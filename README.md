@@ -1,4 +1,6 @@
-# AlphaContextLab
+# QuantA
+
+QuantA 的首个研究模块为 AlphaContextLab。
 
 独立于 RecRankLab 的 **A 股日频量化研究项目**。首版研究四只境内股票 ETF；没有实盘或下单接口。
 
