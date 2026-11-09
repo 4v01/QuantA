@@ -73,7 +73,8 @@ def metadata():
     return pd.DataFrame({'date':pd.to_datetime(['2023-01-03','2023-01-04']),
                          'entry_date':pd.to_datetime(['2023-01-04','2023-01-05']),
                          'exit_date':pd.to_datetime(['2023-01-05','2023-01-06']),
-                         'symbol':['510300']*2,'target':[.1,-.05],'entry_gap':[0,0],'exit_gap':[0,0]})
+                         'symbol':['510300']*2,'target':[.1,-.05],'entry_gap':[0,0],'exit_gap':[0,0],
+                         'entry_tradable':[True,True],'exit_tradable':[True,True]})
 
 
 def test_next_open_timing_round_trip_cost_and_cash():
@@ -86,6 +87,13 @@ def test_next_open_timing_round_trip_cost_and_cash():
     cash=simulate(meta,[0,0],['510300'],5,'cash')
     assert np.all(cash.net_return==0)
     assert (pd.to_datetime(net.entry_date)>meta.date).all()
+
+
+def test_suspended_open_never_fills():
+    meta=metadata();meta['entry_tradable']=[False,True]
+    result=simulate(meta,[1,0],['510300'],5,'model')
+    assert result.turnover.sum()==0 and result.net_return.sum()==0
+    assert result.blocked_buys.sum()==1
 
 
 def test_negative_r2_and_alpha_are_retained():

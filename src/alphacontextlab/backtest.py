@@ -60,7 +60,8 @@ def simulate(meta,scores,symbols,cost_bps,policy='model'):
         limits=np.array([limit_fraction(s,date) for s in symbols])
         gap=gaps.iloc[j].to_numpy()
         # A conservative 0.1 percentage-point buffer accounts for price rounding.
-        buy=gap<limits-.001;sell=gap>-(limits-.001)
+        tradable=data[data.entry_date==date].set_index('symbol').reindex(symbols).entry_tradable.to_numpy(dtype=bool)
+        buy=(gap<limits-.001)&tradable;sell=(gap>-(limits-.001))&tradable
         target=pre.copy() if j and policy.endswith('buy_hold') else targets[j]
         holdings,cash,traded=execute(pre,target,buy,sell,fee)
         asset_end=holdings*(1+returns.iloc[j].to_numpy())
@@ -72,7 +73,8 @@ def simulate(meta,scores,symbols,cost_bps,policy='model'):
             exit_gaps=data[data.entry_date==date].set_index('symbol').reindex(symbols).exit_gap.to_numpy()
             exit_date=data[data.entry_date==date].exit_date.iloc[0]
             exit_limits=np.array([limit_fraction(s,exit_date) for s in symbols])
-            if np.any((asset_end>0)&(exit_gaps<=-(exit_limits-.001))):
+            exit_tradable=data[data.entry_date==date].set_index('symbol').reindex(symbols).exit_tradable.to_numpy(dtype=bool)
+            if np.any((asset_end>0)&((exit_gaps<=-(exit_limits-.001))|~exit_tradable)):
                 raise ValueError('Terminal liquidation blocked; extend simulator rather than invent a fill')
             liquidation=asset_end.sum();nav_end-=fee*liquidation
         records.append({'entry_date':str(pd.Timestamp(date).date()),'exit_date':str(pd.Timestamp(data[data.entry_date==date].exit_date.iloc[0]).date()),

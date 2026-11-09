@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -15,3 +17,8 @@ jobs:
         env:
           OMP_NUM_THREADS: '2'
           MKL_NUM_THREADS: '2'
+      - name: Audit published results when present
+        run: |
+          if test -f reports/v1/provenance.json; then
+            python -m alphacontextlab.audit
+          fi

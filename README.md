@@ -25,7 +25,7 @@ python -m alphacontextlab.study run
 python -m alphacontextlab.study report
 ```
 
-完整候选与预算见 [configs/study.json](configs/study.json)，事前协议见 [PROTOCOL.md](PROTOCOL.md)。数据原始响应、本地参数和单笔预测不上传 Git；报告记录数据、配置、代码和模型指纹。上游历史复权会修订，重新下载若指纹不同必须作为新版本，不能冒充逐位复现。
+完整候选与预算见 [configs/study.json](configs/study.json)，事前协议见 [PROTOCOL.md](PROTOCOL.md)。有公告依据的已知停牌保留在组合日历中，以过去收盘估值并阻断买卖；相关无开盘成交标签不用于预测误差。数据原始响应、本地参数和单笔预测不上传 Git；报告记录数据、配置、代码和模型指纹。上游历史复权会修订，重新下载若指纹不同必须作为新版本，不能冒充逐位复现。
 
 ## DeepSeek 方法来源
 

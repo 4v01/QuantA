@@ -54,9 +54,11 @@ def run(config_path,data_root,output_root):
     prov=provenance(config_path,manifest);root=Path(output_root);root.mkdir(parents=True,exist_ok=True)
     write_json(root/'provenance.json',prov)
     for year in config['test_years']:
-        train_ids,val_ids,test_ids=fold_indices(meta,year);refit_ids=np.r_[train_ids,val_ids]
+        train_ids,val_ids,test_ids=fold_indices(meta,year)
+        valid=meta.forecast_valid.to_numpy(dtype=bool)
+        train_ids=train_ids[valid[train_ids]];val_ids=val_ids[valid[val_ids]]
         # Include every labeled interval available before test, including old train/val boundary purge.
-        refit_ids=np.flatnonzero((meta.exit_date<pd.Timestamp(year,1,1)).to_numpy())
+        refit_ids=np.flatnonzero((meta.exit_date<pd.Timestamp(year,1,1)).to_numpy()&valid)
         transform=Transform().fit(x[train_ids]);tx,tt=transform.apply(x[train_ids]);vx,vt=transform.apply(x[val_ids])
         refit_transform=Transform().fit(x[refit_ids]);rx,rt=refit_transform.apply(x[refit_ids]);qx,qt=refit_transform.apply(x[test_ids])
         y=meta.target.to_numpy();test_meta=meta.iloc[test_ids].reset_index(drop=True)
@@ -64,7 +66,8 @@ def run(config_path,data_root,output_root):
         split={'train_rows':len(train_ids),'validation_rows':len(val_ids),'refit_rows':len(refit_ids),'test_rows':len(test_ids),
                'train_last_exit':str(meta.iloc[train_ids].exit_date.max()),'validation_first_entry':str(meta.iloc[val_ids].entry_date.min()),
                'validation_last_exit':str(meta.iloc[val_ids].exit_date.max()),'test_first_entry':str(meta.iloc[test_ids].entry_date.min()),
-               'test_last_exit':str(meta.iloc[test_ids].exit_date.max()),'training_transform':transform.state(),
+               'test_last_exit':str(meta.iloc[test_ids].exit_date.max()),'test_forecast_valid_rows':int(valid[test_ids].sum()),
+               'test_portfolio_rows_including_halts':len(test_ids),'training_transform':transform.state(),
                'refit_transform':refit_transform.state()}
         for arm in ['ridge','lstm','lstm_capacity','lstm_memory']:
             seeds=[config['seeds'][0]] if arm=='ridge' else config['seeds']
@@ -100,7 +103,9 @@ def run(config_path,data_root,output_root):
                     checkpoint=destination/('model.npz' if arm=='ridge' else 'model.pt')
                     pd.DataFrame({'prediction':prediction}).to_csv(destination/'predictions.csv',index=False,float_format='%.12g')
                     result={'arm':arm,'seed':seed,'test_year':year,'parameters':params,'elapsed_seconds':time.time()-started,
-                            'forecast_metrics':forecast_metrics(y[test_ids],prediction),'checkpoint_sha256':sha256(checkpoint),
+                            'forecast_metrics':forecast_metrics(y[test_ids][valid[test_ids]],prediction[valid[test_ids]]),
+                            'forecast_excluded_nontradable_intervals':int((~valid[test_ids]).sum()),
+                            'checkpoint_sha256':sha256(checkpoint),
                             'predictions_sha256':sha256(destination/'predictions.csv'),'provenance':prov}
                     write_json(destination/'result.json',result)
                     print(json.dumps({k:result[k] for k in ['arm','seed','test_year','elapsed_seconds','forecast_metrics']}),flush=True)
@@ -145,7 +150,7 @@ def report(config_path,output_root,report_root):
                          'annual_turnover':float(joined.turnover.sum()*252/len(joined)),
                          'blocked_buys':int(joined.blocked_buys.sum()),'blocked_sells':int(joined.blocked_sells.sum())})
             if bps==config['primary_cost_bps']:
-                joined['method']=name;joined['seed']=seed;traces.append(joined)
+                joined['method']=name;joined['seed']=seed;joined['market_return']=market;traces.append(joined)
     table=pd.DataFrame(rows);table.to_csv(reports/'backtest_results.csv',index=False)
     pd.concat(traces,ignore_index=True).to_csv(reports/'daily_net_returns.csv',index=False,float_format='%.12g')
     write_json(reports/'forecast_results.json',forecast)
@@ -173,6 +178,7 @@ def report(config_path,output_root,report_root):
             '预测 RMSE、R² 与相关系数见 forecast_results.json；预测 R² 与 CAPM 回归 R² 含义不同。','',
             '## 解释边界','',
             '- 数据来自第三方当前前复权日线，非逐时点复权档案；小数舍入及事后复权修订会影响历史特征。',
+            '- 已声明的全天/开盘停牌按过去收盘估值且禁止交易，保留在组合收益中；不可交易开盘标签只从预测误差计算排除，数量在各拟合记录中披露。',
             '- 固定 ETF 篮子有存续及研究者选样偏差，没有历史全市场/退市股样本。',
             '- 连续名义权重模拟不含100份整手、最低佣金、订单簿、冲击与集合竞价真实成交保证。',
             '- 每日只在开盘调仓一次，新增持仓最早次日卖出，满足模型层面的 T+1；涨跌停以开盘价与前收的复权比值保守过滤，并非交易所精确涨跌停价。',

@@ -67,14 +67,27 @@ def panel(root, config):
     expected = pd.DatetimeIndex(sorted(adj.date.unique()))
     for kind, data in [('adjusted', adj), ('raw',raw)]:
         for symbol in config['symbols']:
-            if not pd.DatetimeIndex(data[data.symbol == symbol].date).equals(expected):
-                raise ValueError(f'Missing sessions: {kind} {symbol}; do not silently intersect calendars')
+            observed=pd.DatetimeIndex(data[data.symbol == symbol].date)
+            missing=expected.difference(observed)
+            allowed=pd.DatetimeIndex(pd.to_datetime(config.get('known_full_session_halts',{}).get(symbol,[])))
+            allowed=allowed[(allowed>=expected.min())&(allowed<=expected.max())]
+            if not missing.equals(allowed):
+                raise ValueError(f'Unexplained missing sessions: {kind} {symbol}: {missing}; do not intersect calendars')
     market = adj[adj.symbol == '510300'].set_index('date').close.pct_change()
     frames = []
     for symbol in config['symbols']:
-        f = adj[adj.symbol == symbol].set_index('date').copy()
-        unadjusted = raw[raw.symbol == symbol].set_index('date')
+        f = adj[adj.symbol == symbol].set_index('date').reindex(expected).copy()
+        f.index.name='date';present=f.close.notna()
+        previous=f.close.ffill()
+        for col in ['open','close','high','low']:f[col]=f[col].fillna(previous)
+        f['volume']=f.volume.fillna(0);f['symbol']=symbol
+        unadjusted = raw[raw.symbol == symbol].set_index('date').reindex(expected)
+        unadjusted['open']=unadjusted.open.fillna(unadjusted.close.ffill())
+        unadjusted['close']=unadjusted.close.ffill()
         f['raw_open'] = unadjusted.open; f['raw_close'] = unadjusted.close
+        no_open=pd.DatetimeIndex(pd.to_datetime(config.get('known_no_open_execution',{}).get(symbol,[])))
+        tradable=present & ~f.index.isin(no_open)
+        mark_open=f.open.where(tradable,f.close.shift(1))
         f['ret1'] = f.close.pct_change(); f['ret5'] = f.close.pct_change(5); f['ret20'] = f.close.pct_change(20)
         f['vol20'] = f.ret1.rolling(20, min_periods=20).std(ddof=0)
         f['range'] = (f.high-f.low)/f.close
@@ -83,7 +96,10 @@ def panel(root, config):
         f['market_ret1'] = market
         f['entry_date'] = f.index.to_series().shift(-1)
         f['exit_date'] = f.index.to_series().shift(-2)
-        f['target'] = f.open.shift(-2)/f.open.shift(-1)-1
+        f['target'] = mark_open.shift(-2)/mark_open.shift(-1)-1
+        f['entry_tradable']=tradable.shift(-1,fill_value=False)
+        f['exit_tradable']=tradable.shift(-2,fill_value=False)
+        f['forecast_valid']=f.entry_tradable & f.exit_tradable
         # At entry, compare adjusted opening with last close (same adjustment basis).
         f['entry_gap'] = f.open.shift(-1)/f.close-1
         f['exit_gap'] = f.open.shift(-2)/f.close.shift(-1)-1
@@ -100,7 +116,8 @@ def sequences(frame, config):
             block=values[end-length+1:end+1]
             row=f.iloc[end]
             if not np.isfinite(block).all() or not np.isfinite(row.target): continue
-            xs.append(block);metadata.append(row[['date','symbol','entry_date','exit_date','target','entry_gap','exit_gap','ret20']].to_dict())
+            xs.append(block);metadata.append(row[['date','symbol','entry_date','exit_date','target','entry_gap','exit_gap','ret20',
+                                                 'entry_tradable','exit_tradable','forecast_valid']].to_dict())
     meta=pd.DataFrame(metadata)
     order=meta.sort_values(['entry_date','symbol'],kind='stable').index.to_numpy()
     return np.stack(xs)[order], meta.iloc[order].reset_index(drop=True)
