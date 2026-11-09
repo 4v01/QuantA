@@ -1,0 +1,82 @@
+[
+  {
+    "method": "cash",
+    "seeds": 1,
+    "sharpe_mean": null,
+    "sharpe_seed_std": null,
+    "annual_return_mean": 0.0,
+    "max_drawdown_mean": 0.0,
+    "alpha_annual_mean": 0.0,
+    "annual_turnover_mean": 0.0
+  },
+  {
+    "method": "csi300_buy_hold",
+    "seeds": 1,
+    "sharpe_mean": -0.14852039939174694,
+    "sharpe_seed_std": null,
+    "annual_return_mean": -0.05660415213039027,
+    "max_drawdown_mean": -0.47022554944625805,
+    "alpha_annual_mean": -0.001051706226673437,
+    "annual_turnover_mean": 2.1014893435370476
+  },
+  {
+    "method": "equal_buy_hold",
+    "seeds": 1,
+    "sharpe_mean": -0.0866053041303488,
+    "sharpe_seed_std": null,
+    "annual_return_mean": -0.047249187323726405,
+    "max_drawdown_mean": -0.4487035559004128,
+    "alpha_annual_mean": 0.012830651112367704,
+    "annual_turnover_mean": 2.1015760438018742
+  },
+  {
+    "method": "momentum20",
+    "seeds": 1,
+    "sharpe_mean": -0.027486080963526623,
+    "sharpe_seed_std": null,
+    "annual_return_mean": -0.042519538639635535,
+    "max_drawdown_mean": -0.3864903314826945,
+    "alpha_annual_mean": 0.02202198560868015,
+    "annual_turnover_mean": 71.00618873459157
+  },
+  {
+    "method": "ridge",
+    "seeds": 1,
+    "sharpe_mean": -0.013154737853041427,
+    "sharpe_seed_std": null,
+    "annual_return_mean": -0.040479426741965585,
+    "max_drawdown_mean": -0.4916454893040406,
+    "alpha_annual_mean": 0.028744926057840917,
+    "annual_turnover_mean": 186.3847232841731
+  },
+  {
+    "method": "lstm",
+    "seeds": 3,
+    "sharpe_mean": -0.35056468865237855,
+    "sharpe_seed_std": 0.07508191322154333,
+    "annual_return_mean": -0.116498618220039,
+    "max_drawdown_mean": -0.629575399718925,
+    "alpha_annual_mean": -0.061078813286879335,
+    "annual_turnover_mean": 168.11100800948182
+  },
+  {
+    "method": "lstm_capacity",
+    "seeds": 3,
+    "sharpe_mean": -0.4003516064195312,
+    "sharpe_seed_std": 0.4826790535002815,
+    "annual_return_mean": -0.10591007379291346,
+    "max_drawdown_mean": -0.5622294639842423,
+    "alpha_annual_mean": -0.054472162039846395,
+    "annual_turnover_mean": 163.40897378899464
+  },
+  {
+    "method": "lstm_memory",
+    "seeds": 3,
+    "sharpe_mean": -0.9046671037200004,
+    "sharpe_seed_std": 0.39501718825508236,
+    "annual_return_mean": -0.2111068570220197,
+    "max_drawdown_mean": -0.7193597932741249,
+    "alpha_annual_mean": -0.17959665333196814,
+    "annual_turnover_mean": 327.4998478690388
+  }
+]

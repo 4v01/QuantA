@@ -1,0 +1,234 @@
+{
+  "selected": {
+    "config": {
+      "lr": 0.003,
+      "weight_decay": 0.001
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_scaled_mse": 4.171902302052059,
+        "validation_rmse": 0.014566218860587244
+      },
+      {
+        "epoch": 2,
+        "train_scaled_mse": 4.12586644858239,
+        "validation_rmse": 0.014460532545868206
+      },
+      {
+        "epoch": 3,
+        "train_scaled_mse": 4.100342418794394,
+        "validation_rmse": 0.014471339616789017
+      },
+      {
+        "epoch": 4,
+        "train_scaled_mse": 4.07739690928128,
+        "validation_rmse": 0.014535048000937177
+      },
+      {
+        "epoch": 5,
+        "train_scaled_mse": 4.046241485525709,
+        "validation_rmse": 0.014554434565992348
+      }
+    ],
+    "best": {
+      "epoch": 2,
+      "train_scaled_mse": 4.12586644858239,
+      "validation_rmse": 0.014460532545868206
+    },
+    "validation_rmse": 0.014460532545868206
+  },
+  "candidates": [
+    {
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.001
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_scaled_mse": 4.195745788270493,
+          "validation_rmse": 0.01454757205486299
+        },
+        {
+          "epoch": 2,
+          "train_scaled_mse": 4.154161557738778,
+          "validation_rmse": 0.014546423713949215
+        },
+        {
+          "epoch": 3,
+          "train_scaled_mse": 4.1374364302011495,
+          "validation_rmse": 0.014540612664240471
+        },
+        {
+          "epoch": 4,
+          "train_scaled_mse": 4.1270015062854615,
+          "validation_rmse": 0.014515985557394062
+        },
+        {
+          "epoch": 5,
+          "train_scaled_mse": 4.1168741929577966,
+          "validation_rmse": 0.014513180588072976
+        },
+        {
+          "epoch": 6,
+          "train_scaled_mse": 4.1083179914466985,
+          "validation_rmse": 0.014508572413143869
+        },
+        {
+          "epoch": 7,
+          "train_scaled_mse": 4.097076989876333,
+          "validation_rmse": 0.014503612960904286
+        },
+        {
+          "epoch": 8,
+          "train_scaled_mse": 4.0860361872931765,
+          "validation_rmse": 0.014528984443267189
+        },
+        {
+          "epoch": 9,
+          "train_scaled_mse": 4.075524779978461,
+          "validation_rmse": 0.014516440621904795
+        },
+        {
+          "epoch": 10,
+          "train_scaled_mse": 4.061969902099819,
+          "validation_rmse": 0.014539413109126573
+        }
+      ],
+      "best": {
+        "epoch": 7,
+        "train_scaled_mse": 4.097076989876333,
+        "validation_rmse": 0.014503612960904286
+      },
+      "validation_rmse": 0.014503612960904286
+    },
+    {
+      "config": {
+        "lr": 0.003,
+        "weight_decay": 0.001
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "train_scaled_mse": 4.171902302052059,
+          "validation_rmse": 0.014566218860587244
+        },
+        {
+          "epoch": 2,
+          "train_scaled_mse": 4.12586644858239,
+          "validation_rmse": 0.014460532545868206
+        },
+        {
+          "epoch": 3,
+          "train_scaled_mse": 4.100342418794394,
+          "validation_rmse": 0.014471339616789017
+        },
+        {
+          "epoch": 4,
+          "train_scaled_mse": 4.07739690928128,
+          "validation_rmse": 0.014535048000937177
+        },
+        {
+          "epoch": 5,
+          "train_scaled_mse": 4.046241485525709,
+          "validation_rmse": 0.014554434565992348
+        }
+      ],
+      "best": {
+        "epoch": 2,
+        "train_scaled_mse": 4.12586644858239,
+        "validation_rmse": 0.014460532545868206
+      },
+      "validation_rmse": 0.014460532545868206
+    }
+  ],
+  "split": {
+    "train_rows": 7630,
+    "validation_rows": 964,
+    "refit_rows": 8598,
+    "test_rows": 964,
+    "train_last_exit": "2021-12-31 00:00:00",
+    "validation_first_entry": "2022-01-04 00:00:00",
+    "validation_last_exit": "2022-12-30 00:00:00",
+    "test_first_entry": "2023-01-03 00:00:00",
+    "test_last_exit": "2023-12-29 00:00:00",
+    "test_forecast_valid_rows": 964,
+    "test_portfolio_rows_including_halts": 964,
+    "training_transform": {
+      "mean": [
+        0.0007048551023839427,
+        0.0035128543165325174,
+        0.014388124752399485,
+        0.016500483171274057,
+        0.022344951444054646,
+        -0.0007454662330679475,
+        -0.06823833776011302,
+        0.0007935677280055717
+      ],
+      "std": [
+        0.019702256435234558,
+        0.04360971791317953,
+        0.09041177558283144,
+        0.009880693417011822,
+        0.017244317440687523,
+        0.0085514947908707,
+        0.47284477968908695,
+        0.019132169901008564
+      ],
+      "return_edges": [
+        -0.007579346187412739,
+        0.0006016847328282893,
+        0.009454545564949512
+      ],
+      "volatility_edges": [
+        0.011302517727017403,
+        0.017316976562142372
+      ]
+    },
+    "refit_transform": {
+      "mean": [
+        0.0005231598739900763,
+        0.002600337120419922,
+        0.010706048237604184,
+        0.016224466610203686,
+        0.02203382608450368,
+        -0.0007622516275226321,
+        -0.06328750398431811,
+        0.0006028552412304674
+      ],
+      "std": [
+        0.019252911665777472,
+        0.04254956380740469,
+        0.08837399069582871,
+        0.009468702586230554,
+        0.016590143635372114,
+        0.00831828538156199,
+        0.46171352245349007,
+        0.01861894512908364
+      ],
+      "return_edges": [
+        -0.007799442857503891,
+        0.00038971161120571196,
+        0.009252692572772503
+      ],
+      "volatility_edges": [
+        0.011289582587778568,
+        0.017070908099412918
+      ]
+    }
+  },
+  "provenance": {
+    "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+    "source_dirty": false,
+    "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2
+  }
+}

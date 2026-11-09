@@ -1,0 +1,207 @@
+{
+  "status": "passed",
+  "verified_checkpoints": 40,
+  "runs": [
+    {
+      "run": "2021-lstm-17",
+      "checkpoint_sha256": "d36d008a6fd214d8bdc9393ba4d95243362edf436ae315bd0618199493b65dca",
+      "max_absolute_prediction_error": 3.705889761729253e-14
+    },
+    {
+      "run": "2021-lstm-29",
+      "checkpoint_sha256": "5eb51ff9286d19aee717dcceca69b234ed7e770906cce4b8d46cf43fb7c59714",
+      "max_absolute_prediction_error": 3.940077430986122e-14
+    },
+    {
+      "run": "2021-lstm-43",
+      "checkpoint_sha256": "4af8e686c1079d36e5278115531490a47196df4edc5ebf842c8b885e38ee1e10",
+      "max_absolute_prediction_error": 4.995136249075216e-15
+    },
+    {
+      "run": "2021-lstm_capacity-17",
+      "checkpoint_sha256": "236f28bd657f29286e3c901b491b9592976408dd4c2dfec568e02d5c7cb8df69",
+      "max_absolute_prediction_error": 4.994268887337228e-15
+    },
+    {
+      "run": "2021-lstm_capacity-29",
+      "checkpoint_sha256": "6197c3050c8fb3e9baf78c24836a0f51d114e3e53c51338b588f450250e7a7cb",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "run": "2021-lstm_capacity-43",
+      "checkpoint_sha256": "91f6939430e828d51578fc90ddf7041184a856b858e5588c9c2de7b127b80c18",
+      "max_absolute_prediction_error": 4.99860569602717e-15
+    },
+    {
+      "run": "2021-lstm_memory-17",
+      "checkpoint_sha256": "c2a0e359195a3e1378b58b928fc4fd8345a272b729b3c14a873dfcb50f594629",
+      "max_absolute_prediction_error": 4.9855952699573436e-15
+    },
+    {
+      "run": "2021-lstm_memory-29",
+      "checkpoint_sha256": "7b93b7e8e3534d89ab886b8fbdf3eb59727dfa0e67da18dfc602c9e7bc571591",
+      "max_absolute_prediction_error": 4.984294227350361e-15
+    },
+    {
+      "run": "2021-lstm_memory-43",
+      "checkpoint_sha256": "b1464801528f8e9abb5de6c1509b6da9e3ce033fa049f2e81e175793613e28c3",
+      "max_absolute_prediction_error": 4.9916668021232624e-15
+    },
+    {
+      "run": "2021-ridge-17",
+      "checkpoint_sha256": "bb805fc668721a6f08093f577f946b2a5364bc5767360cc1fa823ab696d05477",
+      "max_absolute_prediction_error": 4.992534163861251e-15
+    },
+    {
+      "run": "2022-lstm-17",
+      "checkpoint_sha256": "699446fb564d1b4a84bca58af2897a1c8ee32818e1c2f6446f64294fc735ab1d",
+      "max_absolute_prediction_error": 4.8841139466127e-15
+    },
+    {
+      "run": "2022-lstm-29",
+      "checkpoint_sha256": "f876a402a09fd5902214b80e5244c331bbbdd0349799ee048aaf698f87ea6e74",
+      "max_absolute_prediction_error": 4.986028950826338e-15
+    },
+    {
+      "run": "2022-lstm-43",
+      "checkpoint_sha256": "28319e4cacb206c2ff10c238217eaa4ef58f178a6dff79172fbf784b3537959b",
+      "max_absolute_prediction_error": 4.4953190475593985e-15
+    },
+    {
+      "run": "2022-lstm_capacity-17",
+      "checkpoint_sha256": "fc2e52a216fdad9e126a26ee7b7bead1b018e6f749e82b375ae651267abb4294",
+      "max_absolute_prediction_error": 4.957839694341715e-15
+    },
+    {
+      "run": "2022-lstm_capacity-29",
+      "checkpoint_sha256": "b1d74f4e7c482632b079534717d78f54b0d4f0eebeb3526da0ac6736bf7e06bf",
+      "max_absolute_prediction_error": 4.9589238965142e-15
+    },
+    {
+      "run": "2022-lstm_capacity-43",
+      "checkpoint_sha256": "db350cfbdeadcdb64bd86000db960fbf3d7c68aa671dcdc32a314e6c6a30c15d",
+      "max_absolute_prediction_error": 4.948298715223842e-15
+    },
+    {
+      "run": "2022-lstm_memory-17",
+      "checkpoint_sha256": "c620d9b844e3378222845e7666abd941f3cfac75e561bb10faa827ba616e3d76",
+      "max_absolute_prediction_error": 4.973235365191009e-15
+    },
+    {
+      "run": "2022-lstm_memory-29",
+      "checkpoint_sha256": "8a06b83be61c1d861e2082def3a84e6e65c0189cf3f629176fdb8b6501c2e852",
+      "max_absolute_prediction_error": 4.9960036108132044e-15
+    },
+    {
+      "run": "2022-lstm_memory-43",
+      "checkpoint_sha256": "41068ea9fcf9caeaf7104e761930db1729ea1bacd75b5e214577800c2277d105",
+      "max_absolute_prediction_error": 4.982559503874384e-15
+    },
+    {
+      "run": "2022-ridge-17",
+      "checkpoint_sha256": "2af9ea7ad62790e14feeceb1c829e9fbf76ae0e2d8a82d46444546ef663cb87e",
+      "max_absolute_prediction_error": 4.992967844730245e-15
+    },
+    {
+      "run": "2023-lstm-17",
+      "checkpoint_sha256": "100a1e326807dc4423fe6ada24091b53abc6e43085f78914ef1f993621cbb7ad",
+      "max_absolute_prediction_error": 4.999689898199655e-15
+    },
+    {
+      "run": "2023-lstm-29",
+      "checkpoint_sha256": "21050b13cefccf6a9984bbfba52c50ce05b72168eb11507cc25a1bc0cad4ae46",
+      "max_absolute_prediction_error": 4.9619596625971596e-15
+    },
+    {
+      "run": "2023-lstm-43",
+      "checkpoint_sha256": "191394ce87784b6187e45688005a660fede81f6f139ceb7a56944faab1b3fc67",
+      "max_absolute_prediction_error": 3.69712940817557e-15
+    },
+    {
+      "run": "2023-lstm_capacity-17",
+      "checkpoint_sha256": "1706bded5341ce87556910b4877250ae83080c2a5afbc8aef466d7aa97c37eb1",
+      "max_absolute_prediction_error": 4.999039376896164e-15
+    },
+    {
+      "run": "2023-lstm_capacity-29",
+      "checkpoint_sha256": "3bb399ff459a2e520aab988dd039d25e497a64491e26e9bde9b1652f08da3ad6",
+      "max_absolute_prediction_error": 4.999798318416904e-16
+    },
+    {
+      "run": "2023-lstm_capacity-43",
+      "checkpoint_sha256": "5511965d0075f71dd3091681233069d68b842f14339849aef34767f37f0ed528",
+      "max_absolute_prediction_error": 4.9738858864945e-15
+    },
+    {
+      "run": "2023-lstm_memory-17",
+      "checkpoint_sha256": "17ecc88303946a0f2d11e38871b00858eb617fd413d4e61a4d7acc6542304a2c",
+      "max_absolute_prediction_error": 4.999906738634152e-15
+    },
+    {
+      "run": "2023-lstm_memory-29",
+      "checkpoint_sha256": "e9b9ac9e855ddd5d1320a840e635ffe53a3947ba3a82ec6bb5a7dc8a19042510",
+      "max_absolute_prediction_error": 4.997738334289181e-15
+    },
+    {
+      "run": "2023-lstm_memory-43",
+      "checkpoint_sha256": "f417995375f3b77c0c1032ce9686b35c32b6c2560b322990c4e5a3adf790d080",
+      "max_absolute_prediction_error": 4.9788732164879335e-15
+    },
+    {
+      "run": "2023-ridge-17",
+      "checkpoint_sha256": "97b1356e3dd3b5e18f4130599a6f8789373e4addfb99b639d31e83a98b4b4a0f",
+      "max_absolute_prediction_error": 4.548444954011188e-14
+    },
+    {
+      "run": "2024-lstm-17",
+      "checkpoint_sha256": "bda73aa1b96e781b038a981ba008846e7341181c76ec3564c311b41a50f43979",
+      "max_absolute_prediction_error": 2.90652918399914e-14
+    },
+    {
+      "run": "2024-lstm-29",
+      "checkpoint_sha256": "0a688f56ba064eed3ebd86e277395e9a3f150132615adafc07db699e0073edaa",
+      "max_absolute_prediction_error": 4.999256217330661e-15
+    },
+    {
+      "run": "2024-lstm-43",
+      "checkpoint_sha256": "8593b6edbde73c882d0870caaaf83699a600ef4cecb8d4074ef7f83da72d0bc8",
+      "max_absolute_prediction_error": 4.907099032669393e-15
+    },
+    {
+      "run": "2024-lstm_capacity-17",
+      "checkpoint_sha256": "ac3be530ade97576e8cbac261f31c00813df9e9b307c46491d2d2c98f3782148",
+      "max_absolute_prediction_error": 4.994485727771725e-15
+    },
+    {
+      "run": "2024-lstm_capacity-29",
+      "checkpoint_sha256": "89298d50b3d710f0676becc7386a19eceb85161a9611de436f45086896a47d1d",
+      "max_absolute_prediction_error": 4.7596475372113645e-15
+    },
+    {
+      "run": "2024-lstm_capacity-43",
+      "checkpoint_sha256": "22661a6c760aaea4f7db9ebbf405c29aacd59e03001da18ba246af77b3d633bf",
+      "max_absolute_prediction_error": 4.946130310878871e-15
+    },
+    {
+      "run": "2024-lstm_memory-17",
+      "checkpoint_sha256": "70cf5c248e6a70fe4b7ab25f4d94ecd58528fe1e587549ebfc570ba916c24d3b",
+      "max_absolute_prediction_error": 4.973452205625506e-15
+    },
+    {
+      "run": "2024-lstm_memory-29",
+      "checkpoint_sha256": "83b8c3410083d2394b3bf530e9062bc749a2a7d6a05669ed9ca98625af6ea494",
+      "max_absolute_prediction_error": 4.954803928258755e-15
+    },
+    {
+      "run": "2024-lstm_memory-43",
+      "checkpoint_sha256": "8cc0b80d5efeab22185781863df955825f53ed6383ed676e840ba21b431e8c16",
+      "max_absolute_prediction_error": 4.9660796308526045e-15
+    },
+    {
+      "run": "2024-ridge-17",
+      "checkpoint_sha256": "2e106cdcba25a8e274473902bff2ee64f8259d6610381893227ac98992ac979c",
+      "max_absolute_prediction_error": 4.929390229335695e-14
+    }
+  ],
+  "scope": "Exact saved-parameter replay, not independent retraining."
+}

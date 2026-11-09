@@ -147,3 +147,24 @@ def test_future_quotes_cannot_change_past_features_or_execution_time(tmp_path):
     # Heldout prices never alter already available features or prefix sequences.
     valid=(meta.date<dates[80]).to_numpy()
     np.testing.assert_equal(x[valid],x2[(meta2.date<dates[80]).to_numpy()])
+
+
+def test_incomplete_report_preserves_published_evidence(tmp_path):
+    from alphacontextlab.study import report
+    outputs=tmp_path/'outputs';outputs.mkdir();reports=tmp_path/'reports';reports.mkdir()
+    sentinel=reports/'REPORT.md';sentinel.write_text('published evidence')
+    with pytest.raises(ValueError,match='Incomplete study'):
+        report(ROOT/'configs/study.json',outputs,reports)
+    assert sentinel.read_text()=='published evidence'
+
+
+def test_new_source_cannot_overwrite_old_output_provenance(tmp_path,monkeypatch):
+    from alphacontextlab import study
+    outputs=tmp_path/'outputs';outputs.mkdir()
+    sentinel=outputs/'provenance.json';sentinel.write_text('{"source_commit":"old"}')
+    monkeypatch.setattr(study,'panel',lambda *args:(None,{}))
+    monkeypatch.setattr(study,'sequences',lambda *args:(np.zeros((1,20,8)),pd.DataFrame()))
+    monkeypatch.setattr(study,'provenance',lambda *args:{'source_commit':'new'})
+    with pytest.raises(RuntimeError,match='Existing output provenance differs'):
+        study.run(ROOT/'configs/study.json',tmp_path/'data',outputs)
+    assert json.loads(sentinel.read_text())=={'source_commit':'old'}

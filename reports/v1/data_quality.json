@@ -1,0 +1,52 @@
+{
+  "quotes_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+  "source_rows": 21402,
+  "source_checks": {
+    "159915:fqt0": {
+      "rows": 2675,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "159915:fqt1": {
+      "rows": 2675,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510050:fqt0": {
+      "rows": 2676,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510050:fqt1": {
+      "rows": 2676,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510300:fqt0": {
+      "rows": 2676,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510300:fqt1": {
+      "rows": 2676,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510500:fqt0": {
+      "rows": 2674,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    },
+    "510500:fqt1": {
+      "rows": 2674,
+      "ohlc_violations": 0,
+      "nonpositive_volume_rows": 0
+    }
+  },
+  "halt_policy": "Declared full-session and opening halts are retained as stale valuations and trade-blocked; no calendar intersection.",
+  "non_point_in_time_warning": [
+    "Third-party data, not an exchange-certified archive.",
+    "Current forward-adjustment factors are retrospectively revised and rounded; not point-in-time.",
+    "No permission to redistribute raw provider data is assumed; raw files stay local."
+  ]
+}

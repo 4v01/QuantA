@@ -1,0 +1,60 @@
+{
+  "scope": "Post-hoc conditional descriptive comparison; no multiple-testing correction or model reselection.",
+  "block_length": 20,
+  "pairs": [
+    {
+      "seed": 17,
+      "comparison": "lstm_memory - lstm",
+      "delta_sharpe": -1.057763275511844,
+      "paired_block_bootstrap95": [
+        -2.1880985993612456,
+        0.46136612323011844
+      ]
+    },
+    {
+      "seed": 17,
+      "comparison": "lstm_memory - lstm_capacity",
+      "delta_sharpe": -1.2514764339015976,
+      "paired_block_bootstrap95": [
+        -2.100666429015014,
+        -0.2351629073518388
+      ]
+    },
+    {
+      "seed": 29,
+      "comparison": "lstm_memory - lstm",
+      "delta_sharpe": -0.14011480161429168,
+      "paired_block_bootstrap95": [
+        -0.8388864198630371,
+        0.3365448371335792
+      ]
+    },
+    {
+      "seed": 29,
+      "comparison": "lstm_memory - lstm_capacity",
+      "delta_sharpe": 0.3847002496803168,
+      "paired_block_bootstrap95": [
+        -0.9556903775700339,
+        1.4604620255733831
+      ]
+    },
+    {
+      "seed": 43,
+      "comparison": "lstm_memory - lstm",
+      "delta_sharpe": -0.4644291680745327,
+      "paired_block_bootstrap95": [
+        -1.1548761230646618,
+        0.2598811705242133
+      ]
+    },
+    {
+      "seed": 43,
+      "comparison": "lstm_memory - lstm_capacity",
+      "delta_sharpe": -0.6461703076794953,
+      "paired_block_bootstrap95": [
+        -1.1767891755014188,
+        0.050332421525178826
+      ]
+    }
+  ]
+}

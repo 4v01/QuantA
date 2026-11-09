@@ -1,0 +1,28 @@
+{
+  "arm": "lstm_capacity",
+  "seed": 17,
+  "test_year": 2022,
+  "parameters": 4285,
+  "elapsed_seconds": 2.3390045166015625,
+  "forecast_metrics": {
+    "rmse": 0.014482849434175729,
+    "r2": -0.005215654934355385,
+    "pearson": 0.07887542304294012
+  },
+  "forecast_excluded_nontradable_intervals": 0,
+  "checkpoint_sha256": "fc2e52a216fdad9e126a26ee7b7bead1b018e6f749e82b375ae651267abb4294",
+  "predictions_sha256": "d7f22395bfada745688b426a3b313c40d904c889b77b2dc261d58b294e34b492",
+  "provenance": {
+    "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+    "source_dirty": false,
+    "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2
+  }
+}

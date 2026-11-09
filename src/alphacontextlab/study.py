@@ -52,7 +52,10 @@ def run(config_path,data_root,output_root):
     config=json.loads(Path(config_path).read_text());torch.set_num_threads(2);torch.use_deterministic_algorithms(True)
     frame,manifest=panel(data_root,config);x,meta=sequences(frame,config)
     prov=provenance(config_path,manifest);root=Path(output_root);root.mkdir(parents=True,exist_ok=True)
+    if (root/'provenance.json').exists() and json.loads((root/'provenance.json').read_text())!=prov:
+        raise RuntimeError('Existing output provenance differs; choose a new output directory')
     write_json(root/'provenance.json',prov)
+    write_json(root/'data_manifest.json',manifest)
     for year in config['test_years']:
         train_ids,val_ids,test_ids=fold_indices(meta,year)
         valid=meta.forecast_valid.to_numpy(dtype=bool)
@@ -120,6 +123,10 @@ def report(config_path,output_root,report_root):
     expected=len(config['test_years'])*(1+3*len(config['seeds']))
     results=list(root.glob('*/result.json'))
     if len(results)!=expected:raise ValueError(f'Incomplete study: {len(results)}/{expected}')
+    prov=json.loads((root/'provenance.json').read_text())
+    if (reports/'provenance.json').exists() and json.loads((reports/'provenance.json').read_text())!=prov:
+        raise ValueError('Refusing to overwrite report with different provenance')
+    write_json(reports/'data_manifest.json',json.loads((root/'data_manifest.json').read_text()))
     rows=[];forecast=[];traces=[]
     policies=[('cash',None),('csi300_buy_hold',None),('equal_buy_hold',None),('momentum20',None),('ridge',config['seeds'][0])]
     policies += [(arm,seed) for arm in ['lstm','lstm_capacity','lstm_memory'] for seed in config['seeds']]

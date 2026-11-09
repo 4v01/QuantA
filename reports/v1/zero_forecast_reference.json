@@ -1,0 +1,41 @@
+{
+  "scope": "Post-hoc no-fit arithmetic reference, never used to select models or rules.",
+  "years": [
+    {
+      "year": 2021,
+      "observations": 965,
+      "zero_return_forecast": {
+        "rmse": 0.01400316565768358,
+        "r2": -0.00019250899910749908,
+        "pearson": null
+      }
+    },
+    {
+      "year": 2022,
+      "observations": 964,
+      "zero_return_forecast": {
+        "rmse": 0.014477020752970509,
+        "r2": -0.004406711553955223,
+        "pearson": null
+      }
+    },
+    {
+      "year": 2023,
+      "observations": 964,
+      "zero_return_forecast": {
+        "rmse": 0.011296625681548232,
+        "r2": -0.0017041459143494198,
+        "pearson": null
+      }
+    },
+    {
+      "year": 2024,
+      "observations": 964,
+      "zero_return_forecast": {
+        "rmse": 0.023583734431200813,
+        "r2": -0.0015375661627978765,
+        "pearson": null
+      }
+    }
+  ]
+}

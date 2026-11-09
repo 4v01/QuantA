@@ -1,0 +1,1122 @@
+[
+  {
+    "arm": "ridge",
+    "seed": 17,
+    "test_year": 2021,
+    "parameters": 17,
+    "elapsed_seconds": 0.0181272029876709,
+    "forecast_metrics": {
+      "rmse": 0.014129944558549256,
+      "r2": -0.018385155225744576,
+      "pearson": -0.03319663193364868
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "bb805fc668721a6f08093f577f946b2a5364bc5767360cc1fa823ab696d05477",
+    "predictions_sha256": "0c3fce6d474ab6dbac9f7817c428b9bd982f02dee94d0207a3e71a81b20b96ec",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "ridge",
+    "seed": 17,
+    "test_year": 2022,
+    "parameters": 17,
+    "elapsed_seconds": 0.02009272575378418,
+    "forecast_metrics": {
+      "rmse": 0.014531992611026034,
+      "r2": -0.012049020434213187,
+      "pearson": 0.07460165751534208
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "2af9ea7ad62790e14feeceb1c829e9fbf76ae0e2d8a82d46444546ef663cb87e",
+    "predictions_sha256": "92ff34dfe6ab1e246f87d07f73442b659338b9aad1c0e2599780c5f1e0fbce5d",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "ridge",
+    "seed": 17,
+    "test_year": 2023,
+    "parameters": 17,
+    "elapsed_seconds": 0.02413201332092285,
+    "forecast_metrics": {
+      "rmse": 0.011550143001204652,
+      "r2": -0.04716885468534193,
+      "pearson": -0.10056548493225123
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "97b1356e3dd3b5e18f4130599a6f8789373e4addfb99b639d31e83a98b4b4a0f",
+    "predictions_sha256": "579c33cbb5f0d8e9f27dc8663a718c6a402367f040a568193f4a8dfafb9da22a",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "ridge",
+    "seed": 17,
+    "test_year": 2024,
+    "parameters": 17,
+    "elapsed_seconds": 0.02152395248413086,
+    "forecast_metrics": {
+      "rmse": 0.023700046811531143,
+      "r2": -0.01144087300163199,
+      "pearson": 0.025970182252744865
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "2e106cdcba25a8e274473902bff2ee64f8259d6610381893227ac98992ac979c",
+    "predictions_sha256": "a6d4d53413c90596730f4bd2bcac3398c650c1894e1ab3b0fcd35ab29d3fccfd",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 17,
+    "test_year": 2021,
+    "parameters": 1681,
+    "elapsed_seconds": 4.817035436630249,
+    "forecast_metrics": {
+      "rmse": 0.01424579985934287,
+      "r2": -0.03515365916800195,
+      "pearson": -0.0024330077653140483
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "d36d008a6fd214d8bdc9393ba4d95243362edf436ae315bd0618199493b65dca",
+    "predictions_sha256": "7f6e8be7792a7c30f523febf158a72560823a6c6c6bba4409b87a05239e356e1",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 17,
+    "test_year": 2022,
+    "parameters": 1681,
+    "elapsed_seconds": 1.119377851486206,
+    "forecast_metrics": {
+      "rmse": 0.014515118649671806,
+      "r2": -0.009700084290971578,
+      "pearson": -0.044004382524088496
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "699446fb564d1b4a84bca58af2897a1c8ee32818e1c2f6446f64294fc735ab1d",
+    "predictions_sha256": "7f4ae03a62378bc5053c8eee08e217c220009a6c21f3177e3d279b49c06134e7",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 17,
+    "test_year": 2023,
+    "parameters": 1681,
+    "elapsed_seconds": 2.166273593902588,
+    "forecast_metrics": {
+      "rmse": 0.011323507095986278,
+      "r2": -0.006477122025817517,
+      "pearson": -0.05410353645601277
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "100a1e326807dc4423fe6ada24091b53abc6e43085f78914ef1f993621cbb7ad",
+    "predictions_sha256": "dbb0216dd7e8fb2ce394dc3e2ace16d906cd75b011122ede65308aaba7be7de7",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 17,
+    "test_year": 2024,
+    "parameters": 1681,
+    "elapsed_seconds": 2.7127532958984375,
+    "forecast_metrics": {
+      "rmse": 0.023685925652655,
+      "r2": -0.010235941859396469,
+      "pearson": -0.022527091559839455
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "bda73aa1b96e781b038a981ba008846e7341181c76ec3564c311b41a50f43979",
+    "predictions_sha256": "d64ac32816425de7577e4d197feefe04bf116340f09ed2237a9f560730dfd2f1",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 29,
+    "test_year": 2021,
+    "parameters": 1681,
+    "elapsed_seconds": 4.550020694732666,
+    "forecast_metrics": {
+      "rmse": 0.014122337717670819,
+      "r2": -0.01728895720679091,
+      "pearson": 0.010038728750276569
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "5eb51ff9286d19aee717dcceca69b234ed7e770906cce4b8d46cf43fb7c59714",
+    "predictions_sha256": "dd0bd8a939d02a24e918d55a08ea9e9afb51563b90fcb611bbfb86c18de5e50d",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 29,
+    "test_year": 2022,
+    "parameters": 1681,
+    "elapsed_seconds": 2.715059518814087,
+    "forecast_metrics": {
+      "rmse": 0.014478402905100786,
+      "r2": -0.004598506422381465,
+      "pearson": 0.0625333220393725
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "f876a402a09fd5902214b80e5244c331bbbdd0349799ee048aaf698f87ea6e74",
+    "predictions_sha256": "c19f3e66685ddd898985765dd157528142efe664465f88e023bcc830a0640f28",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 29,
+    "test_year": 2023,
+    "parameters": 1681,
+    "elapsed_seconds": 3.2658965587615967,
+    "forecast_metrics": {
+      "rmse": 0.011344536522978408,
+      "r2": -0.01021894703395354,
+      "pearson": -0.028363107049209944
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "21050b13cefccf6a9984bbfba52c50ce05b72168eb11507cc25a1bc0cad4ae46",
+    "predictions_sha256": "50a819c75e707b91df55d266eb8d1c97bbfa1a944c623c9a6cab0f677a7ba4e7",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 29,
+    "test_year": 2024,
+    "parameters": 1681,
+    "elapsed_seconds": 2.5067031383514404,
+    "forecast_metrics": {
+      "rmse": 0.023586042972741673,
+      "r2": -0.0017336508197711709,
+      "pearson": -0.0199016957090766
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "0a688f56ba064eed3ebd86e277395e9a3f150132615adafc07db699e0073edaa",
+    "predictions_sha256": "c55d8cb04586b6371c26730eb1c0edacc7c63fa4bbe3efbd99525247173ef60b",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 43,
+    "test_year": 2021,
+    "parameters": 1681,
+    "elapsed_seconds": 2.2955117225646973,
+    "forecast_metrics": {
+      "rmse": 0.01406458827529282,
+      "r2": -0.008986117478021916,
+      "pearson": -0.006081785728502101
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "4af8e686c1079d36e5278115531490a47196df4edc5ebf842c8b885e38ee1e10",
+    "predictions_sha256": "a8617f1c7c228628a69b9a35bf7be4f5670f06d2e291d093069448055de72af1",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 43,
+    "test_year": 2022,
+    "parameters": 1681,
+    "elapsed_seconds": 1.5392663478851318,
+    "forecast_metrics": {
+      "rmse": 0.014493084534806482,
+      "r2": -0.006636938624617894,
+      "pearson": -0.021753880857060027
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "28319e4cacb206c2ff10c238217eaa4ef58f178a6dff79172fbf784b3537959b",
+    "predictions_sha256": "3adacecfa4ea8f5de4f763d5633364827175db9c9da2f45dc6e580fa4e51a71f",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 43,
+    "test_year": 2023,
+    "parameters": 1681,
+    "elapsed_seconds": 1.5489764213562012,
+    "forecast_metrics": {
+      "rmse": 0.011282587612022388,
+      "r2": 0.0007838988479935693,
+      "pearson": 0.054335356000995316
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "191394ce87784b6187e45688005a660fede81f6f139ceb7a56944faab1b3fc67",
+    "predictions_sha256": "1352f9c9639deb367e949c3213d352bcc9f618199b41eb753ccf057c6f87a39a",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm",
+    "seed": 43,
+    "test_year": 2024,
+    "parameters": 1681,
+    "elapsed_seconds": 2.6419851779937744,
+    "forecast_metrics": {
+      "rmse": 0.02353006771131954,
+      "r2": 0.003015409174963013,
+      "pearson": 0.0894406690834025
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "8593b6edbde73c882d0870caaaf83699a600ef4cecb8d4074ef7f83da72d0bc8",
+    "predictions_sha256": "2074fc839336211a75ea7580804a207ea05fbead6f6f7442744dd3cce2551700",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 17,
+    "test_year": 2021,
+    "parameters": 4285,
+    "elapsed_seconds": 3.0288710594177246,
+    "forecast_metrics": {
+      "rmse": 0.014038716166805779,
+      "r2": -0.005277428990074773,
+      "pearson": 0.03280120883064572
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "236f28bd657f29286e3c901b491b9592976408dd4c2dfec568e02d5c7cb8df69",
+    "predictions_sha256": "bc7c002c4406e8c250341e3334bcf935fed887caf85138970c4a8b5eeeafa330",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 17,
+    "test_year": 2022,
+    "parameters": 4285,
+    "elapsed_seconds": 2.3390045166015625,
+    "forecast_metrics": {
+      "rmse": 0.014482849434175729,
+      "r2": -0.005215654934355385,
+      "pearson": 0.07887542304294012
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "fc2e52a216fdad9e126a26ee7b7bead1b018e6f749e82b375ae651267abb4294",
+    "predictions_sha256": "d7f22395bfada745688b426a3b313c40d904c889b77b2dc261d58b294e34b492",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 17,
+    "test_year": 2023,
+    "parameters": 4285,
+    "elapsed_seconds": 4.017362833023071,
+    "forecast_metrics": {
+      "rmse": 0.011315013406797081,
+      "r2": -0.004967784394914299,
+      "pearson": -0.00696249314839444
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "1706bded5341ce87556910b4877250ae83080c2a5afbc8aef466d7aa97c37eb1",
+    "predictions_sha256": "fbde06ca5349878716924efb176b0a2d711ef70540801356991cae699b2a9d17",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 17,
+    "test_year": 2024,
+    "parameters": 4285,
+    "elapsed_seconds": 3.90445876121521,
+    "forecast_metrics": {
+      "rmse": 0.02361208946582322,
+      "r2": -0.003947337564521813,
+      "pearson": 0.011572247316162748
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "ac3be530ade97576e8cbac261f31c00813df9e9b307c46491d2d2c98f3782148",
+    "predictions_sha256": "7c7ae68b50cbfdee3368e182c227f10fa85e9dfad766b36df9f9541e30ed8ca3",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 29,
+    "test_year": 2021,
+    "parameters": 4285,
+    "elapsed_seconds": 5.9742045402526855,
+    "forecast_metrics": {
+      "rmse": 0.014283778828603353,
+      "r2": -0.040680407344218183,
+      "pearson": -0.008630366538198018
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "6197c3050c8fb3e9baf78c24836a0f51d114e3e53c51338b588f450250e7a7cb",
+    "predictions_sha256": "d4c81dd985242f24aeb98fafd561a6688c7824a89d0427b16b576813687a8ac7",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 29,
+    "test_year": 2022,
+    "parameters": 4285,
+    "elapsed_seconds": 1.7670886516571045,
+    "forecast_metrics": {
+      "rmse": 0.0144614143651084,
+      "r2": -0.0022423557819750695,
+      "pearson": 0.04203092763004989
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "b1d74f4e7c482632b079534717d78f54b0d4f0eebeb3526da0ac6736bf7e06bf",
+    "predictions_sha256": "1d4a98b070ccb47f6b2f392e724af366cae8ca41f09a5941e76d4251449768b5",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 29,
+    "test_year": 2023,
+    "parameters": 4285,
+    "elapsed_seconds": 2.080970525741577,
+    "forecast_metrics": {
+      "rmse": 0.011311660884378886,
+      "r2": -0.0043723493248284395,
+      "pearson": -0.029181227039242173
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "3bb399ff459a2e520aab988dd039d25e497a64491e26e9bde9b1652f08da3ad6",
+    "predictions_sha256": "80b7f9394135c684d8b6cc395d0eeb0433f5de33d7f03106093153fbf38ee68f",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 29,
+    "test_year": 2024,
+    "parameters": 4285,
+    "elapsed_seconds": 2.457136631011963,
+    "forecast_metrics": {
+      "rmse": 0.023634632246329,
+      "r2": -0.00586521678722729,
+      "pearson": -0.12451862440057489
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "89298d50b3d710f0676becc7386a19eceb85161a9611de436f45086896a47d1d",
+    "predictions_sha256": "7c712089643d394114a587a19759d1609d83d6916e277e5b619dc4361f4a1693",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 43,
+    "test_year": 2021,
+    "parameters": 4285,
+    "elapsed_seconds": 5.433382749557495,
+    "forecast_metrics": {
+      "rmse": 0.014094656652639153,
+      "r2": -0.013304908019658113,
+      "pearson": 0.01773422684569632
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "91f6939430e828d51578fc90ddf7041184a856b858e5588c9c2de7b127b80c18",
+    "predictions_sha256": "a00b8f75b5df99f12090263bdd9b6d11b8b3caed66b276e555ae63e95ed3ab91",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 43,
+    "test_year": 2022,
+    "parameters": 4285,
+    "elapsed_seconds": 2.6905791759490967,
+    "forecast_metrics": {
+      "rmse": 0.014460813497164333,
+      "r2": -0.0021590717023369788,
+      "pearson": 0.07898606401890002
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "db350cfbdeadcdb64bd86000db960fbf3d7c68aa671dcdc32a314e6c6a30c15d",
+    "predictions_sha256": "ead68643c7cf7600d02ea82598d3ad893d2d9e0b62f8848a2ee742cda16ede04",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 43,
+    "test_year": 2023,
+    "parameters": 4285,
+    "elapsed_seconds": 4.2030322551727295,
+    "forecast_metrics": {
+      "rmse": 0.011362689315793865,
+      "r2": -0.013454507531807325,
+      "pearson": 0.0033569506392086366
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "5511965d0075f71dd3091681233069d68b842f14339849aef34767f37f0ed528",
+    "predictions_sha256": "197997b8d124978ec93c41145f6001fd12ae263ce835a2482091b51febdd95fe",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_capacity",
+    "seed": 43,
+    "test_year": 2024,
+    "parameters": 4285,
+    "elapsed_seconds": 2.9723222255706787,
+    "forecast_metrics": {
+      "rmse": 0.02359847557911422,
+      "r2": -0.002789991010919035,
+      "pearson": -0.0177529875596674
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "22661a6c760aaea4f7db9ebbf405c29aacd59e03001da18ba246af77b3d633bf",
+    "predictions_sha256": "220b581df383bacb9fcd87cd0ff3c9b6a7f1710e15cd1f6df5d9b960a2313b3e",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 17,
+    "test_year": 2021,
+    "parameters": 4329,
+    "elapsed_seconds": 1.54024338722229,
+    "forecast_metrics": {
+      "rmse": 0.014061403099351258,
+      "r2": -0.008529163554737096,
+      "pearson": -0.010703461267972917
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "c2a0e359195a3e1378b58b928fc4fd8345a272b729b3c14a873dfcb50f594629",
+    "predictions_sha256": "8546c732933cc34754b1a8d9b713cc935c6dbac617c6e0c6b37434d31d7a7650",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 17,
+    "test_year": 2022,
+    "parameters": 4329,
+    "elapsed_seconds": 1.5371265411376953,
+    "forecast_metrics": {
+      "rmse": 0.01449855163830144,
+      "r2": -0.007396532113549403,
+      "pearson": -0.005905347945078164
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "c620d9b844e3378222845e7666abd941f3cfac75e561bb10faa827ba616e3d76",
+    "predictions_sha256": "110a060911ee9a3f0c0b31b1c73e650aa8c8a0b543ad4f60284c495a34bfd692",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 17,
+    "test_year": 2023,
+    "parameters": 4329,
+    "elapsed_seconds": 1.894435167312622,
+    "forecast_metrics": {
+      "rmse": 0.011464939520163892,
+      "r2": -0.031776258742763464,
+      "pearson": -0.07959077027855226
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "17ecc88303946a0f2d11e38871b00858eb617fd413d4e61a4d7acc6542304a2c",
+    "predictions_sha256": "8cd7fb8d5e86501c74163f7bb95154617afca516c78c61cad612f879730285e7",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 17,
+    "test_year": 2024,
+    "parameters": 4329,
+    "elapsed_seconds": 1.6950759887695312,
+    "forecast_metrics": {
+      "rmse": 0.023682007553787063,
+      "r2": -0.009901745343088297,
+      "pearson": -0.0840768982951862
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "70cf5c248e6a70fe4b7ab25f4d94ecd58528fe1e587549ebfc570ba916c24d3b",
+    "predictions_sha256": "df0d73e47f19c2efb39578fb4a6f42058b0bf0e2135d21ef1c39795fda906e14",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 29,
+    "test_year": 2021,
+    "parameters": 4329,
+    "elapsed_seconds": 2.2392196655273438,
+    "forecast_metrics": {
+      "rmse": 0.014108207052510788,
+      "r2": -0.015254198062872204,
+      "pearson": -0.03319877794000803
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "7b93b7e8e3534d89ab886b8fbdf3eb59727dfa0e67da18dfc602c9e7bc571591",
+    "predictions_sha256": "a33e320b645fb1d9cbc68b7f9017555ce97590174cccfba881f8cb52a0efe88f",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 29,
+    "test_year": 2022,
+    "parameters": 4329,
+    "elapsed_seconds": 1.5347051620483398,
+    "forecast_metrics": {
+      "rmse": 0.014493343213251336,
+      "r2": -0.006672872673165298,
+      "pearson": 0.04858418348199569
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "8a06b83be61c1d861e2082def3a84e6e65c0189cf3f629176fdb8b6501c2e852",
+    "predictions_sha256": "eba6d7b69db8d86bc2e8b007a2519eafcc17f57e0a1b64503b5cdfe2c6d1a033",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 29,
+    "test_year": 2023,
+    "parameters": 4329,
+    "elapsed_seconds": 3.926901340484619,
+    "forecast_metrics": {
+      "rmse": 0.011400129357049104,
+      "r2": -0.020144172250741166,
+      "pearson": -0.028612659921039698
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "e9b9ac9e855ddd5d1320a840e635ffe53a3947ba3a82ec6bb5a7dc8a19042510",
+    "predictions_sha256": "b17d3d9b21b440aa1ab2d5d0e138a17340cbfb4c2bd1858b51b4d7f8309e445d",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 29,
+    "test_year": 2024,
+    "parameters": 4329,
+    "elapsed_seconds": 2.268446922302246,
+    "forecast_metrics": {
+      "rmse": 0.02367420714819467,
+      "r2": -0.00923656982273835,
+      "pearson": -0.04386919053090126
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "83b8c3410083d2394b3bf530e9062bc749a2a7d6a05669ed9ca98625af6ea494",
+    "predictions_sha256": "837a6d253a05bce2903af7abcfa6fa3c673b328dd236b2543d378c23bf67786d",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 43,
+    "test_year": 2021,
+    "parameters": 4329,
+    "elapsed_seconds": 1.5009241104125977,
+    "forecast_metrics": {
+      "rmse": 0.01405819725191893,
+      "r2": -0.008069348550449496,
+      "pearson": -0.025745433710649232
+    },
+    "forecast_excluded_nontradable_intervals": 3,
+    "checkpoint_sha256": "b1464801528f8e9abb5de6c1509b6da9e3ce033fa049f2e81e175793613e28c3",
+    "predictions_sha256": "97d89b2da85e5eb94bdf019796c0532c37f70fe2f9182c776e0ceaa018e1ae55",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 43,
+    "test_year": 2022,
+    "parameters": 4329,
+    "elapsed_seconds": 1.6702449321746826,
+    "forecast_metrics": {
+      "rmse": 0.014546423713949215,
+      "r2": -0.014060064034617348,
+      "pearson": -0.0197519369249938
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "41068ea9fcf9caeaf7104e761930db1729ea1bacd75b5e214577800c2277d105",
+    "predictions_sha256": "0a539f948f9a2ab8e5329720755635c4a9bd904f259c83de1e09269d70bff3fd",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 43,
+    "test_year": 2023,
+    "parameters": 4329,
+    "elapsed_seconds": 2.868535280227661,
+    "forecast_metrics": {
+      "rmse": 0.011423948946481811,
+      "r2": -0.024411632794769433,
+      "pearson": -0.06833000201419473
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "f417995375f3b77c0c1032ce9686b35c32b6c2560b322990c4e5a3adf790d080",
+    "predictions_sha256": "becf71d1ab5a0710d2803130e5aa2b11b2b86a1a25f4ff856f6c78873a6b8da3",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  {
+    "arm": "lstm_memory",
+    "seed": 43,
+    "test_year": 2024,
+    "parameters": 4329,
+    "elapsed_seconds": 1.7137770652770996,
+    "forecast_metrics": {
+      "rmse": 0.02356913058780881,
+      "r2": -0.00029757855508405484,
+      "pearson": 0.0402995358971641
+    },
+    "forecast_excluded_nontradable_intervals": 0,
+    "checkpoint_sha256": "8cc0b80d5efeab22185781863df955825f53ed6383ed676e840ba21b431e8c16",
+    "predictions_sha256": "b46dec1f051e94fb69b14314f5cee0a866926c75da8c39839fd78981a0c4a8ff",
+    "provenance": {
+      "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+      "source_dirty": false,
+      "config_sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+      "python": "3.12.14",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "torch": "2.15.0+cpu",
+      "device": "cpu",
+      "threads": 2
+    }
+  }
+]

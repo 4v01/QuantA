@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "run": "2021-lstm-17",
+  "scope": "One same-environment deterministic retraining; all final runs also checked by saved-parameter replay.",
+  "max_parameter_absolute_error": 0.0,
+  "parameters": {
+    "lstm.weight_ih_l0": 0.0,
+    "lstm.weight_hh_l0": 0.0,
+    "lstm.bias_ih_l0": 0.0,
+    "lstm.bias_hh_l0": 0.0,
+    "head.weight": 0.0,
+    "head.bias": 0.0
+  }
+}

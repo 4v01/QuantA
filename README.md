@@ -4,6 +4,10 @@
 
 目标是检验 LSTM 与 DeepSeek Engram 式条件记忆是否提供可靠的样本外预测及成本后收益改善，不预设其拥有正 α。
 
+**首版已完成：40次最终拟合、84次候选拟合。结果没有支持记忆模块的收益优势。** 5bp单边费用下，普通LSTM三种子平均净夏普−0.351，记忆模型−0.905；完整负面结果见[实验报告](reports/v1/REPORT.md)、[消融与诊断](reports/v1/DIAGNOSTICS.md)、[交付说明](DELIVERY.md)。
+
+![固定种子17的净值与回撤](reports/v1/equity_and_drawdown.png)
+
 ## 研究范围
 
 - 固定篮子：510300（沪深300）、510050（上证50）、510500（中证500）、159915（创业板）。它们都是今天仍然存在、由研究者事先选定的 ETF；不宣称无存续偏差或全市场选股。
@@ -19,13 +23,24 @@ Python 3.11+，CPU；训练使用两个线程。锁定的实际运行依赖见 `
 ```bash
 python -m pip install -e . pytest
 python -m pytest -q
+python -m alphacontextlab.audit
+# 以下重放需要本地复现快照中的 data/ 与 outputs/：
+python -m alphacontextlab.verify_local --retrain-one
+
+# 新训练使用新输出及报告目录，保留已发表证据。
 python -m alphacontextlab.study fetch
 # 所有代码、配置须先提交，正式训练拒绝脏工作树。
-python -m alphacontextlab.study run
-python -m alphacontextlab.study report
+python -m alphacontextlab.study run --outputs outputs/reproduction
+python -m alphacontextlab.study report --outputs outputs/reproduction --reports reports/reproduction
+python -m alphacontextlab.verify_local --outputs outputs/reproduction --retrain-one
+python -m alphacontextlab.audit --reports reports/reproduction
+# 可选的诊断图需要 matplotlib；诊断不重新选择模型。
+python -m alphacontextlab.diagnostics --outputs outputs/reproduction --reports reports/reproduction
 ```
 
 完整候选与预算见 [configs/study.json](configs/study.json)，事前协议见 [PROTOCOL.md](PROTOCOL.md)。有公告依据的已知停牌保留在组合日历中，以过去收盘估值并阻断买卖；相关无开盘成交标签不用于预测误差。数据原始响应、本地参数和单笔预测不上传 Git；报告记录数据、配置、代码和模型指纹。上游历史复权会修订，重新下载若指纹不同必须作为新版本，不能冒充逐位复现。
+
+原正式训练提交为 `1fa055ba5a44808b74605ae7664636fa31a7bd3a`，其后只补交付、审计和报告目录保护逻辑。精确复训原版本应在独立工作树检出该提交，并使用本地快照行情；上述新训练命令会记录当前提交，不冒充原始提交。只验证公开报告不需要下载行情或参数。
 
 ## DeepSeek 方法来源
 

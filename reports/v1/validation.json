@@ -1,0 +1,25 @@
+{
+  "unit_tests": {
+    "status": "passed",
+    "count": 14,
+    "command": "PYTHONPATH=src OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 python -m pytest -q"
+  },
+  "published_evidence_audit": {
+    "status": "passed",
+    "final_fits": 40,
+    "candidate_fits": 84,
+    "primary_metric_rows_recomputed": 70,
+    "source_commit": "1fa055ba5a44808b74605ae7664636fa31a7bd3a",
+    "limitations": "Checks reported provenance and arithmetic; not source-data certification or replication of stochastic training."
+  },
+  "checkpoint_replay": {
+    "status": "passed",
+    "count": 40
+  },
+  "same_environment_retraining": {
+    "status": "passed",
+    "run": "2021-lstm-17",
+    "max_parameter_absolute_error": 0.0
+  },
+  "hosted_ci": "not_run_repository_creation_denied_HTTP403"
+}
