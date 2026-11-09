@@ -1,0 +1,7 @@
+# Actual initial CPU research environment, Python 3.12. Recreate with pip -r.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.4
+pandas==2.2.3
+scipy==1.18.1
+torch==2.15.0+cpu
+pytest==9.2.0
