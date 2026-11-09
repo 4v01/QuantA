@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "scope": "Next-cycle research memory; not read to alter the already frozen V2 models or tests.",
+  "source_records": [
+    "reports/v1/REPORT.md",
+    "reports/v2/REPORT.md",
+    "reports/v2/confirmation_test.json"
+  ],
+  "lessons": [
+    {
+      "id": "V1_MEMORY_NOT_SUPPORTED",
+      "constraint": "Do not enlarge sequence/memory models by default; retain strong simple controls."
+    },
+    {
+      "id": "V2_SIMPLE_CHAMPION",
+      "observation": "basic_ridge won predeclared validation CE; complex models were not substituted after test."
+    },
+    {
+      "id": "V2_DECISION_ABLATION",
+      "observation": "For frozen basic forecasts, lower turnover and risk/cost value stages improved point estimates in both evaluated periods.",
+      "limitation": "Correlated evaluation periods and retrospective data; not proof of stable alpha."
+    },
+    {
+      "id": "V2_CONFIRMATION_NOT_PASSED",
+      "observation": "2025 net Sharpe positive but CSI300 paired excess interval crossed zero.",
+      "constraint": "Do not tune on 2025 then call it unseen again."
+    },
+    {
+      "id": "DATA_AND_EXECUTION_UNRESOLVED",
+      "constraint": "Obtain point-in-time events and realistic lot/minimum commission/auction execution before deployment claims."
+    },
+    {
+      "id": "FACTOR_CAPACITY_CONFOUND",
+      "constraint": "Deduplicate basic features and add feature-count-matched controls in a new frozen study."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "case": "2021-evolved_lstm-17",
+  "max_absolute_parameter_error": 0.0,
+  "parameter_errors": {
+    "encoder.weight_ih_l0": 0.0,
+    "encoder.weight_hh_l0": 0.0,
+    "encoder.bias_ih_l0": 0.0,
+    "encoder.bias_hh_l0": 0.0,
+    "head.weight": 0.0,
+    "head.bias": 0.0
+  },
+  "scope": "One additional same-environment deterministic refit audit; not used for selection or portfolio results."
+}

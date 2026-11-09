@@ -1,0 +1,22 @@
+{
+  "public_seal_commit": "acf1d2b2ebc8a7f8b6f8fce56f03500f1537c621",
+  "public_seal_commit_utc": "2026-11-09T20:22:44Z",
+  "first_confirmation_raw_file_utc": "2026-11-09T20:22:59.914134979+00:00",
+  "seal_before_first_raw_file": true,
+  "historical_prefix_rows_old": 21402,
+  "historical_prefix_rows_new": 21402,
+  "historical_prefix_max_absolute_differences": {
+    "open": 0.0,
+    "close": 0.0,
+    "high": 0.0,
+    "low": 0.0,
+    "volume": 0.0,
+    "amount": 0.0,
+    "amplitude": 0.0,
+    "pct": 0.0,
+    "change": 0.0,
+    "turnover": 0.0
+  },
+  "historical_prefix_numerically_identical": true,
+  "confirmation_data_sha256": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c"
+}

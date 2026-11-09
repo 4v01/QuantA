@@ -1,0 +1,209 @@
+{
+  "selected": {
+    "index": 0,
+    "config": {
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    "status": "success",
+    "validation_net_ce": 0.05402262872801138,
+    "validation_return_rmse": 0.03217272026835619,
+    "history": [
+      {
+        "epoch": 1,
+        "train_scaled_joint_mse": 27.84118801355362,
+        "validation_joint_rmse": 0.026706770892517096
+      },
+      {
+        "epoch": 2,
+        "train_scaled_joint_mse": 26.778175801038742,
+        "validation_joint_rmse": 0.02576192809328141
+      },
+      {
+        "epoch": 3,
+        "train_scaled_joint_mse": 24.686910092830658,
+        "validation_joint_rmse": 0.024416041193230875
+      },
+      {
+        "epoch": 4,
+        "train_scaled_joint_mse": 23.003798365592957,
+        "validation_joint_rmse": 0.024248839597454438
+      },
+      {
+        "epoch": 5,
+        "train_scaled_joint_mse": 22.41028141975403,
+        "validation_joint_rmse": 0.023942569154331298
+      },
+      {
+        "epoch": 6,
+        "train_scaled_joint_mse": 22.047079861164093,
+        "validation_joint_rmse": 0.023999045816011946
+      },
+      {
+        "epoch": 7,
+        "train_scaled_joint_mse": 21.800606966018677,
+        "validation_joint_rmse": 0.02388781482634978
+      },
+      {
+        "epoch": 8,
+        "train_scaled_joint_mse": 21.63817450404167,
+        "validation_joint_rmse": 0.023985884603127186
+      },
+      {
+        "epoch": 9,
+        "train_scaled_joint_mse": 21.51678228378296,
+        "validation_joint_rmse": 0.023900686729616132
+      },
+      {
+        "epoch": 10,
+        "train_scaled_joint_mse": 21.415384262800217,
+        "validation_joint_rmse": 0.02395639665555629
+      }
+    ],
+    "best": {
+      "epoch": 7,
+      "train_scaled_joint_mse": 21.800606966018677,
+      "validation_joint_rmse": 0.02388781482634978
+    },
+    "elapsed_seconds": 1.8056023120880127
+  },
+  "candidates": [
+    {
+      "index": 0,
+      "config": {
+        "lr": 0.001,
+        "weight_decay": 0.001
+      },
+      "status": "success",
+      "validation_net_ce": 0.05402262872801138,
+      "validation_return_rmse": 0.03217272026835619,
+      "history": [
+        {
+          "epoch": 1,
+          "train_scaled_joint_mse": 27.84118801355362,
+          "validation_joint_rmse": 0.026706770892517096
+        },
+        {
+          "epoch": 2,
+          "train_scaled_joint_mse": 26.778175801038742,
+          "validation_joint_rmse": 0.02576192809328141
+        },
+        {
+          "epoch": 3,
+          "train_scaled_joint_mse": 24.686910092830658,
+          "validation_joint_rmse": 0.024416041193230875
+        },
+        {
+          "epoch": 4,
+          "train_scaled_joint_mse": 23.003798365592957,
+          "validation_joint_rmse": 0.024248839597454438
+        },
+        {
+          "epoch": 5,
+          "train_scaled_joint_mse": 22.41028141975403,
+          "validation_joint_rmse": 0.023942569154331298
+        },
+        {
+          "epoch": 6,
+          "train_scaled_joint_mse": 22.047079861164093,
+          "validation_joint_rmse": 0.023999045816011946
+        },
+        {
+          "epoch": 7,
+          "train_scaled_joint_mse": 21.800606966018677,
+          "validation_joint_rmse": 0.02388781482634978
+        },
+        {
+          "epoch": 8,
+          "train_scaled_joint_mse": 21.63817450404167,
+          "validation_joint_rmse": 0.023985884603127186
+        },
+        {
+          "epoch": 9,
+          "train_scaled_joint_mse": 21.51678228378296,
+          "validation_joint_rmse": 0.023900686729616132
+        },
+        {
+          "epoch": 10,
+          "train_scaled_joint_mse": 21.415384262800217,
+          "validation_joint_rmse": 0.02395639665555629
+        }
+      ],
+      "best": {
+        "epoch": 7,
+        "train_scaled_joint_mse": 21.800606966018677,
+        "validation_joint_rmse": 0.02388781482634978
+      },
+      "elapsed_seconds": 1.8056023120880127
+    },
+    {
+      "index": 1,
+      "config": {
+        "lr": 0.003,
+        "weight_decay": 0.001
+      },
+      "status": "success",
+      "validation_net_ce": 0.010328497189460531,
+      "validation_return_rmse": 0.032284222541748134,
+      "history": [
+        {
+          "epoch": 1,
+          "train_scaled_joint_mse": 26.817436277866364,
+          "validation_joint_rmse": 0.024971788635168624
+        },
+        {
+          "epoch": 2,
+          "train_scaled_joint_mse": 23.129041582345963,
+          "validation_joint_rmse": 0.024166565643411218
+        },
+        {
+          "epoch": 3,
+          "train_scaled_joint_mse": 21.888448923826218,
+          "validation_joint_rmse": 0.024038642879131534
+        },
+        {
+          "epoch": 4,
+          "train_scaled_joint_mse": 21.45040848851204,
+          "validation_joint_rmse": 0.024107647370745496
+        },
+        {
+          "epoch": 5,
+          "train_scaled_joint_mse": 21.177063018083572,
+          "validation_joint_rmse": 0.02424603018169886
+        },
+        {
+          "epoch": 6,
+          "train_scaled_joint_mse": 20.910345047712326,
+          "validation_joint_rmse": 0.024367674456219464
+        }
+      ],
+      "best": {
+        "epoch": 3,
+        "train_scaled_joint_mse": 21.888448923826218,
+        "validation_joint_rmse": 0.024038642879131534
+      },
+      "elapsed_seconds": 1.19419264793396
+    }
+  ],
+  "criterion": "maximum_validation_net_certainty_equivalent",
+  "train_rows": 8160,
+  "validation_score_rows": 928,
+  "validation_execution_rows": 964,
+  "refit_rows": 9128,
+  "test_execution_rows": 964,
+  "provenance": {
+    "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075",
+    "source_dirty": false,
+    "config_sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "study": "v2",
+    "scikit_learn": "1.9.1"
+  }
+}

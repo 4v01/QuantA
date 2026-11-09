@@ -1,0 +1,45 @@
+{
+  "arm": "evolved_lstm",
+  "seed": 29,
+  "test_year": 2022,
+  "selected_validation_net_ce": 0.04828828241367469,
+  "features": 14,
+  "refit_epochs": 3,
+  "refit_history": [
+    {
+      "epoch": 1,
+      "train_scaled_joint_mse": 28.707737495159282
+    },
+    {
+      "epoch": 2,
+      "train_scaled_joint_mse": 25.285881700186895
+    },
+    {
+      "epoch": 3,
+      "train_scaled_joint_mse": 23.64964268125337
+    }
+  ],
+  "elapsed_seconds": 2.2586002349853516,
+  "hashes": {
+    "selection.json": "23f5e4b882b738d47077f17b9877d293f62aae48a6fa7208aa992db47ccfa3d9",
+    "validation.pkl": "d470ff9293d66c0c990ae7191091d0e15673c5ec0e3d841f406464487167232a",
+    "final.pkl": "74c6742666c7fb0bd5e865e3ef15f9593d6bacee71c837b7adfd20ce71fb8e89",
+    "validation_predictions.csv": "7d0bcefd44128e9d5722c4606ce188326272fe1aba02f2d6c4b277f5b44d6195",
+    "test_predictions.csv": "d4e8bdce54b2d3313f76354bfc19b6032a04fa368bd78b0a29f94d082f4cce98"
+  },
+  "provenance": {
+    "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075",
+    "source_dirty": false,
+    "config_sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "study": "v2",
+    "scikit_learn": "1.9.1"
+  }
+}

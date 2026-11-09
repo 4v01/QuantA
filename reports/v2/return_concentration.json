@@ -1,0 +1,65 @@
+{
+  "scope": "Post-hoc concentration diagnostic only; no days deleted or metrics reselected.",
+  "records": [
+    {
+      "mode": "development",
+      "arm": "champion_ensemble",
+      "days": 965,
+      "max_daily_net_gain": 0.339,
+      "max_daily_net_loss": -0.100074682599,
+      "top5_positive_log_growth": 0.7130792211306339,
+      "total_log_growth": 0.06250849070322549,
+      "top5_share_of_log_growth": 11.407717785351014
+    },
+    {
+      "mode": "development",
+      "arm": "csi300",
+      "days": 965,
+      "max_daily_net_gain": 0.170969441517,
+      "max_daily_net_loss": -0.0834645669291,
+      "top5_positive_log_growth": 0.43089427397260266,
+      "total_log_growth": -0.2231344585471447,
+      "top5_share_of_log_growth": null
+    },
+    {
+      "mode": "development",
+      "arm": "inverse_volatility",
+      "days": 965,
+      "max_daily_net_gain": 0.102985544929,
+      "max_daily_net_loss": -0.0517395153751,
+      "top5_positive_log_growth": 0.27270771751444217,
+      "total_log_growth": -0.19826138947237965,
+      "top5_share_of_log_growth": null
+    },
+    {
+      "mode": "confirmation",
+      "arm": "champion_ensemble",
+      "days": 242,
+      "max_daily_net_gain": 0.0712727272727,
+      "max_daily_net_loss": -0.0520530229551,
+      "top5_positive_log_growth": 0.24886774195269734,
+      "total_log_growth": 0.42985529641125875,
+      "top5_share_of_log_growth": 0.5789570211892799
+    },
+    {
+      "mode": "confirmation",
+      "arm": "csi300",
+      "days": 242,
+      "max_daily_net_gain": 0.0350172215844,
+      "max_daily_net_loss": -0.0405231560892,
+      "top5_positive_log_growth": 0.14930437497795862,
+      "total_log_growth": 0.19936037730032546,
+      "top5_share_of_log_growth": 0.7489169964452855
+    },
+    {
+      "mode": "confirmation",
+      "arm": "inverse_volatility",
+      "days": 242,
+      "max_daily_net_gain": 0.034964544732,
+      "max_daily_net_loss": -0.0356941252714,
+      "top5_positive_log_growth": 0.11701178407480176,
+      "total_log_growth": 0.1849950520942146,
+      "top5_share_of_log_growth": 0.6325130469717092
+    }
+  ]
+}

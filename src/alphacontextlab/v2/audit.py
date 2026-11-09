@@ -16,7 +16,9 @@ from ..study import write_json
 from .data import samples,split
 from .execution import simulate,certainty_equivalent
 from .report import confirmation_test
-from .study import seeds
+from .study import seeds,create
+from .factors import FactorSearch,Scale
+from .models import fit_lstm
 
 
 def audit(reports='reports/v2'):
@@ -46,6 +48,20 @@ def audit(reports='reports/v2'):
     if max(config['arms'],key=lambda a:scores[a])!=seal['arm']:raise ValueError('Champion selected from different objective')
     sealed_public=root/'champion_pre_confirmation.json'
     if not sealed_public.exists() or json.loads(sealed_public.read_text())!=seal:raise ValueError('Missing or changed pre-confirmation seal')
+    acquisition=root/'acquisition_audit.json'
+    if acquisition.exists():
+        acquisition=json.loads(acquisition.read_text())
+        if not acquisition['seal_before_first_raw_file'] or pd.Timestamp(acquisition['public_seal_commit_utc'])>=pd.Timestamp(acquisition['first_confirmation_raw_file_utc']):
+            raise ValueError('Recorded confirmation download precedes seal')
+        public_snapshot=subprocess.check_output(['git','show',acquisition['public_seal_commit']+':reports/v2/champion_pre_confirmation.json'])
+        if json.loads(public_snapshot)!=seal:raise ValueError('Seal differs from original public commit')
+    immutable=root/'v1_immutability.json'
+    if immutable.exists():
+        old=json.loads(immutable.read_text())
+        for item in old['files']:
+            original=subprocess.check_output(['git','show',old['reference_commit']+':'+item['path']])
+            if hashlib.sha256(original).hexdigest()!=item['sha256'] or sha256(item['path'])!=item['sha256']:
+                raise ValueError('V1 archived report changed')
     for year in config['development_years']+[config['confirmation_year']]:
         factor=json.loads((root/'evidence'/f'{year}-factors.json').read_text())
         for phase in ['training','refit']:
@@ -102,6 +118,31 @@ def replay(config_path='configs/v2.json',outputs='outputs/v2',development_data='
     write_json(base/'replay_audit.json',result);print(json.dumps({k:v for k,v in result.items() if k!='cases'},indent=2));return result
 
 
+def retrain_one(config_path='configs/v2.json',outputs='outputs/v2',data='data'):
+    config=json.loads(Path(config_path).read_text());torch.set_num_threads(2);torch.use_deterministic_algorithms(True)
+    year=config['development_years'][0];seed=config['seeds'][0];arm='evolved_lstm'
+    directory=Path(outputs)/'development'/f'{year}-{arm}-{seed}'
+    record=json.loads((directory/'result.json').read_text());selection=json.loads((directory/'selection.json').read_text())['selected']
+    if sha256(directory/'final.pkl')!=record['hashes']['final.pkl']:raise ValueError('Checkpoint corruption')
+    with (directory/'final.pkl').open('rb') as f:saved=pickle.load(f)
+    x,meta,_,manifest=samples(data,config)
+    if manifest['quotes_sha256']!=record['provenance']['data_sha256']:raise ValueError('Retraining data mismatch')
+    _,_,_,_,ids=split(meta,year);y=meta[['label_return','label_downside']].to_numpy(dtype=float)
+    search=FactorSearch(config['factor_search']).fit(x[ids],y[ids,0],meta.iloc[ids].date.dt.year.to_numpy())
+    raw=search.transform(x[ids],arm);xx=Scale().fit(raw).apply(raw)
+    model=create(arm,xx.shape[-1],config,selection['config'],seed)
+    fit_lstm(model,xx,y[ids],config,selection['config'],seed,epochs=selection['best']['epoch'])
+    errors={name:float((v-saved['model'].state_dict()[name]).abs().max()) for name,v in model.state_dict().items()}
+    result={'status':'passed' if max(errors.values())==0 else 'failed','case':directory.name,
+            'max_absolute_parameter_error':max(errors.values()),'parameter_errors':errors,
+            'scope':'One additional same-environment deterministic refit audit; not used for selection or portfolio results.'}
+    write_json(Path(outputs)/'retrain_audit.json',result);print(json.dumps(result,indent=2))
+    if result['status']!='passed':raise ValueError('Stochastic training did not reproduce exactly')
+    return result
+
+
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--reports',default='reports/v2');p.add_argument('--local-replay',action='store_true');p.add_argument('--outputs',default='outputs/v2');a=p.parse_args()
-    replay(outputs=a.outputs) if a.local_replay else audit(a.reports)
+    p=argparse.ArgumentParser();p.add_argument('--reports',default='reports/v2');p.add_argument('--local-replay',action='store_true');p.add_argument('--retrain-one',action='store_true');p.add_argument('--outputs',default='outputs/v2');a=p.parse_args()
+    if a.retrain_one:retrain_one(outputs=a.outputs)
+    elif a.local_replay:replay(outputs=a.outputs)
+    else:audit(a.reports)

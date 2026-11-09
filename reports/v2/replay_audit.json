@@ -1,0 +1,357 @@
+{
+  "status": "passed",
+  "checkpoints_replayed": 70,
+  "cases": [
+    {
+      "case": "2021-basic_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.981431933614999e-14
+    },
+    {
+      "case": "2021-basic_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.993921942642032e-14
+    },
+    {
+      "case": "2021-static_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.994615832032423e-14
+    },
+    {
+      "case": "2021-static_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.993921942642032e-14
+    },
+    {
+      "case": "2021-evolved_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9963505555084e-14
+    },
+    {
+      "case": "2021-evolved_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.989758606299688e-14
+    },
+    {
+      "case": "2021-evolved_hgb-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9960036108132044e-14
+    },
+    {
+      "case": "2021-evolved_hgb-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.998432223679572e-14
+    },
+    {
+      "case": "2021-evolved_lstm-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.999473057765158e-14
+    },
+    {
+      "case": "2021-evolved_lstm-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.999473057765158e-14
+    },
+    {
+      "case": "2021-evolved_lstm-29",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9960036108132044e-14
+    },
+    {
+      "case": "2021-evolved_lstm-29",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.994615832032423e-14
+    },
+    {
+      "case": "2021-evolved_lstm-43",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.999473057765158e-14
+    },
+    {
+      "case": "2021-evolved_lstm-43",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.997391389593986e-14
+    },
+    {
+      "case": "2022-basic_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.993921942642032e-14
+    },
+    {
+      "case": "2022-basic_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.989758606299688e-14
+    },
+    {
+      "case": "2022-static_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9987791683747673e-14
+    },
+    {
+      "case": "2022-static_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9949627767276183e-14
+    },
+    {
+      "case": "2022-evolved_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "case": "2022-evolved_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.993054580904044e-14
+    },
+    {
+      "case": "2022-evolved_hgb-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "case": "2022-evolved_hgb-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9963505555084e-14
+    },
+    {
+      "case": "2022-evolved_lstm-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9949627767276183e-14
+    },
+    {
+      "case": "2022-evolved_lstm-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9987791683747673e-14
+    },
+    {
+      "case": "2022-evolved_lstm-29",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.985942214652539e-14
+    },
+    {
+      "case": "2022-evolved_lstm-29",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.985248325262148e-14
+    },
+    {
+      "case": "2022-evolved_lstm-43",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.995309721422814e-14
+    },
+    {
+      "case": "2022-evolved_lstm-43",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9921872191660555e-14
+    },
+    {
+      "case": "2023-basic_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.998432223679572e-14
+    },
+    {
+      "case": "2023-basic_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9970444448987905e-14
+    },
+    {
+      "case": "2023-static_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "case": "2023-static_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9987791683747673e-14
+    },
+    {
+      "case": "2023-evolved_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9932280532516415e-14
+    },
+    {
+      "case": "2023-evolved_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.998432223679572e-14
+    },
+    {
+      "case": "2023-evolved_hgb-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9963505555084e-14
+    },
+    {
+      "case": "2023-evolved_hgb-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.991493329775665e-14
+    },
+    {
+      "case": "2023-evolved_lstm-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.999473057765158e-14
+    },
+    {
+      "case": "2023-evolved_lstm-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9932280532516415e-14
+    },
+    {
+      "case": "2023-evolved_lstm-29",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9998200024603534e-14
+    },
+    {
+      "case": "2023-evolved_lstm-29",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.997391389593986e-14
+    },
+    {
+      "case": "2023-evolved_lstm-43",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9949627767276183e-14
+    },
+    {
+      "case": "2023-evolved_lstm-43",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9894116616044926e-14
+    },
+    {
+      "case": "2024-basic_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.999126113069963e-14
+    },
+    {
+      "case": "2024-basic_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.913985884869021e-13
+    },
+    {
+      "case": "2024-static_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9987791683747673e-14
+    },
+    {
+      "case": "2024-static_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.770073225301985e-13
+    },
+    {
+      "case": "2024-evolved_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.998432223679572e-14
+    },
+    {
+      "case": "2024-evolved_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.396760733271776e-13
+    },
+    {
+      "case": "2024-evolved_hgb-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "case": "2024-evolved_hgb-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.997391389593986e-14
+    },
+    {
+      "case": "2024-evolved_lstm-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9932280532516415e-14
+    },
+    {
+      "case": "2024-evolved_lstm-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9786563760534364e-14
+    },
+    {
+      "case": "2024-evolved_lstm-29",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.997391389593986e-14
+    },
+    {
+      "case": "2024-evolved_lstm-29",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.997391389593986e-14
+    },
+    {
+      "case": "2024-evolved_lstm-43",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.995656666118009e-14
+    },
+    {
+      "case": "2024-evolved_lstm-43",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.999126113069963e-14
+    },
+    {
+      "case": "2025-basic_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.913985884869021e-13
+    },
+    {
+      "case": "2025-basic_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.984901380566953e-14
+    },
+    {
+      "case": "2025-static_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.957700916463637e-13
+    },
+    {
+      "case": "2025-static_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9987791683747673e-14
+    },
+    {
+      "case": "2025-evolved_ridge-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.396760733271776e-13
+    },
+    {
+      "case": "2025-evolved_ridge-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9980852789843766e-14
+    },
+    {
+      "case": "2025-evolved_hgb-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9858728257135e-13
+    },
+    {
+      "case": "2025-evolved_hgb-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9998200024603534e-14
+    },
+    {
+      "case": "2025-evolved_lstm-17",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9731052609303106e-14
+    },
+    {
+      "case": "2025-evolved_lstm-17",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.998432223679572e-14
+    },
+    {
+      "case": "2025-evolved_lstm-29",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9894116616044926e-14
+    },
+    {
+      "case": "2025-evolved_lstm-29",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.999473057765158e-14
+    },
+    {
+      "case": "2025-evolved_lstm-43",
+      "phase": "validation",
+      "max_absolute_prediction_error": 4.9786563760534364e-14
+    },
+    {
+      "case": "2025-evolved_lstm-43",
+      "phase": "final",
+      "max_absolute_prediction_error": 4.9963505555084e-14
+    }
+  ],
+  "scope": "Hash-verified own local pickle files only; saved-parameter replay, not full retraining."
+}

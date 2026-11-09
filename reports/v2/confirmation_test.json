@@ -1,0 +1,28 @@
+{
+  "status": "not_passed",
+  "primary_champion": "basic_ridge",
+  "rule": "positive net Sharpe AND positive lower excess-return bound versus both predeclared benchmarks",
+  "tests": {
+    "csi300": {
+      "annualized_arithmetic_excess_mean": 0.2512532274311211,
+      "paired_block_bonferroni97_5": [
+        -0.03641019053668587,
+        0.5755910301082243
+      ],
+      "block_length": 20,
+      "bootstrap_repetitions": 1000,
+      "family_comparisons": 2
+    },
+    "inverse_volatility": {
+      "annualized_arithmetic_excess_mean": 0.2710471925988462,
+      "paired_block_bonferroni97_5": [
+        0.008047275707962018,
+        0.600542224373804
+      ],
+      "block_length": 20,
+      "bootstrap_repetitions": 1000,
+      "family_comparisons": 2
+    }
+  },
+  "scope": "Retrospective uninspected-2025 confirmation, not prospective live evaluation; revised data limitations remain."
+}

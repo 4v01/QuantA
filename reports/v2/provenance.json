@@ -1,0 +1,11 @@
+{
+  "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075",
+  "config_sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+  "final_fits": 35,
+  "candidate_fits": 85,
+  "failed_candidates": 0,
+  "data_sha256": {
+    "development": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "confirmation": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c"
+  }
+}

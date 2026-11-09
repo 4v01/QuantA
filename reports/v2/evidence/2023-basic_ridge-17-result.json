@@ -1,0 +1,32 @@
+{
+  "arm": "basic_ridge",
+  "seed": 17,
+  "test_year": 2023,
+  "selected_validation_net_ce": -0.10579810899752198,
+  "features": 8,
+  "refit_epochs": null,
+  "refit_history": [],
+  "elapsed_seconds": 0.12393641471862793,
+  "hashes": {
+    "selection.json": "0fb4feeec64fd854c1acde11a7694183e55243630de911a7ddb278030971caf4",
+    "validation.pkl": "2167d1f739da98673e3a9f94b865b39ca3ceb7e9f31438424cb6dc722fe39ab6",
+    "final.pkl": "b23016c28eb6a619f1e9d6928f3fe56c614570fa894deb00dedf1dd024aae692",
+    "validation_predictions.csv": "87d5a4a23e96291f099554f985821a4ce17b47bd650ac4a0d54ebac8a0a3b446",
+    "test_predictions.csv": "097f0799e8ae64d297f382c4f17e8417805314e4cbc0e9a410ec83818743254d"
+  },
+  "provenance": {
+    "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075",
+    "source_dirty": false,
+    "config_sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "study": "v2",
+    "scikit_learn": "1.9.1"
+  }
+}

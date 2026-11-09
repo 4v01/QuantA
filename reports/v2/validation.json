@@ -1,0 +1,36 @@
+{
+  "unit_tests": 22,
+  "hosted_source_ci": "https://github.com/4v01/QuantA/actions/runs/42692155492",
+  "public_seal_ci": "https://github.com/4v01/QuantA/actions/runs/42692392255",
+  "evidence_audit": {
+    "status": "passed",
+    "final_fits": 35,
+    "candidate_fits": 85,
+    "metric_rows_recomputed": 888,
+    "champion": "basic_ridge",
+    "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075"
+  },
+  "checkpoint_replay": {
+    "status": "passed",
+    "checkpoints": 70
+  },
+  "supplementary_refit_audit": {
+    "status": "passed",
+    "case": "2021-evolved_lstm-17",
+    "max_absolute_parameter_error": 0.0,
+    "parameter_errors": {
+      "encoder.weight_ih_l0": 0.0,
+      "encoder.weight_hh_l0": 0.0,
+      "encoder.bias_ih_l0": 0.0,
+      "encoder.bias_hh_l0": 0.0,
+      "head.weight": 0.0,
+      "head.bias": 0.0
+    },
+    "scope": "One additional same-environment deterministic refit audit; not used for selection or portfolio results."
+  },
+  "confirmation_rule_status": "not_passed",
+  "v1_unchanged_files": 98,
+  "public_seal_metadata_verified_against_git": true,
+  "v1_immutable_files_verified": 98,
+  "final_local_test_result": "22 passed in 8.57s"
+}

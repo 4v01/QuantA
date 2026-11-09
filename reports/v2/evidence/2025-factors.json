@@ -1,0 +1,1942 @@
+{
+  "training": {
+    "selected": [
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04003974413740024,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.0948378569502657,
+          0.06955337937421711
+        ],
+        "stability_score": 0.01958860624552062,
+        "finite": true,
+        "standard_deviation": 0.23214201629161835,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.040649007121427924,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.5901120901107788,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4059946537017822,
+          "scale_b": 0.008224951103329659,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.033218964891410144,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1514199591344481,
+          0.06999392884299788,
+          6.42972500786364e-05,
+          0.005123270669788816,
+          0.004375987693507376,
+          0.07744496864876649,
+          0.02124659294109052,
+          -0.08085601691092523,
+          0.05136979501804487,
+          0.06742278794596245
+        ],
+        "stability_score": 0.007379145342435507,
+        "finite": true,
+        "standard_deviation": 0.7194061279296875,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "range_compression__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.01198121253401041,
+          "scale_b": 0.4059946537017822,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.06719401581095742,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.21369372308053936,
+          -0.10500722074490863,
+          0.006126980021570464,
+          0.03514891961383608,
+          0.1616166437831471,
+          0.017487625611038053,
+          -0.029713714617417977,
+          -0.02919245360291306,
+          0.17139072057482008,
+          0.061628292366143096
+        ],
+        "stability_score": 0.0018465079829711253,
+        "finite": true,
+        "standard_deviation": 0.671291172504425,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182525990276766,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011414017215832337,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023171640653826087,
+        "finite": true,
+        "standard_deviation": 0.44233471155166626,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182281091185834,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023173743001506052,
+        "finite": true,
+        "standard_deviation": 0.008224951103329659,
+        "disposition": "selected"
+      }
+    ],
+    "ledger": [
+      {
+        "spec": {
+          "id": "momentum20",
+          "op": "base",
+          "column": 8,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.06298765387605067,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.061036301246318606,
+          0.14918933047046415,
+          -0.05448199948774522,
+          0.017007594681423956,
+          -0.328619670251412,
+          0.022752081698487716,
+          -0.10781523411488467,
+          0.055721244452173045,
+          0.06799019919150469,
+          -0.17732005060079759
+        ],
+        "stability_score": -0.09651139012351007,
+        "finite": true,
+        "standard_deviation": 0.08586941659450531,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum60",
+          "op": "base",
+          "column": 9,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.009595237249566586,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01785439697703844,
+          -0.01876143144138017,
+          -0.2260376391509425,
+          -0.010594145405640543,
+          -0.29289079576271076,
+          -0.2612115380195287,
+          -0.14135968011545247,
+          -0.23282526865082626,
+          -0.11393912054608579,
+          -0.06461511990392388
+        ],
+        "stability_score": -0.189674982332177,
+        "finite": true,
+        "standard_deviation": 0.16453050076961517,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum120",
+          "op": "base",
+          "column": 10,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.06339873733046729,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.2467627375040746,
+          0.009009149569821526,
+          -0.03250863295294808,
+          0.06345462531789058,
+          -0.15304275541670148,
+          -0.4162119148547334,
+          -0.1037682338518319,
+          -0.009845538498343968,
+          -0.31589103105842536,
+          -0.07080779426703523
+        ],
+        "stability_score": -0.16732019996238473,
+        "finite": true,
+        "standard_deviation": 0.24969616532325745,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "reversal5",
+          "op": "base",
+          "column": 11,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.0026804695451120735,
+        "orientation": -1.0,
+        "year_correlations": [
+          -0.05354343774073194,
+          0.01695390961636631,
+          -0.038380819394617204,
+          -0.013288810432850425,
+          -0.182067080233205,
+          0.07271989097798147,
+          -0.08496865219896098,
+          -0.14496042709320575,
+          0.021741946456343354,
+          -0.0787739317444976
+        ],
+        "stability_score": -0.08542676382753728,
+        "finite": true,
+        "standard_deviation": 0.041282474994659424,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "downside20",
+          "op": "base",
+          "column": 12,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.02246053407951959,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0009836336692898894,
+          -0.21202005805132712,
+          0.12229183808882749,
+          -0.0599820388165421,
+          0.3821022702635174,
+          -0.11182934536317983,
+          -0.030181743575080876,
+          -0.0988828490278222,
+          0.0829544183123693,
+          0.17967304772066148
+        ],
+        "stability_score": -0.05593831297902454,
+        "finite": true,
+        "standard_deviation": 0.007741485722362995,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60",
+          "op": "base",
+          "column": 13,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": 0.0015588999228817902,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.16108350536876567,
+          0.10620783603031266,
+          -0.197975439694748,
+          -0.02174562583078711,
+          -0.27345492726492554,
+          -0.03535852102312938,
+          -0.06532413849852256,
+          -0.172821834476655,
+          -0.06438492948654596,
+          -0.14210002528239976
+        ],
+        "stability_score": -0.1542114507064154,
+        "finite": true,
+        "standard_deviation": 0.07696213573217392,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence",
+          "op": "base",
+          "column": 14,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.0008225563355819417,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.043151430349483044,
+          0.007707511593589137,
+          -0.05248050875458886,
+          0.06827569934023799,
+          -0.15412183888259168,
+          0.13291204942680504,
+          -0.04444682543552664,
+          -0.09778245415535945,
+          0.10266860515607094,
+          -0.18896124284411417
+        ],
+        "stability_score": -0.077258000078803,
+        "finite": true,
+        "standard_deviation": 0.2917585074901581,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise",
+          "op": "base",
+          "column": 15,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04064899232931016,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.4059946537017822,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "range_compression",
+          "op": "base",
+          "column": 16,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06978542350265446,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.2333783537961287,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.2356905394873043,
+          0.0018599598539967806
+        ],
+        "stability_score": -0.04383138860456284,
+        "finite": true,
+        "standard_deviation": 0.01198121253401041,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "trend_efficiency",
+          "op": "base",
+          "column": 17,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": 0.058566924466525457,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.06218349035553145,
+          0.1670707375054299,
+          -0.08784068843377008,
+          0.022560752740064638,
+          -0.2828231945344381,
+          0.022903986391699847,
+          -0.09094133514381288,
+          0.04467568379247037,
+          0.10136982858884595,
+          -0.18234147699015085
+        ],
+        "stability_score": -0.08738115519650373,
+        "finite": true,
+        "standard_deviation": 0.28991398215293884,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure",
+          "op": "base",
+          "column": 18,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.008116577395502826,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337585279561113,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.0389755492597392,
+          -0.008650073054708617
+        ],
+        "stability_score": -0.04138328468053544,
+        "finite": true,
+        "standard_deviation": 0.5563297271728516,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182281091185834,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023173743001506052,
+        "finite": true,
+        "standard_deviation": 0.008224951103329659,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.040649007121427924,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.5901120901107788,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04003974413740024,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.0948378569502657,
+          0.06955337937421711
+        ],
+        "stability_score": 0.01958860624552062,
+        "finite": true,
+        "standard_deviation": 0.23214201629161835,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182525990276766,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011414017215832337,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023171640653826087,
+        "finite": true,
+        "standard_deviation": 0.44233471155166626,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.010636601050952462,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.04547229735843479,
+          -0.008447289158012513,
+          -0.008476290909463441,
+          -0.04399233734363822,
+          0.03104934531642115,
+          0.06465324203482359,
+          -0.03486325038349238,
+          -0.08555937149177192,
+          -0.01872805299131077,
+          0.053770124815935474
+        ],
+        "stability_score": -0.023460774154956173,
+        "finite": true,
+        "standard_deviation": 0.0036686633247882128,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563297271728516,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.008116578097660683,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337415436238387,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.0389755492597392,
+          -0.008650073054708617
+        ],
+        "stability_score": -0.04138327028604914,
+        "finite": true,
+        "standard_deviation": 0.6788159012794495,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563297271728516,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.01217064554971524,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.08930876938590898,
+          0.012881387452987923,
+          -0.00400257178332529,
+          -0.021639535251718,
+          -0.06832545598582049,
+          0.00823974965164134,
+          0.028618346985304008,
+          -0.07456144309685661,
+          0.03867454595305432,
+          -0.0064017001350134845
+        ],
+        "stability_score": -0.03890518512480862,
+        "finite": true,
+        "standard_deviation": 0.3324984014034271,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01198121253401041,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06978682056676812,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.23329781967957838,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.2356905394873043,
+          0.0018599598539967806
+        ],
+        "stability_score": -0.0438166347167175,
+        "finite": true,
+        "standard_deviation": 0.09112291038036346,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01198121253401041,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06975416335585873,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16622494568288332,
+          -0.20555871847402987,
+          -0.03312915971641824,
+          0.0679386598916566,
+          0.24739830224553772,
+          -0.02854278351581806,
+          -0.1017163746050758,
+          0.0535911622840505,
+          0.23366957726393803,
+          0.030942597877915763
+        ],
+        "stability_score": -0.025444752202140812,
+        "finite": true,
+        "standard_deviation": 0.00282059027813375,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4059946537017822,
+          "scale_b": 0.008224951103329659,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.033218964891410144,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1514199591344481,
+          0.06999392884299788,
+          6.42972500786364e-05,
+          0.005123270669788816,
+          0.004375987693507376,
+          0.07744496864876649,
+          0.02124659294109052,
+          -0.08085601691092523,
+          0.05136979501804487,
+          0.06742278794596245
+        ],
+        "stability_score": 0.007379145342435507,
+        "finite": true,
+        "standard_deviation": 0.7194061279296875,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__mix__bar_pressure",
+          "op": "mix",
+          "a": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "b": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale_a": 0.008224951103329659,
+          "scale_b": 0.5563297271728516,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.011682271673669782,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01841059475454321,
+          0.00651471044083998,
+          0.006729294886455724,
+          -0.0303991388362832,
+          -0.05792974198211528,
+          0.015289438040619965,
+          0.005646544562658388,
+          -0.11244917744592554,
+          0.012412200076272207,
+          0.005927176034389478
+        ],
+        "stability_score": -0.03605019122387933,
+        "finite": true,
+        "standard_deviation": 0.7122207880020142,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__mix__range_compression",
+          "op": "mix",
+          "a": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "b": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale_a": 0.5563297271728516,
+          "scale_b": 0.01198121253401041,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.0448551909060125,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.09348794381151772,
+          -0.16282116281375367,
+          0.026567665035553936,
+          -0.019761069782377058,
+          0.04356947456564296,
+          -0.025651324019792136,
+          -0.03708846970153584,
+          -0.07716410865491519,
+          0.10919243380822838,
+          -0.011255407683064158
+        ],
+        "stability_score": -0.04414227419411333,
+        "finite": true,
+        "standard_deviation": 0.7130354046821594,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.01198121253401041,
+          "scale_b": 0.4059946537017822,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.06719401581095742,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.21369372308053936,
+          -0.10500722074490863,
+          0.006126980021570464,
+          0.03514891961383608,
+          0.1616166437831471,
+          0.017487625611038053,
+          -0.029713714617417977,
+          -0.02919245360291306,
+          0.17139072057482008,
+          0.061628292366143096
+        ],
+        "stability_score": 0.0018465079829711253,
+        "finite": true,
+        "standard_deviation": 0.671291172504425,
+        "disposition": "selected"
+      }
+    ],
+    "budget": {
+      "initial": 12,
+      "parents": 4,
+      "mutations_per_parent": 2,
+      "crossovers": 4,
+      "select": 6,
+      "max_absolute_correlation": 0.9
+    },
+    "selection_data": "fit_partition_only_no_validation_or_test"
+  },
+  "refit": {
+    "selected": [
+      {
+        "spec": {
+          "id": "drawdown60__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "scale": 0.07491730153560638,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.014543936877698551,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16108350536876567,
+          -0.10620712330335019,
+          0.197975439694748,
+          0.02174562583078711,
+          0.27345492726492554,
+          0.03535852102312938,
+          0.06532413849852256,
+          0.172821834476655,
+          0.06438492948654596,
+          0.14079697405668645,
+          0.1866294308952961
+        ],
+        "stability_score": 0.05985028728434195,
+        "finite": true,
+        "standard_deviation": 0.3363218307495117,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "drawdown60",
+          "op": "base",
+          "column": 13,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.014543948944385114,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16108350536876567,
+          -0.10620783603031266,
+          0.197975439694748,
+          0.02174562583078711,
+          0.27345492726492554,
+          0.03535852102312938,
+          0.06532413849852256,
+          0.172821834476655,
+          0.06438492948654596,
+          0.14079697405668645,
+          0.1866294308952961
+        ],
+        "stability_score": 0.05985015298160085,
+        "finite": true,
+        "standard_deviation": 0.07491730153560638,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "drawdown60__mix__reversal5",
+          "op": "mix",
+          "a": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "b": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "scale_a": 0.07491730153560638,
+          "scale_b": 0.04263930767774582,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.012504626730211897,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.08039862729328134,
+          -0.09148340880197746,
+          0.13622420171661404,
+          0.014961608770323492,
+          0.2716371333047529,
+          -0.03926099879455405,
+          0.1195978012992735,
+          0.19350145177835829,
+          0.023031348939910355,
+          0.15458424140985852,
+          0.12444324042068688
+        ],
+        "stability_score": 0.03934905086072322,
+        "finite": true,
+        "standard_deviation": 0.8196870684623718,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence__mix__drawdown60",
+          "op": "mix",
+          "a": {
+            "id": "price_volume_coherence",
+            "op": "base",
+            "column": 14,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "scale_a": 0.2909887731075287,
+          "scale_b": 0.07491730153560638,
+          "sign_a": -1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.04072480567457382,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.10424352834809811,
+          -0.047694576099864223,
+          0.16751045110238832,
+          -0.035572811659813526,
+          0.26458197480592005,
+          -0.07046219573918723,
+          0.08973281411074308,
+          0.16720231827842139,
+          -0.041039738709756794,
+          0.21456777709588434,
+          0.21829277937471112
+        ],
+        "stability_score": 0.03496194699288756,
+        "finite": true,
+        "standard_deviation": 0.7300171852111816,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "reversal5__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.04263930767774582,
+          "scale_b": 0.409184068441391,
+          "sign_a": 1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.008948452255440784,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.0685932995793964,
+          0.0509839982459621,
+          -0.011251005548036956,
+          0.03047862738149922,
+          0.11597736178419617,
+          -0.035483072355156985,
+          0.10848437986891436,
+          0.04756103951245832,
+          0.029972725592864256,
+          0.08182335926935673,
+          0.019117525251119556
+        ],
+        "stability_score": 0.023785204114341832,
+        "finite": true,
+        "standard_deviation": 0.7044655084609985,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "reversal5",
+          "op": "base",
+          "column": 11,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": 0.00412135693983971,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.05354343774073194,
+          -0.01695390961636631,
+          0.038380819394617204,
+          0.013288810432850425,
+          0.182067080233205,
+          -0.07271989097798147,
+          0.08496865219896098,
+          0.14496042709320575,
+          -0.021741946456343354,
+          0.10473687103517089,
+          0.07006640291746631
+        ],
+        "stability_score": 0.016732043105914918,
+        "finite": true,
+        "standard_deviation": 0.04263930767774582,
+        "disposition": "selected"
+      }
+    ],
+    "ledger": [
+      {
+        "spec": {
+          "id": "momentum20",
+          "op": "base",
+          "column": 8,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.057906503841979505,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.061036301246318606,
+          0.14918933047046415,
+          -0.05448199948774522,
+          0.017007594681423956,
+          -0.328619670251412,
+          0.022752081698487716,
+          -0.10781523411488467,
+          0.055721244452173045,
+          0.06799019919150469,
+          -0.17238785867157624,
+          0.009219109992841798
+        ],
+        "stability_score": -0.08940676858807017,
+        "finite": true,
+        "standard_deviation": 0.08693014085292816,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum60",
+          "op": "base",
+          "column": 9,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.003158967160455636,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01785439697703844,
+          -0.01876143144138017,
+          -0.2260376391509425,
+          -0.010594145405640543,
+          -0.29289079576271076,
+          -0.2612115380195287,
+          -0.14135968011545247,
+          -0.23282526865082626,
+          -0.11393912054608579,
+          -0.06182734398728602,
+          -0.059536437061780044
+        ],
+        "stability_score": -0.18124274291140505,
+        "finite": true,
+        "standard_deviation": 0.16260844469070435,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum120",
+          "op": "base",
+          "column": 10,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.048608487777117904,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.2467627375040746,
+          0.009009149569821526,
+          -0.03250863295294808,
+          0.06345462531789058,
+          -0.15304275541670148,
+          -0.4162119148547334,
+          -0.1037682338518319,
+          -0.009845538498343968,
+          -0.31589103105842536,
+          -0.056345241618323,
+          -0.16291957491825498
+        ],
+        "stability_score": -0.17050655954420207,
+        "finite": true,
+        "standard_deviation": 0.24119997024536133,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "reversal5",
+          "op": "base",
+          "column": 11,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": 0.00412135693983971,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.05354343774073194,
+          -0.01695390961636631,
+          0.038380819394617204,
+          0.013288810432850425,
+          0.182067080233205,
+          -0.07271989097798147,
+          0.08496865219896098,
+          0.14496042709320575,
+          -0.021741946456343354,
+          0.10473687103517089,
+          0.07006640291746631
+        ],
+        "stability_score": 0.016732043105914918,
+        "finite": true,
+        "standard_deviation": 0.04263930767774582,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "downside20",
+          "op": "base",
+          "column": 12,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.03914044136767634,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0009836336692898894,
+          -0.21202005805132712,
+          0.12229183808882749,
+          -0.0599820388165421,
+          0.3821022702635174,
+          -0.11182934536317983,
+          -0.030181743575080876,
+          -0.0988828490278222,
+          0.0829544183123693,
+          0.16499616037289197,
+          0.1929008594380785
+        ],
+        "stability_score": -0.04136223871747521,
+        "finite": true,
+        "standard_deviation": 0.007611808832734823,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60",
+          "op": "base",
+          "column": 13,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.014543948944385114,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16108350536876567,
+          -0.10620783603031266,
+          0.197975439694748,
+          0.02174562583078711,
+          0.27345492726492554,
+          0.03535852102312938,
+          0.06532413849852256,
+          0.172821834476655,
+          0.06438492948654596,
+          0.14079697405668645,
+          0.1866294308952961
+        ],
+        "stability_score": 0.05985015298160085,
+        "finite": true,
+        "standard_deviation": 0.07491730153560638,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence",
+          "op": "base",
+          "column": 14,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": -0.013973342937382116,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.043151430349483044,
+          -0.007707511593589137,
+          0.05248050875458886,
+          -0.06827569934023799,
+          0.15412183888259168,
+          -0.13291204942680504,
+          0.04444682543552664,
+          0.09778245415535945,
+          -0.10266860515607094,
+          0.2092282792055994,
+          0.1015697675172536
+        ],
+        "stability_score": -0.015115015313075054,
+        "finite": true,
+        "standard_deviation": 0.2909887731075287,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise",
+          "op": "base",
+          "column": 15,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.030374240947619254,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.0546078540895165,
+          -0.06930338868558228
+        ],
+        "stability_score": 0.00413527040530156,
+        "finite": true,
+        "standard_deviation": 0.409184068441391,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression",
+          "op": "base",
+          "column": 16,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.07669458830750629,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.2333783537961287,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.2356905394873043,
+          -0.01836456051124923,
+          0.14550313955747116
+        ],
+        "stability_score": -0.03392218966973112,
+        "finite": true,
+        "standard_deviation": 0.011783957481384277,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "trend_efficiency",
+          "op": "base",
+          "column": 17,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": 0.052416977267821685,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.06218349035553145,
+          0.1670707375054299,
+          -0.08784068843377008,
+          0.022560752740064638,
+          -0.2828231945344381,
+          0.022903986391699847,
+          -0.09094133514381288,
+          0.04467568379247037,
+          0.10136982858884595,
+          -0.17712165214884448,
+          -0.022026302924731192
+        ],
+        "stability_score": -0.08354997208803557,
+        "finite": true,
+        "standard_deviation": 0.290798157453537,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure",
+          "op": "base",
+          "column": 18,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.004625811787278792,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337585279561113,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.0389755492597392,
+          -0.03079091006817894,
+          -0.015309676364711759
+        ],
+        "stability_score": -0.041871230646693694,
+        "finite": true,
+        "standard_deviation": 0.5560103058815002,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.01114553905966541,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.06367167819764386,
+          0.006597206369521866
+        ],
+        "stability_score": -0.021195488928961607,
+        "finite": true,
+        "standard_deviation": 0.008547013625502586,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "scale": 0.07491730153560638,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.014543936877698551,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16108350536876567,
+          -0.10620712330335019,
+          0.197975439694748,
+          0.02174562583078711,
+          0.27345492726492554,
+          0.03535852102312938,
+          0.06532413849852256,
+          0.172821834476655,
+          0.06438492948654596,
+          0.14079697405668645,
+          0.1866294308952961
+        ],
+        "stability_score": 0.05985028728434195,
+        "finite": true,
+        "standard_deviation": 0.3363218307495117,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "drawdown60__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "scale": 0.07491730153560638,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.006537590178687805,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.14380293159334268,
+          -0.09012987369185553,
+          0.20422485002575771,
+          0.0216840354614718,
+          0.19536984739110846,
+          0.057508384343791685,
+          0.07516087782633193,
+          0.2011618437714858,
+          0.028319942885071482,
+          0.14417130916443005,
+          0.11300911447472554
+        ],
+        "stability_score": 0.05576860632451259,
+        "finite": true,
+        "standard_deviation": 0.031178323552012444,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "reversal5__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "scale": 0.04263930767774582,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": 0.004121343040032728,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.05354343774073194,
+          -0.016956875928735717,
+          0.038380819394617204,
+          0.013288810432850425,
+          0.182067080233205,
+          -0.07271989097798147,
+          0.08496865219896098,
+          0.14496042709320575,
+          -0.021741946456343354,
+          0.10473687103517089,
+          0.07006645642340778
+        ],
+        "stability_score": 0.01673164730762821,
+        "finite": true,
+        "standard_deviation": 0.5473511815071106,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "reversal5__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "scale": 0.04263930767774582,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": 0.00012780615035543142,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.07091633230932037,
+          -0.05761970469598756,
+          0.03225623346225772,
+          0.010170067285375657,
+          0.18199589537800584,
+          -0.06816786673739521,
+          0.07807863084469503,
+          0.14579965055202038,
+          -0.022584590127974112,
+          0.10198180811520768,
+          0.07010247567586543
+        ],
+        "stability_score": 0.011325042863560689,
+        "finite": true,
+        "standard_deviation": 0.020155565813183784,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.409184068441391,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.030374240947619254,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.0546078540895165,
+          -0.06930338868558228
+        ],
+        "stability_score": 0.00413527040530156,
+        "finite": true,
+        "standard_deviation": 0.59156334400177,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.409184068441391,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.032176909815893016,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.0948378569502657,
+          0.0547164316679383,
+          -0.03684584205492843
+        ],
+        "stability_score": 0.009450171243128865,
+        "finite": true,
+        "standard_deviation": 0.23419751226902008,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "price_volume_coherence",
+            "op": "base",
+            "column": 14,
+            "theme": "price_volume"
+          },
+          "scale": 0.2909887731075287,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": -0.013973342937382116,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.043151430349483044,
+          -0.007707511593589137,
+          0.05248050875458886,
+          -0.06827569934023799,
+          0.15412183888259168,
+          -0.13291204942680504,
+          0.04444682543552664,
+          0.09778245415535945,
+          -0.10266860515607094,
+          0.2092282792055994,
+          0.1015697675172536
+        ],
+        "stability_score": -0.015115015313075054,
+        "finite": true,
+        "standard_deviation": 0.6378687620162964,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "price_volume_coherence",
+            "op": "base",
+            "column": 14,
+            "theme": "price_volume"
+          },
+          "scale": 0.2909887731075287,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": -0.025016630555720794,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.058411388199304595,
+          -0.008760284532251921,
+          0.07041978356750545,
+          -0.06628763447986956,
+          0.1551441523389378,
+          -0.12774372643371987,
+          0.051834869873492506,
+          0.1052077198565857,
+          -0.10355101779607354,
+          0.20571053500712416,
+          0.15604684036230432
+        ],
+        "stability_score": -0.007520291344606411,
+        "finite": true,
+        "standard_deviation": 0.17418691515922546,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60__mix__reversal5",
+          "op": "mix",
+          "a": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "b": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "scale_a": 0.07491730153560638,
+          "scale_b": 0.04263930767774582,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.012504626730211897,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.08039862729328134,
+          -0.09148340880197746,
+          0.13622420171661404,
+          0.014961608770323492,
+          0.2716371333047529,
+          -0.03926099879455405,
+          0.1195978012992735,
+          0.19350145177835829,
+          0.023031348939910355,
+          0.15458424140985852,
+          0.12444324042068688
+        ],
+        "stability_score": 0.03934905086072322,
+        "finite": true,
+        "standard_deviation": 0.8196870684623718,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "reversal5__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "reversal5",
+            "op": "base",
+            "column": 11,
+            "theme": "reversal"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.04263930767774582,
+          "scale_b": 0.409184068441391,
+          "sign_a": 1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.008948452255440784,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.0685932995793964,
+          0.0509839982459621,
+          -0.011251005548036956,
+          0.03047862738149922,
+          0.11597736178419617,
+          -0.035483072355156985,
+          0.10848437986891436,
+          0.04756103951245832,
+          0.029972725592864256,
+          0.08182335926935673,
+          0.019117525251119556
+        ],
+        "stability_score": 0.023785204114341832,
+        "finite": true,
+        "standard_deviation": 0.7044655084609985,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__price_volume_coherence",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "price_volume_coherence",
+            "op": "base",
+            "column": 14,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.409184068441391,
+          "scale_b": 0.2909887731075287,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.03293145100629537,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.12900357034399612,
+          0.08489152966773754,
+          0.0185361105034237,
+          -0.048534009729504585,
+          0.1400102412979927,
+          -0.046744190554278475,
+          0.07118465909659816,
+          0.0558696637720291,
+          -0.03814063709515241,
+          0.17563670225379677,
+          0.046031236133846014
+        ],
+        "stability_score": 0.016645107671944624,
+        "finite": true,
+        "standard_deviation": 0.6976132392883301,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence__mix__drawdown60",
+          "op": "mix",
+          "a": {
+            "id": "price_volume_coherence",
+            "op": "base",
+            "column": 14,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "drawdown60",
+            "op": "base",
+            "column": 13,
+            "theme": "risk"
+          },
+          "scale_a": 0.2909887731075287,
+          "scale_b": 0.07491730153560638,
+          "sign_a": -1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.04072480567457382,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.10424352834809811,
+          -0.047694576099864223,
+          0.16751045110238832,
+          -0.035572811659813526,
+          0.26458197480592005,
+          -0.07046219573918723,
+          0.08973281411074308,
+          0.16720231827842139,
+          -0.041039738709756794,
+          0.21456777709588434,
+          0.21829277937471112
+        ],
+        "stability_score": 0.03496194699288756,
+        "finite": true,
+        "standard_deviation": 0.7300171852111816,
+        "disposition": "selected"
+      }
+    ],
+    "budget": {
+      "initial": 12,
+      "parents": 4,
+      "mutations_per_parent": 2,
+      "crossovers": 4,
+      "select": 6,
+      "max_absolute_correlation": 0.9
+    },
+    "selection_data": "fit_partition_only_no_validation_or_test"
+  },
+  "train_last_label_exit": "2023-12-29 00:00:00",
+  "validation_first_entry": "2024-01-02 00:00:00",
+  "validation_last_label_exit": "2024-12-31 00:00:00",
+  "test_first_entry": "2025-01-02 00:00:00",
+  "refit_last_label_exit": "2024-12-31 00:00:00"
+}

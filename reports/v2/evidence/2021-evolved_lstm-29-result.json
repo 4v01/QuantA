@@ -1,0 +1,69 @@
+{
+  "arm": "evolved_lstm",
+  "seed": 29,
+  "test_year": 2021,
+  "selected_validation_net_ce": 0.25726711635374777,
+  "features": 14,
+  "refit_epochs": 9,
+  "refit_history": [
+    {
+      "epoch": 1,
+      "train_scaled_joint_mse": 32.3328553119478
+    },
+    {
+      "epoch": 2,
+      "train_scaled_joint_mse": 31.525183326787385
+    },
+    {
+      "epoch": 3,
+      "train_scaled_joint_mse": 30.182109674635154
+    },
+    {
+      "epoch": 4,
+      "train_scaled_joint_mse": 28.11703581399354
+    },
+    {
+      "epoch": 5,
+      "train_scaled_joint_mse": 26.906120442792506
+    },
+    {
+      "epoch": 6,
+      "train_scaled_joint_mse": 26.35966791469211
+    },
+    {
+      "epoch": 7,
+      "train_scaled_joint_mse": 25.863261391080744
+    },
+    {
+      "epoch": 8,
+      "train_scaled_joint_mse": 25.492125814555543
+    },
+    {
+      "epoch": 9,
+      "train_scaled_joint_mse": 25.248371782829953
+    }
+  ],
+  "elapsed_seconds": 3.5715599060058594,
+  "hashes": {
+    "selection.json": "66751e99bc4346c35dfa8c60ac797901ccbcf4279fea7562f30d1f5b4565be3c",
+    "validation.pkl": "e0a834def326ba3fc308c35ef3552a5ff9e4cb75c725e84bd10b7c46aba5b142",
+    "final.pkl": "05289bba1c3c8f67a3a46c9ec53af34961190af42bcbce494fcf1cef297055d1",
+    "validation_predictions.csv": "c727783e8a9611685a779080a3f5e665577d769b2f0eb7d70b693007c44b129b",
+    "test_predictions.csv": "6c5a24f0780cb4f08a285f8b77adf9d42086c9ed441ef89ef2fbd8c15c4d56c9"
+  },
+  "provenance": {
+    "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075",
+    "source_dirty": false,
+    "config_sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+    "data_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "study": "v2",
+    "scikit_learn": "1.9.1"
+  }
+}

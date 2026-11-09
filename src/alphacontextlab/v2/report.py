@@ -126,7 +126,8 @@ def report(config_path='configs/v2.json',outputs='outputs/v2',reports='reports/v
             sh='未定义' if g.sharpe_rf_zero.isna().all() else f'{g.sharpe_rf_zero.mean():.3f}'
             lines.append(f'| {mode} | {arm} | {len(g)} | {sh} | {g.annualized_return.mean():.2%} | {g.max_drawdown.mean():.2%} | {g.capm_alpha_annual_arithmetic.mean():.2%} | {g.annual_turnover.mean():.1f} |')
     lines+=['','champion_ensemble 使用事前选定类别的全部预声明种子预测均值后决策；不是挑选测试表现最好的种子。',
-            '其他神经方法的表格均值仅作描述，不代表可直接交易的种子组合。','',
+            '其他神经方法的表格均值仅作描述，不代表可直接交易的种子组合。',
+            'CAPM α为相对沪深300ETF、零无风险假设的单因子日截距×252，不能等同于多因子残差α或实盘盈利。','',
             '## 预设确认检验','',f"结论：**{'通过' if passed else '未通过'}**。正净夏普且对沪深300与逆波动参照两项年度均值超额收益区间下界均为正，才算通过。",'',
             '| 参照 | 年化算术平均超额 | 配对区块97.5%区间（两项Bonferroni） |','|---|---:|---|']
     for name,v in tests.items():
@@ -134,7 +135,15 @@ def report(config_path='configs/v2.json',outputs='outputs/v2',reports='reports/v
     lines+=['','## 消融和复现','',
             'results.csv 包含全部年度、种子、0/5/10/20bp以及每日纯收益、每周纯收益、每周加风险、每周加风险和成本四个对照；模型预测完全复用，不按测试重新拟合。',
             'forecast_metrics.json 分别列出10日收益预测RMSE/R²、下行风险误差及逐日横截面RankIC；它们不能与V1单日预测指标或CSI300个股论文指标直接比较。',
-            'evidence/ 保存全部候选验证分数、早停、训练/重拟合因子池、冗余拒绝、代码与参数指纹。每日全部成本/消融路径保存在daily_paths.csv.gz。','',
+            'evidence/ 保存全部候选验证分数、早停、训练/重拟合因子池、冗余拒绝、代码与参数指纹。每日全部成本/消融路径保存在daily_paths.csv.gz。',
+            '决策消融的超参数先按主协议验证效用选定，再固定预测；不是每种策略分别调到最好的比较。','',
+            '## 冠军类别的预测解释指标','',
+            '| 年度 | 种子数 | 收益RMSE均值（小数） | 收益R²均值 | 日横截面RankIC均值 |',
+            '|---:|---:|---:|---:|---:|']
+    for year,_ in year_modes:
+        selected=[r for r in forecasts if r['year']==year and r['arm']==seal['arm']]
+        lines.append(f"| {year} | {len(selected)} | {np.mean([r['return']['rmse'] for r in selected]):.6f} | {np.mean([r['return']['r2'] for r in selected]):.6f} | {np.mean([r['daily_cross_section_rank_ic_mean'] for r in selected]):.6f} |")
+    lines+=['','预测R²在开发年份均为负、2025也仅略大于零；较好的组合点估计不能替代对预测解释力与稳定性的检查。横截面只有4只ETF且标签重叠，不能与大股票池论文IC直接对标。','',
             '## 限制','',
             '- 仍是固定四只存续ETF和第三方当前前复权日线，不是逐时点完整股票市场数据；没有Level-2或逐笔交易，不能冒充MicroTSM。',
             '- 仍为连续名义权重、年度清仓重置及开盘成交近似；未解决整手、最低佣金、开盘深度和精确除权涨跌停价。',

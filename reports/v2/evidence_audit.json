@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "final_fits": 35,
+  "candidate_fits": 85,
+  "metric_rows_recomputed": 888,
+  "champion": "basic_ridge",
+  "source_commit": "4bee73444c84eb900bc913b99d5da999d3eb0075"
+}

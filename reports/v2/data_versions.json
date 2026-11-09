@@ -1,0 +1,186 @@
+{
+  "development": {
+    "provider": "Eastmoney public historical daily kline, unadjusted and forward-adjusted",
+    "retrieved_utc": "2026-11-09T18:15:19.847405+00:00",
+    "quotes_sha256": "59a1b8c1b11d0ab25891d274dfcce38b6595e8139edc7b40ccb5daca379e29c2",
+    "sources": [
+      {
+        "symbol": "510300",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510300&klt=101&fqt=0&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "10b0883a9a839c215d1e5c985676975788c18a9206bcdee31206e6049b5a57a3",
+        "rows": 2676,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "沪深300ETF华泰柏瑞"
+      },
+      {
+        "symbol": "510300",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510300&klt=101&fqt=1&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "cb7abaddba2828d7dab1bd39e56a034c837699d084b3c01aa8b28720c5e9349f",
+        "rows": 2676,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "沪深300ETF华泰柏瑞"
+      },
+      {
+        "symbol": "510050",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510050&klt=101&fqt=0&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "292f3256acf5aa9d4b6ee8bbf8f795ab3dc37fc44978372f8edbafa88d798840",
+        "rows": 2676,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "上证50ETF华夏"
+      },
+      {
+        "symbol": "510050",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510050&klt=101&fqt=1&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "94ddaca8f93674368afc7c816c34c6e9055d9a89ae11ecab32263c9116582718",
+        "rows": 2676,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "上证50ETF华夏"
+      },
+      {
+        "symbol": "510500",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510500&klt=101&fqt=0&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "70fa2e6c1938b8701dd4b7a2c86a24d01c7ad63eab534557319760a00ad878c6",
+        "rows": 2674,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "中证500ETF南方"
+      },
+      {
+        "symbol": "510500",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510500&klt=101&fqt=1&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "dc7f9c12d7c57e717b781f8a5d7fab79555126ef2c8fc63b75701199195c75ca",
+        "rows": 2674,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "中证500ETF南方"
+      },
+      {
+        "symbol": "159915",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159915&klt=101&fqt=0&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "df826d3068ad00c0af328726d9e0723913d1cb98d89202d1b624af6033911dd7",
+        "rows": 2675,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "创业板ETF易方达"
+      },
+      {
+        "symbol": "159915",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159915&klt=101&fqt=1&beg=20140101&end=20241231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "1961b342aea4ecfe1d151aa300dbc7ac2fe999c96f788e54beb085791e5f090f",
+        "rows": 2675,
+        "first": "2014-01-02",
+        "last": "2024-12-31",
+        "name": "创业板ETF易方达"
+      }
+    ],
+    "limitations": [
+      "Third-party data, not an exchange-certified archive.",
+      "Current forward-adjustment factors are retrospectively revised and rounded; not point-in-time.",
+      "No permission to redistribute raw provider data is assumed; raw files stay local."
+    ]
+  },
+  "confirmation": {
+    "provider": "Eastmoney public historical daily kline, unadjusted and forward-adjusted",
+    "retrieved_utc": "2026-11-09T20:23:15.981571+00:00",
+    "quotes_sha256": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c",
+    "sources": [
+      {
+        "symbol": "510300",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510300&klt=101&fqt=0&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "0ed42e2d6afb51fea937974a25e639298066bea053d03ee351e823eba9ca31f1",
+        "rows": 2919,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "沪深300ETF华泰柏瑞"
+      },
+      {
+        "symbol": "510300",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510300&klt=101&fqt=1&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "9b1a2018314a871250dec9a479febe3bfd3a9925332fc3aa4161c96589a50062",
+        "rows": 2919,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "沪深300ETF华泰柏瑞"
+      },
+      {
+        "symbol": "510050",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510050&klt=101&fqt=0&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "2de727355d6b14866d2486ceba39dcf0ae9715c95def2f89fed9e348c701bd18",
+        "rows": 2919,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "上证50ETF华夏"
+      },
+      {
+        "symbol": "510050",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510050&klt=101&fqt=1&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "3022fbc795dbd0f756b6970a62edeb65a61f1131146093983f707d79f68170f6",
+        "rows": 2919,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "上证50ETF华夏"
+      },
+      {
+        "symbol": "510500",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510500&klt=101&fqt=0&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "241fb6547ce6ba4a1f6de10e569b6b27b6b8f7dde9aaae5ac54e3a4997873cea",
+        "rows": 2917,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "中证500ETF南方"
+      },
+      {
+        "symbol": "510500",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=1.510500&klt=101&fqt=1&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "2c70629161e0adef43c00be2d7b7369d070236612804953e915b984de2d7303c",
+        "rows": 2917,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "中证500ETF南方"
+      },
+      {
+        "symbol": "159915",
+        "adjustment": 0,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159915&klt=101&fqt=0&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "26e7d5eeadf5e39c26517154caafd9f4f47a4ab9aef12b4cd08081f42a283ab9",
+        "rows": 2918,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "创业板ETF易方达"
+      },
+      {
+        "symbol": "159915",
+        "adjustment": 1,
+        "url": "https://push2his.eastmoney.com/api/qt/stock/kline/get?secid=0.159915&klt=101&fqt=1&beg=20140101&end=20251231&lmt=10000&fields1=f1,f2,f3,f4,f5,f6&fields2=f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
+        "sha256": "d104bce63334ba27055a6e67b210f43dfdfada993cf0ca64e3b1fa82422ec49d",
+        "rows": 2918,
+        "first": "2014-01-02",
+        "last": "2025-12-31",
+        "name": "创业板ETF易方达"
+      }
+    ],
+    "limitations": [
+      "Third-party data, not an exchange-certified archive.",
+      "Current forward-adjustment factors are retrospectively revised and rounded; not point-in-time.",
+      "No permission to redistribute raw provider data is assumed; raw files stay local."
+    ]
+  }
+}

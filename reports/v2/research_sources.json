@@ -1,0 +1,25 @@
+{
+  "retrieved_client_date": "2026-11-10 Asia/Shanghai",
+  "methods": [
+    {
+      "name": "CogAlpha",
+      "url": "https://arxiv.org/abs/2511.18850v4",
+      "decision": "KEEP bounded hypothesis templates, not original LLM/agent reproduction"
+    },
+    {
+      "name": "XALPHA",
+      "url": "https://arxiv.org/abs/2607.08332v3",
+      "decision": "KEEP structured research lessons, not full agent routing"
+    },
+    {
+      "name": "MicroTSM",
+      "url": "https://graceim.ai/zh/research/microtsm-financial-time-series-market-microstructure/",
+      "decision": "DROP missing Level-2 and tick data"
+    },
+    {
+      "name": "X recommendation",
+      "url": "https://github.com/xai-org/x-algorithm/tree/3b6919f87532e57063bb3f1e85c2f509323b513e",
+      "decision": "KEEP candidate isolation, multi-objective values, execution filtering, diversity proxy; no click labels or ANN claim"
+    }
+  ]
+}

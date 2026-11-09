@@ -1,0 +1,1885 @@
+{
+  "training": {
+    "selected": [
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4131750166416168,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.03583859935208762,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.09943727796303461
+        ],
+        "stability_score": 0.016226664261743386,
+        "finite": true,
+        "standard_deviation": 0.23196256160736084,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4131750166416168,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.03771597111454605,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09402651795974
+        ],
+        "stability_score": 0.015914643543487525,
+        "finite": true,
+        "standard_deviation": 0.5874505639076233,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4131750166416168,
+          "scale_b": 0.00848813634365797,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.03133294661662814,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1521666473290763,
+          0.07074030181311605,
+          -0.000372572974434383,
+          0.005302429159632148,
+          0.0044386711171680426,
+          0.07727570354254387,
+          0.021706865856788573,
+          -0.08079490151688191,
+          0.04471468574007475
+        ],
+        "stability_score": 0.002294498967858695,
+        "finite": true,
+        "standard_deviation": 0.7168522477149963,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.5563083291053772,
+          "scale_b": 0.4131750166416168,
+          "sign_a": 1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.02603781810260083,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.02693241188788092,
+          0.08156636869896952,
+          -0.03178806867430331,
+          -0.004999742243071795,
+          -0.03587717179866949,
+          0.03167980906937322,
+          0.051699277955888044,
+          -0.09621233955261793,
+          0.09710830877607896
+        ],
+        "stability_score": -0.015743246998796152,
+        "finite": true,
+        "standard_deviation": 0.7222652435302734,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "range_compression__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01231287606060505,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.05128159434517482,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16622494568288332,
+          -0.20555871847402987,
+          -0.03312915971641824,
+          0.0679386598916566,
+          0.24739830224553772,
+          -0.02854278351581806,
+          -0.1017163746050758,
+          0.0535911622840505,
+          0.30997596012565903
+        ],
+        "stability_score": -0.025570875720707834,
+        "finite": true,
+        "standard_deviation": 0.0028399371076375246,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.00848813634365797,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.006296091783476623,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011429476897932922,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.02943389601104655
+        ],
+        "stability_score": -0.029825948245807532,
+        "finite": true,
+        "standard_deviation": 0.4451970160007477,
+        "disposition": "selected"
+      }
+    ],
+    "ledger": [
+      {
+        "spec": {
+          "id": "momentum20",
+          "op": "base",
+          "column": 8,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.07306505518887366,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.061036301246318606,
+          0.14918933047046415,
+          -0.05448199948774522,
+          0.017007594681423956,
+          -0.328619670251412,
+          0.022752081698487716,
+          -0.10781523411488467,
+          0.055721244452173045,
+          0.041664762562570276
+        ],
+        "stability_score": -0.0809119841319236,
+        "finite": true,
+        "standard_deviation": 0.08957386761903763,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum60",
+          "op": "base",
+          "column": 9,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.0028572631199212132,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01785439697703844,
+          -0.01876143144138017,
+          -0.2260376391509425,
+          -0.010594145405640543,
+          -0.29289079576271076,
+          -0.2612115380195287,
+          -0.14135968011545247,
+          -0.23282526865082626,
+          -0.15528841871284807
+        ],
+        "stability_score": -0.20336913912115756,
+        "finite": true,
+        "standard_deviation": 0.17178656160831451,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum120",
+          "op": "base",
+          "column": 10,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.06202124068108572,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.2467627375040746,
+          0.009009149569821526,
+          -0.03250863295294808,
+          0.06345462531789058,
+          -0.15304275541670148,
+          -0.4162119148547334,
+          -0.1037682338518319,
+          -0.009845538498343968,
+          -0.2888608505216498
+        ],
+        "stability_score": -0.16813868600796744,
+        "finite": true,
+        "standard_deviation": 0.2602839171886444,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "reversal5",
+          "op": "base",
+          "column": 11,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.0029154690890855358,
+        "orientation": -1.0,
+        "year_correlations": [
+          -0.05354343774073194,
+          0.01695390961636631,
+          -0.038380819394617204,
+          -0.013288810432850425,
+          -0.182067080233205,
+          0.07271989097798147,
+          -0.08496865219896098,
+          -0.14496042709320575,
+          0.03229576163543725
+        ],
+        "stability_score": -0.08305901414578463,
+        "finite": true,
+        "standard_deviation": 0.04296327754855156,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "downside20",
+          "op": "base",
+          "column": 12,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": 0.0018432479995536446,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.0009836336692898894,
+          0.21202005805132712,
+          -0.12229183808882749,
+          0.0599820388165421,
+          -0.3821022702635174,
+          0.11182934536317983,
+          0.030181743575080876,
+          0.0988828490278222,
+          -0.14684872913961236
+        ],
+        "stability_score": -0.09916556452201261,
+        "finite": true,
+        "standard_deviation": 0.008012986741960049,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60",
+          "op": "base",
+          "column": 13,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": 0.008689404925532416,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.16108350536876567,
+          0.10620783603031266,
+          -0.197975439694748,
+          -0.02174562583078711,
+          -0.27345492726492554,
+          -0.03535852102312938,
+          -0.06532413849852256,
+          -0.172821834476655,
+          -0.1101173226544899
+        ],
+        "stability_score": -0.15694036473138143,
+        "finite": true,
+        "standard_deviation": 0.08034562319517136,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence",
+          "op": "base",
+          "column": 14,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.017991225466145053,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.043151430349483044,
+          0.007707511593589137,
+          -0.05248050875458886,
+          0.06827569934023799,
+          -0.15412183888259168,
+          0.13291204942680504,
+          -0.04444682543552664,
+          -0.09778245415535945,
+          0.07393068603736411
+        ],
+        "stability_score": -0.05508692508093682,
+        "finite": true,
+        "standard_deviation": 0.2958958148956299,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise",
+          "op": "base",
+          "column": 15,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.03771595372186428,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09402651795974
+        ],
+        "stability_score": 0.015914643543487525,
+        "finite": true,
+        "standard_deviation": 0.4131750166416168,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "range_compression",
+          "op": "base",
+          "column": 16,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.05059526746239021,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.2333783537961287,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.3083028862699228
+        ],
+        "stability_score": -0.04114803173459838,
+        "finite": true,
+        "standard_deviation": 0.01231287606060505,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "trend_efficiency",
+          "op": "base",
+          "column": 17,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": 0.07052730480130222,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.06218349035553145,
+          0.1670707375054299,
+          -0.08784068843377008,
+          0.022560752740064638,
+          -0.2828231945344381,
+          0.022903986391699847,
+          -0.09094133514381288,
+          0.04467568379247037,
+          0.08913613596338005
+        ],
+        "stability_score": -0.06790442774585069,
+        "finite": true,
+        "standard_deviation": 0.2896444499492645,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure",
+          "op": "base",
+          "column": 18,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.002255813067327045,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337585279561113,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.04280704843612794
+        ],
+        "stability_score": -0.04366016059628207,
+        "finite": true,
+        "standard_deviation": 0.5563083291053772,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.0062961713186845646,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.02943389601104655
+        ],
+        "stability_score": -0.029826330779341523,
+        "finite": true,
+        "standard_deviation": 0.00848813634365797,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4131750166416168,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.03771597111454605,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09402651795974
+        ],
+        "stability_score": 0.015914643543487525,
+        "finite": true,
+        "standard_deviation": 0.5874505639076233,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4131750166416168,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.03583859935208762,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.09943727796303461
+        ],
+        "stability_score": 0.016226664261743386,
+        "finite": true,
+        "standard_deviation": 0.23196256160736084,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.00848813634365797,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.006296091783476623,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011429476897932922,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.02943389601104655
+        ],
+        "stability_score": -0.029825948245807532,
+        "finite": true,
+        "standard_deviation": 0.4451970160007477,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.00848813634365797,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.007341931539381106,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.04547229735843479,
+          -0.008447289158012513,
+          -0.008476290909463441,
+          -0.04399233734363822,
+          0.03104934531642115,
+          0.06465324203482359,
+          -0.03486325038349238,
+          -0.08555937149177192,
+          -0.0280215767899744
+        ],
+        "stability_score": -0.029995649478769534,
+        "finite": true,
+        "standard_deviation": 0.0036624534986913204,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01231287606060505,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.05059577571746482,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.23335074431373473,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.3083028862699228
+        ],
+        "stability_score": -0.041142572836177824,
+        "finite": true,
+        "standard_deviation": 0.09136654436588287,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01231287606060505,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.05128159434517482,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16622494568288332,
+          -0.20555871847402987,
+          -0.03312915971641824,
+          0.0679386598916566,
+          0.24739830224553772,
+          -0.02854278351581806,
+          -0.1017163746050758,
+          0.0535911622840505,
+          0.30997596012565903
+        ],
+        "stability_score": -0.025570875720707834,
+        "finite": true,
+        "standard_deviation": 0.0028399371076375246,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563083291053772,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.0022558840840110127,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009335135328778292,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.04280704843612794
+        ],
+        "stability_score": -0.04365993060030079,
+        "finite": true,
+        "standard_deviation": 0.6786173582077026,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563083291053772,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.006144569315209947,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.08930876938590898,
+          0.012881387452987923,
+          -0.00400257178332529,
+          -0.021639535251718,
+          -0.06832545598582049,
+          0.00823974965164134,
+          0.028618346985304008,
+          -0.07456144309685661,
+          0.042173220789322605
+        ],
+        "stability_score": -0.04108103664974047,
+        "finite": true,
+        "standard_deviation": 0.3262918293476105,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4131750166416168,
+          "scale_b": 0.00848813634365797,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.03133294661662814,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1521666473290763,
+          0.07074030181311605,
+          -0.000372572974434383,
+          0.005302429159632148,
+          0.0044386711171680426,
+          0.07727570354254387,
+          0.021706865856788573,
+          -0.08079490151688191,
+          0.04471468574007475
+        ],
+        "stability_score": 0.002294498967858695,
+        "finite": true,
+        "standard_deviation": 0.7168522477149963,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__mix__range_compression",
+          "op": "mix",
+          "a": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "b": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale_a": 0.00848813634365797,
+          "scale_b": 0.01231287606060505,
+          "sign_a": -1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.03953421155798026,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1839866159722657,
+          -0.18699494166947184,
+          0.04400135810919416,
+          0.002404219035616336,
+          0.18950739597103364,
+          -0.008767704044776161,
+          -0.0889016153363142,
+          -0.05601971698108622,
+          0.12762990113779993
+        ],
+        "stability_score": -0.03695398620702864,
+        "finite": true,
+        "standard_deviation": 0.6761744022369385,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__mix__bar_pressure",
+          "op": "mix",
+          "a": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "b": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale_a": 0.01231287606060505,
+          "scale_b": 0.5563083291053772,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.03116304963596759,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.09141239307190598,
+          -0.16017362821690725,
+          0.02615727394554585,
+          -0.020191202463046277,
+          0.04070601684685355,
+          -0.02471884288519912,
+          -0.03585836163547008,
+          -0.0773115158895576,
+          0.13407505883848045
+        ],
+        "stability_score": -0.044556811011516095,
+        "finite": true,
+        "standard_deviation": 0.7079991698265076,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.5563083291053772,
+          "scale_b": 0.4131750166416168,
+          "sign_a": 1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.02603781810260083,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.02693241188788092,
+          0.08156636869896952,
+          -0.03178806867430331,
+          -0.004999742243071795,
+          -0.03587717179866949,
+          0.03167980906937322,
+          0.051699277955888044,
+          -0.09621233955261793,
+          0.09710830877607896
+        ],
+        "stability_score": -0.015743246998796152,
+        "finite": true,
+        "standard_deviation": 0.7222652435302734,
+        "disposition": "selected"
+      }
+    ],
+    "budget": {
+      "initial": 12,
+      "parents": 4,
+      "mutations_per_parent": 2,
+      "crossovers": 4,
+      "select": 6,
+      "max_absolute_correlation": 0.9
+    },
+    "selection_data": "fit_partition_only_no_validation_or_test"
+  },
+  "refit": {
+    "selected": [
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04003974413740024,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.0948378569502657,
+          0.06955337937421711
+        ],
+        "stability_score": 0.01958860624552062,
+        "finite": true,
+        "standard_deviation": 0.23214201629161835,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.040649007121427924,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.5901120901107788,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4059946537017822,
+          "scale_b": 0.008224951103329659,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.033218964891410144,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1514199591344481,
+          0.06999392884299788,
+          6.42972500786364e-05,
+          0.005123270669788816,
+          0.004375987693507376,
+          0.07744496864876649,
+          0.02124659294109052,
+          -0.08085601691092523,
+          0.05136979501804487,
+          0.06742278794596245
+        ],
+        "stability_score": 0.007379145342435507,
+        "finite": true,
+        "standard_deviation": 0.7194061279296875,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "range_compression__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.01198121253401041,
+          "scale_b": 0.4059946537017822,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.06719401581095742,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.21369372308053936,
+          -0.10500722074490863,
+          0.006126980021570464,
+          0.03514891961383608,
+          0.1616166437831471,
+          0.017487625611038053,
+          -0.029713714617417977,
+          -0.02919245360291306,
+          0.17139072057482008,
+          0.061628292366143096
+        ],
+        "stability_score": 0.0018465079829711253,
+        "finite": true,
+        "standard_deviation": 0.671291172504425,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182525990276766,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011414017215832337,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023171640653826087,
+        "finite": true,
+        "standard_deviation": 0.44233471155166626,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182281091185834,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023173743001506052,
+        "finite": true,
+        "standard_deviation": 0.008224951103329659,
+        "disposition": "selected"
+      }
+    ],
+    "ledger": [
+      {
+        "spec": {
+          "id": "momentum20",
+          "op": "base",
+          "column": 8,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.06298765387605067,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.061036301246318606,
+          0.14918933047046415,
+          -0.05448199948774522,
+          0.017007594681423956,
+          -0.328619670251412,
+          0.022752081698487716,
+          -0.10781523411488467,
+          0.055721244452173045,
+          0.06799019919150469,
+          -0.17732005060079759
+        ],
+        "stability_score": -0.09651139012351007,
+        "finite": true,
+        "standard_deviation": 0.08586941659450531,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum60",
+          "op": "base",
+          "column": 9,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.009595237249566586,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01785439697703844,
+          -0.01876143144138017,
+          -0.2260376391509425,
+          -0.010594145405640543,
+          -0.29289079576271076,
+          -0.2612115380195287,
+          -0.14135968011545247,
+          -0.23282526865082626,
+          -0.11393912054608579,
+          -0.06461511990392388
+        ],
+        "stability_score": -0.189674982332177,
+        "finite": true,
+        "standard_deviation": 0.16453050076961517,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "momentum120",
+          "op": "base",
+          "column": 10,
+          "theme": "trend"
+        },
+        "train_pooled_rank_correlation": 0.06339873733046729,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.2467627375040746,
+          0.009009149569821526,
+          -0.03250863295294808,
+          0.06345462531789058,
+          -0.15304275541670148,
+          -0.4162119148547334,
+          -0.1037682338518319,
+          -0.009845538498343968,
+          -0.31589103105842536,
+          -0.07080779426703523
+        ],
+        "stability_score": -0.16732019996238473,
+        "finite": true,
+        "standard_deviation": 0.24969616532325745,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "reversal5",
+          "op": "base",
+          "column": 11,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.0026804695451120735,
+        "orientation": -1.0,
+        "year_correlations": [
+          -0.05354343774073194,
+          0.01695390961636631,
+          -0.038380819394617204,
+          -0.013288810432850425,
+          -0.182067080233205,
+          0.07271989097798147,
+          -0.08496865219896098,
+          -0.14496042709320575,
+          0.021741946456343354,
+          -0.0787739317444976
+        ],
+        "stability_score": -0.08542676382753728,
+        "finite": true,
+        "standard_deviation": 0.041282474994659424,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "downside20",
+          "op": "base",
+          "column": 12,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": -0.02246053407951959,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0009836336692898894,
+          -0.21202005805132712,
+          0.12229183808882749,
+          -0.0599820388165421,
+          0.3821022702635174,
+          -0.11182934536317983,
+          -0.030181743575080876,
+          -0.0988828490278222,
+          0.0829544183123693,
+          0.17967304772066148
+        ],
+        "stability_score": -0.05593831297902454,
+        "finite": true,
+        "standard_deviation": 0.007741485722362995,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "drawdown60",
+          "op": "base",
+          "column": 13,
+          "theme": "risk"
+        },
+        "train_pooled_rank_correlation": 0.0015588999228817902,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.16108350536876567,
+          0.10620783603031266,
+          -0.197975439694748,
+          -0.02174562583078711,
+          -0.27345492726492554,
+          -0.03535852102312938,
+          -0.06532413849852256,
+          -0.172821834476655,
+          -0.06438492948654596,
+          -0.14210002528239976
+        ],
+        "stability_score": -0.1542114507064154,
+        "finite": true,
+        "standard_deviation": 0.07696213573217392,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "price_volume_coherence",
+          "op": "base",
+          "column": 14,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.0008225563355819417,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.043151430349483044,
+          0.007707511593589137,
+          -0.05248050875458886,
+          0.06827569934023799,
+          -0.15412183888259168,
+          0.13291204942680504,
+          -0.04444682543552664,
+          -0.09778245415535945,
+          0.10266860515607094,
+          -0.18896124284411417
+        ],
+        "stability_score": -0.077258000078803,
+        "finite": true,
+        "standard_deviation": 0.2917585074901581,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise",
+          "op": "base",
+          "column": 15,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04064899232931016,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.4059946537017822,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "range_compression",
+          "op": "base",
+          "column": 16,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06978542350265446,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.2333783537961287,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.2356905394873043,
+          0.0018599598539967806
+        ],
+        "stability_score": -0.04383138860456284,
+        "finite": true,
+        "standard_deviation": 0.01198121253401041,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "trend_efficiency",
+          "op": "base",
+          "column": 17,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": 0.058566924466525457,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.06218349035553145,
+          0.1670707375054299,
+          -0.08784068843377008,
+          0.022560752740064638,
+          -0.2828231945344381,
+          0.022903986391699847,
+          -0.09094133514381288,
+          0.04467568379247037,
+          0.10136982858884595,
+          -0.18234147699015085
+        ],
+        "stability_score": -0.08738115519650373,
+        "finite": true,
+        "standard_deviation": 0.28991398215293884,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure",
+          "op": "base",
+          "column": 18,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.008116577395502826,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337585279561113,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.0389755492597392,
+          -0.008650073054708617
+        ],
+        "stability_score": -0.04138328468053544,
+        "finite": true,
+        "standard_deviation": 0.5563297271728516,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal",
+          "op": "base",
+          "column": 19,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182281091185834,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011432461558385116,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755671452188375,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023173743001506052,
+        "finite": true,
+        "standard_deviation": 0.008224951103329659,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.040649007121427924,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1595743357773236,
+          0.12428535585211069,
+          -0.03576648937284492,
+          0.019759449927870716,
+          0.026729926267332976,
+          0.0521815965351611,
+          0.045045649992178784,
+          -0.04949665579097316,
+          0.09102654902315804,
+          0.06956280276517643
+        ],
+        "stability_score": 0.0193343742108676,
+        "finite": true,
+        "standard_deviation": 0.5901120901107788,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale": 0.4059946537017822,
+          "theme": "price_volume"
+        },
+        "train_pooled_rank_correlation": 0.04003974413740024,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.14171191059766877,
+          0.12427379137018633,
+          -0.026417644572307122,
+          0.0198425529815688,
+          0.0190869260972892,
+          0.049056129385039095,
+          0.049955164601436945,
+          -0.0523608304857715,
+          0.0948378569502657,
+          0.06955337937421711
+        ],
+        "stability_score": 0.01958860624552062,
+        "finite": true,
+        "standard_deviation": 0.23214201629161835,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.009182525990276766,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.0489418653628309,
+          -0.011414017215832337,
+          -0.0132149834146636,
+          -0.042677323272267795,
+          0.025273636858978293,
+          0.0675464429715023,
+          -0.030755410479209575,
+          -0.08245855378773316,
+          -0.01913166577675825,
+          0.05381954245463303
+        ],
+        "stability_score": -0.023171640653826087,
+        "finite": true,
+        "standard_deviation": 0.44233471155166626,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale": 0.008224951103329659,
+          "theme": "reversal"
+        },
+        "train_pooled_rank_correlation": -0.010636601050952462,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.04547229735843479,
+          -0.008447289158012513,
+          -0.008476290909463441,
+          -0.04399233734363822,
+          0.03104934531642115,
+          0.06465324203482359,
+          -0.03486325038349238,
+          -0.08555937149177192,
+          -0.01872805299131077,
+          0.053770124815935474
+        ],
+        "stability_score": -0.023460774154956173,
+        "finite": true,
+        "standard_deviation": 0.0036686633247882128,
+        "disposition": "reject_redundant"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563297271728516,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.008116578097660683,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.07383825786341912,
+          -0.009337415436238387,
+          -0.012291615125122769,
+          -0.02897370448862317,
+          -0.07749713432879504,
+          0.008417904516424397,
+          0.02385677412422371,
+          -0.07544491672277313,
+          0.0389755492597392,
+          -0.008650073054708617
+        ],
+        "stability_score": -0.04138327028604914,
+        "finite": true,
+        "standard_deviation": 0.6788159012794495,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale": 0.5563297271728516,
+          "theme": "geometry"
+        },
+        "train_pooled_rank_correlation": 0.01217064554971524,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.08930876938590898,
+          0.012881387452987923,
+          -0.00400257178332529,
+          -0.021639535251718,
+          -0.06832545598582049,
+          0.00823974965164134,
+          0.028618346985304008,
+          -0.07456144309685661,
+          0.03867454595305432,
+          -0.0064017001350134845
+        ],
+        "stability_score": -0.03890518512480862,
+        "finite": true,
+        "standard_deviation": 0.3324984014034271,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__tanh",
+          "op": "tanh",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01198121253401041,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06978682056676812,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.20492442674797004,
+          -0.23329781967957838,
+          -0.005769121262751788,
+          0.04731746027361693,
+          0.3240292115469428,
+          -0.06273122433601645,
+          -0.1261023193153333,
+          -0.010063613094666753,
+          0.2356905394873043,
+          0.0018599598539967806
+        ],
+        "stability_score": -0.0438166347167175,
+        "finite": true,
+        "standard_deviation": 0.09112291038036346,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__vol_gate",
+          "op": "vol_gate",
+          "parent": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale": 0.01198121253401041,
+          "theme": "stability"
+        },
+        "train_pooled_rank_correlation": -0.06975416335585873,
+        "orientation": -1.0,
+        "year_correlations": [
+          0.16622494568288332,
+          -0.20555871847402987,
+          -0.03312915971641824,
+          0.0679386598916566,
+          0.24739830224553772,
+          -0.02854278351581806,
+          -0.1017163746050758,
+          0.0535911622840505,
+          0.23366957726393803,
+          0.030942597877915763
+        ],
+        "stability_score": -0.025444752202140812,
+        "finite": true,
+        "standard_deviation": 0.00282059027813375,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "volume_surprise__mix__overnight_reversal",
+          "op": "mix",
+          "a": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "b": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "scale_a": 0.4059946537017822,
+          "scale_b": 0.008224951103329659,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.033218964891410144,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.1514199591344481,
+          0.06999392884299788,
+          6.42972500786364e-05,
+          0.005123270669788816,
+          0.004375987693507376,
+          0.07744496864876649,
+          0.02124659294109052,
+          -0.08085601691092523,
+          0.05136979501804487,
+          0.06742278794596245
+        ],
+        "stability_score": 0.007379145342435507,
+        "finite": true,
+        "standard_deviation": 0.7194061279296875,
+        "disposition": "selected"
+      },
+      {
+        "spec": {
+          "id": "overnight_reversal__mix__bar_pressure",
+          "op": "mix",
+          "a": {
+            "id": "overnight_reversal",
+            "op": "base",
+            "column": 19,
+            "theme": "reversal"
+          },
+          "b": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "scale_a": 0.008224951103329659,
+          "scale_b": 0.5563297271728516,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.011682271673669782,
+        "orientation": 1.0,
+        "year_correlations": [
+          -0.01841059475454321,
+          0.00651471044083998,
+          0.006729294886455724,
+          -0.0303991388362832,
+          -0.05792974198211528,
+          0.015289438040619965,
+          0.005646544562658388,
+          -0.11244917744592554,
+          0.012412200076272207,
+          0.005927176034389478
+        ],
+        "stability_score": -0.03605019122387933,
+        "finite": true,
+        "standard_deviation": 0.7122207880020142,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "bar_pressure__mix__range_compression",
+          "op": "mix",
+          "a": {
+            "id": "bar_pressure",
+            "op": "base",
+            "column": 18,
+            "theme": "geometry"
+          },
+          "b": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "scale_a": 0.5563297271728516,
+          "scale_b": 0.01198121253401041,
+          "sign_a": 1.0,
+          "sign_b": -1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.0448551909060125,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.09348794381151772,
+          -0.16282116281375367,
+          0.026567665035553936,
+          -0.019761069782377058,
+          0.04356947456564296,
+          -0.025651324019792136,
+          -0.03708846970153584,
+          -0.07716410865491519,
+          0.10919243380822838,
+          -0.011255407683064158
+        ],
+        "stability_score": -0.04414227419411333,
+        "finite": true,
+        "standard_deviation": 0.7130354046821594,
+        "disposition": "reject_budget"
+      },
+      {
+        "spec": {
+          "id": "range_compression__mix__volume_surprise",
+          "op": "mix",
+          "a": {
+            "id": "range_compression",
+            "op": "base",
+            "column": 16,
+            "theme": "stability"
+          },
+          "b": {
+            "id": "volume_surprise",
+            "op": "base",
+            "column": 15,
+            "theme": "price_volume"
+          },
+          "scale_a": 0.01198121253401041,
+          "scale_b": 0.4059946537017822,
+          "sign_a": -1.0,
+          "sign_b": 1.0,
+          "theme": "fusion"
+        },
+        "train_pooled_rank_correlation": 0.06719401581095742,
+        "orientation": 1.0,
+        "year_correlations": [
+          0.21369372308053936,
+          -0.10500722074490863,
+          0.006126980021570464,
+          0.03514891961383608,
+          0.1616166437831471,
+          0.017487625611038053,
+          -0.029713714617417977,
+          -0.02919245360291306,
+          0.17139072057482008,
+          0.061628292366143096
+        ],
+        "stability_score": 0.0018465079829711253,
+        "finite": true,
+        "standard_deviation": 0.671291172504425,
+        "disposition": "selected"
+      }
+    ],
+    "budget": {
+      "initial": 12,
+      "parents": 4,
+      "mutations_per_parent": 2,
+      "crossovers": 4,
+      "select": 6,
+      "max_absolute_correlation": 0.9
+    },
+    "selection_data": "fit_partition_only_no_validation_or_test"
+  },
+  "train_last_label_exit": "2022-12-30 00:00:00",
+  "validation_first_entry": "2023-01-03 00:00:00",
+  "validation_last_label_exit": "2023-12-29 00:00:00",
+  "test_first_entry": "2024-01-02 00:00:00",
+  "refit_last_label_exit": "2023-12-29 00:00:00"
+}
