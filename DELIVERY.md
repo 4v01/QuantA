@@ -29,14 +29,9 @@
 
 ## GitHub 状态
 
-尝试建立 `4v01/AlphaContextLab` 时，GitHub GraphQL和REST均返回 `Resource not accessible by integration`（HTTP403），当前授权不能创建仓库。没有将金融代码写入原RecRankLab仓库，也没有声称已发布不存在的远端地址。
+2026-11-10（北京时间），用户建立远端后，首版已发布至 **https://github.com/4v01/QuantA**。保留用户初始化提交并合并原完整研究历史，没有覆盖或强推。首版托管CI已通过：[42689648984](https://github.com/4v01/QuantA/actions/runs/42689648984)。
 
-`.github/workflows/ci.yml` 已准备，本地对应测试和证据审计通过；因为远端仓库尚未创建，**未运行GitHub托管CI**。在GitHub创建空仓库并提供地址后，可执行：
-
-```bash
-git remote add origin <新建空仓库地址>
-git push -u origin main
-```
+最初尝试新建AlphaContextLab时的HTTP403已经通过用户提供QuantA仓库解决；历史V1报告的validation.json保留当时“托管CI未运行”的归档状态，不能据此误认为现在仍未发布。RecRankLab仓库没有改动。
 
 交付包包含Git历史bundle；可用 `git clone AlphaContextLab.bundle AlphaContextLab` 恢复项目。单独的本地复现快照含下载缓存和参数，仅供该研究复现；项目MIT许可不覆盖第三方行情数据。
 

@@ -7,7 +7,7 @@ name = "alphacontextlab"
 version = "0.1.0"
 description = "Auditable daily A-share ETF sequence and conditional-memory research"
 requires-python = ">=3.11"
-dependencies = ["numpy>=1.26", "pandas>=2.2", "scipy>=1.11", "torch>=2.2"]
+dependencies = ["numpy>=1.26", "pandas>=2.2", "scipy>=1.11", "torch>=2.2", "scikit-learn>=1.4"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

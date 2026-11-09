@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install numpy pandas scipy pytest
+      - run: pip install numpy pandas scipy scikit-learn pytest
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
       - run: pip install --no-deps -e .
       - run: python -m pytest -q
@@ -21,4 +21,7 @@ jobs:
         run: |
           if test -f reports/v1/provenance.json; then
             python -m alphacontextlab.audit
+          fi
+          if test -f reports/v2/provenance.json; then
+            python -m alphacontextlab.v2.audit
           fi

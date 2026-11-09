@@ -2,6 +2,8 @@
 
 QuantA 的首个研究模块为 AlphaContextLab。
 
+仓库：https://github.com/4v01/QuantA 。首版已发布且GitHub CI通过；V1归档保留不变。V2按[冻结协议](docs/V2_PROTOCOL.md)与[研究来源](docs/V2_RESEARCH.md)检验有界因子演化、10日双目标预测和X式成本/风险排序。
+
 独立于 RecRankLab 的 **A 股日频量化研究项目**。首版研究四只境内股票 ETF；没有实盘或下单接口。
 
 目标是检验 LSTM 与 DeepSeek Engram 式条件记忆是否提供可靠的样本外预测及成本后收益改善，不预设其拥有正 α。
