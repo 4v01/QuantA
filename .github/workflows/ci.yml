@@ -25,3 +25,6 @@ jobs:
           if test -f reports/v2/provenance.json; then
             python -m alphacontextlab.v2.audit
           fi
+          if test -f reports/v3/provenance.json; then
+            python -m alphacontextlab.v3.audit
+          fi
