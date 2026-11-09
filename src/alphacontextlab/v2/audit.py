@@ -16,7 +16,7 @@ from ..study import write_json
 from .data import samples,split
 from .execution import simulate,certainty_equivalent
 from .report import confirmation_test
-from .study import seeds,create
+from .study import seeds,create,candidates
 from .factors import FactorSearch,Scale
 from .models import fit_lstm
 
@@ -42,6 +42,8 @@ def audit(reports='reports/v2'):
         if key[0] in config['development_years']:validation.setdefault(key[1],[]).append(winner['validation_net_ce'])
     if observed!=expected or len(observed)!=prov['final_fits']:raise ValueError('Incomplete V2 study')
     if candidate_count!=prov['candidate_fits']:raise ValueError('Candidate budget mismatch')
+    planned=(len(config['development_years'])+1)*sum(len(candidates(a,config))*len(seeds(a,config)) for a in config['arms'])
+    if candidate_count!=planned:raise ValueError('Candidate count differs from frozen plan')
     scores={arm:float(np.mean(validation[arm])) for arm in config['arms']}
     for arm,value in scores.items():
         if not np.isclose(value,seal['selection_scores'][arm]):raise ValueError('Champion score mismatch')
@@ -86,6 +88,9 @@ def audit(reports='reports/v2'):
         other=confirm[confirm.arm==control]
         recomputed=confirmation_test(champion.net_return,other.net_return,config['bootstrap_repetitions'],config['bootstrap_block_length'])
         if not np.allclose(recomputed['paired_block_bonferroni97_5'],actual['tests'][control]['paired_block_bonferroni97_5']):raise ValueError('Confirmation interval mismatch')
+    sh=statistics(champion.net_return,champion.market_return)['sharpe_rf_zero']
+    passed=sh is not None and sh>0 and all(v['paired_block_bonferroni97_5'][0]>0 for v in actual['tests'].values())
+    if actual['status']!=('passed' if passed else 'not_passed'):raise ValueError('Reported confirmation decision violates frozen rule')
     result={'status':'passed','final_fits':len(observed),'candidate_fits':candidate_count,'metric_rows_recomputed':checked,
             'champion':seal['arm'],'source_commit':prov['source_commit']}
     print(json.dumps(result,indent=2));return result
