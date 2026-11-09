@@ -1,0 +1,41 @@
+{
+  "status": "not_passed",
+  "family": "lw_variance_managed",
+  "tests": {
+    "legacy_discrete": {
+      "annualized_mean_excess": 0.055183505073421804,
+      "bonferroni_interval": [
+        -0.23629136467960132,
+        0.3677544806347489
+      ],
+      "interval_coverage": 0.9833333333333333,
+      "family_comparisons": 3,
+      "block": 20,
+      "repetitions": 1000
+    },
+    "csi300": {
+      "annualized_mean_excess": 0.16374547968667486,
+      "bonferroni_interval": [
+        -0.01261135695256051,
+        0.3730865478029392
+      ],
+      "interval_coverage": 0.9833333333333333,
+      "family_comparisons": 3,
+      "block": 20,
+      "repetitions": 1000
+    },
+    "equal_weekly": {
+      "annualized_mean_excess": 0.1697652458925765,
+      "bonferroni_interval": [
+        -0.1341257516787494,
+        0.5047729316961499
+      ],
+      "interval_coverage": 0.9833333333333333,
+      "family_comparisons": 3,
+      "block": 20,
+      "repetitions": 1000
+    }
+  },
+  "strict_prospective_blind_trial": false,
+  "scope": "2026-01-01 through 2026-10-30 new-project retrospective check; market/corporate metadata not completely unseen."
+}

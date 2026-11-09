@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "forecast_candidates": 18,
+  "policy_validation_candidates": 342,
+  "planned_scenarios": 396,
+  "metric_rows_recomputed": 462,
+  "source_commit": "a740f453764e317fc0b6a592d84ed0206b56a328",
+  "champion": "lw_variance_managed"
+}

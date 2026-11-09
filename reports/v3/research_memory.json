@@ -1,0 +1,34 @@
+{
+  "scope": "Post-evaluation lessons for a future frozen experiment; not read to retune V3.",
+  "source_records": [
+    "REPORT.md",
+    "DIAGNOSTICS.md",
+    "confirmation_test.json"
+  ],
+  "lessons": [
+    {
+      "id": "RAW_EVENTS_AND_ORDER_CAUSALITY",
+      "outcome": "Causal event features and close-fixed integer orders are verified by protocol tests; full vintage data and auction matching still unavailable."
+    },
+    {
+      "id": "RISK_NOT_ALPHA",
+      "outcome": "2026 champion reduced drawdown/turnover relative to matching legacy control, but mean excess intervals crossed zero and R2 remained negative."
+    },
+    {
+      "id": "SHRINKAGE_NOT_UNIVERSAL",
+      "outcome": "LW alone did not generally outperform sample covariance in this four-asset experiment."
+    },
+    {
+      "id": "GAMMA_CONFOUND",
+      "constraint": "Different families choose gamma on a common validation grid; family comparisons are not fixed-gamma causal component effects."
+    },
+    {
+      "id": "NEW_INFORMATION_NEEDED",
+      "constraint": "Audit informative new data/asset domains and future windows before more search on the same 2026 outcomes."
+    },
+    {
+      "id": "STRICT_PROSPECTIVE_FALSE",
+      "constraint": "Do not describe 2026 retrospective checks as a prospective blind trial."
+    }
+  ]
+}

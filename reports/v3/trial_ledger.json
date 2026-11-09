@@ -1,0 +1,20 @@
+{
+  "formal_forecast_candidates": 18,
+  "formal_final_forecasts": 6,
+  "formal_policy_validation_paths": 342,
+  "fixed_validation_benchmark_paths": 6,
+  "formal_sensitivity_paths": 396,
+  "failures": 0,
+  "engineering_smoke": {
+    "period": "2015 training history",
+    "predictions": "fixed constant, no model selection",
+    "policies": 3,
+    "purpose": "Cash conservation, corporate events and solver interface only."
+  },
+  "verification": {
+    "same_saved_checkpoints": 12,
+    "replayed_selected_forecaster_validation_paths": 114,
+    "replayed_sensitivity_paths": 396
+  },
+  "global_research_count": "Not inferred: previous versions, literature exposure and correlation among trials preclude a known independent trial count."
+}

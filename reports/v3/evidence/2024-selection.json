@@ -1,0 +1,621 @@
+{
+  "forecast_candidates": [
+    {
+      "index": 0,
+      "alpha": 1.0,
+      "validation_joint_rmse": 0.024105491386904165
+    },
+    {
+      "index": 1,
+      "alpha": 10.0,
+      "validation_joint_rmse": 0.024032288427181723
+    },
+    {
+      "index": 2,
+      "alpha": 100.0,
+      "validation_joint_rmse": 0.023919904806505996
+    }
+  ],
+  "selected_forecast": {
+    "index": 2,
+    "alpha": 100.0,
+    "validation_joint_rmse": 0.023919904806505996
+  },
+  "policy_candidates": [
+    {
+      "case": 0,
+      "forecast_index": 0,
+      "family": "legacy_discrete",
+      "gamma": null,
+      "status": "success",
+      "validation_net_ce": -0.27944042879738223,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 1,
+      "forecast_index": 0,
+      "family": "sample_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.29704510396813316,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 2,
+      "forecast_index": 0,
+      "family": "sample_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.16914529912770648,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 3,
+      "forecast_index": 0,
+      "family": "sample_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05338628077002806,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 4,
+      "forecast_index": 0,
+      "family": "lw_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.29006351695266747,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 5,
+      "forecast_index": 0,
+      "family": "lw_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.17386924687334904,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 6,
+      "forecast_index": 0,
+      "family": "lw_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.060856649207285805,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 7,
+      "forecast_index": 0,
+      "family": "lw_shrunk",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.24578356394306217,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 8,
+      "forecast_index": 0,
+      "family": "lw_shrunk",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.09732442247372292,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 9,
+      "forecast_index": 0,
+      "family": "lw_shrunk",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.028876809328247845,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 10,
+      "forecast_index": 0,
+      "family": "lw_cost",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.19755843373527476,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 11,
+      "forecast_index": 0,
+      "family": "lw_cost",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.0945799884129557,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 12,
+      "forecast_index": 0,
+      "family": "lw_cost",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.027837763560934273,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 13,
+      "forecast_index": 0,
+      "family": "lw_partial",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.18904682869808162,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 14,
+      "forecast_index": 0,
+      "family": "lw_partial",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.10727246894205836,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 15,
+      "forecast_index": 0,
+      "family": "lw_partial",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.034085012491943525,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 16,
+      "forecast_index": 0,
+      "family": "lw_variance_managed",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.18382325659593857,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 17,
+      "forecast_index": 0,
+      "family": "lw_variance_managed",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.10727246894205836,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 18,
+      "forecast_index": 0,
+      "family": "lw_variance_managed",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.034085012491943525,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 19,
+      "forecast_index": 1,
+      "family": "legacy_discrete",
+      "gamma": null,
+      "status": "success",
+      "validation_net_ce": -0.1449312657748602,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 20,
+      "forecast_index": 1,
+      "family": "sample_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.24191721571898728,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 21,
+      "forecast_index": 1,
+      "family": "sample_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.1472908140601478,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 22,
+      "forecast_index": 1,
+      "family": "sample_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.047216520349205725,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 23,
+      "forecast_index": 1,
+      "family": "lw_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.23702131317127073,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 24,
+      "forecast_index": 1,
+      "family": "lw_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.1551750605110169,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 25,
+      "forecast_index": 1,
+      "family": "lw_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05466423896931126,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 26,
+      "forecast_index": 1,
+      "family": "lw_shrunk",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.18349349648650348,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 27,
+      "forecast_index": 1,
+      "family": "lw_shrunk",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.08965332150487708,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 28,
+      "forecast_index": 1,
+      "family": "lw_shrunk",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.025705059089671838,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 29,
+      "forecast_index": 1,
+      "family": "lw_cost",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.1285573558931295,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 30,
+      "forecast_index": 1,
+      "family": "lw_cost",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.08829650759098324,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 31,
+      "forecast_index": 1,
+      "family": "lw_cost",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.02520911747227565,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 32,
+      "forecast_index": 1,
+      "family": "lw_partial",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.1609571680792496,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 33,
+      "forecast_index": 1,
+      "family": "lw_partial",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.10741656749568411,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 34,
+      "forecast_index": 1,
+      "family": "lw_partial",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.033794190859309396,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 35,
+      "forecast_index": 1,
+      "family": "lw_variance_managed",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.15349880070332203,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 36,
+      "forecast_index": 1,
+      "family": "lw_variance_managed",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.10741656749568411,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 37,
+      "forecast_index": 1,
+      "family": "lw_variance_managed",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.033794190859309396,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 38,
+      "forecast_index": 2,
+      "family": "legacy_discrete",
+      "gamma": null,
+      "status": "success",
+      "validation_net_ce": -0.118568721378083,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 39,
+      "forecast_index": 2,
+      "family": "sample_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.19983566753468904,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 40,
+      "forecast_index": 2,
+      "family": "sample_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.12900691713086215,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 41,
+      "forecast_index": 2,
+      "family": "sample_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.04176761551892084,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 42,
+      "forecast_index": 2,
+      "family": "lw_mv",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.19917996473727964,
+      "solver_fallbacks": 1
+    },
+    {
+      "case": 43,
+      "forecast_index": 2,
+      "family": "lw_mv",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.1400594216727161,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 44,
+      "forecast_index": 2,
+      "family": "lw_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05095758130874826,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 45,
+      "forecast_index": 2,
+      "family": "lw_shrunk",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.1512361719240088,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 46,
+      "forecast_index": 2,
+      "family": "lw_shrunk",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.08695432003644342,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 47,
+      "forecast_index": 2,
+      "family": "lw_shrunk",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.023979051761446647,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 48,
+      "forecast_index": 2,
+      "family": "lw_cost",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.12567725221029075,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 49,
+      "forecast_index": 2,
+      "family": "lw_cost",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.0859550839547445,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 50,
+      "forecast_index": 2,
+      "family": "lw_cost",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.02395968921450374,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 51,
+      "forecast_index": 2,
+      "family": "lw_partial",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.1604125635453856,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 52,
+      "forecast_index": 2,
+      "family": "lw_partial",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.1018636906831434,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 53,
+      "forecast_index": 2,
+      "family": "lw_partial",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.03129526358944555,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 54,
+      "forecast_index": 2,
+      "family": "lw_variance_managed",
+      "gamma": 3.0,
+      "status": "success",
+      "validation_net_ce": -0.15528331767728434,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 55,
+      "forecast_index": 2,
+      "family": "lw_variance_managed",
+      "gamma": 10.0,
+      "status": "success",
+      "validation_net_ce": -0.1018636906831434,
+      "solver_fallbacks": 0
+    },
+    {
+      "case": 56,
+      "forecast_index": 2,
+      "family": "lw_variance_managed",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.03129526358944555,
+      "solver_fallbacks": 0
+    }
+  ],
+  "selected_policies": {
+    "legacy_discrete": {
+      "case": 38,
+      "forecast_index": 2,
+      "family": "legacy_discrete",
+      "gamma": null,
+      "status": "success",
+      "validation_net_ce": -0.118568721378083,
+      "solver_fallbacks": 0
+    },
+    "sample_mv": {
+      "case": 41,
+      "forecast_index": 2,
+      "family": "sample_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.04176761551892084,
+      "solver_fallbacks": 0
+    },
+    "lw_mv": {
+      "case": 44,
+      "forecast_index": 2,
+      "family": "lw_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05095758130874826,
+      "solver_fallbacks": 0
+    },
+    "lw_shrunk": {
+      "case": 47,
+      "forecast_index": 2,
+      "family": "lw_shrunk",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.023979051761446647,
+      "solver_fallbacks": 0
+    },
+    "lw_cost": {
+      "case": 50,
+      "forecast_index": 2,
+      "family": "lw_cost",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.02395968921450374,
+      "solver_fallbacks": 0
+    },
+    "lw_partial": {
+      "case": 53,
+      "forecast_index": 2,
+      "family": "lw_partial",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.03129526358944555,
+      "solver_fallbacks": 0
+    },
+    "lw_variance_managed": {
+      "case": 56,
+      "forecast_index": 2,
+      "family": "lw_variance_managed",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.03129526358944555,
+      "solver_fallbacks": 0
+    }
+  },
+  "train_last_label_exit": "2022-12-30 00:00:00",
+  "validation_first_entry": "2023-01-03 00:00:00",
+  "validation_last_label_exit": "2023-12-29 00:00:00",
+  "test_first_entry": "2024-01-02 00:00:00",
+  "refit_last_label_exit": "2023-12-29 00:00:00",
+  "train_rows": 8160,
+  "validation_rows": 964,
+  "refit_rows": 9128,
+  "validation_search_check": {
+    "candidates": 57,
+    "days": 241,
+    "statistic": 0.006258320738359878,
+    "conditional_pvalue": 0.3076923076923077,
+    "repetitions": 1000,
+    "block": 20,
+    "scope": "Descriptive validation-family centered max bootstrap; not global research significance."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "source_commit": "a740f453764e317fc0b6a592d84ed0206b56a328",
+  "config_sha256": "3293b330cdc227c08940bde5ca132a150acbc93b87e373ed9e287b6e5983d181",
+  "corporate_actions_sha256": "6b325b326f47f23cff7593ab92b218193eaa2612963f87195c47ca0d64dae811",
+  "final_forecast_fits": 6,
+  "forecast_candidate_fits": 18,
+  "policy_validation_paths": 342,
+  "planned_scenarios": 396,
+  "successful_scenarios": 396,
+  "failed_scenarios": 0,
+  "quotes_sha256": {
+    "development": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c",
+    "confirmation": "f7a4fce5204df831d96fe0e852f627b2935707e4ca8a560893cd8ca5b8971b44"
+  }
+}

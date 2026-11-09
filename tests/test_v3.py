@@ -139,3 +139,18 @@ def test_raw_pipeline_future_quotes_and_future_events_do_not_change_past(config,
     np.testing.assert_array_equal(x[(m.date<cut).to_numpy()],xx[(mm.date<cut).to_numpy()])
     np.testing.assert_array_equal(market.lw_cov[:300],other.lw_cov[:300])
     np.testing.assert_array_equal(market.sample_cov[:300],other.sample_cov[:300])
+
+
+def test_report_refuses_same_source_with_changed_data_version(config,tmp_path):
+    from alphacontextlab.v3.report import report,case_years
+    base=tmp_path/'outputs';dest=tmp_path/'reports';base.mkdir();dest.mkdir()
+    seal={'source_commit':'same','config_sha256':'same','corporate_actions_sha256':'new-events'}
+    (base/'champion.json').write_text(json.dumps(seal))
+    for year,mode in case_years(config):
+        folder=base/mode/str(year);folder.mkdir(parents=True)
+        (folder/'result.json').write_text('{}')
+        (base/mode/'provenance.json').write_text(json.dumps({'data_sha256':'new-quotes'}))
+    (dest/'provenance.json').write_text(json.dumps({'source_commit':'same','config_sha256':'same','corporate_actions_sha256':'old-events','quotes_sha256':{'development':'old','confirmation':'old'}}))
+    (dest/'REPORT.md').write_text('published original')
+    with pytest.raises(ValueError,match='do not overwrite'):report(ROOT/'configs/v3.json',base,dest)
+    assert (dest/'REPORT.md').read_text()=='published original'

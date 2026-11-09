@@ -1,0 +1,566 @@
+{
+  "year": 2023,
+  "forecast_candidates": 3,
+  "policy_validation_candidates": 57,
+  "final_forecasts": 1,
+  "selected_forecast": {
+    "index": 2,
+    "alpha": 100.0,
+    "validation_joint_rmse": 0.034022347382451
+  },
+  "selected_policies": {
+    "legacy_discrete": {
+      "case": 38,
+      "forecast_index": 2,
+      "family": "legacy_discrete",
+      "gamma": null,
+      "status": "success",
+      "validation_net_ce": -0.20064483319255788,
+      "solver_fallbacks": 0
+    },
+    "sample_mv": {
+      "case": 41,
+      "forecast_index": 2,
+      "family": "sample_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.0961477543088508,
+      "solver_fallbacks": 1
+    },
+    "lw_mv": {
+      "case": 44,
+      "forecast_index": 2,
+      "family": "lw_mv",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.09493218002429553,
+      "solver_fallbacks": 0
+    },
+    "lw_shrunk": {
+      "case": 47,
+      "forecast_index": 2,
+      "family": "lw_shrunk",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.04513361404168091,
+      "solver_fallbacks": 0
+    },
+    "lw_cost": {
+      "case": 50,
+      "forecast_index": 2,
+      "family": "lw_cost",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.046581020449904836,
+      "solver_fallbacks": 0
+    },
+    "lw_partial": {
+      "case": 53,
+      "forecast_index": 2,
+      "family": "lw_partial",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05205017856469857,
+      "solver_fallbacks": 0
+    },
+    "lw_variance_managed": {
+      "case": 56,
+      "forecast_index": 2,
+      "family": "lw_variance_managed",
+      "gamma": 30.0,
+      "status": "success",
+      "validation_net_ce": -0.05205017856469857,
+      "solver_fallbacks": 0
+    }
+  },
+  "scenarios": [
+    {
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "ce2ed5b384215c2c4764d9845dc9b2ac67499b7718c2ab8e435479f1c39435a2",
+      "orders_sha256": "dae284bd2c19da518ff85281f57c1098ce0bb75ca818d3036481972501cdc479"
+    },
+    {
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "b7ae7ee803d0e96752eaa822de43516badedcc889f3e968471d2fde94e3c2f86",
+      "orders_sha256": "4889cc03f86174077570d9994f7a0bb09cc46169cf9d0ca925b3a58914a9fe88"
+    },
+    {
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "b8f6c2f389d0aebeb2d525f3eb2ebb0753fd49ee0a50537457f0f375695307cd",
+      "orders_sha256": "3dd6a2009561059ccabe25ab6b8fc5edc4d6c48b5b73c2d5fd93b3c0777a9071"
+    },
+    {
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "b6a6446e96b06eaeb78f0628f57c8bacdb7cfaf3d12e28cdf1d7466898db9ddb",
+      "orders_sha256": "390d774347822bce79c27b043f2dab3c7d7335aa4d4a3be575ca1b32ad7b6a71"
+    },
+    {
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "352b80f9339b74def6d7ba6b30ddaa65b9e3ea7415fa6bb7654b4f03ced406e5",
+      "orders_sha256": "0318969b4ff4dc41bf9db7ff25555184b96f994e655f29fc0dc31ba03f66a4bf"
+    },
+    {
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "b441c229ae3e518e74769f03f8e6f65ed856f5a9ce3cfe2b1d679f53b82042c6",
+      "orders_sha256": "3699ae1d779c0d2f9dfd8e8d0b86dc450f9638fbd14607035f7489e9a6762e46"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "5bd51268e0cff8e42ba30593c57b971d1556296d6d36667f0a6f06602d4a5a09",
+      "orders_sha256": "53c0c500d76fbb52018fd7965ad42fa1ca995d391482ba636f81d33d4e199256"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "212b48f814b22e22bb540328723cedae022468b943150a3995d975fb96a8293c",
+      "orders_sha256": "001cd41081c5a18c0e72b207098c00c5cfabc3c860c3f954bd47a63b9a84a2df"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "300a3b2b8cb5d102b52377ffcabc237a074ee100a1662b279cfba3ce81e7c985",
+      "orders_sha256": "51c72c598f35853aea95b6883f97a68cf2c1a6c2ec8b92a74c3873bf028b968b"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "203a35ee9f3386c1c2f2175154321255273e242a742dc82b5f038b3b8f718961",
+      "orders_sha256": "e3e676a7ebef0ffc329d503583a79a1f2621c7afb0f8f3771f5381d8dd0d2ae0"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "2f9f08fbfd1c9a910c136bbd28d86f45044b9a89177fe9bf7b333c13b9854713",
+      "orders_sha256": "cd590d1add0897597c2f1cd22935cbf7e0ae2d823f93272d318d16e0c6119708"
+    },
+    {
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "5aa18c87d9f2224c241301f19f0f11e51f4aa6b6c1292f35338fb08a915c259a",
+      "orders_sha256": "f8d0f72e8eea6235b2ee358241c30bd37251e0e97fde8752b43a100ab851f382"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "5cbb95d3cc2f1e98e3ec2a1b01e8a6119462541a5e6b4972c94393bf6aeacd37",
+      "orders_sha256": "ee702dd5e9dac6d71f23be01236b8a19a04755855e5c9f1222233b4b453c3ce0"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "b3e4fa7c11ebd7cc7eb66d116f2a9aff45563c66886fbb7cd28504db5bdcda40",
+      "orders_sha256": "f8594918e9f91bdd476faee6bc16b250720bd4af7aa3cbc07efa738ee831f9b6"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "8d8074fb26f20e108f4e588b07c9c1c350eebdfc5974a3cb22c38378c2dc22ef",
+      "orders_sha256": "f7416f2b04c432a95cd1e389a77130cb5a8ee3727d4ae4a45d3e14d61906d567"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "52450344b5e475a29ae43d4580df8db371e13d4541750bfee616cbfe55ef43b4",
+      "orders_sha256": "f5761bef90887cae8efd4705a5e276f685f800d399ad507c3b7d9f994633a0de"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "76dead50308ccbcd749b5454ec239b756101642fcc01cd0b919eea5477828694",
+      "orders_sha256": "327e0c83d48e3da6cee030ef045e9414e804de88ba425372fa55a01baccf9b16"
+    },
+    {
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "8691e2d68da3de032ad9b36dc67d48589f26bd2ca0d93eb2c24191dd051a87ff",
+      "orders_sha256": "ae084ea43264fff0e1919580cf7c3e43e741501d957d407e2925e1307181006b"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "808d698fabf0faf5af9dfe688dd8af23551043e42bb4222d61947964751e3412",
+      "orders_sha256": "927829c1fb2f6371b0cdb6ec37bae8118fb3a99ce79b6e7e6a686ffe7cdaba1f"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "6fbff93b34c2fcab1e2c07c9556aae3e48b4a6f825058b93e11e15a983cdcd19",
+      "orders_sha256": "4de3ad3ced4c1be5d57d20c13b71f424d261c6e524d03f66f1c5b284c4425eed"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "45c5007d1750ea967dc6d8d8654c086ca1e851c9b15e4b9a8f0d01f8ab9c8675",
+      "orders_sha256": "4e89b09c2c32b4406860564ccd9fbbe96ae959949c04744181967648c05180be"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "e207687e84ececd086eb3b6bb1f177f9e8017b004f29da603ffc22d1aae176d5",
+      "orders_sha256": "f351babc66fc6dac698adef1cc7d8be0d6dce6b51b37dc0b27821f23953123f5"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "0b1d91afbcb1e5a637856ca0fde57e9fce6082310d56c1427961414b1ec7a878",
+      "orders_sha256": "5bfdabc715ccbe298b13bb52db1dea4069cf330ef43f407a186f6dcbafd7c420"
+    },
+    {
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "22da2d8a50545654c58f08543ed192470b46732ae410ee1abf649b86676c8ef7",
+      "orders_sha256": "3819b29ed03676414d9a583763c0021f30fbadcb0318c13d36e0f7b6df303821"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "a1a2473269cbd52d6b24c3df416be3a70b31e6dd8ee9f03647378863333a2fb3",
+      "orders_sha256": "e47b6e5e41c640ee7161a63529ff761f69bc09ac10415288646ed01ddba1041a"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "f583116d734ccef2d4e1bdc7bfe6a7a9d830a32802ca39d13e8226c003cd2c3e",
+      "orders_sha256": "08f8ea79f4ae99bce35c83014ecc55d40920a0de7283c204fb9bc27d7cbf1563"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "20fc95fd431d4d002f0e0de9ed8e5f80a1ac29db09b0b48e701ca6bd0828749a",
+      "orders_sha256": "0e0b67c763c399f5b6e87b5f3806e3b03751bcd022e0a3a943f39a69f27e68f1"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "577af9a1f5683a1e36e68f73c9dfe113e7b97c40fddaa685e6806fcd4393867c",
+      "orders_sha256": "dd5d7bfe893e553b64ea3b08f2793d2c3d6794715f8636875685cb9197d2a9e2"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "87906cca58b66ef6292e0cfdbac38f1218d0b7dd796ea7fb2cc3f93403c580d8",
+      "orders_sha256": "b0816fadcaf470b3549a3f7b17f3c93a18bcf4ad6aef4297bc4db810f63b279d"
+    },
+    {
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "83e4168fdeaed02194463dec4c23a1ab1344fa87172725972908c16d19ab8948",
+      "orders_sha256": "47b04eaba5e36bd2ba7a0e0ff957f89f0b7646261cb9c87e9178867bddfba1e8"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "15fb55a87d2f60b4be4a52fc531132bfb78921463374d8f4009ee13e0ba3a6af",
+      "orders_sha256": "aa3ef36b4bc22ce3f17eddc88db3039bd8fbab38ce865fd7663688e2c1c4bd42"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "65e66080739d1deaec5194eb36091d00ad73860ff9f7ba56b307491a6b938bf5",
+      "orders_sha256": "ef82515a8e30452c9ee21dfe07504c6a723edf30739abfcdd7a301be8328c003"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "b59cc2f2e26e16480dccf375ea0f562120cf9e512171af2a7f5c87356b7d669e",
+      "orders_sha256": "680e776bdea918720339c161a87d202de0699fd8750e0cee80e3959da41eb763"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "d8ea13d9f710e6739d15de0db25dd56e72160051bff7f2f8237ff70f775e78d4",
+      "orders_sha256": "5e7735987320813687c0004840ebe4cffa862557f1bf5f6d80d4727ce229aa4a"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "4b3bca8a39b93ca31d9e7495375fb2350d0e724d438718c077ff90a8e0898665",
+      "orders_sha256": "3919651aab84fd0bfc218193a5959a78e101b8987f473ac4c80a5a87e768689e"
+    },
+    {
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "4a00c910f5b76d7442d6055afb47b3ab70f85678898a4f89bdf32e85380bae24",
+      "orders_sha256": "dc4ccebbdd54aac54e38ef13f813ac3a813d0d4b274b91451b7c92d53bed50d5"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "15fb55a87d2f60b4be4a52fc531132bfb78921463374d8f4009ee13e0ba3a6af",
+      "orders_sha256": "aa3ef36b4bc22ce3f17eddc88db3039bd8fbab38ce865fd7663688e2c1c4bd42"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "65e66080739d1deaec5194eb36091d00ad73860ff9f7ba56b307491a6b938bf5",
+      "orders_sha256": "ef82515a8e30452c9ee21dfe07504c6a723edf30739abfcdd7a301be8328c003"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "b59cc2f2e26e16480dccf375ea0f562120cf9e512171af2a7f5c87356b7d669e",
+      "orders_sha256": "680e776bdea918720339c161a87d202de0699fd8750e0cee80e3959da41eb763"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "d8ea13d9f710e6739d15de0db25dd56e72160051bff7f2f8237ff70f775e78d4",
+      "orders_sha256": "5e7735987320813687c0004840ebe4cffa862557f1bf5f6d80d4727ce229aa4a"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "4b3bca8a39b93ca31d9e7495375fb2350d0e724d438718c077ff90a8e0898665",
+      "orders_sha256": "3919651aab84fd0bfc218193a5959a78e101b8987f473ac4c80a5a87e768689e"
+    },
+    {
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "4a00c910f5b76d7442d6055afb47b3ab70f85678898a4f89bdf32e85380bae24",
+      "orders_sha256": "dc4ccebbdd54aac54e38ef13f813ac3a813d0d4b274b91451b7c92d53bed50d5"
+    },
+    {
+      "family": "cash",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "79ce421529e07687915330e41bc2bc049b56edff597b6dfd95efd8985b85cc1a",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "cash",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "79ce421529e07687915330e41bc2bc049b56edff597b6dfd95efd8985b85cc1a",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "cash",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "79ce421529e07687915330e41bc2bc049b56edff597b6dfd95efd8985b85cc1a",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "cash",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "79ce421529e07687915330e41bc2bc049b56edff597b6dfd95efd8985b85cc1a",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "cash",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "14277cd98077ef1fa8c61615902dbed6eadf9c38a5d07c7947b5a7ba20030bf9",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "cash",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "6c151c26445eeb98b1d0e3edd4eb4614483256270ff84f7a02fbb2410060253d",
+      "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "family": "csi300",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "e678b8fd0544fab49f5d52e3dee4434a7fe52d9dc36b6b18b9912c459cd552ba",
+      "orders_sha256": "f7921c0c9086c56ef60e6b58fd2c134d1826870200b5d85e20c2152563ca4844"
+    },
+    {
+      "family": "csi300",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "ef60a50c6f73a012febcd7c667b3b29658f8b8e56835ee71688b4649735b9b24",
+      "orders_sha256": "4e439461caa12e7616e71bdd211dd8ea9aa5561900292df11748259a40712ca5"
+    },
+    {
+      "family": "csi300",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "15dd064ba43f2b8217255757d0bc70afcd7a12f025a60cf854335afb27b887dd",
+      "orders_sha256": "4a14e15c37b36c9df5389c0611cd52f25664eeedf60d644abd63cde2fae7a390"
+    },
+    {
+      "family": "csi300",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "42589bae944613e5325d06980f81fe5e6a077f57834e1e58512500f8018f13fa",
+      "orders_sha256": "fb8b3e52cb7d5ccda9daf876a2f1fab64fccb98782b70463dd99214ec9029e71"
+    },
+    {
+      "family": "csi300",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "71d8d8982eac0f27ef1a90776bdf27af0b0f210540a3d7f406aea14d0b74d3f6",
+      "orders_sha256": "2bea43d7ee3a3fc3341f008d4159ce23baa16c8ce2bb546ccb670504cada2cbf"
+    },
+    {
+      "family": "csi300",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "6e92559ad334366277b927afe91e03fb9369b1be354fdea453154a6f7b8a1876",
+      "orders_sha256": "1955a01d096b6588503a8cf6021be11de892d58f6e97b148f6b0712dec37e332"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "cc4f9603fdd296b36468e9077365d4c83fff5bbde5d2b387378589eafec7ed22",
+      "orders_sha256": "54d64e1c627d1b881f831a5f1d89f9b33a7f52e3fd827fc52873a818d80a1dcd"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "ad2085f3884776315f6ea6ccf3335c5cf4528bfd47df4ffb98c59aa87dfdae10",
+      "orders_sha256": "29c2178280eed635d2ca0a40fb5649cd66c5b1c49b13b666c0d98681c8456952"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "3b8387cfb60621c0aad75252b034acd0f0ff820c785a08e5b46fe24f709640cb",
+      "orders_sha256": "b82fa8c53c2502be966d2304f1a07de2780e9c7c7492d508ca1fcfdde65ccb46"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "08133258035886ffe14bbd3d06f688078a3230694c7e4b3f6eaa91ac9dc8e658",
+      "orders_sha256": "a5a7bf18249b6fca6de0e431256d9ff52aef3e43277912d696b0198706cf8742"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "e430c308af947eb7b70ffe6aaf64fe5202f53a68141b0c0987be3abc60a9d5b8",
+      "orders_sha256": "72c559d9fd3f1dba84fd042aff0ec4bfbe2b668fda04521c17633694061cba6e"
+    },
+    {
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "cdf0a5a2a4f6ef12fc1396963da7052363c70c70cbd3c18a6fe1806e78ffe633",
+      "orders_sha256": "4d2ff5d84d2b6d798f257ed208253bc68377965c47c198f2c984b21b50572dae"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "status": "success",
+      "path_sha256": "2be2670558142876e13bf363c99810c4a8f936c465ff54a54cfae465748204ba",
+      "orders_sha256": "c233dd9e41495e634948a51542c52514caf88ab295fdf3c98b30c2f9a9e86512"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "status": "success",
+      "path_sha256": "422448e216ca5cadfe15d07c6d801a7a977da3b44b017de0c913e3b2c9231a38",
+      "orders_sha256": "74de22ba341770459b08c9cdf67f5532c2ea1613bb89ada39d30cceb417e93d5"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "status": "success",
+      "path_sha256": "15bf6e034fbd2836500a1b78fbaa65b95d04fcaa1142dfec61b31615ccbc8ff1",
+      "orders_sha256": "2067e8aba687a2ab3c7eb706b49d128e23650e0b8884afca0fceee21d7aa82b6"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "status": "success",
+      "path_sha256": "12e40cfd1cae75dbb72a9817159ed7270dcf6fb0e369c6fcc27bf3d1d151d49d",
+      "orders_sha256": "e99ff163be9e258d5f647eb559dca3a5fb0a1bec4b90847bc2721583be1b8bf0"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "status": "success",
+      "path_sha256": "aee46f22a47ab624efb742adecec4eef049b5bb000309be53a2aba49ea31034c",
+      "orders_sha256": "24202ff363df8f83e05ae628e24078cc72687fcbfa31b4da3f3949c515a31d2a"
+    },
+    {
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "status": "success",
+      "path_sha256": "158b7307b6ee0cf9fedd9911367a917cdf6dfdcf97ba11e8b9711c9b99edf81c",
+      "orders_sha256": "5251d10f4775a9b3a6742ed1278da6a0c052f7950dfe42d086a10be2e5b463d3"
+    }
+  ],
+  "elapsed_seconds": 15.069555759429932,
+  "provenance": {
+    "source_commit": "a740f453764e317fc0b6a592d84ed0206b56a328",
+    "source_dirty": false,
+    "config_sha256": "3293b330cdc227c08940bde5ca132a150acbc93b87e373ed9e287b6e5983d181",
+    "data_sha256": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c",
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "2.2.3",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "threads": 2,
+    "study": "v3",
+    "sklearn": "1.9.1",
+    "corporate_actions_sha256": "6b325b326f47f23cff7593ab92b218193eaa2612963f87195c47ca0d64dae811"
+  },
+  "hashes": {
+    "selection.json": "2ef18645a7809facff470850a660fdb0383d98e638d0da3f122c3c158a7d674b",
+    "predictions.csv": "a9d79671e652085370bcc95e3deb3e828512bdd72c069fdd160b6315bc4105e5",
+    "metadata.csv": "4ab80c00568ed71aa23e491253d50fc9457939e6ed0c7b57839566a01cc83f20",
+    "final.pkl": "d9ac52595865f1d600b2f6ac72bdc1c41920a531dd4c459886a4f202772142b3",
+    "validation.pkl": "c7e7f9e7f316bc3591b035eafbec03b9c432387a48dee107fe31ff3a7edd4722",
+    "validation_paths.csv.gz": "ea3c8adc67cbf61ccc30d65a9760a6fbd453a624261d2279ccc98951a2af2457",
+    "validation_benchmark.csv": "323cbf513e6feaccff4ff6ad03289e0c916d84b67ddb5e182da5452c8a635877"
+  }
+}

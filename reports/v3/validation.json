@@ -1,0 +1,23 @@
+{
+  "frozen_source_unit_tests": 34,
+  "current_protocol_and_report_guard_tests": 35,
+  "evidence_audit": {
+    "status": "passed",
+    "forecast_candidates": 18,
+    "policy_validation_candidates": 342,
+    "planned_scenarios": 396,
+    "metric_rows_recomputed": 462,
+    "source_commit": "a740f453764e317fc0b6a592d84ed0206b56a328",
+    "champion": "lw_variance_managed"
+  },
+  "local_replay": {
+    "status": "passed",
+    "checkpoints_loaded": 12,
+    "validation_paths_replayed": 114,
+    "account_paths_replayed": 396,
+    "scope": "Own hash-checked saved models and regenerated account paths; not independent proof of market assumptions."
+  },
+  "past_reports_unchanged": 195,
+  "financial_confirmation_status": "not_passed",
+  "strict_prospective_blind_trial": false
+}

@@ -1,0 +1,20 @@
+{
+  "family": "lw_variance_managed",
+  "selection_scores": {
+    "legacy_discrete": 0.0007454818073650213,
+    "sample_mv": 0.040628865235863676,
+    "lw_mv": 0.0370170088787836,
+    "lw_shrunk": 0.03264574856898823,
+    "lw_cost": 0.040462734820326425,
+    "lw_partial": 0.034690354706661056,
+    "lw_variance_managed": 0.058625750817964416
+  },
+  "criterion": "mean_validation_net_CE_development_folds",
+  "source_commit": "a740f453764e317fc0b6a592d84ed0206b56a328",
+  "config_sha256": "3293b330cdc227c08940bde5ca132a150acbc93b87e373ed9e287b6e5983d181",
+  "corporate_actions_sha256": "6b325b326f47f23cff7593ab92b218193eaa2612963f87195c47ca0d64dae811",
+  "development_quotes_sha256": "d1ce3c83c2d650501d2ce0c31fa6899917f2b46485d25df2665fd9f52a8bdf7c",
+  "new_price_snapshot_loaded": false,
+  "strict_prospective_blind_trial": false,
+  "metadata_available_before_seal": "2026 corporate actions and isolated web-search snippets; no project-wide 2026 return backtest"
+}

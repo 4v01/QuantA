@@ -1,0 +1,17 @@
+{
+  "seal_commit": "1864b74e5b67c2cfb5d132fe0fc4d766c25ca73f",
+  "seal_utc": "2026-11-09T22:26:15Z",
+  "first_raw_price_file_utc": "2026-11-09T22:27:36.942795992+00:00",
+  "raw_prefix_max_absolute_difference": {
+    "open": 0.0,
+    "close": 0.0,
+    "high": 0.0,
+    "low": 0.0,
+    "volume": 0.0,
+    "amount": 0.0
+  },
+  "raw_prefix_identical": true,
+  "metadata_exposure_before_seal": true,
+  "strict_prospective_blind_trial": false,
+  "confirmation_quotes_sha256": "f7a4fce5204df831d96fe0e852f627b2935707e4ca8a560893cd8ca5b8971b44"
+}

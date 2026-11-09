@@ -1,0 +1,2385 @@
+{
+  "status": "passed",
+  "checkpoints_loaded": 12,
+  "validation_paths_replayed": 114,
+  "account_paths_replayed": 396,
+  "cases": [
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.980911516572206e-14
+    },
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 4.935461761501614e-14
+    },
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 4.992013746818458e-14
+    },
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9980852789843766e-14
+    },
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.894695759816159e-14
+    },
+    {
+      "year": 2021,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9949627767276183e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.8161127863544095e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.9682480351975755e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.977095124925057e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9165532756134667e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.8471643365743944e-14
+    },
+    {
+      "year": 2021,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.964258171202829e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.96790109050238e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.964084698855231e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.982819712395781e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.992534163861251e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.760601635123152e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.978309431358241e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.987156521085723e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 4.9835136017861714e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.986983048738125e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.812469867054858e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.989758606299688e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 4.942574127753119e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.9661663670264033e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.815418896964019e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 4.856531843344669e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.920890084303409e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 4.899552985548894e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 4.963737754160036e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.941880238362728e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 4.937716902020384e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.967554145807185e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9455231576622793e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.918634943784639e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9769216525774596e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.9980852789843766e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 4.861909486120197e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.956104970865738e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.860521707339416e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9883708275189065e-14
+    },
+    {
+      "year": 2021,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.957666221994117e-14
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 4.878736303837172e-14
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.964778588245622e-14
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9802176271818155e-14
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9692888692831616e-14
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.971717482149529e-14
+    },
+    {
+      "year": 2021,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.926614671774132e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 4.9654724776360126e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 4.969635813978357e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.939278153148763e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9236656418649716e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9822992953529877e-14
+    },
+    {
+      "year": 2021,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 4.781071372139678e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.963737754160036e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 4.909961326404755e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 4.916900220308662e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 4.516352569705617e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.5661391334661516e-14
+    },
+    {
+      "year": 2021,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 4.925573837688546e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.763030247989519e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 4.978829848401034e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 4.897991734420515e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9269616164693275e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.857572677430255e-14
+    },
+    {
+      "year": 2022,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.995830138465607e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.8953896492065496e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.885501725393482e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9210635566510064e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.997738334289181e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.801020692113411e-14
+    },
+    {
+      "year": 2022,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.999473057765158e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.9774420696202526e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.839184608584901e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.933900510373235e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9904524956900786e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9998200024603534e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.963564281812438e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.939104680801165e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 4.9221043907365924e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.970329703368748e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.8933079810353775e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.988717772214102e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9210635566510064e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.9567988602561286e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.9758808184918735e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 4.980044154834218e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9866361040429297e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 4.805010556108158e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 4.932512731592453e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.9203696672606156e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 4.995656666118009e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.968421507545173e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9167267479610643e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.627201399820535e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.906665351800399e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.6945086706884354e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 4.890185478778619e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.8986856238109056e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.916206330918271e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9286963399453043e-14
+    },
+    {
+      "year": 2022,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.761122052165945e-14
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 4.9057979900624105e-14
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.8639911542913694e-14
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9954831937704114e-14
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9600948348604845e-14
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.939104680801165e-14
+    },
+    {
+      "year": 2022,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.956104970865738e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 4.992881108556446e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 4.931124952811672e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9259207823837414e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 4.997217917246388e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.936849540282395e-14
+    },
+    {
+      "year": 2022,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 4.930084118726086e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.941533293667533e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 4.926267727078937e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 4.650273222051027e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 4.851674617611934e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.965819422331208e-14
+    },
+    {
+      "year": 2022,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 4.870756575847679e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.979003320748632e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 4.9068388241479965e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9422271830579234e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 4.7959899940330786e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.8894915893882285e-14
+    },
+    {
+      "year": 2023,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.920716611955811e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.9411863489723373e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.5498327327919696e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.121529506573296e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 2.6926377794112e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.603956105242446e-14
+    },
+    {
+      "year": 2023,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.560588018343026e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.67022254202476e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 3.654715419187937e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.90510410067202e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.826347654862673e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 3.976333151634037e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.979350265443827e-14
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.980174259094916e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 4.978222695184442e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9725848438875175e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9617428221626625e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.886282350957671e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 4.867634073590921e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.9832100251778755e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.974319567363494e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 4.981692142136396e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.989064716909297e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 4.997521493854684e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 4.957839694341715e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.957839694341715e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 4.993618366033736e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9790900569224306e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.996654132116696e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.957189173038223e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9877636743023146e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.957839694341715e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 4.993618366033736e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9790900569224306e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.996654132116696e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.957189173038223e-15
+    },
+    {
+      "year": 2023,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9877636743023146e-15
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 4.873011716366449e-14
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.70387617745871e-14
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9817788783101946e-14
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 4.927655505859718e-14
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.874919912190023e-14
+    },
+    {
+      "year": 2023,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9899320786472856e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 4.985421797609746e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 4.999473057765158e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9254003653409484e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 4.8910528405166076e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9476048258334515e-14
+    },
+    {
+      "year": 2023,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9705031757163454e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.80709222427933e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 4.990105550994883e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9073592411907896e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 4.700233258159159e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.784887763786827e-14
+    },
+    {
+      "year": 2023,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 4.928869812292902e-14
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.203720704865077e-13
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 3.311795282456842e-13
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 2.762789996779702e-13
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 1.7122414597281477e-13
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.995726055057048e-13
+    },
+    {
+      "year": 2024,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.065359160421167e-13
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 3.9662717554733717e-13
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.929390229335695e-14
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 8.934519790670947e-14
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 8.915090887740007e-14
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 1.2913281555171352e-13
+    },
+    {
+      "year": 2024,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 3.346212196220222e-13
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 1.0400014183176154e-13
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 2.8102520310824275e-13
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 1.3594680936535042e-13
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.67022254202476e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 5.079270337660091e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 2.809974475326271e-13
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.270368780812106e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 2.400857290751901e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.854276702825899e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.949513021657026e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.457198499174808e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 3.873810994203808e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.823051680258317e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.106437412332298e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 3.509692536596276e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9280024505549136e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 3.3601593729670753e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 3.745441456981524e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.904410211281629e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 3.3639757646142243e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9394516254963605e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.655650864826555e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.308012280240803e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.6639775375112436e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.904410211281629e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 3.3639757646142243e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9394516254963605e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.655650864826555e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.308012280240803e-14
+    },
+    {
+      "year": 2024,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.6639775375112436e-14
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 1.4949153026577733e-13
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.994442359684825e-14
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 3.978206652988092e-13
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 2.625399897482339e-13
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.2194026050879074e-13
+    },
+    {
+      "year": 2024,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.39870362356487e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 3.7317371415213074e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 2.639138907412075e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.733435865489355e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 2.8091418080578023e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.739958425759028e-13
+    },
+    {
+      "year": 2024,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 3.114314361951642e-13
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.409805853811122e-13
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 3.6137759451548845e-13
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 2.97761815204467e-13
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 2.5349167209753887e-13
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.929563701683293e-14
+    },
+    {
+      "year": 2024,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 3.808897641732756e-13
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.993921942642032e-14
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 4.9274820335121206e-14
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9536763579993703e-14
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 4.989758606299688e-14
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9585335837321054e-14
+    },
+    {
+      "year": 2025,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.99184027447086e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.9937484702944346e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.6369158512860054e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.900073402591687e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.946737464095463e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.821143484434742e-14
+    },
+    {
+      "year": 2025,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9743195673634943e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.799979858027825e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.879430193227563e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.774999839973759e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.57897608718838e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.915165496832685e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9286963399453043e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.851327672916739e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 4.981084988919804e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.971370537454334e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.66276323107806e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.978309431358241e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 4.856531843344669e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.999126113069963e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.6542630860457734e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 4.6112419438415486e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.6494058603130384e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 4.7330195318551205e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 4.991319857428067e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.837623357456522e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 4.8650319883769555e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.413136522884997e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.8742260227996326e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.915165496832685e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9297371740308904e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.831551825290603e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 4.96269692007445e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.865725877767346e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.872491299323656e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.8377968298041196e-14
+    },
+    {
+      "year": 2025,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.856184898649474e-14
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 4.891399785211803e-14
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.97761554196785e-14
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9280024505549136e-14
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 4.995656666118009e-14
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9661663670264033e-14
+    },
+    {
+      "year": 2025,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.864164626638967e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 4.8568787880398645e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 4.9845544358717575e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9992995854175604e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9932280532516415e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.998432223679572e-14
+    },
+    {
+      "year": 2025,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 4.783673457353643e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.9975648619415836e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 4.9318188422020626e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 4.90284896015325e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 4.928349395250109e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9503803833950144e-14
+    },
+    {
+      "year": 2025,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9529824686089796e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "primary",
+      "maximum_return_error": 4.9623499753792544e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "free",
+      "maximum_return_error": 4.9639112265076335e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "slip10",
+      "maximum_return_error": 4.8884507553026424e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "slip20",
+      "maximum_return_error": 4.890185478778619e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "small_account",
+      "maximum_return_error": 4.917594109699053e-14
+    },
+    {
+      "year": 2026,
+      "family": "legacy_discrete",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9509008004378074e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.8834200572223097e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.966860256416794e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.92453300360296e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.902675487805652e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.7829795679632525e-14
+    },
+    {
+      "year": 2026,
+      "family": "sample_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.78991846186716e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "primary",
+      "maximum_return_error": 4.917941054394248e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "free",
+      "maximum_return_error": 4.939278153148763e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9101347987523525e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "slip20",
+      "maximum_return_error": 4.889144644693033e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "small_account",
+      "maximum_return_error": 4.9699827586735523e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_mv",
+      "scenario": "large_account",
+      "maximum_return_error": 4.8688483800241045e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "primary",
+      "maximum_return_error": 4.848378643007578e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "free",
+      "maximum_return_error": 4.949513021657026e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "slip10",
+      "maximum_return_error": 4.761989413903933e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "slip20",
+      "maximum_return_error": 4.8390111362373034e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "small_account",
+      "maximum_return_error": 4.748978987834107e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_shrunk",
+      "scenario": "large_account",
+      "maximum_return_error": 4.885328253045884e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "primary",
+      "maximum_return_error": 4.719662161090099e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "free",
+      "maximum_return_error": 4.940145514886751e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "slip10",
+      "maximum_return_error": 4.497617556165068e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "slip20",
+      "maximum_return_error": 4.964605115898024e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "small_account",
+      "maximum_return_error": 4.802755415589388e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_cost",
+      "scenario": "large_account",
+      "maximum_return_error": 4.931471897506867e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "primary",
+      "maximum_return_error": 4.992013746818458e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "free",
+      "maximum_return_error": 4.8650319883769555e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "slip10",
+      "maximum_return_error": 4.9465639917478654e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9585335837321054e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "small_account",
+      "maximum_return_error": 4.7715303930218056e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_partial",
+      "scenario": "large_account",
+      "maximum_return_error": 4.919675777870225e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "primary",
+      "maximum_return_error": 4.981084988919804e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "free",
+      "maximum_return_error": 4.931471897506867e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "slip10",
+      "maximum_return_error": 4.50715853528294e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "slip20",
+      "maximum_return_error": 4.970676648063943e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "small_account",
+      "maximum_return_error": 4.845603085446015e-14
+    },
+    {
+      "year": 2026,
+      "family": "lw_variance_managed",
+      "scenario": "large_account",
+      "maximum_return_error": 4.7182743823093176e-14
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "primary",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "free",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "slip10",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "slip20",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "small_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "cash",
+      "scenario": "large_account",
+      "maximum_return_error": 0.0
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "primary",
+      "maximum_return_error": 4.9536763579993703e-14
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "free",
+      "maximum_return_error": 4.9784829037058387e-14
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "slip10",
+      "maximum_return_error": 4.959400945470094e-14
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9371964849775907e-14
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "small_account",
+      "maximum_return_error": 4.979350265443827e-14
+    },
+    {
+      "year": 2026,
+      "family": "csi300",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9404924595819466e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "primary",
+      "maximum_return_error": 4.9404924595819466e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "free",
+      "maximum_return_error": 4.9692888692831616e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "slip10",
+      "maximum_return_error": 4.968074562849978e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "slip20",
+      "maximum_return_error": 4.9873299934333204e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "small_account",
+      "maximum_return_error": 4.963217337117243e-14
+    },
+    {
+      "year": 2026,
+      "family": "equal_weekly",
+      "scenario": "large_account",
+      "maximum_return_error": 4.9578396943417147e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "primary",
+      "maximum_return_error": 4.916379803265869e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "free",
+      "maximum_return_error": 4.740825787497016e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "slip10",
+      "maximum_return_error": 4.8329396040713846e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "slip20",
+      "maximum_return_error": 4.898512151463308e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "small_account",
+      "maximum_return_error": 4.76597927789868e-14
+    },
+    {
+      "year": 2026,
+      "family": "inverse_volatility",
+      "scenario": "large_account",
+      "maximum_return_error": 4.7569587158236004e-14
+    }
+  ],
+  "scope": "Own hash-checked saved models and regenerated account paths; not independent proof of market assumptions."
+}

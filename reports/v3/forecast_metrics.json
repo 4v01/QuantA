@@ -1,0 +1,74 @@
+[
+  {
+    "year": 2021,
+    "mode": "development",
+    "return": {
+      "rmse": 0.03607689987142342,
+      "r2": -0.05391678346138651,
+      "pearson": 0.06363022263886127
+    },
+    "downside_rmse": 0.012318812009569044,
+    "forecast_rows": 928,
+    "account_rows": 968
+  },
+  {
+    "year": 2022,
+    "mode": "development",
+    "return": {
+      "rmse": 0.04586484581529364,
+      "r2": -0.12312045298087226,
+      "pearson": 0.13632581440846062
+    },
+    "downside_rmse": 0.014541532283900097,
+    "forecast_rows": 928,
+    "account_rows": 964
+  },
+  {
+    "year": 2023,
+    "mode": "development",
+    "return": {
+      "rmse": 0.03211689431678288,
+      "r2": -0.21006883082050365,
+      "pearson": -0.0502199112315683
+    },
+    "downside_rmse": 0.010622089782578106,
+    "forecast_rows": 928,
+    "account_rows": 964
+  },
+  {
+    "year": 2024,
+    "mode": "development",
+    "return": {
+      "rmse": 0.07453594311904985,
+      "r2": -0.04846297586634907,
+      "pearson": 0.08234278577664078
+    },
+    "downside_rmse": 0.02355874411854313,
+    "forecast_rows": 928,
+    "account_rows": 964
+  },
+  {
+    "year": 2025,
+    "mode": "development",
+    "return": {
+      "rmse": 0.03619898055875456,
+      "r2": 0.007084956808997234,
+      "pearson": 0.28822263854094393
+    },
+    "downside_rmse": 0.014181014207058687,
+    "forecast_rows": 932,
+    "account_rows": 968
+  },
+  {
+    "year": 2026,
+    "mode": "confirmation",
+    "return": {
+      "rmse": 0.048982401417514226,
+      "r2": -0.07609751434025291,
+      "pearson": 0.013618404753034113
+    },
+    "downside_rmse": 0.015594786467612653,
+    "forecast_rows": 752,
+    "account_rows": 788
+  }
+]

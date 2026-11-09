@@ -1,0 +1,3170 @@
+[
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 54,
+    "status": "passed",
+    "orders_sha256": "b17ba3e39ece687fd59255830fe5fb3f9122f54f8ad1ce561248e53d902bcd00"
+  },
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 59,
+    "status": "passed",
+    "orders_sha256": "387bd327beea2d40321b1ecb64a919c98ba81001d1a810990e8193c1b9004515"
+  },
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 59,
+    "status": "passed",
+    "orders_sha256": "0b247c17433e9109aca91ee30f8bebff5d31091dfb8c73baa35d0d652f35b335"
+  },
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 58,
+    "status": "passed",
+    "orders_sha256": "1ae486d761af3a3faf77c0f9413e76c0f4d7c78f2ace1001e21b980380fb2201"
+  },
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 58,
+    "status": "passed",
+    "orders_sha256": "438a05cc9814cdbaf78987813e65d981e5b3c4f7b62b70f42411038695ddd1c5"
+  },
+  {
+    "year": 2021,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 64,
+    "status": "passed",
+    "orders_sha256": "dfc6d22d6cbfd6261b2b1da1b13943aa547c9422ea23d901b5cad43eb99d8683"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 70,
+    "status": "passed",
+    "orders_sha256": "5abf7458ede3d160c8952e9883221b2153350fa94d73981b5e5ef7ebc6909a6f"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 74,
+    "status": "passed",
+    "orders_sha256": "5f73016405aff57cc1d62268d6700519c03585c1d6c27f176d61dcd2c872ba98"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 69,
+    "status": "passed",
+    "orders_sha256": "83c950054321bfb67afc129f0ab89459cd860db3bc3cdc112fe369b102570636"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 75,
+    "status": "passed",
+    "orders_sha256": "8cd62707abd53db3b97bdd240aec4d5ecf3f2c290b49a55c77323da1c7ba7b22"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 71,
+    "status": "passed",
+    "orders_sha256": "40f6f2f6ec7b90c9ed23dbd47234e6d3b956b4d1f0e1161a94f434031acb77e4"
+  },
+  {
+    "year": 2021,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 76,
+    "status": "passed",
+    "orders_sha256": "b3756e6a1bcb806aff1720f2eadcdad52829504f50a647fd88225eb221b474ff"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 76,
+    "status": "passed",
+    "orders_sha256": "ba7ed9cb97024f451e649e5ac6d26ad16b8b76bd7e2c6fd63115bea4647f6ab6"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 80,
+    "status": "passed",
+    "orders_sha256": "5a5da450e8701f2f5ca78c4385991d7dd5fea7b973f38921798a3a2978b23af3"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 85,
+    "status": "passed",
+    "orders_sha256": "f50dd2217c846c89c515b37ea80e0fec920f84a729575d4cd3b3244002414a8e"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 74,
+    "status": "passed",
+    "orders_sha256": "6b3a19e74b21089ec5842c2e7f5ed6d57efdba496c1a985e06593e80d39d2b3e"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 66,
+    "status": "passed",
+    "orders_sha256": "c53204f315f3f6d43b09a64afe995b64849fc8ae36a77d74ef6caa6a4daa1e66"
+  },
+  {
+    "year": 2021,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 83,
+    "status": "passed",
+    "orders_sha256": "c67a137ebc9e94510f405b468649ed7c689ed76198576a484ca8217031377bb3"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 99,
+    "status": "passed",
+    "orders_sha256": "885f12fa282dacb9d32e994ac367658873020dc0f2b308d4f52295f1f811f8ce"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "d8cb9b50e52e7e94d7002a18c9a649f12db91363c7cc54e966be2ac96cb1e4a4"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "b387a6879b06a6105133a0d9e23333de2fb92d28c4b5dc7519cd5128bd18de31"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "563ecb11ed2212bf7fd13135bf80f7486fb622b2933573654dac03a24358aaaa"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "f8b4763c0746665014a4f2b03786ab47ab0298172bcd00e8a0fa92d88c47dea9"
+  },
+  {
+    "year": 2021,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 103,
+    "status": "passed",
+    "orders_sha256": "0ce58c3867095d6026821c5be27de5672ee74cd8ddc302f6de5d935d54390855"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 78,
+    "status": "passed",
+    "orders_sha256": "317668c8b039a453de7ceb9d76c26b5f48574e36fecb9b2e85ba9d6c258fb609"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 80,
+    "status": "passed",
+    "orders_sha256": "8d15020e84b81c0d63da99b1ab154cfce4c5b649e1b608e3af976811b5995003"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 85,
+    "status": "passed",
+    "orders_sha256": "27e85074b3a55f7b4324507b9727bd99d90fdc7ce9e78e74d5df2decb11d01d0"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 80,
+    "status": "passed",
+    "orders_sha256": "cc655865f81d37203cc75c893c74d9ad903bf4a7b9508fe22dffb422cd7064ac"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 80,
+    "status": "passed",
+    "orders_sha256": "fb4ec6e7d1be2e11d6caafb90dd69a1206237b5968d8a71f91f4ee23e392f1e0"
+  },
+  {
+    "year": 2021,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 83,
+    "status": "passed",
+    "orders_sha256": "60097b74bfae169b464b508ebf876b14a16e292e58d094a1deca8a0f4b3bce86"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 150,
+    "status": "passed",
+    "orders_sha256": "897dcddb55f22c578c80a010bfd09cd135763065490ce107998dcaf992903a59"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 149,
+    "status": "passed",
+    "orders_sha256": "d7b8b7abceaef287a3ad7448be4ab3c670669dc8b247314832b56a418aea0e61"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 151,
+    "status": "passed",
+    "orders_sha256": "8574cb8e04b3362a53f3b52096a83baa59a044e41f6dbd2e3f37b70fc71da7fe"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 147,
+    "status": "passed",
+    "orders_sha256": "9d17c77e2e7370d9dd4dcfceaef9526a986377674a0c32a536e1d077ac7919f9"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 128,
+    "status": "passed",
+    "orders_sha256": "23aa4496002e06c3821cdfed3189cbb29eafaa5096a17c486b9695beb278878b"
+  },
+  {
+    "year": 2021,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 163,
+    "status": "passed",
+    "orders_sha256": "f43b1b6302d4893d0835977c97d4e5dd752f4f83c97ebd7a52cc7f73c34dfb5a"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 145,
+    "status": "passed",
+    "orders_sha256": "60bb76b11cdc9bea9810eda899b9c457dcba8001ae5f2b638a0591ad08ef5ffc"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 155,
+    "status": "passed",
+    "orders_sha256": "38df5d49e0add415e1849e9314e65423724263618249b4d642a19375dc9b12f0"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 148,
+    "status": "passed",
+    "orders_sha256": "9835862cd1564295c870d6aedc7cad6552acfc9f3a1a6d0fd7aadef3aa4fe947"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 151,
+    "status": "passed",
+    "orders_sha256": "67e009961806ee7de68c6337a13e7ec3bc4b6faebe4297cdd7f135582e5e5d43"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 133,
+    "status": "passed",
+    "orders_sha256": "9bd7fd475af0483388a23bbb6c3764c47041059b3e736fcdc380057ef4d6f577"
+  },
+  {
+    "year": 2021,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 164,
+    "status": "passed",
+    "orders_sha256": "19bacefce5f19c9fb56e8792f36a5471f35e1fe1f31a5ccc181f41cf275725a2"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "179f9582bd7d809de19b0713b907e7840e3687c23ed286604773b2d7897763b3"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "8924f524c2ede8b18a7444ae0a4a5f29cf3cf0172bf152633d0083056cafa85c"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "c8b122efb037e840a6ab3c1ebb05a0ea253635aa3d120a17f315a2bc55adb4bf"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "09a2670360a1260cd2eba544eaea01205fecafa120c7b7bb50a8059b3784c5db"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "6a7eb0e8d5409e6b55813c5d2ccf302dc74c77c5c55c4e2dc76c8486e83c2828"
+  },
+  {
+    "year": 2021,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "efa9693e39280a0a7156ace3426f9add4d1118cf0e4c8cacc2dc0102795d7029"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 184,
+    "status": "passed",
+    "orders_sha256": "fe0d3f14a58a386e262d56c4025d1d4390e1ef45f5150e25fe0d83f421d8c53f"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 185,
+    "status": "passed",
+    "orders_sha256": "a21caaaefa67046686b85b1ddf8368e5f23644a5a898e4b2635ff68249f10ac9"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 183,
+    "status": "passed",
+    "orders_sha256": "9cb1290f505fda575f1fc1829b1be33eee6aad9421f9468b2c7fadabc9099187"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 183,
+    "status": "passed",
+    "orders_sha256": "372b2d2198a12aa6d1addbdf1ae4d5f3529bb2cb6360b98f2290d4125d4377ba"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "4b99e22e1bce58d07a519de2419632b0ce8fb76bbb072562b9d6964a0bd0d0ee"
+  },
+  {
+    "year": 2021,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 195,
+    "status": "passed",
+    "orders_sha256": "aec046cfdfaef1433c7c0007a86f1942425462753aae04cfbac4679df08e2d13"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "4a174435b71948eeb7dd0854c439168e1531c5deb422a1542062b7f85393df78"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 192,
+    "status": "passed",
+    "orders_sha256": "7f07eb75b37f6618027c69532b7189dd629182c98e5df82f981761a0f01cc98c"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 191,
+    "status": "passed",
+    "orders_sha256": "d08d26c232126af9259bbb28611105151c4134cbf95380104df43d07b1696699"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 190,
+    "status": "passed",
+    "orders_sha256": "d11f5fa7497811e73deead476a47371884d3d84ba06b650ac7257aeb89a0e1a4"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 146,
+    "status": "passed",
+    "orders_sha256": "c5c128c64cad53cda371c279342d433415fa266e41b6174b7d9ea8e6f1258ba6"
+  },
+  {
+    "year": 2021,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 196,
+    "status": "passed",
+    "orders_sha256": "925c2cf66f62ac8be181d8625b38cab4b6e295fe4518b4868f90960c6b53ca99"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 54,
+    "status": "passed",
+    "orders_sha256": "84ebf72d44b8dc670383331a01c8437add8472ccf8d0cf1bc64109ab0e21bba1"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 57,
+    "status": "passed",
+    "orders_sha256": "e40bf2d87613f1b63a8b84d1c98c14cf86921d4880aeb4d8051c54185aaf7a4d"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 54,
+    "status": "passed",
+    "orders_sha256": "3a5ebf92ef83b9c764201a41a9963edbe7f437fdcdcd7847d295bd916b0c48b5"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 53,
+    "status": "passed",
+    "orders_sha256": "66ec8c2fed6a4ff3b8e547d71541fbafa4e021f46b7f1148221935c72fe99cd5"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 54,
+    "status": "passed",
+    "orders_sha256": "8bc523ec19feb0c58b44949ccfb3f9ace0de1ca2c4730e27e45d54c8cb077196"
+  },
+  {
+    "year": 2022,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 58,
+    "status": "passed",
+    "orders_sha256": "30dc3b50d956b9e3acd57123ce8f0bbb5ba4e532b3bc78ff44fdc5b166895234"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 79,
+    "status": "passed",
+    "orders_sha256": "2601f40115672d789d5835eb2e54682d41f454d3e315b09cfea3638a2ba986cf"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 81,
+    "status": "passed",
+    "orders_sha256": "d76f6f8590ab58b958114ae48d961a7ed1aac805b1bb0cb5566112aedf6de014"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 83,
+    "status": "passed",
+    "orders_sha256": "f84c96af603c17a886c8857821980b4bf7fd420e7fadc95eee05dce5c6400d0e"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 85,
+    "status": "passed",
+    "orders_sha256": "06739e76c6b539d16a398a74ef60f4347cf68b4afe613e02c9a481d07ad3823e"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 81,
+    "status": "passed",
+    "orders_sha256": "e97a22459b9dab0a8e471611593b7caf0ba58700304bb5d78ac89576f3cf12d5"
+  },
+  {
+    "year": 2022,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 87,
+    "status": "passed",
+    "orders_sha256": "eadb05e5d44a0e02a72604051165f283ff703e896e73efe17bc7954ff35b20ef"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "505923e85e93103e189b4abc2f469935fbfa29f0ab9bbe77c81796906ff4cd3d"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 85,
+    "status": "passed",
+    "orders_sha256": "9a99c46d6220e3281bdc9b8f9a09a0a597bc3a5971b10ea704b14e8316a2cb0a"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 99,
+    "status": "passed",
+    "orders_sha256": "80ad482f8fa980d07eeb6c6acf26543b85396bd6f8b5e7d3d7b1ad82426763eb"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 82,
+    "status": "passed",
+    "orders_sha256": "7476444855e918e2ed3013a9d47810a118ec9ecd9931cd127cefa9dd4062e8a4"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 91,
+    "status": "passed",
+    "orders_sha256": "a3f0a3befa0c9639a73b90d1fe951e02eb87e6e50c10911f015eda6875875531"
+  },
+  {
+    "year": 2022,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 100,
+    "status": "passed",
+    "orders_sha256": "ba9fdd125bd1ba0bdc6de23f8cc47d87210c6f892baea49e7e0fcbeb73d44277"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 116,
+    "status": "passed",
+    "orders_sha256": "b125d27aa5e838873f012771714fe6bbc75111251ccecf9d962663069f723999"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 116,
+    "status": "passed",
+    "orders_sha256": "0369f08b4176224f721006fe281607073cc7c1beaf47de2bf340f98cb48909f8"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 116,
+    "status": "passed",
+    "orders_sha256": "c6493751ffe4b54b61e4363ac6b9f60a1c0037dd007c3d683f410ec89388cf15"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 115,
+    "status": "passed",
+    "orders_sha256": "5384701d5ca67b5f25d5b825b5fb1e7943d5606b25448a92c4ab31ae510dfa0e"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 113,
+    "status": "passed",
+    "orders_sha256": "1b6b4971a82d93a6dc1952dc666053be0dc9f0a126ca806dd7867b7060fc6c04"
+  },
+  {
+    "year": 2022,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 116,
+    "status": "passed",
+    "orders_sha256": "344f05cb434084fc03c80043c98690aeec3ac936471046be2207418979f381bd"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 90,
+    "status": "passed",
+    "orders_sha256": "ab90b654bf7dd7e1da74d51f0db8c3aa6572c2c8f595abd14b4c6dc89040402f"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 88,
+    "status": "passed",
+    "orders_sha256": "3533158f3b18ac6209b3fcd4cfabbb416c201eae7329d22df1b95388ca41e858"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 89,
+    "status": "passed",
+    "orders_sha256": "cf1227fcb69acc4f60f697d1fceb168718afc77cc30db8951fa377b5a24061bf"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 88,
+    "status": "passed",
+    "orders_sha256": "fba3c5f95910e2930aae7a20d61e73a6531c7658890d42f12fe1b6a2ac63190b"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 86,
+    "status": "passed",
+    "orders_sha256": "15db3cedc21eec0c0f9584e3943b6563197330b88b74cee95ee264f6cb0d94a0"
+  },
+  {
+    "year": 2022,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 96,
+    "status": "passed",
+    "orders_sha256": "e4661fa8e904670664d15d104fc64dd3db0371504ae6ca42a7c7cf84cdfb845b"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 150,
+    "status": "passed",
+    "orders_sha256": "7f9672d94f4b7039428c29b27f4aa6e6b54b719837a05f140de57354b6213d7f"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 153,
+    "status": "passed",
+    "orders_sha256": "7eed5fe2b5d11376a31c01ef489030f5b9f6c8832083d8f73f0c24e92ebe12f1"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 152,
+    "status": "passed",
+    "orders_sha256": "fc89dbef3bd813e2b434688c84293632b20c4c0ba956cfa7b98a98427d70fb84"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 153,
+    "status": "passed",
+    "orders_sha256": "1e1830c3f26bd3eecdb02485193d082c81f1f886b095addde01272da16ba92ca"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 138,
+    "status": "passed",
+    "orders_sha256": "5a4c11e52487cffd8738d0063db4d01d7bd63e3a3dc84e9720daf35661bcf3c0"
+  },
+  {
+    "year": 2022,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 163,
+    "status": "passed",
+    "orders_sha256": "84b56b93badb28d5ac8c7007afca4009e9f3985db458510f60619ed2b1de6499"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 161,
+    "status": "passed",
+    "orders_sha256": "00fcac514b700073173100a1a859ffa8660339f683eda9d02901a9d8cb2ec45a"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 161,
+    "status": "passed",
+    "orders_sha256": "22ed072ee721407db139880378c85e77c3029e0a8ccce696bf0308903a846ad0"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 160,
+    "status": "passed",
+    "orders_sha256": "dda0112065b9c07d361349cdd871ece70249c134dfb185bd951db68db299d583"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 161,
+    "status": "passed",
+    "orders_sha256": "d536d9bff3145478cff7763993b771323263339900d93cf1b1efd27263247c97"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 147,
+    "status": "passed",
+    "orders_sha256": "3b4df862e8524b3d8ec2f6d3b727a2e4f18f83a732eb84af9505fd04b78821fd"
+  },
+  {
+    "year": 2022,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 161,
+    "status": "passed",
+    "orders_sha256": "fc4726bec7fd99fa8642a9dc8cdafdad5b0a5e6efa9b68e3c97dd59d75a0c6bf"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "8bf421c87984c89e40ad99f6d0e6a72949c39961203978b316c00ff769ba2efe"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "e8aa9db0cad1023f5e4fb3053dc6934c5ede290f9b14eed7040b38e9d4c51bc5"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "e5a74958556fb8cba0508ccc812d9b812753d16eb76a36d77e4c4fc4f902b7fe"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "9e00849d634a256257699aa37ba6eabeef4fea42b553d0d5ffc850090524d4a6"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "8d615d4060cd20fdbf3a8e7073daca9c1ae0cbd349455250a22b59927bf0e93c"
+  },
+  {
+    "year": 2022,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "2181397fae821fc9b0a5656f50e93d84bea080407c7ea79ec5e40ac312d24c71"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 183,
+    "status": "passed",
+    "orders_sha256": "c7da4f3eb7376655fd5533ffbab234ec5367bc78e3374d6ece5348f95a0527d6"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 179,
+    "status": "passed",
+    "orders_sha256": "d6ea422d92462f26d492ed0a7ec5b77d08468d46d7aacaf141f64bd66d33b91c"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 176,
+    "status": "passed",
+    "orders_sha256": "c29140edb51de02f9d3bd7a51ff1ccc6912e072993bb99cc7a92466ffcf22d9e"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 180,
+    "status": "passed",
+    "orders_sha256": "3a5eaa1355c1dff15bd538fd1edae83d34e52522112d8e03d0b12869a4e837a3"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 92,
+    "status": "passed",
+    "orders_sha256": "c628459fba1eed72e065d97d36bd965b02da1fa49efce34aa5a434dba87ff86a"
+  },
+  {
+    "year": 2022,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 194,
+    "status": "passed",
+    "orders_sha256": "e4b2f158eae176c539c44a9868f29f0a31ca3097acc22bde1df6ce4d95b589cb"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 189,
+    "status": "passed",
+    "orders_sha256": "07c564b6608b7af1603c15496d1121e36a429871f20c69bb3b27e5967809945a"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 188,
+    "status": "passed",
+    "orders_sha256": "acac2a4f79ca9da61562edd9ca90a0df48f12356c87b3461b986de85b47e428c"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 189,
+    "status": "passed",
+    "orders_sha256": "b068aff819d186240fc227c4ad993b6a7090ce69c3b7b67040bd1d96e057df68"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 186,
+    "status": "passed",
+    "orders_sha256": "a432daa7826f0768be2a3799985f0eff159d4a20cb0ccd5806089b4f38b8a82a"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 148,
+    "status": "passed",
+    "orders_sha256": "c25c0d32bc60ff90e867e5ae6429cd0fcff1ccb4fede1858917f6bd5579bb8fb"
+  },
+  {
+    "year": 2022,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "bf88a7d927a39c3819edd1a597072624f41489011ae3b43e7360c165bb3c4dc9"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 41,
+    "status": "passed",
+    "orders_sha256": "dae284bd2c19da518ff85281f57c1098ce0bb75ca818d3036481972501cdc479"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 45,
+    "status": "passed",
+    "orders_sha256": "4889cc03f86174077570d9994f7a0bb09cc46169cf9d0ca925b3a58914a9fe88"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 39,
+    "status": "passed",
+    "orders_sha256": "3dd6a2009561059ccabe25ab6b8fc5edc4d6c48b5b73c2d5fd93b3c0777a9071"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 38,
+    "status": "passed",
+    "orders_sha256": "390d774347822bce79c27b043f2dab3c7d7335aa4d4a3be575ca1b32ad7b6a71"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 40,
+    "status": "passed",
+    "orders_sha256": "0318969b4ff4dc41bf9db7ff25555184b96f994e655f29fc0dc31ba03f66a4bf"
+  },
+  {
+    "year": 2023,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 41,
+    "status": "passed",
+    "orders_sha256": "3699ae1d779c0d2f9dfd8e8d0b86dc450f9638fbd14607035f7489e9a6762e46"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "53c0c500d76fbb52018fd7965ad42fa1ca995d391482ba636f81d33d4e199256"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "001cd41081c5a18c0e72b207098c00c5cfabc3c860c3f954bd47a63b9a84a2df"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "51c72c598f35853aea95b6883f97a68cf2c1a6c2ec8b92a74c3873bf028b968b"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "e3e676a7ebef0ffc329d503583a79a1f2621c7afb0f8f3771f5381d8dd0d2ae0"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 92,
+    "status": "passed",
+    "orders_sha256": "cd590d1add0897597c2f1cd22935cbf7e0ae2d823f93272d318d16e0c6119708"
+  },
+  {
+    "year": 2023,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "f8d0f72e8eea6235b2ee358241c30bd37251e0e97fde8752b43a100ab851f382"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "ee702dd5e9dac6d71f23be01236b8a19a04755855e5c9f1222233b4b453c3ce0"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "f8594918e9f91bdd476faee6bc16b250720bd4af7aa3cbc07efa738ee831f9b6"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "f7416f2b04c432a95cd1e389a77130cb5a8ee3727d4ae4a45d3e14d61906d567"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "f5761bef90887cae8efd4705a5e276f685f800d399ad507c3b7d9f994633a0de"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "327e0c83d48e3da6cee030ef045e9414e804de88ba425372fa55a01baccf9b16"
+  },
+  {
+    "year": 2023,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "ae084ea43264fff0e1919580cf7c3e43e741501d957d407e2925e1307181006b"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "927829c1fb2f6371b0cdb6ec37bae8118fb3a99ce79b6e7e6a686ffe7cdaba1f"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "4de3ad3ced4c1be5d57d20c13b71f424d261c6e524d03f66f1c5b284c4425eed"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "4e89b09c2c32b4406860564ccd9fbbe96ae959949c04744181967648c05180be"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "f351babc66fc6dac698adef1cc7d8be0d6dce6b51b37dc0b27821f23953123f5"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "5bfdabc715ccbe298b13bb52db1dea4069cf330ef43f407a186f6dcbafd7c420"
+  },
+  {
+    "year": 2023,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 101,
+    "status": "passed",
+    "orders_sha256": "3819b29ed03676414d9a583763c0021f30fbadcb0318c13d36e0f7b6df303821"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 83,
+    "status": "passed",
+    "orders_sha256": "e47b6e5e41c640ee7161a63529ff761f69bc09ac10415288646ed01ddba1041a"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 82,
+    "status": "passed",
+    "orders_sha256": "08f8ea79f4ae99bce35c83014ecc55d40920a0de7283c204fb9bc27d7cbf1563"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 87,
+    "status": "passed",
+    "orders_sha256": "0e0b67c763c399f5b6e87b5f3806e3b03751bcd022e0a3a943f39a69f27e68f1"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 84,
+    "status": "passed",
+    "orders_sha256": "dd5d7bfe893e553b64ea3b08f2793d2c3d6794715f8636875685cb9197d2a9e2"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 80,
+    "status": "passed",
+    "orders_sha256": "b0816fadcaf470b3549a3f7b17f3c93a18bcf4ad6aef4297bc4db810f63b279d"
+  },
+  {
+    "year": 2023,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 88,
+    "status": "passed",
+    "orders_sha256": "47b04eaba5e36bd2ba7a0e0ff957f89f0b7646261cb9c87e9178867bddfba1e8"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 125,
+    "status": "passed",
+    "orders_sha256": "aa3ef36b4bc22ce3f17eddc88db3039bd8fbab38ce865fd7663688e2c1c4bd42"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 128,
+    "status": "passed",
+    "orders_sha256": "ef82515a8e30452c9ee21dfe07504c6a723edf30739abfcdd7a301be8328c003"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 127,
+    "status": "passed",
+    "orders_sha256": "680e776bdea918720339c161a87d202de0699fd8750e0cee80e3959da41eb763"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 127,
+    "status": "passed",
+    "orders_sha256": "5e7735987320813687c0004840ebe4cffa862557f1bf5f6d80d4727ce229aa4a"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 110,
+    "status": "passed",
+    "orders_sha256": "3919651aab84fd0bfc218193a5959a78e101b8987f473ac4c80a5a87e768689e"
+  },
+  {
+    "year": 2023,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 147,
+    "status": "passed",
+    "orders_sha256": "dc4ccebbdd54aac54e38ef13f813ac3a813d0d4b274b91451b7c92d53bed50d5"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 125,
+    "status": "passed",
+    "orders_sha256": "aa3ef36b4bc22ce3f17eddc88db3039bd8fbab38ce865fd7663688e2c1c4bd42"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 128,
+    "status": "passed",
+    "orders_sha256": "ef82515a8e30452c9ee21dfe07504c6a723edf30739abfcdd7a301be8328c003"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 127,
+    "status": "passed",
+    "orders_sha256": "680e776bdea918720339c161a87d202de0699fd8750e0cee80e3959da41eb763"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 127,
+    "status": "passed",
+    "orders_sha256": "5e7735987320813687c0004840ebe4cffa862557f1bf5f6d80d4727ce229aa4a"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 110,
+    "status": "passed",
+    "orders_sha256": "3919651aab84fd0bfc218193a5959a78e101b8987f473ac4c80a5a87e768689e"
+  },
+  {
+    "year": 2023,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 147,
+    "status": "passed",
+    "orders_sha256": "dc4ccebbdd54aac54e38ef13f813ac3a813d0d4b274b91451b7c92d53bed50d5"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "f7921c0c9086c56ef60e6b58fd2c134d1826870200b5d85e20c2152563ca4844"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "4e439461caa12e7616e71bdd211dd8ea9aa5561900292df11748259a40712ca5"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "4a14e15c37b36c9df5389c0611cd52f25664eeedf60d644abd63cde2fae7a390"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "fb8b3e52cb7d5ccda9daf876a2f1fab64fccb98782b70463dd99214ec9029e71"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "2bea43d7ee3a3fc3341f008d4159ce23baa16c8ce2bb546ccb670504cada2cbf"
+  },
+  {
+    "year": 2023,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "1955a01d096b6588503a8cf6021be11de892d58f6e97b148f6b0712dec37e332"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 177,
+    "status": "passed",
+    "orders_sha256": "54d64e1c627d1b881f831a5f1d89f9b33a7f52e3fd827fc52873a818d80a1dcd"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 178,
+    "status": "passed",
+    "orders_sha256": "29c2178280eed635d2ca0a40fb5649cd66c5b1c49b13b666c0d98681c8456952"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 178,
+    "status": "passed",
+    "orders_sha256": "b82fa8c53c2502be966d2304f1a07de2780e9c7c7492d508ca1fcfdde65ccb46"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 176,
+    "status": "passed",
+    "orders_sha256": "a5a7bf18249b6fca6de0e431256d9ff52aef3e43277912d696b0198706cf8742"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 86,
+    "status": "passed",
+    "orders_sha256": "72c559d9fd3f1dba84fd042aff0ec4bfbe2b668fda04521c17633694061cba6e"
+  },
+  {
+    "year": 2023,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 196,
+    "status": "passed",
+    "orders_sha256": "4d2ff5d84d2b6d798f257ed208253bc68377965c47c198f2c984b21b50572dae"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 191,
+    "status": "passed",
+    "orders_sha256": "c233dd9e41495e634948a51542c52514caf88ab295fdf3c98b30c2f9a9e86512"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "74de22ba341770459b08c9cdf67f5532c2ea1613bb89ada39d30cceb417e93d5"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 195,
+    "status": "passed",
+    "orders_sha256": "2067e8aba687a2ab3c7eb706b49d128e23650e0b8884afca0fceee21d7aa82b6"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 192,
+    "status": "passed",
+    "orders_sha256": "e99ff163be9e258d5f647eb559dca3a5fb0a1bec4b90847bc2721583be1b8bf0"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 156,
+    "status": "passed",
+    "orders_sha256": "24202ff363df8f83e05ae628e24078cc72687fcbfa31b4da3f3949c515a31d2a"
+  },
+  {
+    "year": 2023,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 196,
+    "status": "passed",
+    "orders_sha256": "5251d10f4775a9b3a6742ed1278da6a0c052f7950dfe42d086a10be2e5b463d3"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 41,
+    "status": "passed",
+    "orders_sha256": "713055e8b38d985f765be19b48ef141e44f11fb9724a61881765d58a08d65edc"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 41,
+    "status": "passed",
+    "orders_sha256": "9c97b5f1bf0d91b81ed941c106b8c8aa62fd069ed7ac4a8508a80ad848967c0d"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 39,
+    "status": "passed",
+    "orders_sha256": "b4b8b691eacb04549d2b60a3c3f8b1b475dacad849c75eaa66ec172c52e381e3"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 39,
+    "status": "passed",
+    "orders_sha256": "392abfe922076d9783927dc8e28490cec1e236413b848a25fe898d5dd09e2b26"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 40,
+    "status": "passed",
+    "orders_sha256": "b208a3307ededf70b530ad4710a111ccb050de48d1f44d08cc4ba6b024fbcab8"
+  },
+  {
+    "year": 2024,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 41,
+    "status": "passed",
+    "orders_sha256": "9649fc3ac7c384c6a3898e5573cf89ed938ca341de801994aab92076cbf46bfc"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 67,
+    "status": "passed",
+    "orders_sha256": "2f83a935e128e676eb73e260cd98affbc0c312905c59b0e7ddfaa7954e195aab"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 67,
+    "status": "passed",
+    "orders_sha256": "7424d352fa3109fb01c2e4424782e2db849e1bff8a086027c5e7bdd49d6aba70"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 67,
+    "status": "passed",
+    "orders_sha256": "84d659c1ac8565ecd8c14b35871eceb3ea6f7cbcd0bb626d3e21c7f51ddddc05"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 67,
+    "status": "passed",
+    "orders_sha256": "86bbdda2554452688e9cb3404f8495815ed0b8d8748fcb3afe02a1f553abd71b"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 65,
+    "status": "passed",
+    "orders_sha256": "757fb429c7345112ae718f4f4579bb8bef0c48748b53b33b001c44de7effa983"
+  },
+  {
+    "year": 2024,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "65af689ea1ff169feee92ee06f1cee65330171b261d8968094d0ad0530185f22"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 97,
+    "status": "passed",
+    "orders_sha256": "a1856bb680de25072c1bc37f94a409260a36990004df8a6ef2e226ded6d52d29"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 97,
+    "status": "passed",
+    "orders_sha256": "45acb07414411166c85bcd8ba43d4ecc0cd6daee7f66d6168f22715aee0a1ba1"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 94,
+    "status": "passed",
+    "orders_sha256": "75998b19695be67c1d66cd772e5f44c77bcf58b2db393d424f37f70bc6102a72"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 97,
+    "status": "passed",
+    "orders_sha256": "29edc19e79b9979d62287c9a6d4ff121734659362bb9a41c540518bbd4a7decd"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 97,
+    "status": "passed",
+    "orders_sha256": "d4f78e87667ae534da5c90b218a0b19f1a265c3ee53b6e1073875fdd44b60af3"
+  },
+  {
+    "year": 2024,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 97,
+    "status": "passed",
+    "orders_sha256": "a6e78329d159f94655c2dc71c291cbbc8f51bcca3b0c4a8a9af55e2daa6a07f5"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "129017e616120e447600b8bbd0df8b8528c8c617bc72247123bb5bd8f81b8794"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "5cfa1daa24077f79c8c006c542bb353d13d2dadcb10b25e20678752608f06efe"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "6cc2dc35142c44dc817306dca768f0cf1d8c9db10a3d61d6f5580f54260bb523"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "3d4de689e05a60d61f6276d9574b2a9e1ff0ede5549896e929e370e67e4a3c9a"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "9dba1089ffe58caaad4fd30c2003bbe63125e46bc99b9bfef4d40c503a2d6406"
+  },
+  {
+    "year": 2024,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "97d35044f8908e22c32f5844da390675e31c96b18a3fd51c77d03e802407512f"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 81,
+    "status": "passed",
+    "orders_sha256": "c9518145ded2f997eef0ea4fbc669be8d62888921743dae0dca2fbdef31d79ff"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 82,
+    "status": "passed",
+    "orders_sha256": "10337ce91551874524862b03eb168a540ee6d97110edbe02ea2c822bf77fe731"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 79,
+    "status": "passed",
+    "orders_sha256": "d32c34eb86c19f495a7bb8e5f698af0722876ddded8ed31ea942242575c439e3"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 78,
+    "status": "passed",
+    "orders_sha256": "9000a256e6772dab79db8d12db01cf37c02c2e8f07c3d83696ed09edf9cf849a"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 75,
+    "status": "passed",
+    "orders_sha256": "28c2c2f216270fd393b82167480e8d0805a3957899fb468d5d9584a9220aac4f"
+  },
+  {
+    "year": 2024,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 81,
+    "status": "passed",
+    "orders_sha256": "c00bc2917975c1acab8ed746a9aac4259483fa721aaba669a869a31c61adffd4"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 136,
+    "status": "passed",
+    "orders_sha256": "45ab8d79ec95fed4675b70ef7f6b0b17b16a2c6f187195e5df47c3d1f79b231b"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 135,
+    "status": "passed",
+    "orders_sha256": "2ccaa14dc54f3164bac61f666fb5c4ecba00970e435869f390a0540c66a00b3d"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 138,
+    "status": "passed",
+    "orders_sha256": "0cff07fe6a2d45e143ea3179036b30edf60cc335b9a86692e305fee71a200fff"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 133,
+    "status": "passed",
+    "orders_sha256": "3fbd5f84975d57520cba2d292a24f5334c0aa2818cf323bbc4084479137ad2fe"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 106,
+    "status": "passed",
+    "orders_sha256": "e893daadd2e8db2e2f680b3ccd05ebae1bb2f9cc67b8580651c4aa56bf9396db"
+  },
+  {
+    "year": 2024,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 154,
+    "status": "passed",
+    "orders_sha256": "6a118415e97b709197d0f31c4a7ec6afe4e227d3d18d1f5131efc57ca23d3746"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 136,
+    "status": "passed",
+    "orders_sha256": "45ab8d79ec95fed4675b70ef7f6b0b17b16a2c6f187195e5df47c3d1f79b231b"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 135,
+    "status": "passed",
+    "orders_sha256": "2ccaa14dc54f3164bac61f666fb5c4ecba00970e435869f390a0540c66a00b3d"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 138,
+    "status": "passed",
+    "orders_sha256": "0cff07fe6a2d45e143ea3179036b30edf60cc335b9a86692e305fee71a200fff"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 133,
+    "status": "passed",
+    "orders_sha256": "3fbd5f84975d57520cba2d292a24f5334c0aa2818cf323bbc4084479137ad2fe"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 106,
+    "status": "passed",
+    "orders_sha256": "e893daadd2e8db2e2f680b3ccd05ebae1bb2f9cc67b8580651c4aa56bf9396db"
+  },
+  {
+    "year": 2024,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 154,
+    "status": "passed",
+    "orders_sha256": "6a118415e97b709197d0f31c4a7ec6afe4e227d3d18d1f5131efc57ca23d3746"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "373b342ae4f04be157015d6f413d8ccd71a0a8bc8a761d6981bbb5cdc58b82c3"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "b7a3fe5c74d21d1573cc040900a4d47281830f7f4a5c6a4fa5847b9a1fa1e78b"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "b8498eaec4d1150da458f2df3551ae23d59f3c13e069c06a0bd4d329a8d93f9a"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "bf3a8751c427b58fcd94453e7ad14deb85a6c23df0f4127d684de10711a26406"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "b2baef1c34687eb93ca9a1e976416921ccadb90060311a3e423d5014ab149499"
+  },
+  {
+    "year": 2024,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "7e04ca9db6b32fe5a86c01d019f8e7481d03a1e0aa01d38fe3ed025c9ea1f890"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 187,
+    "status": "passed",
+    "orders_sha256": "2820f6d3570f2f1a5c1c1990fab4f4fdf4ab4df461c91a3e2a4675ca3e7b4b64"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 185,
+    "status": "passed",
+    "orders_sha256": "74333c6a259dac4982e2464bb8c8e2609d735adc8a428bd87062d21d1699296d"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 190,
+    "status": "passed",
+    "orders_sha256": "e0863bee90d26a1db12bbaeb6771d5b2bf36e0442dbc5335c7120fb8823ee5a0"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 187,
+    "status": "passed",
+    "orders_sha256": "404e748ec36e0dbdcf6ca1070f9fcdd827df812b94f035098951dcde3cad6f24"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 129,
+    "status": "passed",
+    "orders_sha256": "83c0f00866ae344eb7d7f2f68b5a75e2df5ada23843afea43939f90e86779fd9"
+  },
+  {
+    "year": 2024,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 196,
+    "status": "passed",
+    "orders_sha256": "463c941be8e783514ccd4efd1c680a7f93672991179052df766ada91a83f7f46"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 189,
+    "status": "passed",
+    "orders_sha256": "d258dc521cbdecb5171f404cb683fb2e89969c6d05c07f44be4ddca8a169db53"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 191,
+    "status": "passed",
+    "orders_sha256": "27c2f51e501306f562c57b92c89924d53df09afeec38b92cb7947bdaff356f5c"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 189,
+    "status": "passed",
+    "orders_sha256": "a11ff731c8f6cdb59e410e66d1334efc87946d1098e0f74c3ca99a61b3bb1f96"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "e025c371fc07217f53bf374d1354d1a9cbe24e74e0fabe2110241a074601c763"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 148,
+    "status": "passed",
+    "orders_sha256": "bdba8190b902453c954e8569c33f83157c78fa25c2067d5d5db25edcf58af019"
+  },
+  {
+    "year": 2024,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 195,
+    "status": "passed",
+    "orders_sha256": "f826df5c3c2a5475f083f8f1531ae1f5004776c1ff22631c7920f1cf51d94345"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 46,
+    "status": "passed",
+    "orders_sha256": "0bcc55cbd68161981e164f8c7151dc13431e5aab9be6f100d6358239fb7648cb"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 47,
+    "status": "passed",
+    "orders_sha256": "5ac07827642299fe9b6652353b2165fa97c8223e2e9b6639f401bdad752609dc"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 45,
+    "status": "passed",
+    "orders_sha256": "06024cf13ff37d663f217ff4288bb485e310921d5e45ea30df4145cdff180133"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 44,
+    "status": "passed",
+    "orders_sha256": "40830025d8cc2ba748f36b049c9b9b4d4370ef02a47fbb477ec8da5d5b1563fe"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 44,
+    "status": "passed",
+    "orders_sha256": "e8cf45cfb823e4de33389a83619e0a69790afdc955d8574b33332169db0c876e"
+  },
+  {
+    "year": 2025,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 48,
+    "status": "passed",
+    "orders_sha256": "4b6e8cfba177b10058fd972e71c8919e6d867fc848e894f9ed0e1a953e9a89c0"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 72,
+    "status": "passed",
+    "orders_sha256": "f12caa093132101b0db99520abfd0f05a72026ea2ae547b86e745fc38b1c10c4"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 73,
+    "status": "passed",
+    "orders_sha256": "2c3c7e66ceea87402d58e6e72c7a01e756747f6eeb6076a925543fb287940c33"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 71,
+    "status": "passed",
+    "orders_sha256": "f9bcc1b1a09c4cf5d2a11e555fc9b6a2ac45da249bb8174dcc2f24c5914ad3b2"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 65,
+    "status": "passed",
+    "orders_sha256": "afd22fc75174a773fd9c1008af19816f2a12d03cd3f8150cd44b657bc1151da6"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "fa4989805f3597a204dd1d3046156ce809c82e1a2d7a6e24519f5138112c66eb"
+  },
+  {
+    "year": 2025,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 71,
+    "status": "passed",
+    "orders_sha256": "72802a40e4799c90331dd9b00d435ed445b686a4c75c97eb623e4039c1d98979"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "3482b78cff39fb89f4f5c471c6aa514f195a6eb8562866e5ca954a41b438e57d"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "859bb7644feffe52d4408769e0aa72dec43de12b721185b23bf82ccb9b344230"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "9945392f39cde3abd5b173e30b993b9d51463f3663181d8227cb6c265794b631"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 123,
+    "status": "passed",
+    "orders_sha256": "1a06c22ee8ec7761a5bce2c99aac66787cf41cdcc077581558f7edec843546eb"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 121,
+    "status": "passed",
+    "orders_sha256": "5259446af412f5196ea2f57eb88044ac5cb8e565495e52ce5a11dd20e1b5e12a"
+  },
+  {
+    "year": 2025,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "a7ff33ca871235d4872e8130b8f404741789ae3a023f06ed7a288a7706c65c4a"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "2ac2813c35868b9b54dc4439acff8828a359f7247eedeccb4385652b40e72089"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "4e7b8d963a6f184cf5cb4382eab8affdff3c4955f0a496d0aff43dc0990e7c90"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "fdc0e1182a84c9ada46557e1d2c5088bd87cb02af0dddb4e9431cbc6abcf7a66"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "0fb09997d57d054c98b1640c3073c83b4a7c2ffe11f062891c678c920a3df6f4"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 122,
+    "status": "passed",
+    "orders_sha256": "0cbd1125e0e2b343a03ec3395d2cb9cbd3f3920eb63d98e75afe32cff112782a"
+  },
+  {
+    "year": 2025,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 124,
+    "status": "passed",
+    "orders_sha256": "07ab8775a00aaae37a54768c618ec9074fe4958ba9c7c05f499e5e636b28c915"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 91,
+    "status": "passed",
+    "orders_sha256": "2055bcdcd0373a77bf38e03bcacbabb9489ccfa19070a506e26c9bc15c407a80"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "0dfbfe4af8c0c3351141db4501843690bed4e67f6285d1abf7212214e4337c65"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 94,
+    "status": "passed",
+    "orders_sha256": "e85cf01d367b9ade886874861fc61f2d214822467e18fc633480290f78945db4"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 93,
+    "status": "passed",
+    "orders_sha256": "da574613f45ae1f905a64db465b6a25b16a974dae783385836b0613b482f1171"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 89,
+    "status": "passed",
+    "orders_sha256": "d4456937da634449e130cd1352f1fd6b9abfc2771c3fdda5866010302fb65b65"
+  },
+  {
+    "year": 2025,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 98,
+    "status": "passed",
+    "orders_sha256": "3f4c83133ae4557ce2c5c2da4c95585fb0415ef14ad59f794c09f3afc88c1262"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 140,
+    "status": "passed",
+    "orders_sha256": "cfb146b1b5ff481b239f1491e8f4d88099bf6df7c5e20d6662f9ef6b83de2af4"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 141,
+    "status": "passed",
+    "orders_sha256": "b10d4062eab423978d8e63fe292a594a42754fdb9ed44444bc12e9478399e836"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 140,
+    "status": "passed",
+    "orders_sha256": "cc91ee402f44bda3fcd0a266fbc904b3f117b1968ac66d5bdf75583035b2dd0d"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 140,
+    "status": "passed",
+    "orders_sha256": "a97554daf53b9e5f56ebe0d79675cc027f20d693a90a866b760c1e6a4d7c0cb0"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 122,
+    "status": "passed",
+    "orders_sha256": "1d317738f3361c52244798f8dfbe93469f8e42e4dd487a40a3bc9350524cac6a"
+  },
+  {
+    "year": 2025,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 148,
+    "status": "passed",
+    "orders_sha256": "5aba926f4a8ed076bb2d49ba2ce2e31d50d7cbdfb8c858031b3fa8b55cc8c0bb"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 143,
+    "status": "passed",
+    "orders_sha256": "798a2258db5cd15af2ab93732394ebcc3db794c3c799dc9593a4c9d92275ac02"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 149,
+    "status": "passed",
+    "orders_sha256": "60ac746640cb6feebeda75bce7d6de7a4f5ae6a4399cb69cdf5e809e90130417"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 143,
+    "status": "passed",
+    "orders_sha256": "9080418345016d3dc234b1044cdd80364c793a0659f0c7f486f67c81b9492a4b"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 145,
+    "status": "passed",
+    "orders_sha256": "84fe3e1d54508d3d7108bb0a624170334dfc5fea25d54a29b143b1162bdda507"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 130,
+    "status": "passed",
+    "orders_sha256": "3c7b4cd57db03e010878bddc0757e9cd0eaa2843f6c9bb0972a1063fcaad937a"
+  },
+  {
+    "year": 2025,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 147,
+    "status": "passed",
+    "orders_sha256": "6e78f7f85a407a4d469c77568c24564a9fb305e8065d8446da2d293a793d2bd3"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "5d9cc0aaa417aa59ed7350f22a031d1cb2f1ad32cff5bc35a0744d28b533ef19"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "68c3e85c9433706f43baf88c673b69ff30fb5f70765be7d36b7886eaf681f817"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "90a2445204a3da1c4bd2f29447935dbe0687908b0c3baf343f779bca97852fe4"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "e04b0ec1641ff169eba36122122154bd2aaacfee9133b4389d463093e83e6fd8"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "6ceddcc4361d7daf02c5cdbd924e23f8608fa72cff305b493058c2bd68e33ec9"
+  },
+  {
+    "year": 2025,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "b23ab62f60e9766d47617e12a3e159f084f997b7da0b89e0c5c2105db16785a0"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 183,
+    "status": "passed",
+    "orders_sha256": "0ed3bfe4c6e8e582c960380c87d55837fa0a8447c669a43b3fa83b70a63a9194"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 180,
+    "status": "passed",
+    "orders_sha256": "c609e81599113fc01229b563291887d449f0d3b9d57a87b6b6f0419ca9871c59"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 181,
+    "status": "passed",
+    "orders_sha256": "b9096f9c02cde9cc1d2a7e9bff5d59849feb366ebf6f50279b543ab40fc483f4"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 179,
+    "status": "passed",
+    "orders_sha256": "99c7b4c5bbc02d8f651cd07c29e8480162ba8946ce9c3d741486ac5d6c21879c"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 102,
+    "status": "passed",
+    "orders_sha256": "fbc366dcf87c4b9d5d5f105c94cdac5c0716794d2ae75cade8c3bfb5b5a8c15f"
+  },
+  {
+    "year": 2025,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "7f994a983fc54740441e7fdf9e0e4c18afbd7ec012ddbd1880533ae06251b45f"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 192,
+    "status": "passed",
+    "orders_sha256": "85befe057894ea02dabf80b531347acc36377bd94255bdd480034453f5de633b"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 193,
+    "status": "passed",
+    "orders_sha256": "4c6502320fac438e02f7d4762117a021bfa4bdf74e496bcaa06da51d5405db82"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 191,
+    "status": "passed",
+    "orders_sha256": "da1bbb88af0b96187696deb0032632a5fc6a3fe2567de582c14e2eb252e84a9c"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 192,
+    "status": "passed",
+    "orders_sha256": "43fef321bb59987f3b26d94500c4e9cfa192a91c98e9a3d66d9ae30f33aacc1f"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 158,
+    "status": "passed",
+    "orders_sha256": "2a092444dd818b1cdb5b7cf696a03913b6e4c01c375a20710b292853eb5495b1"
+  },
+  {
+    "year": 2025,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 195,
+    "status": "passed",
+    "orders_sha256": "b77f2a7490579e51348a0dff97b051567fbc97d580164d5b6eea51fa92f36836"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "primary",
+    "orders_rows": 35,
+    "status": "passed",
+    "orders_sha256": "28c409d51c2a5721ea10eff8b904d2ffe7439d06e2756c42b41a076bda73159f"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "free",
+    "orders_rows": 35,
+    "status": "passed",
+    "orders_sha256": "3c1ba5b8033339d6aba609fc17d5dd9763e923009de5a20a0a699ebf2a66b949"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "slip10",
+    "orders_rows": 34,
+    "status": "passed",
+    "orders_sha256": "d56f394ea1bc1d406036eeab155ab1c63215e9e956f59d6c0cc0bfb5b20870d5"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "slip20",
+    "orders_rows": 35,
+    "status": "passed",
+    "orders_sha256": "ab6829350c23617d27373edbfb26d06c4ea86c9ccc39d558543709b71ac5c75d"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "small_account",
+    "orders_rows": 34,
+    "status": "passed",
+    "orders_sha256": "af92f43ad41a696874096c2bd841bb7656245161fe7df35b505d16810c1a56f7"
+  },
+  {
+    "year": 2026,
+    "family": "legacy_discrete",
+    "scenario": "large_account",
+    "orders_rows": 37,
+    "status": "passed",
+    "orders_sha256": "9e86a77e123f4a2950075040c722058867e2e4444b33ad8237cf420cd823b192"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "primary",
+    "orders_rows": 54,
+    "status": "passed",
+    "orders_sha256": "9620ce6bec7c48f99419c9363f45e614c692264b39bbaccd92a1f9dcb6d4beda"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "free",
+    "orders_rows": 59,
+    "status": "passed",
+    "orders_sha256": "76bb65a9885859692839d22789f25b5980d43e0ac0909d1d3bda3f3701e011f7"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "slip10",
+    "orders_rows": 55,
+    "status": "passed",
+    "orders_sha256": "704959a336b9a51c557c559034c1b83cf4e5a15c43652d1e45f905f96de001f4"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "slip20",
+    "orders_rows": 53,
+    "status": "passed",
+    "orders_sha256": "ee164117cd08a905636737179b08f5020a7575096a0d4035d67608cad94576b0"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "small_account",
+    "orders_rows": 55,
+    "status": "passed",
+    "orders_sha256": "18b8a27a20605556188fb2e0a086991e9dc4ec8cef8b0c3ec35635b6c6b4f44e"
+  },
+  {
+    "year": 2026,
+    "family": "sample_mv",
+    "scenario": "large_account",
+    "orders_rows": 51,
+    "status": "passed",
+    "orders_sha256": "264b7148bcf5bd36e033702ef014a2cc1d4131d42c06dd1ed77e24b29e604226"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "primary",
+    "orders_rows": 59,
+    "status": "passed",
+    "orders_sha256": "bf6ab27b28a66ad68682f1d49b11e4fc95ece8ea42f3fd0f5b91ffcad03a9451"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "free",
+    "orders_rows": 58,
+    "status": "passed",
+    "orders_sha256": "40b293d4019e5aa05ca0b179b5a2178f50eb46379a6ed5cc4941b2d3f38a405f"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "slip10",
+    "orders_rows": 65,
+    "status": "passed",
+    "orders_sha256": "9eeae0c701cf32bd65f168d58cd35d5d6dd11290cfcf07f322e83eb52c7a4006"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "slip20",
+    "orders_rows": 66,
+    "status": "passed",
+    "orders_sha256": "a24ac789e8f5ab13643016f77ad870750a417fbbfd8a5c15422ab0645231956d"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "small_account",
+    "orders_rows": 65,
+    "status": "passed",
+    "orders_sha256": "f4b37d2b225b82205be7feaa183a49ddefb830b0e26c796f16a5d68c9926f418"
+  },
+  {
+    "year": 2026,
+    "family": "lw_mv",
+    "scenario": "large_account",
+    "orders_rows": 67,
+    "status": "passed",
+    "orders_sha256": "792438944831bdae0c3810b39e9062d0792b24484654aec2567b205e2f42c0c0"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "primary",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "cc8895788b7da815ded1a0b8831f6d0d71024f16ca5c0fa1e5421be6ec239700"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "free",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "10b9bd7ad32bcba8230174c79071752ed95c88ffc8dd6a19d4aa65a07b872498"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "slip10",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "6661a84ac4c870da1ac60ad0d4b770d010f4c9f9e5597cd2a09abc452450ae0a"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "slip20",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "3e7ef7da148c36b07f1bb4a095a6934f65f440456f8e196547b2e6a028780ee9"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "small_account",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "ac53bd6a6f64cf986fe6e4a85e48b39384627690fb7b4e13a6fb2a9c8bde6aac"
+  },
+  {
+    "year": 2026,
+    "family": "lw_shrunk",
+    "scenario": "large_account",
+    "orders_rows": 68,
+    "status": "passed",
+    "orders_sha256": "e71c3657db38facbffd13b33fac30adefcb84df1ab89e3870d561368c47e1ff0"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "primary",
+    "orders_rows": 62,
+    "status": "passed",
+    "orders_sha256": "23cf217fdb9afb681e42f6ea887d045843f1d2ae37eb9c944ee04fb0cc395f16"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "free",
+    "orders_rows": 63,
+    "status": "passed",
+    "orders_sha256": "11fd479e40d9ce2851c4eec30f14efa832a5c98ae569370353ba30798708b74a"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "slip10",
+    "orders_rows": 65,
+    "status": "passed",
+    "orders_sha256": "518cd9e1b9967180591e85915f0a9cc70610f20ff0c83e96a393aabb97ffb6e8"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "slip20",
+    "orders_rows": 64,
+    "status": "passed",
+    "orders_sha256": "dbfedee44231ca36973a27162730e62bac924f05212540b04e6a17e7a69838ea"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "small_account",
+    "orders_rows": 59,
+    "status": "passed",
+    "orders_sha256": "15611387b0dda202b87a33152015de012c63d2810b772552b40d566c572f8f0e"
+  },
+  {
+    "year": 2026,
+    "family": "lw_cost",
+    "scenario": "large_account",
+    "orders_rows": 66,
+    "status": "passed",
+    "orders_sha256": "0eb191c894d2598a4cb0de917b0250f9f12acb05db8e05c4ab6aa70397233861"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "primary",
+    "orders_rows": 120,
+    "status": "passed",
+    "orders_sha256": "6b9c790a2e0f3e2d39b55d3cb9f8f47c5504bbd1c70fa6221fa5a5b250968436"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "free",
+    "orders_rows": 120,
+    "status": "passed",
+    "orders_sha256": "f47259edcbd84d852dd7f0ceeacf43720c12a15792e285befe921114fa269449"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "slip10",
+    "orders_rows": 119,
+    "status": "passed",
+    "orders_sha256": "309b421b77dcf542129fc201d7d669d51da14514f060a5e4bbde9531f13c80d3"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "slip20",
+    "orders_rows": 120,
+    "status": "passed",
+    "orders_sha256": "7699570202d44070179acba3d4fe7bed456e8dfa8b7a22dd533cf6db484bcfd9"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "small_account",
+    "orders_rows": 104,
+    "status": "passed",
+    "orders_sha256": "4ef7386e786ed7573093217aff021405c41ba628ecdde6971b7dda59b01f0315"
+  },
+  {
+    "year": 2026,
+    "family": "lw_partial",
+    "scenario": "large_account",
+    "orders_rows": 130,
+    "status": "passed",
+    "orders_sha256": "7272a8933d41bb74c0c36545439791f16e903058773f1e779d88679f91b3f392"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "primary",
+    "orders_rows": 122,
+    "status": "passed",
+    "orders_sha256": "5a9d6ff4dc9bea4d4d602efedd0d328c1a77c25127fd7b6bc12cc39e13e90339"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "free",
+    "orders_rows": 123,
+    "status": "passed",
+    "orders_sha256": "4f1e1996ec632a0b9e5951df6eac9af9de5e0767b5a35e8775e3f8c263b29c1d"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "slip10",
+    "orders_rows": 121,
+    "status": "passed",
+    "orders_sha256": "f0fb80cc49e17ede0deae0eb3cfbc77f7b3fad8e984404fa848bfc97948d429c"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "slip20",
+    "orders_rows": 122,
+    "status": "passed",
+    "orders_sha256": "d4836778acd2cec186701ab9f815830ad81fd51814b4d9214242a446123d3ad8"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "small_account",
+    "orders_rows": 103,
+    "status": "passed",
+    "orders_sha256": "8b31628821aa6b0c1cecac3e95b8b6413f1503f0491b6e4f017730ff83c94ef3"
+  },
+  {
+    "year": 2026,
+    "family": "lw_variance_managed",
+    "scenario": "large_account",
+    "orders_rows": 132,
+    "status": "passed",
+    "orders_sha256": "13fcf75114678d35e2434284fd3f3823b235822e8c55f46dce0f2d8e122a17be"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "primary",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "free",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "slip10",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "slip20",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "small_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "cash",
+    "scenario": "large_account",
+    "orders_rows": 0,
+    "status": "passed",
+    "orders_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "primary",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "98684e50c8e113740f4405d61a9aa171eed06386cea46db944d6a777a663ef70"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "free",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "fe3b55c123282d4cfabdce558a55745237ade576a9144ea31081117153e00d9b"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "slip10",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "18212874e934ae4a1e8474363e6aa4ae74e21a8c609d07a812c4a21b0f733e7f"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "slip20",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "6b11e13ab9730981bb9de28a80fabf2905cdc0cb8bb94a5000de998de593992a"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "small_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "18a66d2665cce7fa29af8f1613b92be0c1982ea1685d2c8ff305e6fe43eef3f9"
+  },
+  {
+    "year": 2026,
+    "family": "csi300",
+    "scenario": "large_account",
+    "orders_rows": 2,
+    "status": "passed",
+    "orders_sha256": "940ee3fe804ac295ce16f53c076c11b94eb4eaf94653a72333ed3f48db3dfae4"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "primary",
+    "orders_rows": 153,
+    "status": "passed",
+    "orders_sha256": "a02869cfabafab8416fdab315efa20cf2d448273a5680e8a22b035e2587b99f5"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "free",
+    "orders_rows": 151,
+    "status": "passed",
+    "orders_sha256": "8055a1c06170c22fa6f63c6698f7aaa9f377e8c4cdcdf80b39c341852b2ebde4"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "slip10",
+    "orders_rows": 151,
+    "status": "passed",
+    "orders_sha256": "e513acee5a5487cf8b8259937d19305981b22eac2c7de8c8f4fa35353e1d53ce"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "slip20",
+    "orders_rows": 154,
+    "status": "passed",
+    "orders_sha256": "02f6b0e8d68adfa4928f22039346f3b9cec2eb650b18f31bfe0d8fb089ed49e7"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "small_account",
+    "orders_rows": 94,
+    "status": "passed",
+    "orders_sha256": "4f4d48740bc275268459505380ca930fb141a428a33aa85e90ce87f355f9f8e7"
+  },
+  {
+    "year": 2026,
+    "family": "equal_weekly",
+    "scenario": "large_account",
+    "orders_rows": 159,
+    "status": "passed",
+    "orders_sha256": "0bfa50f91ee5a936f73e6717d5c6821699c642c5ff5921799d11f8734ba47c70"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "primary",
+    "orders_rows": 154,
+    "status": "passed",
+    "orders_sha256": "1b0ba80db97a234e67e66e87af0b3496f36a5d48e7c4f1ac743e77e8e4462c3d"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "free",
+    "orders_rows": 152,
+    "status": "passed",
+    "orders_sha256": "9cdffee9fe546e4226e3f6ff84752ed3aa005811c41fb7ee4477fe84b0001648"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "slip10",
+    "orders_rows": 153,
+    "status": "passed",
+    "orders_sha256": "9984e5a5f1a973879956c564d0734db160c732cefda137f451113bfd026ec8f3"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "slip20",
+    "orders_rows": 152,
+    "status": "passed",
+    "orders_sha256": "9b82a67d3c83e8c0fd05cca2484baf8a601f41d81664ad5bbafdbae73ac4aa8e"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "small_account",
+    "orders_rows": 115,
+    "status": "passed",
+    "orders_sha256": "d265c13b358ba71ee39bdb3752074bbded31f7e9671c44876de727e84e552398"
+  },
+  {
+    "year": 2026,
+    "family": "inverse_volatility",
+    "scenario": "large_account",
+    "orders_rows": 160,
+    "status": "passed",
+    "orders_sha256": "3099203eaa5da251d747754fdad3fb484b15575a42954e0d6d28b5a2ef9415a9"
+  }
+]

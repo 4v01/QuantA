@@ -1,46 +1,47 @@
 # QuantA
 
-[QuantA](https://github.com/4v01/QuantA) 是独立于 RecRankLab 的A股日频量化研究仓库，研究模块名AlphaContextLab。固定研究4只境内股票ETF，没有券商或实盘下单接口。全部实验记录代码提交、数据版本、候选、配置和随机种子；失败结果不删除。
+[QuantA](https://github.com/4v01/QuantA) 是独立于 RecRankLab 的A股日频研究仓库，模块名AlphaContextLab。固定研究4只境内股票ETF，没有实盘接口。代码、数据指纹、候选、参数与随机种子均记录，失败和负结果保留。
 
-## V2：收益有改善，预设确认尚未通过
+## V3：论文指导的风险与成交改进，尚未发现可靠新α
 
-借鉴 [CogAlpha](https://arxiv.org/abs/2511.18850v4) 的有界因子演化、[XALPHA](https://arxiv.org/abs/2607.08332v3) 的研究记忆，以及 [X公开代码](https://github.com/xai-org/x-algorithm/tree/3b6919f87532e57063bb3f1e85c2f509323b513e) 的候选/多目标打分/过滤流程。缺少Level-2数据，未实施MicroTSM；没有复现这些系统的完整LLM、代理或生产架构。
+检索并审查8篇相关论文，加入连续凸组合优化、Ledoit-Wolf协方差收缩、固定均值收缩、成本惩罚、部分调仓和保守逆方差缩放；保留等权与旧式匹配控制。文献也包含波动管理效果不稳定的反面证据。
 
-35次最终拟合、85次候选拟合，比较基础/静态因子/演化因子Ridge、双头HGB、3种子的双头LSTM。按验证成本后效用选出的冠军是**基础Ridge**。相同预测下匹配对照每日/每周调仓、风险与成本感知，不能把全部改善归功于新因子或更大网络。
+[文献取舍](docs/V3_LITERATURE.md) · [冻结协议](docs/V3_PROTOCOL.md) · [完整结果](reports/v3/REPORT.md) · [消融与诊断](reports/v3/DIAGNOSTICS.md)
 
-| 预封存冠军，单边5bp | 净夏普 | 年化收益 | 最大回撤 | 年换手 |
+V3按原始报价与分红/拆分事件递推输入，增加登记权益、应收股息、支付日、整手、最低佣金、滞后一日定量订单、容量与价格档位。报价历史版本和精确公告时间仍未认证，不能称为完整PIT数据或真实撮合。
+
+2026-01-01至2026-10-30，虚拟100万元、佣金2bp/最低5元、滑点3bp并向不利价格档位取整：
+
+| 同一预测与账本 | 累计收益 | 净夏普 | 最大回撤 | 年换手 |
 |---|---:|---:|---:|---:|
-| 2021–2024开发回测 | 0.194 | 1.65% | −41.76% | 40.7 |
-| 封存后才下载的2025回顾性留出 | 2.160 | 56.46% | −8.82% | 42.7 |
+| 预封存方差管理方案 | +0.13% | 0.073 | −9.53% | 13.6 |
+| V2式匹配离散控制 | −4.99% | −0.237 | −20.06% | 35.7 |
 
-**预设确认未通过**：相对沪深300的超额均值区块区间仍跨零。2025点估计较好，不等于确认稳定α或实盘可用。仅四只存续ETF、现行复权及连续名义成交近似等限制仍在。
+**预设检验未通过**：三项超额收益区间仍跨零；2026预测R²为−0.076。改善主要表现为风险和换手降低，不能据此声称稳定α。此期为新增回顾性检查，公司行动和少量公开报价信息此前可见，不是前瞻盲测。现金与无风险收益取0。
 
-[完整报告](reports/v2/REPORT.md) · [全部消融与诊断](reports/v2/DIAGNOSTICS.md) · [逐模型预测RMSE/R²](reports/v2/forecast_metrics.json) · [冻结协议](docs/V2_PROTOCOL.md) · [来源与迁移边界](docs/V2_RESEARCH.md)
+![V3净值与回撤](reports/v3/equity_and_drawdown.png)
 
-![V2净值与回撤](reports/v2/equity_and_drawdown.png)
-
-正式源提交：[4bee734](https://github.com/4v01/QuantA/commit/4bee73444c84eb900bc913b99d5da999d3eb0075)；下载2025前公开封存：[acf1d2b](https://github.com/4v01/QuantA/commit/acf1d2b2ebc8a7f8b6f8fce56f03500f1537c621)。开发缓存历史前缀与确认新快照逐项相同，见[获取顺序审计](reports/v2/acquisition_audit.json)。
+正式源提交：[a740f45](https://github.com/4v01/QuantA/commit/a740f453764e317fc0b6a592d84ed0206b56a328)；新行情下载前封存：[1864b74](https://github.com/4v01/QuantA/commit/1864b74e5b67c2cfb5d132fe0fc4d766c25ca73f)。
 
 ## 审计与复现
 
-Python 3.11+，CPU。原始行情和模型参数不会上传公开Git；公开日收益足以重算指标。完整源与数据哈希、35个最终拟合的全部候选和因子池在reports/v2/evidence/；局部检查点文件只保留参数和衍生统计。
+6个最终Ridge预测拟合、18个预测候选、342条政策验证路径，396个账本场景全部保留。12个检查点、114条选中预测器的验证账本和396条场景账本可重放。公开日收益可以重算462行统计；原始价格、逐单价格与本地参数不上传公开Git。
 
 ```bash
 python -m pip install -e . pytest
 python -m pytest -q
-python -m alphacontextlab.audit
-python -m alphacontextlab.v2.audit
-# 以下需要本地复现快照：
-python -m alphacontextlab.v2.audit --local-replay
-python -m alphacontextlab.v2.audit --retrain-one
+python -m alphacontextlab.v3.audit
+# 以下需要归档data/和outputs/：
+python -m alphacontextlab.v3.audit --local-replay
 ```
 
-22项协议测试；V2的70个验证/最终检查点可重放，888行全部成本/消融统计可由公开日收益重算，1个固定LSTM同环境重训参数逐位一致。新训练必须在干净、独立工作树中运行，见[复现指南](docs/V2_REPRODUCE.md)。重新下载若数据指纹不同，应作为新版本，不能冒充原始版本。
+[复现指南](docs/V3_REPRODUCE.md)解释公开算术审计、缓存重放、冻结源复训与新数据版本边界。35项协议/账本/证据保护测试通过；V1/V2归档195个文件保持原样。
 
-## V1保留原样
+年度折资金独立重置，全部方法在窗口结束前5个持有区间计划退出，仍计算完整日历。拼接年化不是实际连续账户业绩，2026也不是全年。真实盘口、公告时点档案和更广资产域仍需后续验证。
 
-V1研究单日收益、LSTM与DeepSeek Engram式记忆，40次最终拟合、84次候选拟合。5bp下普通LSTM三种子平均净夏普−0.351，记忆模型−0.905，没有支持记忆模块优势。
+## 历史版本保持原样
 
-[V1报告](reports/v1/REPORT.md) · [V1诊断](reports/v1/DIAGNOSTICS.md) · [V1协议](PROTOCOL.md) · [V1配置](configs/study.json) · [V1交付记录](DELIVERY.md)。V1正式源提交为`1fa055ba5a44808b74605ae7664636fa31a7bd3a`，归档未重新生成。V2的10日预测R²不能直接和V1单日预测R²比较。
+- **V2**：[报告](reports/v2/REPORT.md)、[诊断](reports/v2/DIAGNOSTICS.md)、[协议](docs/V2_PROTOCOL.md)。有界因子演化、研究记忆及X式多目标排序；验证冠军仍为Ridge。2025净夏普2.160，但确认未通过。V3变更了输入/收益权益定义和交易账本，不能把新旧曲线直接拼接成改善。
+- **V1**：[报告](reports/v1/REPORT.md)、[诊断](reports/v1/DIAGNOSTICS.md)、[协议](PROTOCOL.md)。LSTM平均净夏普−0.351，Engram式记忆−0.905，未支持记忆增益。
 
-V1参考 [DeepSeek官方Engram](https://github.com/deepseek-ai/Engram/tree/fb7f84a21f91223715394a33a1dc24bbfb7f788e) 的确定性查表及门控思路，独立实现小规模二/三元历史状态记忆；没有下载大模型权重。团队背景、语言模型效果和金融α之间没有可直接推导的关系。
+V2参考 [CogAlpha](https://arxiv.org/abs/2511.18850v4)、[XALPHA](https://arxiv.org/abs/2607.08332v3)与[X公开代码](https://github.com/xai-org/x-algorithm/tree/3b6919f87532e57063bb3f1e85c2f509323b513e)的研究/候选/打分/过滤思路；V1参考[DeepSeek Engram](https://github.com/deepseek-ai/Engram/tree/fb7f84a21f91223715394a33a1dc24bbfb7f788e)。均为小规模独立适配，没有复现完整LLM/代理/生产系统，未使用缺失的Level-2或社交数据。

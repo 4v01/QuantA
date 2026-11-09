@@ -1,0 +1,8 @@
+{
+  "raw_quotes_rows": 12465,
+  "ohlc_violations": 0,
+  "corporate_event_count": 30,
+  "forward_adjusted_prices_used": false,
+  "source_prefix_raw_identical": true,
+  "source_caveat": "Date-level corporate actions, not a complete vintage/announcement-time archive; price data remains third-party."
+}
