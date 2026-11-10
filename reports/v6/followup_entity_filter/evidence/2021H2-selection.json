@@ -1,0 +1,194 @@
+{
+  "split": {
+    "train_start": "2019-07-01 00:00:00",
+    "validation_start": "2021-01-01 00:00:00",
+    "test_start": "2021-07-01 00:00:00",
+    "test_end_exclusive": "2022-01-01 00:00:00",
+    "training_label_exit_max": "2020-12-31 00:00:00",
+    "refit_label_exit_max": "2021-06-30 00:00:00",
+    "train_rows": 19544,
+    "validation_rows": 6077,
+    "refit_rows": 25963,
+    "test_rows": 7153
+  },
+  "selection": {
+    "groups": {
+      "fundamental": {
+        "candidates": [
+          {
+            "alpha": 1.0,
+            "raw_validation_ic": -0.009377786718885466,
+            "selection_score": 0.009377786718885466,
+            "direction": -1
+          },
+          {
+            "alpha": 100.0,
+            "raw_validation_ic": -0.01016372401471742,
+            "selection_score": 0.01016372401471742,
+            "direction": -1
+          },
+          {
+            "alpha": 10000.0,
+            "raw_validation_ic": -0.008937539881734746,
+            "selection_score": 0.008937539881734746,
+            "direction": -1
+          }
+        ],
+        "selected": {
+          "alpha": 100.0,
+          "raw_validation_ic": -0.01016372401471742,
+          "selection_score": 0.01016372401471742,
+          "direction": -1
+        },
+        "feature_names": [
+          "fin_roe",
+          "fin_revenue_growth",
+          "fin_profit_growth",
+          "fin_leverage",
+          "fin_eps",
+          "fin_bps"
+        ]
+      },
+      "price_volume": {
+        "candidates": [
+          {
+            "alpha": 1.0,
+            "raw_validation_ic": 0.0781170473158215,
+            "selection_score": 0.0781170473158215,
+            "direction": 1
+          },
+          {
+            "alpha": 100.0,
+            "raw_validation_ic": 0.07977966792206069,
+            "selection_score": 0.07977966792206069,
+            "direction": 1
+          },
+          {
+            "alpha": 10000.0,
+            "raw_validation_ic": 0.052002259186395394,
+            "selection_score": 0.052002259186395394,
+            "direction": 1
+          }
+        ],
+        "selected": {
+          "alpha": 100.0,
+          "raw_validation_ic": 0.07977966792206069,
+          "selection_score": 0.07977966792206069,
+          "direction": 1
+        },
+        "feature_names": [
+          "ret1",
+          "ret5",
+          "ret20",
+          "ret60",
+          "reversal5",
+          "vol5",
+          "vol20",
+          "vol60",
+          "downside20",
+          "range1",
+          "range20",
+          "gap1",
+          "intraday1",
+          "close_location",
+          "volume_ratio5",
+          "volume_ratio20",
+          "amount_ratio20",
+          "turnover1",
+          "turnover20",
+          "volume_vol20",
+          "price_volume_corr20",
+          "amihud20",
+          "ma_gap5",
+          "ma_gap20",
+          "ma_gap60",
+          "trend_strength20",
+          "volume_trend20"
+        ]
+      },
+      "alternative": {
+        "candidates": [
+          {
+            "alpha": 1.0,
+            "raw_validation_ic": 0.007011258994163841,
+            "selection_score": 0.007011258994163841,
+            "direction": 1
+          },
+          {
+            "alpha": 100.0,
+            "raw_validation_ic": 0.0070194262366648,
+            "selection_score": 0.0070194262366648,
+            "direction": 1
+          },
+          {
+            "alpha": 10000.0,
+            "raw_validation_ic": 0.00735208460057808,
+            "selection_score": 0.00735208460057808,
+            "direction": 1
+          }
+        ],
+        "selected": {
+          "alpha": 10000.0,
+          "raw_validation_ic": 0.00735208460057808,
+          "selection_score": 0.00735208460057808,
+          "direction": 1
+        },
+        "feature_names": [
+          "news_count_1",
+          "news_sentiment_1",
+          "news_positive_1",
+          "news_negative_1",
+          "news_length_1",
+          "news_count_5",
+          "news_sentiment_5",
+          "news_positive_5",
+          "news_negative_5",
+          "news_length_5",
+          "news_count_20",
+          "news_sentiment_20",
+          "news_positive_20",
+          "news_negative_20",
+          "news_length_20"
+        ]
+      }
+    },
+    "calibration": {
+      "fundamental": {
+        "mean": 0.009215073226921175,
+        "std": 0.28865185092695145
+      },
+      "price_volume": {
+        "mean": 0.009215073226921175,
+        "std": 0.28865185092695145
+      },
+      "alternative": {
+        "mean": 0.009215073226921175,
+        "std": 0.2886501277547283
+      }
+    },
+    "weights": {
+      "fundamental": 0.3,
+      "price_volume": 0.4,
+      "alternative": 0.3
+    }
+  },
+  "provenance": {
+    "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55",
+    "config_sha256": "a18752744c84fc74e4bc1baff79af064e576b558f296be399e3ec681a16821d6",
+    "data_manifest_sha256": "9fd44c812ed76235c4943f3e471498a35d5283ab041856016101c8274b4fe0e6",
+    "price_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "phase": "followup",
+    "entity_only": true,
+    "variant": "entity_filter",
+    "improvement_sha256": "fb677b5c409673ce4a26c77403a938f2d8605d82822523b9af78354e9f511130",
+    "seed": 17,
+    "strict_pit": false,
+    "availability_mode": "vendor_max_notice_update_plus_one_day_and_news_date_plus_one_day_RECONSTRUCTION_NOT_CERTIFIED_PIT",
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1",
+      "openpyxl": "3.1.5"
+    }
+  }
+}

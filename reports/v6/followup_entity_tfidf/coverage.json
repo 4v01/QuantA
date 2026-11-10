@@ -1,0 +1,13 @@
+{
+  "candidate_symbols": 60,
+  "mapped_symbols": 58,
+  "calendar_sessions": 973,
+  "panel_rows": 56434,
+  "eligible_rows": 52688,
+  "excluded_rows": 3746,
+  "minimum_fundamental_fields": 3,
+  "entity_only_news": true,
+  "strict_pit": false,
+  "retrospective_reconstruction": true,
+  "paper_admitted": false
+}

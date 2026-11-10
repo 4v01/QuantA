@@ -1,0 +1,12 @@
+{
+  "unit_tests": 74,
+  "public_arithmetic_audit": "passed",
+  "local_replay": "passed",
+  "prediction_rows_replayed": 214996,
+  "curves_replayed": 60,
+  "checkpoint_sets_replayed": 8,
+  "old_reports_and_first_pilot_unchanged": 319,
+  "strict_pit": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

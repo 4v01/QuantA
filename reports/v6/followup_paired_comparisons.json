@@ -1,0 +1,38 @@
+{
+  "entity_filter": {
+    "alternative": {
+      "paired_days": 237,
+      "mean_delta_rank_ic": 0.002830728702043551,
+      "block_ci95": [
+        -0.027698847445997918,
+        0.03563620679934662
+      ]
+    },
+    "fusion": {
+      "paired_days": 237,
+      "mean_delta_rank_ic": -0.0009781028519702994,
+      "block_ci95": [
+        -0.01836205655771495,
+        0.018619294405732848
+      ]
+    }
+  },
+  "entity_tfidf": {
+    "alternative": {
+      "paired_days": 237,
+      "mean_delta_rank_ic": -0.009524002990903571,
+      "block_ci95": [
+        -0.07464511836215379,
+        0.0533115578954489
+      ]
+    },
+    "fusion": {
+      "paired_days": 237,
+      "mean_delta_rank_ic": -0.007552346133839538,
+      "block_ci95": [
+        -0.043163631633752746,
+        0.02529139412465646
+      ]
+    }
+  }
+}

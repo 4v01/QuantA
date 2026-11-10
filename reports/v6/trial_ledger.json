@@ -1,0 +1,20 @@
+{
+  "cases": [
+    "pilot",
+    "followup_baseline",
+    "followup_entity_filter",
+    "followup_entity_tfidf"
+  ],
+  "folds": 8,
+  "groups_per_fold": 3,
+  "alpha_candidates_per_group": 3,
+  "validation_candidates": 72,
+  "final_group_refits": 24,
+  "selected_training_refits_for_calibration": 24,
+  "seed": 17,
+  "improvement_directions": 1,
+  "followup_variants_including_component_ablation": 3,
+  "no_2021_based_retuning_or_champion_replacement": true,
+  "strict_pit": false,
+  "paper_admitted": false
+}

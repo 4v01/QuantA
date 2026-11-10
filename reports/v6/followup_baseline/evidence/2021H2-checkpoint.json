@@ -1,0 +1,22 @@
+{
+  "sha256": "76a4bcfa9c81bcf611236de8f8a8ca614d3732deca0679d2fbfac285142fa82c",
+  "provenance": {
+    "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55",
+    "config_sha256": "a18752744c84fc74e4bc1baff79af064e576b558f296be399e3ec681a16821d6",
+    "data_manifest_sha256": "9fd44c812ed76235c4943f3e471498a35d5283ab041856016101c8274b4fe0e6",
+    "price_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "phase": "followup",
+    "entity_only": false,
+    "variant": "baseline",
+    "improvement_sha256": "fb677b5c409673ce4a26c77403a938f2d8605d82822523b9af78354e9f511130",
+    "seed": 17,
+    "strict_pit": false,
+    "availability_mode": "vendor_max_notice_update_plus_one_day_and_news_date_plus_one_day_RECONSTRUCTION_NOT_CERTIFIED_PIT",
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scikit-learn": "1.9.1",
+      "openpyxl": "3.1.5"
+    }
+  }
+}

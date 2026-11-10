@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "status": "passed",
+      "case": "followup_baseline",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_filter",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_tfidf",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "pilot",
+      "prediction_rows": 52120,
+      "daily_ic_rows": 908,
+      "curves": 15,
+      "source_commit": "7b4ee5ec33bbeb76a3a643a61a317eca0891063f"
+    }
+  ],
+  "local_replays": [
+    {
+      "status": "passed",
+      "case": "followup_baseline",
+      "checkpoint_sets": 2,
+      "predictions_replayed": 54292,
+      "curves_replayed": 15
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_filter",
+      "checkpoint_sets": 2,
+      "predictions_replayed": 54292,
+      "curves_replayed": 15
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_tfidf",
+      "checkpoint_sets": 2,
+      "predictions_replayed": 54292,
+      "curves_replayed": 15
+    },
+    {
+      "status": "passed",
+      "case": "pilot",
+      "checkpoint_sets": 2,
+      "predictions_replayed": 52120,
+      "curves_replayed": 15
+    }
+  ],
+  "strict_pit": false,
+  "paper_admitted": false
+}

@@ -1,0 +1,42 @@
+{
+  "alternative": {
+    "days": 237,
+    "rank_ic": -0.0012626831785443624,
+    "ic_ir": -0.0050829763326084845,
+    "ci95": [
+      -0.061287048376573706,
+      0.052042777173482734
+    ],
+    "ir_definition": "daily mean RankIC / sample standard deviation, no sqrt252"
+  },
+  "fundamental": {
+    "days": 237,
+    "rank_ic": 0.0004859709192504911,
+    "ic_ir": 0.0018678621867992855,
+    "ci95": [
+      -0.06172033118644109,
+      0.06796499775374568
+    ],
+    "ir_definition": "daily mean RankIC / sample standard deviation, no sqrt252"
+  },
+  "fusion": {
+    "days": 237,
+    "rank_ic": -0.0037664456001428124,
+    "ic_ir": -0.019775657477044895,
+    "ci95": [
+      -0.05076574478448231,
+      0.040918784654678894
+    ],
+    "ir_definition": "daily mean RankIC / sample standard deviation, no sqrt252"
+  },
+  "price_volume": {
+    "days": 237,
+    "rank_ic": -0.005153726933825967,
+    "ic_ir": -0.02357770240735392,
+    "ci95": [
+      -0.056421393368260714,
+      0.04401859837402762
+    ],
+    "ir_definition": "daily mean RankIC / sample standard deviation, no sqrt252"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "status": "passed",
+      "case": "followup_baseline",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_filter",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "followup_entity_tfidf",
+      "prediction_rows": 54292,
+      "daily_ic_rows": 948,
+      "curves": 15,
+      "source_commit": "8c50a43f2e3b97bda49f7305cf50385900427c55"
+    },
+    {
+      "status": "passed",
+      "case": "pilot",
+      "prediction_rows": 52120,
+      "daily_ic_rows": 908,
+      "curves": 15,
+      "source_commit": "7b4ee5ec33bbeb76a3a643a61a317eca0891063f"
+    }
+  ],
+  "local_replays": [],
+  "strict_pit": false,
+  "paper_admitted": false
+}

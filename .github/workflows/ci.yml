@@ -34,3 +34,6 @@ jobs:
           if test -f reports/fusion/acquisition.json; then
             python -m alphacontextlab.fusion.audit
           fi
+          if test -f reports/v6/pilot/provenance.json; then
+            python -m alphacontextlab.v6.audit
+          fi
