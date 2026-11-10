@@ -123,3 +123,10 @@ def test_all_model_arms_ignore_test_labels():
     p,_,_,_=fit_fold(a,b,r,q,c);q2=q.copy();q2[['label','target']]*=-1000
     p2,_,_,_=fit_fold(a,b,r,q2,c)
     for arm in c['models']:np.testing.assert_allclose(p[arm],p2[arm],rtol=1e-12,atol=1e-12)
+
+
+def test_constant_validation_candidate_is_invalid_not_a_fabricated_ic():
+    from alphacontextlab.v4.models import validation_score
+    d=pd.DataFrame({'date':np.repeat(pd.to_datetime(['2020-01-01']),60),'symbol':list(map(str,range(60))),'label':np.linspace(-.1,.1,60)})
+    score,direction,raw=validation_score(d,np.ones(60),config())
+    assert score==-1 and raw is None and direction==1

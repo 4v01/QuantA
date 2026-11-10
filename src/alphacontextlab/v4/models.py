@@ -10,7 +10,7 @@ from .metrics import daily_ic
 
 def validation_score(frame,pred,config):
     d=daily_ic(frame,pred,config['min_cross_section']);mean=float(d.rank_ic.mean())
-    if not np.isfinite(mean):raise ValueError('Insufficient or constant validation predictions')
+    if not np.isfinite(mean):return -1.,1,None  # invalid-candidate sentinel, NOT a measured IC
     return abs(mean),1 if mean>=0 else -1,mean
 
 

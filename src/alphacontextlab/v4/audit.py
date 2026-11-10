@@ -57,9 +57,9 @@ def run(reports='reports/v4',config_path='configs/v4.json'):
             if 'candidates' in record:
                 winner=max(record['candidates'],key=lambda x:x['absolute_validation_rank_ic']);close(winner,chosen)
             assert chosen['direction'] in [-1,1]
-            assert (1 if chosen['raw_validation_rank_ic']>=0 else -1)==chosen['direction']
+            if chosen['raw_validation_rank_ic'] is not None:assert (1 if chosen['raw_validation_rank_ic']>=0 else -1)==chosen['direction']
             got=val[(val.model==m)&(val.fold==fold)].rank_ic.mean()
-            assert np.isclose(got,chosen['absolute_validation_rank_ic'],atol=1e-9)
+            assert (pd.isna(got) and chosen['absolute_validation_rank_ic']==-1) or np.isclose(got,chosen['absolute_validation_rank_ic'],atol=1e-9)
     selected=str(val.groupby('model').rank_ic.mean().sort_values(ascending=False,kind='stable').index[0])
     assert selected==json.loads((r/'frozen_candidate.json').read_text())['model']
     paths=pd.read_csv(r/'screen_paths.csv.gz');table=pd.read_csv(r/'screen_summary.csv');yearly={};curves=0
