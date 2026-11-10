@@ -1,0 +1,13 @@
+{
+  "unit_tests": 66,
+  "fusion_tests": 17,
+  "public_and_local_snapshot_audit": "passed",
+  "collector_source_commit": "0f56b1fd47697d306f6960091524e254b9ce9879",
+  "v4_training_source_commit": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+  "fundamental_symbols": 60,
+  "complete_current_six_feature_vectors": 60,
+  "all_numeric_observations": 34858,
+  "new_fusion_financial_metrics_measured": false,
+  "fusion_status": "blocked",
+  "paper_orders": 0
+}

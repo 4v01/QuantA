@@ -119,3 +119,28 @@ def test_vector_assembly_missing_and_available_fields():
     s=FeatureStore([observation()]);spec={'roe':('fundamental','roe','last',None)}
     v,status=build_vector(s,'600000','2020-06-01T00:00:00Z',links(),spec,{'fundamental':550});assert v.values['roe']==10 and status['status']=='ready'
     v,status=build_vector(s,'600000','2020-01-01T00:00:00Z',links(),spec,{'fundamental':550});assert v is None
+
+
+def test_failed_calibration_cannot_leave_an_enabled_partial_state():
+    m=FixedWeightFusion(config());d=pd.DataFrame({g:np.arange(30,dtype=float) for g in config()['weights']})
+    d['alternative']=0.;d['decision_at']='2019-01-01T00:00:00Z';d['label_available_at']='2019-02-01T00:00:00Z';d['is_oof']=True
+    with pytest.raises(ValueError):m.fit_calibration(d,'2019-03-01T00:00:00Z')
+    assert m.fuse('600000','2020-06-01T07:00:00Z',signals())['status']=='blocked'
+
+
+def test_calibration_rejects_in_sample_or_future_label_statistics():
+    d=pd.DataFrame({g:np.arange(30,dtype=float) for g in config()['weights']})
+    d['decision_at']='2019-01-01T00:00:00Z';d['label_available_at']='2020-02-01T00:00:00Z';d['is_oof']=True
+    with pytest.raises(ValueError):FixedWeightFusion(config()).fit_calibration(d,'2019-03-01T00:00:00Z')
+    d['label_available_at']='2019-02-01T00:00:00Z';d['is_oof']=False
+    with pytest.raises(ValueError):FixedWeightFusion(config()).fit_calibration(d,'2019-03-01T00:00:00Z')
+
+
+def test_financial_collector_rejects_wrong_security_identity(monkeypatch,tmp_path):
+    import akshare as ak
+    from alphacontextlab.fusion.adapters import fundamentals
+    c=config();row={name:1. for name in c['fundamental_fields'].values()}
+    row.update({'SECURITY_CODE':'600519','REPORT_DATE':'2020-03-31','NOTICE_DATE':'2020-04-30'})
+    monkeypatch.setattr(ak,'stock_financial_analysis_indicator_em',lambda **kwargs:pd.DataFrame([row]))
+    with pytest.raises(ValueError,match='entity mismatch'):fundamentals('600000',tmp_path,c['fundamental_fields'])
+    assert not (tmp_path/'600000-financial.csv').exists()

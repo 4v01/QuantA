@@ -23,8 +23,9 @@ def fundamentals(symbol,root,fields):
     import akshare as ak
     root=Path(root);root.mkdir(parents=True,exist_ok=True);suffix='.SH' if symbol.startswith('6') else '.SZ'
     d=ak.stock_financial_analysis_indicator_em(symbol=symbol+suffix,indicator='按报告期');seen=utcnow()
-    required={'REPORT_DATE','NOTICE_DATE',*fields.values()}
+    required={'SECURITY_CODE','REPORT_DATE','NOTICE_DATE',*fields.values()}
     if not required<=set(d):raise ValueError('Fundamental schema changed')
+    if not d.SECURITY_CODE.astype(str).str.zfill(6).eq(symbol).all():raise ValueError('Provider entity mismatch')
     p=root/(symbol+'-financial.csv')
     if p.exists():raise ValueError('Snapshot already exists')
     d.to_csv(p,index=False,float_format='%.17g');ref='sha256:'+sha256(p);rows=[]

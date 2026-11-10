@@ -1,0 +1,659 @@
+{
+  "created_at": "2026-11-10T03:45:08.843375+00:00",
+  "source_commit": "0f56b1fd47697d306f6960091524e254b9ce9879",
+  "config_sha256": "6bba5e68ba3ddd72d805413b42689076626ddfbae1f9473548aaaf20e3f39999",
+  "features_sha256": "e628892808feecbd62468b51f9fcf2898944bca9538080ccc794910dc51d8d4d",
+  "feature_observations": 34858,
+  "weights": {
+    "fundamental": 0.3,
+    "price_volume": 0.4,
+    "alternative": 0.3
+  },
+  "sources": {
+    "fundamental": [
+      {
+        "symbol": "000001",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 123,
+        "feature_observations": 665,
+        "first_seen_at": "2026-11-10T03:44:29.945592+00:00",
+        "sha256": "1b2f4026a1984d3fdec85aaf054c5bc2b90092e44cab26e8852ff2cb8a81a152",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000002",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 118,
+        "feature_observations": 652,
+        "first_seen_at": "2026-11-10T03:44:30.790365+00:00",
+        "sha256": "04a4181cd45bc2c71677c36683877598774a2dbe0a4c323602df5b5d9335cc36",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000063",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 619,
+        "first_seen_at": "2026-11-10T03:44:31.526080+00:00",
+        "sha256": "2e7d22e5bdbae59c22a77dafab6cfd9c6c3a5ed63a0bb241fda4ef0b0d5a4176",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000069",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 113,
+        "feature_observations": 625,
+        "first_seen_at": "2026-11-10T03:44:32.405027+00:00",
+        "sha256": "5baba633801405a437ae6c88f89eedb0c5d1db0a256eb27f8a87719b38ff5ea0",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000100",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 98,
+        "feature_observations": 550,
+        "first_seen_at": "2026-11-10T03:44:33.282079+00:00",
+        "sha256": "c9d06f57cf7892aaff82ca6ad792428eac0184d9ee782ebeb0c8fa68c3b24758",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000157",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 107,
+        "feature_observations": 597,
+        "first_seen_at": "2026-11-10T03:44:33.999917+00:00",
+        "sha256": "ffc8b6a0f56476c63b815d3796e3cbcb0841188771974f65538e5c995bfbf4cf",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000333",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 80,
+        "feature_observations": 429,
+        "first_seen_at": "2026-11-10T03:44:35.244549+00:00",
+        "sha256": "227ea5800fb8a88aa2ffab7cc738f2ab85a1df1412b478c695ca0758b086263c",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000338",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 87,
+        "feature_observations": 499,
+        "first_seen_at": "2026-11-10T03:44:35.884015+00:00",
+        "sha256": "31d2a6ed5ed5ff80ac705438ab73da6905ef16095b41b995cd5245e458bf2730",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000425",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 114,
+        "feature_observations": 628,
+        "first_seen_at": "2026-11-10T03:44:36.607598+00:00",
+        "sha256": "96e768d24e6843a3a07ddee38cfd0af887ae9bd955da2f1653e912af9118e5b6",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000538",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 120,
+        "feature_observations": 653,
+        "first_seen_at": "2026-11-10T03:44:37.421538+00:00",
+        "sha256": "738e701c594669972e51119e7c4f9ea5c261738b63e02aed26b0470799780407",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000568",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 118,
+        "feature_observations": 645,
+        "first_seen_at": "2026-11-10T03:44:38.113677+00:00",
+        "sha256": "cd8eec709998d984809f7e4357025edcdc91773a53897a35e6d450a709385777",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000625",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 621,
+        "first_seen_at": "2026-11-10T03:44:38.967646+00:00",
+        "sha256": "2f012960d4e230a98f0e6a744758de1988beee80cfa994126342f1a489d7d3f2",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000651",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 114,
+        "feature_observations": 631,
+        "first_seen_at": "2026-11-10T03:44:39.701747+00:00",
+        "sha256": "4be9c9d703a5ba51c2809e46948565b5651ee55e5673f13ab99c2719910a93db",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000661",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 115,
+        "feature_observations": 633,
+        "first_seen_at": "2026-11-10T03:44:40.204888+00:00",
+        "sha256": "c6c7d3d1a0b326db640073cd26d45be90868f57a797542bad7a2e1f9267630fb",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000725",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 113,
+        "feature_observations": 619,
+        "first_seen_at": "2026-11-10T03:44:40.830053+00:00",
+        "sha256": "cc554bbc135fde7afdea7cc9053685a21a1dfbda2df81a56399c8add06a93b11",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000768",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 623,
+        "first_seen_at": "2026-11-10T03:44:41.533913+00:00",
+        "sha256": "727df1788837ba3c4fe3d120060feeff48525f9240950e353b0d3d493d45992f",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000776",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 633,
+        "first_seen_at": "2026-11-10T03:44:42.033435+00:00",
+        "sha256": "abe9c3977dcd40704c2e416878bab1eaa71748092c38bcae147c6cc9d51fbeb4",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000858",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 619,
+        "first_seen_at": "2026-11-10T03:44:42.593994+00:00",
+        "sha256": "c01129f8c6c19a9187b340b262dd7d869409e529b024781799b49d4987be0ba1",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000895",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 109,
+        "feature_observations": 608,
+        "first_seen_at": "2026-11-10T03:44:43.178858+00:00",
+        "sha256": "e5df59f299381b562cd2beb75f76dc2454f3827dd684585a63d71e3e1c13fbe6",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "000938",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 108,
+        "feature_observations": 615,
+        "first_seen_at": "2026-11-10T03:44:44.058365+00:00",
+        "sha256": "f7c4c0947f08c2397fe5b6fe124c2cd38426ab0a341dc82297ee7c61d9155bc8",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002001",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 95,
+        "feature_observations": 541,
+        "first_seen_at": "2026-11-10T03:44:44.563716+00:00",
+        "sha256": "c215e06bd25811ed5742dd30003b725922db2e43970fd1421866a0e3f88da852",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002007",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 96,
+        "feature_observations": 544,
+        "first_seen_at": "2026-11-10T03:44:45.504303+00:00",
+        "sha256": "e06f66f207285f7121821238972ab1bafd7f39a4ca48db680df6fe7298004909",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002008",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 96,
+        "feature_observations": 542,
+        "first_seen_at": "2026-11-10T03:44:46.239486+00:00",
+        "sha256": "81a742c1ba58e30fe70d50f8dca6bd7fae561306971bb2ba69c728708b736507",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002027",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 96,
+        "feature_observations": 543,
+        "first_seen_at": "2026-11-10T03:44:46.773495+00:00",
+        "sha256": "f0a01f4721a641b75c236c2c45ab2c6bb51f06019e4e53f30d268c319e3f2f4a",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002142",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 84,
+        "feature_observations": 487,
+        "first_seen_at": "2026-11-10T03:44:47.272439+00:00",
+        "sha256": "d1d601b197442fe1cef0a0865e44576d2c0409910eafa0718554fa1a63aad9a5",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002179",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 83,
+        "feature_observations": 480,
+        "first_seen_at": "2026-11-10T03:44:47.820795+00:00",
+        "sha256": "df77277d6acabd8105ef02c4ff61251a5ebb0215ca2805328b302a63d12abe34",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002230",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 81,
+        "feature_observations": 464,
+        "first_seen_at": "2026-11-10T03:44:48.358030+00:00",
+        "sha256": "9c1c834644d8073f6bc99031e473ff6fbac62d2539a397e36c97f7f69aac3a2d",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002236",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 81,
+        "feature_observations": 467,
+        "first_seen_at": "2026-11-10T03:44:48.961190+00:00",
+        "sha256": "e52783541ab11d2b0eba62fa01b5643f007b951f5f28aeeb1832298998c3a7d9",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002241",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 81,
+        "feature_observations": 466,
+        "first_seen_at": "2026-11-10T03:44:49.465153+00:00",
+        "sha256": "d5453f005a36cbc4b3eb5b6242cc5b02a98797e39b899ce6a417429423a574b5",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "002271",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 79,
+        "feature_observations": 458,
+        "first_seen_at": "2026-11-10T03:44:49.977735+00:00",
+        "sha256": "266fe777ca6ad4cd0ccf97726b73515ab3b1f8febe83c004e909106b0dc83903",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600000",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 109,
+        "feature_observations": 622,
+        "first_seen_at": "2026-11-10T03:44:50.562127+00:00",
+        "sha256": "d91194bad6b347e585ba43a33b897b00085e1417cf02865c302131813b89ef5e",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600009",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 111,
+        "feature_observations": 619,
+        "first_seen_at": "2026-11-10T03:44:51.077999+00:00",
+        "sha256": "9c06dc16e90df1cb3e85aebdeff3116a56a3c5ba2aedaf550d708a0111cca6a4",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600010",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 108,
+        "feature_observations": 601,
+        "first_seen_at": "2026-11-10T03:44:51.597416+00:00",
+        "sha256": "753fab36d95bde6a1cda9561ea1e0cd1c6e68b36259bc8899dbecfc3ec64fe89",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600015",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 99,
+        "feature_observations": 561,
+        "first_seen_at": "2026-11-10T03:44:52.270364+00:00",
+        "sha256": "1b882767963416d4b4c3dcdf2f5909508f406ab28c60259b21fa0d131ee34975",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600016",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 108,
+        "feature_observations": 611,
+        "first_seen_at": "2026-11-10T03:44:52.814314+00:00",
+        "sha256": "55a9122958bd08988efac79c755ed97fc2e7a3d7c9fb38185c0eed5236a4b162",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600019",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 106,
+        "feature_observations": 595,
+        "first_seen_at": "2026-11-10T03:44:53.338220+00:00",
+        "sha256": "9300f512df38762df88b54d44ded6cbbd509efb3970f7dc6d3082290bc813b4d",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600028",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 105,
+        "feature_observations": 583,
+        "first_seen_at": "2026-11-10T03:44:53.881271+00:00",
+        "sha256": "6e5f425c7845080a29ebaf53585e1160efe03536efe1870b77c5d2b5085f9101",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600030",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 101,
+        "feature_observations": 587,
+        "first_seen_at": "2026-11-10T03:44:54.414829+00:00",
+        "sha256": "5fe45ef2536f664f91a043e932390ae15a0ab223bd4972dcdbb416475ad82173",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600031",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 100,
+        "feature_observations": 566,
+        "first_seen_at": "2026-11-10T03:44:54.944253+00:00",
+        "sha256": "bd2bb8de827f1b1ac500f104c5f89ca410e086d428b0ccc51db16d88f77033c0",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600036",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 103,
+        "feature_observations": 590,
+        "first_seen_at": "2026-11-10T03:44:55.429392+00:00",
+        "sha256": "4f6d2bbb377528b1524fd4bb8f75c2f4c956cc1ba00a8ca5ad902c55cacb03b2",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600048",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 87,
+        "feature_observations": 499,
+        "first_seen_at": "2026-11-10T03:44:55.917534+00:00",
+        "sha256": "6a5649efd3c678e052981997e54119c9b6da5085631042b843e070a4075eba0d",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600050",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 100,
+        "feature_observations": 570,
+        "first_seen_at": "2026-11-10T03:44:56.423690+00:00",
+        "sha256": "3ecb1cbc1c5ad81d182c3557c79d157d3016191809b000d959ffd90f3372a52a",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600104",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 616,
+        "first_seen_at": "2026-11-10T03:44:56.930181+00:00",
+        "sha256": "29c4102d9941ef694d8bbba5ddf8c25b568d622f4f4fcf1f56828f2c359a8775",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600111",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 112,
+        "feature_observations": 616,
+        "first_seen_at": "2026-11-10T03:44:57.504485+00:00",
+        "sha256": "fd9214a618cc2f5020d9a49e15d2e56a989280e8e618681c85dd81c2cfc3147d",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600150",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 111,
+        "feature_observations": 615,
+        "first_seen_at": "2026-11-10T03:44:58.022081+00:00",
+        "sha256": "7853b5d9b4dacf770fcb263c087c3c390a99df37e870c98ded72f4e31d830629",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600196",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 111,
+        "feature_observations": 617,
+        "first_seen_at": "2026-11-10T03:44:58.863331+00:00",
+        "sha256": "e6e9b02baf864300a47a15957c4c5d904e03ac26149dcd7d2d1ced1987f1aec8",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600276",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 106,
+        "feature_observations": 596,
+        "first_seen_at": "2026-11-10T03:44:59.374056+00:00",
+        "sha256": "05a3f1a3d73a11ada8531f0d54946d2d90d7f0b507f18c492659c64aada909f6",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600309",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 107,
+        "feature_observations": 600,
+        "first_seen_at": "2026-11-10T03:45:00.014145+00:00",
+        "sha256": "36eea93a464b63968f1980698f51b8e46d6f736d611765ece96c389468280aba",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600406",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 99,
+        "feature_observations": 550,
+        "first_seen_at": "2026-11-10T03:45:00.764074+00:00",
+        "sha256": "6b3e84dc7aaf1343f4203fdea3a3be65d0b11a4825711216dcb4a85922e2a8de",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600436",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 100,
+        "feature_observations": 560,
+        "first_seen_at": "2026-11-10T03:45:01.345630+00:00",
+        "sha256": "881c62dad54e0b0fd548b7816c10425afc20fe13a64b649c8833a807c75ee035",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600519",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 104,
+        "feature_observations": 586,
+        "first_seen_at": "2026-11-10T03:45:01.865685+00:00",
+        "sha256": "ebefb85ae143919c83e58fcd8ff9445397a52257a066a12c57ef3e5ac7ee6686",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600547",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 98,
+        "feature_observations": 555,
+        "first_seen_at": "2026-11-10T03:45:02.383365+00:00",
+        "sha256": "2c9e1648e734a11298b5a27692c8700b3ddb74e1bbf91741cabb391c690168f3",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600585",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 103,
+        "feature_observations": 584,
+        "first_seen_at": "2026-11-10T03:45:02.871932+00:00",
+        "sha256": "f88ac7cf874378b34522227b885ff40aa644882c014857fb6651f59b8b85241f",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600660",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 117,
+        "feature_observations": 648,
+        "first_seen_at": "2026-11-10T03:45:03.669527+00:00",
+        "sha256": "bfdefcb1d27a0901eb511038976c046439823db1dd1d5b6f82a89199b91ca460",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600690",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 120,
+        "feature_observations": 659,
+        "first_seen_at": "2026-11-10T03:45:04.233735+00:00",
+        "sha256": "3ae1b427fe21f02d9e518840ed6e5a7498d01c22b2122a4437fc9691c8e04c67",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600703",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 116,
+        "feature_observations": 625,
+        "first_seen_at": "2026-11-10T03:45:04.748064+00:00",
+        "sha256": "9dd5dd54d90463e7aed5af1ca4da4a73643e0e08b836cda8406a76aa6deadbb9",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600745",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 116,
+        "feature_observations": 627,
+        "first_seen_at": "2026-11-10T03:45:05.438045+00:00",
+        "sha256": "554dd8cfb17b7d12733455c6281b5c4cf304dbf859839b3f9b4ef400d9c7c917",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "600809",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 120,
+        "feature_observations": 641,
+        "first_seen_at": "2026-11-10T03:45:06.098353+00:00",
+        "sha256": "db822d914892fa29730b371a77ac9e6f3d00cf3e8b0367589d55d2348bd9f156",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "601088",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 83,
+        "feature_observations": 477,
+        "first_seen_at": "2026-11-10T03:45:06.605610+00:00",
+        "sha256": "7ed3e9db8457f4881c2add40cd2dce24d841193ecb734e01e12c4333b31d4158",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      },
+      {
+        "symbol": "601318",
+        "api": "akshare.stock_financial_analysis_indicator_em",
+        "rows": 85,
+        "feature_observations": 496,
+        "first_seen_at": "2026-11-10T03:45:07.283573+00:00",
+        "sha256": "d9060c3b957f656e2d5468a95de3894f952ef03ed9f53c8d4843d4110e1a0717",
+        "availability_vintage_certified": false,
+        "report_period_is_not_publication_time": true
+      }
+    ],
+    "news": {
+      "file": "600000-20261110T032553669244.json",
+      "sha256": "5e239454980722d5df6ff1e5563f278a7fca4357a7cce05337f198aee4be0927",
+      "rows": 10,
+      "availability_policy": "max(publication,first_seen)"
+    },
+    "polymarket": {
+      "url": "https://gamma-api.polymarket.com/markets/keyset",
+      "sha256": "ef2d070e35150357268c977748f13b0a4151caf4789a32d8ceb900df874febc1",
+      "markets": 10,
+      "observations": 20,
+      "first_seen_at": "2026-11-10T03:45:07.802241+00:00",
+      "stock_entity_links": 0,
+      "status": "unmapped_market_observations_not_stock_alpha"
+    },
+    "satellite": {
+      "url": "https://earth-search.aws.element84.com/v1/search",
+      "sha256": "15c5c6f14601c4086a140a9ba0c79b6fe2310b99f3ea42e8bd169dbeabddd680",
+      "catalogue_items": 2,
+      "first_seen_at": "2026-11-10T03:45:08.450676+00:00",
+      "imagery_pixels_processed": 0,
+      "economic_feature_observations": 0,
+      "verified_company_sites": 0,
+      "status": "catalogue_only_not_economic_activity_factor",
+      "query_bbox_is_demo_not_company_mapping": true
+    },
+    "x": {
+      "status": "not_configured",
+      "records": 0,
+      "reason": "No authorized X export or configured API access; no paid requests attempted"
+    }
+  },
+  "failures": [],
+  "fusion_status": "blocked",
+  "blocking_reasons": [
+    "No trained/calibrated three-group OOF signal set",
+    "X input unavailable",
+    "Satellite economic features/site mappings unavailable",
+    "Polymarket to security/industry mappings absent",
+    "No historic first-seen archives"
+  ],
+  "financial_performance_measured": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

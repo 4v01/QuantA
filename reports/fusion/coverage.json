@@ -1,0 +1,255 @@
+{
+  "asof": "2026-11-10T03:45:08.843375+00:00",
+  "fundamental_six_feature_vectors": 60,
+  "fundamental_symbol_coverage": [
+    {
+      "symbol": "000001",
+      "status": "ready"
+    },
+    {
+      "symbol": "000002",
+      "status": "ready"
+    },
+    {
+      "symbol": "000063",
+      "status": "ready"
+    },
+    {
+      "symbol": "000069",
+      "status": "ready"
+    },
+    {
+      "symbol": "000100",
+      "status": "ready"
+    },
+    {
+      "symbol": "000157",
+      "status": "ready"
+    },
+    {
+      "symbol": "000333",
+      "status": "ready"
+    },
+    {
+      "symbol": "000338",
+      "status": "ready"
+    },
+    {
+      "symbol": "000425",
+      "status": "ready"
+    },
+    {
+      "symbol": "000538",
+      "status": "ready"
+    },
+    {
+      "symbol": "000568",
+      "status": "ready"
+    },
+    {
+      "symbol": "000625",
+      "status": "ready"
+    },
+    {
+      "symbol": "000651",
+      "status": "ready"
+    },
+    {
+      "symbol": "000661",
+      "status": "ready"
+    },
+    {
+      "symbol": "000725",
+      "status": "ready"
+    },
+    {
+      "symbol": "000768",
+      "status": "ready"
+    },
+    {
+      "symbol": "000776",
+      "status": "ready"
+    },
+    {
+      "symbol": "000858",
+      "status": "ready"
+    },
+    {
+      "symbol": "000895",
+      "status": "ready"
+    },
+    {
+      "symbol": "000938",
+      "status": "ready"
+    },
+    {
+      "symbol": "002001",
+      "status": "ready"
+    },
+    {
+      "symbol": "002007",
+      "status": "ready"
+    },
+    {
+      "symbol": "002008",
+      "status": "ready"
+    },
+    {
+      "symbol": "002027",
+      "status": "ready"
+    },
+    {
+      "symbol": "002142",
+      "status": "ready"
+    },
+    {
+      "symbol": "002179",
+      "status": "ready"
+    },
+    {
+      "symbol": "002230",
+      "status": "ready"
+    },
+    {
+      "symbol": "002236",
+      "status": "ready"
+    },
+    {
+      "symbol": "002241",
+      "status": "ready"
+    },
+    {
+      "symbol": "002271",
+      "status": "ready"
+    },
+    {
+      "symbol": "600000",
+      "status": "ready"
+    },
+    {
+      "symbol": "600009",
+      "status": "ready"
+    },
+    {
+      "symbol": "600010",
+      "status": "ready"
+    },
+    {
+      "symbol": "600015",
+      "status": "ready"
+    },
+    {
+      "symbol": "600016",
+      "status": "ready"
+    },
+    {
+      "symbol": "600019",
+      "status": "ready"
+    },
+    {
+      "symbol": "600028",
+      "status": "ready"
+    },
+    {
+      "symbol": "600030",
+      "status": "ready"
+    },
+    {
+      "symbol": "600031",
+      "status": "ready"
+    },
+    {
+      "symbol": "600036",
+      "status": "ready"
+    },
+    {
+      "symbol": "600048",
+      "status": "ready"
+    },
+    {
+      "symbol": "600050",
+      "status": "ready"
+    },
+    {
+      "symbol": "600104",
+      "status": "ready"
+    },
+    {
+      "symbol": "600111",
+      "status": "ready"
+    },
+    {
+      "symbol": "600150",
+      "status": "ready"
+    },
+    {
+      "symbol": "600196",
+      "status": "ready"
+    },
+    {
+      "symbol": "600276",
+      "status": "ready"
+    },
+    {
+      "symbol": "600309",
+      "status": "ready"
+    },
+    {
+      "symbol": "600406",
+      "status": "ready"
+    },
+    {
+      "symbol": "600436",
+      "status": "ready"
+    },
+    {
+      "symbol": "600519",
+      "status": "ready"
+    },
+    {
+      "symbol": "600547",
+      "status": "ready"
+    },
+    {
+      "symbol": "600585",
+      "status": "ready"
+    },
+    {
+      "symbol": "600660",
+      "status": "ready"
+    },
+    {
+      "symbol": "600690",
+      "status": "ready"
+    },
+    {
+      "symbol": "600703",
+      "status": "ready"
+    },
+    {
+      "symbol": "600745",
+      "status": "ready"
+    },
+    {
+      "symbol": "600809",
+      "status": "ready"
+    },
+    {
+      "symbol": "601088",
+      "status": "ready"
+    },
+    {
+      "symbol": "601318",
+      "status": "ready"
+    }
+  ],
+  "price_volume_factor_count": 27,
+  "price_model_source": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+  "price_model_is_historical_research_not_current_live_feed": true,
+  "alternative_current_sources_with_usable_stock_mapping": [
+    "news"
+  ],
+  "full_alternative_group_available": false,
+  "three_group_oof_calibration_available": false,
+  "fusion_status": "blocked"
+}

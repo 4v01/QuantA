@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "group_weights": {
+    "fundamental": 0.3,
+    "price_volume": 0.4,
+    "alternative": 0.3
+  },
+  "fundamental_symbols": 60,
+  "feature_observations": 34858,
+  "fusion_status": "blocked",
+  "historical_fusion_performance_measured": false,
+  "local_snapshot_verified": true
+}

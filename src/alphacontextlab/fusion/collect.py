@@ -9,6 +9,8 @@ from .core import FeatureStore
 
 
 def collect(config_path='configs/fusion.json',root=None,symbols=None):
+    source=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+    if subprocess.check_output(['git','status','--porcelain'],text=True).strip():raise ValueError('Commit collector/config before snapshot acquisition')
     config=json.loads(Path(config_path).read_text());root=Path(root or ('data/fusion/'+utcnow().replace(':','').replace('+','_')))
     if root.exists() and any(root.iterdir()):raise ValueError('Use new immutable snapshot directory')
     root.mkdir(parents=True,exist_ok=True);store=FeatureStore();status={'fundamental':[]};failures=[]
@@ -27,7 +29,7 @@ def collect(config_path='configs/fusion.json',root=None,symbols=None):
     status['satellite']=attempt('satellite',lambda:satellite_catalogue(root/'alternative'))
     status['x']={'status':'not_configured','records':0,'reason':'No authorized X export or configured API access; no paid requests attempted'}
     store.save(root/'features.jsonl')
-    report={'created_at':utcnow(),'source_commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
+    report={'created_at':utcnow(),'source_commit':source,
             'config_sha256':sha256(config_path),'features_sha256':sha256(root/'features.jsonl'),'feature_observations':len(store.records),
             'weights':config['weights'],'sources':status,'failures':failures,'fusion_status':'blocked',
             'blocking_reasons':['No trained/calibrated three-group OOF signal set','X input unavailable','Satellite economic features/site mappings unavailable',

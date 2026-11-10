@@ -1,6 +1,7 @@
 """Small linear group learner and availability-checked bridge to fusion signals."""
 from dataclasses import dataclass
 import hashlib,json
+from importlib.metadata import version
 import numpy as np
 from sklearn.linear_model import Ridge,ElasticNet
 from sklearn.preprocessing import StandardScaler
@@ -53,6 +54,9 @@ class LinearGroupModel:
         state={'group':self.group,'features':self.features,'kind':self.kind,'alpha':self.alpha,'seed':self.seed,'fit_at':fit_at,
                'train_label_end':self.train_label_end,'coef':self.model.coef_.tolist(),'intercept':float(self.model.intercept_),
                'scale_mean':self.scaler.mean_.tolist(),'scale_std':self.scaler.scale_.tolist(),
+               'training_features_sha256':hashlib.sha256(np.ascontiguousarray(x).tobytes()).hexdigest(),
+               'training_labels_sha256':hashlib.sha256(np.ascontiguousarray(y).tobytes()).hexdigest(),
+               'sklearn_version':version('scikit-learn'),
                'training_observations':len(vectors),'training_source_refs':sorted(set(r for v in vectors for r in v.source_refs))}
         self.state=state;self.model_ref='sha256:'+hashlib.sha256(json.dumps(state,sort_keys=True).encode()).hexdigest();return self
     def predict(self,vector,produced_at):

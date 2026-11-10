@@ -113,7 +113,7 @@ class FixedWeightFusion:
         self.config=config;self.weights=config['weights'];self.calibration=None
         if set(self.weights)!={'fundamental','price_volume','alternative'} or not np.isclose(sum(self.weights.values()),1):raise ValueError('Three weights must sum to one')
         if any(v<0 for v in self.weights.values()):raise ValueError('Negative group weight')
-        if not np.isclose(sum(config['alternative_weights'].values()),1):raise ValueError('Alternative weights must sum to one')
+        if not np.isclose(sum(config['alternative_weights'].values()),1) or any(v<0 for v in config['alternative_weights'].values()):raise ValueError('Alternative weights must be nonnegative and sum to one')
     def fit_calibration(self,oof_scores,calibration_end):
         """Calibration uses earlier OOF scores, not full-history score distributions."""
         cutoff=timestamp(calibration_end)
@@ -122,12 +122,12 @@ class FixedWeightFusion:
         if not oof_scores.is_oof.eq(True).all():raise ValueError('Use out-of-fold calibration scores')
         if not all(timestamp(t)<cutoff for t in oof_scores.decision_at) or not all(timestamp(t)<cutoff for t in oof_scores.label_available_at):raise ValueError('Calibration overlaps decision boundary')
         if len(oof_scores)<20:raise ValueError('Insufficient calibration rows')
-        self.calibration={}
+        calibration={}
         for group in self.weights:
             x=oof_scores[group].to_numpy(float)
             if not np.isfinite(x).all() or np.std(x,ddof=1)<1e-12:raise ValueError('Invalid or constant group calibration')
-            self.calibration[group]={'mean':float(x.mean()),'std':float(x.std(ddof=1))}
-        self.calibration_end=cutoff;return self
+            calibration[group]={'mean':float(x.mean()),'std':float(x.std(ddof=1))}
+        self.calibration=calibration;self.calibration_end=cutoff;return self
     def fuse(self,symbol,when,signals):
         t=timestamp(when);problems=[];by_group={}
         for s in signals:

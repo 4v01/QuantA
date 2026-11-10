@@ -56,7 +56,7 @@ python -m alphacontextlab.fusion.collect
 python -m alphacontextlab.fusion.collect --all-symbols --root data/fusion/full_current_new
 ```
 
-输出acquisition.json逐源状态与features.jsonl。网络失败单独记录；未接通不记作有效来源。源代码提交、配置与快照SHA256保留。导入X/卫星测量使用adapters.import_x_export / import_satellite_features，随后建立有证据的EntityLink。
+正式采集要求源码和配置已提交且工作树干净。输出acquisition.json逐源状态与features.jsonl。网络失败单独记录；未接通不记作有效来源。源代码提交、配置与快照SHA256保留。导入X/卫星测量使用adapters.import_x_export / import_satellite_features，随后建立有证据的EntityLink。
 
 组模型与校准器的最小可运行契约见tests/test_fusion.py：包括无未来数据、修订处理、实体映射、缺失不改权重和精确30/40/30。测试夹具是合成的正确性检查，不是金融收益实验。
 
@@ -65,3 +65,5 @@ python -m alphacontextlab.fusion.collect --all-symbols --root data/fusion/full_c
 后续统一日期/股票池/成本做价量单组、价量+基本面、价量+另类、完整30/40/30消融；缺组实验是单独声明的配置，不能在完整实验内事后切换。比较同日配对ΔIC/ICIR、覆盖率、成本后的组合表现及区块区间。将最早共同可得日期作为新试验起点，数据历史不足时不虚构长回测。
 
 当前框架和采集成功**没有产生新的IC/夏普结果**。V4信号稳定性/净夏普>1尚未过关；新增三组数据也未形成可校准OOF集合，模拟盘继续blocked。先积累可核验历史或前向档案，再进行冻结的融合训练与未来纸面验证。
+
+公开采集审计：`python -m alphacontextlab.fusion.audit`。持有本地快照时：`python -m alphacontextlab.fusion.audit --local data/fusion/v5_current`，核对逐表/特征库哈希、证券身份与首次可见时间；不加载外部pickle。
