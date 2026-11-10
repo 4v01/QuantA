@@ -1,0 +1,25 @@
+{
+  "status": "blocked",
+  "reasons": [
+    "linear_signal_stability_gate_failed",
+    "selected_model_signal_gate_failed",
+    "net_sharpe_not_above_1",
+    "nonpositive_evaluation_year",
+    "pit_universe_not_certified",
+    "executable_cash_event_ledger_not_certified"
+  ],
+  "live_orders_sent": 0,
+  "paper_orders_sent": 0,
+  "historical_winner_is_not_prospectively_confirmed": true,
+  "selected_model": "elasticnet",
+  "selected_by": "mean_validation_rank_ic_only",
+  "linear_pass": false,
+  "backtest_type": "continuous_out_of_fold_fractional_adjusted_return_screen_not_executable_ledger",
+  "thresholds": {
+    "minimum_net_sharpe": 1.0,
+    "all_years_net_positive": true,
+    "requires_linear_signal_gate": true,
+    "requires_pit_universe_and_events": true,
+    "requires_executable_ledger": true
+  }
+}

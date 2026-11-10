@@ -1,0 +1,12 @@
+{
+  "folds": 12,
+  "seed": [
+    17
+  ],
+  "linear_candidates_per_fold": 6,
+  "lightgbm_candidates_per_fold": 2,
+  "gp_ridge_alphas_per_fold": 3,
+  "gp_programs_per_fold": 512,
+  "x_extra_search": 0,
+  "stage_policy": "Advanced arms are exploratory even if linear gate fails; no paper promotion by bypassing the gate"
+}

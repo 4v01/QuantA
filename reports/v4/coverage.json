@@ -1,0 +1,14 @@
+{
+  "eligible_oof_stock_dates": 83740,
+  "oof_dates": 1410,
+  "cross_section_min": 57,
+  "cross_section_max": 60,
+  "unlabeled_oof_rows_per_model": 412,
+  "failure_attempts": [
+    {
+      "source": "f0e9bb3732e5fcebc2b36072e9fcc1dd96e00c00",
+      "stage": "first-fold validation, before OOF prediction",
+      "reason": "Constant ElasticNet candidate made correlation undefined; fixed invalid-candidate handling without changing config"
+    }
+  ]
+}

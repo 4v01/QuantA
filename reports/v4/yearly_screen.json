@@ -1,0 +1,302 @@
+{
+  "ridge": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": 0.0647682037288615,
+      "annualized_return": 0.0675330182391507,
+      "net_sharpe": 0.3966072047406383,
+      "max_drawdown": -0.14856189463209912,
+      "annual_turnover": 62.18224139642955
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.18906368445088262,
+      "annualized_return": -0.19605586470027403,
+      "net_sharpe": -0.7795383310332512,
+      "max_drawdown": -0.30746924447510426,
+      "annual_turnover": 50.02778456869551
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.055693161854826645,
+      "annualized_return": -0.05792657756140429,
+      "net_sharpe": -0.44059770539126775,
+      "max_drawdown": -0.13939867915375037,
+      "annual_turnover": 45.08445749947428
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.11959496451393337,
+      "annualized_return": 0.12483351511652518,
+      "net_sharpe": 0.7229996133864457,
+      "max_drawdown": -0.12350173012384624,
+      "annual_turnover": 31.126372105753852
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": -0.006012002189371923,
+      "annualized_return": -0.006233973466921672,
+      "net_sharpe": -0.037495635744370655,
+      "max_drawdown": -0.053243803588401195,
+      "annual_turnover": 34.73852247683163
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": 0.13444057282654098,
+      "annualized_return": 0.17510357586071712,
+      "net_sharpe": 0.9020107108826959,
+      "max_drawdown": -0.1686738203078778,
+      "annual_turnover": 41.57888221267567
+    }
+  },
+  "elasticnet": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": -0.03101287457653712,
+      "annualized_return": -0.032273497050468225,
+      "net_sharpe": -0.0167998964900984,
+      "max_drawdown": -0.19497058124739075,
+      "annual_turnover": 57.288488012679146
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.21945250023904106,
+      "annualized_return": -0.22740298024506678,
+      "net_sharpe": -1.4559711066494965,
+      "max_drawdown": -0.31009390031977035,
+      "annual_turnover": 39.74731102974327
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.00557254489132708,
+      "annualized_return": -0.005802146039935008,
+      "net_sharpe": -0.003548129434467707,
+      "max_drawdown": -0.13082818191123147,
+      "annual_turnover": 27.49035468647891
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.1907815882448598,
+      "annualized_return": 0.1994044872784848,
+      "net_sharpe": 1.113991990097735,
+      "max_drawdown": -0.10239790956010408,
+      "annual_turnover": 18.04273736231041
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": 0.010993250468275706,
+      "annualized_return": 0.011402720627597285,
+      "net_sharpe": 0.18536016870012656,
+      "max_drawdown": -0.045552102825843765,
+      "annual_turnover": 20.657433393320176
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": 0.14990404765421217,
+      "annualized_return": 0.1956321462369428,
+      "net_sharpe": 0.8958656592511157,
+      "max_drawdown": -0.18205923404283197,
+      "annual_turnover": 32.71772488218797
+    }
+  },
+  "lightgbm": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": -0.10273416539008684,
+      "annualized_return": -0.10674444940493322,
+      "net_sharpe": -0.38452708284121306,
+      "max_drawdown": -0.29287677502415577,
+      "annual_turnover": 58.40171249409338
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.2345538728293739,
+      "annualized_return": -0.24296194037899332,
+      "net_sharpe": -1.3835018249950901,
+      "max_drawdown": -0.3275586225391245,
+      "annual_turnover": 38.452382996521216
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.07582709106051744,
+      "annualized_return": -0.07883362245323022,
+      "net_sharpe": -0.524652164182451,
+      "max_drawdown": -0.18159077892686892,
+      "annual_turnover": 53.12058723598907
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.14049982836229757,
+      "annualized_return": 0.14671245876270955,
+      "net_sharpe": 0.8721366698602795,
+      "max_drawdown": -0.10944668017856762,
+      "annual_turnover": 25.706250809863672
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": -0.01244551645755454,
+      "annualized_return": -0.012903474970581974,
+      "net_sharpe": -0.12511256374636204,
+      "max_drawdown": -0.05472121197584512,
+      "annual_turnover": 31.40231440786667
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": -0.12173360795388422,
+      "annualized_return": -0.15299221111653805,
+      "net_sharpe": -1.8872027139731127,
+      "max_drawdown": -0.16343783510196097,
+      "annual_turnover": 33.570663076841434
+    }
+  },
+  "gp_ridge": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": 0.04241497112547754,
+      "annualized_return": 0.044205847876728654,
+      "net_sharpe": 0.30235849333597486,
+      "max_drawdown": -0.14856189463209912,
+      "annual_turnover": 61.83904271859589
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.1877241621346042,
+      "annualized_return": -0.1946729701544735,
+      "net_sharpe": -0.7778719553148992,
+      "max_drawdown": -0.3082446688560043,
+      "annual_turnover": 52.82636508781857
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.04631340125508698,
+      "annualized_return": -0.04818033122455079,
+      "net_sharpe": -0.3585530124656342,
+      "max_drawdown": -0.1370321025860325,
+      "annual_turnover": 43.83722649365751
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.10229718584039582,
+      "annualized_return": 0.10674247750188326,
+      "net_sharpe": 0.6293650652685397,
+      "max_drawdown": -0.12625114926678482,
+      "annual_turnover": 31.157115508023907
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": -0.0025696863284238036,
+      "annualized_return": -0.002664732979299811,
+      "net_sharpe": 0.006721949841742023,
+      "max_drawdown": -0.05324380358840053,
+      "annual_turnover": 34.56622446460961
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": 0.13459750225122358,
+      "annualized_return": 0.17531151750823204,
+      "net_sharpe": 0.9030964287589271,
+      "max_drawdown": -0.1686738203078778,
+      "annual_turnover": 41.36716878133827
+    }
+  },
+  "x_rerank": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": -0.1049537530791056,
+      "annualized_return": -0.10904530763209697,
+      "net_sharpe": -0.4249320652976951,
+      "max_drawdown": -0.29375421618291864,
+      "annual_turnover": 59.374650049509995
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.24000187549470542,
+      "annualized_return": -0.24857192350246693,
+      "net_sharpe": -1.4530024214132191,
+      "max_drawdown": -0.332643386547519,
+      "annual_turnover": 40.193265897845656
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.07229399775532219,
+      "annualized_return": -0.0751662131148162,
+      "net_sharpe": -0.5491613158527459,
+      "max_drawdown": -0.17952137724324624,
+      "annual_turnover": 50.12305201935556
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.1451126386328463,
+      "annualized_return": 0.15154244971419195,
+      "net_sharpe": 0.9275255005608883,
+      "max_drawdown": -0.11408770652864597,
+      "annual_turnover": 22.555638106464478
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": -0.015380614949723204,
+      "annualized_return": -0.015945701701332582,
+      "net_sharpe": -0.17041845236468095,
+      "max_drawdown": -0.04995565885258679,
+      "annual_turnover": 28.310190185363954
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": -0.11447147613704478,
+      "annualized_return": -0.1440228896185981,
+      "net_sharpe": -1.7883373710957429,
+      "max_drawdown": -0.14943206335769765,
+      "annual_turnover": 28.923191372981563
+    }
+  },
+  "equal_weight": {
+    "2021": {
+      "sessions": 242,
+      "cumulative_return": 0.08533845505965854,
+      "annualized_return": 0.08901742029175841,
+      "net_sharpe": 0.5708557744221938,
+      "max_drawdown": -0.12424887608862867,
+      "annual_turnover": 3.0463812685582874
+    },
+    "2022": {
+      "sessions": 242,
+      "cumulative_return": -0.18190007115660134,
+      "annualized_return": -0.18865920793810287,
+      "net_sharpe": -1.1347177959650456,
+      "max_drawdown": -0.2558151885627691,
+      "annual_turnover": 1.5950295671067733
+    },
+    "2023": {
+      "sessions": 242,
+      "cumulative_return": -0.017805023603091663,
+      "annualized_return": -0.018533908593591164,
+      "net_sharpe": -0.07720587656298676,
+      "max_drawdown": -0.14188234107292408,
+      "annual_turnover": 1.138881270403126
+    },
+    "2024": {
+      "sessions": 242,
+      "cumulative_return": 0.1278979786661918,
+      "annualized_return": 0.13352141178588184,
+      "net_sharpe": 0.6780921100588334,
+      "max_drawdown": -0.12484085738256134,
+      "annual_turnover": 1.1984795003853108
+    },
+    "2025": {
+      "sessions": 243,
+      "cumulative_return": 0.08162765067416022,
+      "annualized_return": 0.08477563264426635,
+      "net_sharpe": 0.7449226358366036,
+      "max_drawdown": -0.08515137200050216,
+      "annual_turnover": 1.158464498885556
+    },
+    "2026": {
+      "sessions": 197,
+      "cumulative_return": -0.10165524313432717,
+      "annualized_return": -0.12814371895465826,
+      "net_sharpe": -1.1623034574902051,
+      "max_drawdown": -0.14955884006584375,
+      "annual_turnover": 2.7525942003473785
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "tests": 49,
+  "formal_training_source": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+  "public_audit": "passed",
+  "local_replay": "passed",
+  "old_reports_unchanged": 242,
+  "signal_gate": "not_passed",
+  "paper_status": "blocked",
+  "orders_sent": 0
+}

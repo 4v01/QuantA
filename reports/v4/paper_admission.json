@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-10T03:31:40.703241+00:00",
+  "status": "blocked",
+  "source_report_sha256": "711d809a5b3969ac509b00a2b09b06b22690fd5e98da9219804047cc65696cef",
+  "research_source": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+  "candidate_model": "elasticnet",
+  "reasons": [
+    "linear_signal_stability_gate_failed",
+    "selected_model_signal_gate_failed",
+    "net_sharpe_not_above_1",
+    "nonpositive_evaluation_year",
+    "pit_universe_not_certified",
+    "executable_cash_event_ledger_not_certified"
+  ],
+  "live_orders_sent": 0,
+  "paper_orders_sent": 0,
+  "running_service": false,
+  "next_requirement": "Certified PIT universe/events and executable ledger plus financial gates before paper sessions"
+}

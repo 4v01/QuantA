@@ -1,0 +1,163 @@
+{
+  "split": {
+    "train_start": "2018-07-01 00:00:00",
+    "validation_start": "2021-01-01 00:00:00",
+    "test_start": "2021-07-01 00:00:00",
+    "test_end_exclusive": "2022-01-01 00:00:00",
+    "train_max_label_exit": "2020-12-31 00:00:00",
+    "refit_max_label_exit": "2021-06-30 00:00:00",
+    "training_rows": 34182,
+    "validation_rows": 6588,
+    "refit_rows": 41124,
+    "test_rows": 7403
+  },
+  "models": {
+    "ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.06613013481257993,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.06613013481257993
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.06607189083819216,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.06607189083819216
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.0600236301376,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.0600236301376
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "absolute_validation_rank_ic": 0.06613013481257993,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.06613013481257993
+      }
+    },
+    "elasticnet": {
+      "candidates": [
+        {
+          "alpha": 0.001,
+          "absolute_validation_rank_ic": 0.06550835222638692,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.06550835222638692
+        },
+        {
+          "alpha": 0.01,
+          "absolute_validation_rank_ic": 0.0415385617337272,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.0415385617337272
+        },
+        {
+          "alpha": 0.1,
+          "absolute_validation_rank_ic": -1.0,
+          "direction": 1,
+          "raw_validation_rank_ic": null
+        }
+      ],
+      "selected": {
+        "alpha": 0.001,
+        "absolute_validation_rank_ic": 0.06550835222638692,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.06550835222638692
+      }
+    },
+    "lightgbm": {
+      "candidates": [
+        {
+          "leaves": 15,
+          "best_iteration": 1,
+          "absolute_validation_rank_ic": 0.006320076286845111,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.006320076286845111
+        },
+        {
+          "leaves": 31,
+          "best_iteration": 4,
+          "absolute_validation_rank_ic": 0.011582530108285565,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.011582530108285565
+        }
+      ],
+      "selected": {
+        "leaves": 31,
+        "best_iteration": 4,
+        "absolute_validation_rank_ic": 0.011582530108285565,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.011582530108285565
+      }
+    },
+    "gp_ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.04447308227475213,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.04447308227475213
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.044974246970693736,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.044974246970693736
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.034332214768019065,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.034332214768019065
+        }
+      ],
+      "selected": {
+        "alpha": 100.0,
+        "absolute_validation_rank_ic": 0.044974246970693736,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.044974246970693736
+      },
+      "formulas": [
+        "sqrt(turnover1)",
+        "downside20",
+        "vol20",
+        "ret60"
+      ],
+      "sample_rows": 6000,
+      "candidate_program_budget": 512
+    },
+    "x_rerank": {
+      "selected": {
+        "direction": 1,
+        "absolute_validation_rank_ic": 0.0074339005593172846,
+        "raw_validation_rank_ic": 0.0074339005593172846
+      },
+      "weights": {
+        "pred_rank": 1.0,
+        "vol20": -0.2,
+        "amount_ratio20": 0.1
+      },
+      "base": "lightgbm"
+    }
+  },
+  "provenance": {
+    "source_commit": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+    "config_sha256": "dca0af9188b63232fb55dcb3a7cd9929fc3b64e56315ef83375bf56f063bc882",
+    "data_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "packages": {
+      "akshare": "1.20.37",
+      "lightgbm": "4.7.0",
+      "gplearn": "0.4.3",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1"
+    },
+    "python": "3.12.14",
+    "seed": 17,
+    "source_dirty": false
+  }
+}

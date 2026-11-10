@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "source_commit": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+  "oof_model_rows": 418700,
+  "daily_ic_rows_recomputed": 7020,
+  "screen_curves_recomputed": 18,
+  "selected_model": "elasticnet",
+  "paper_status": "blocked",
+  "live_orders_sent": 0
+}

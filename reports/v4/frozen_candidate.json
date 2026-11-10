@@ -1,0 +1,12 @@
+{
+  "model": "elasticnet",
+  "validation_scores": {
+    "elasticnet": 0.04027050243401224,
+    "ridge": 0.036206178668850994,
+    "x_rerank": 0.035666574987219785,
+    "gp_ridge": 0.03452604768702396,
+    "lightgbm": 0.0325294863535537
+  },
+  "never_selected_on_oof_sharpe": true,
+  "gate": "blocked"
+}

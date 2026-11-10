@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "checkpoints_loaded": 12,
+  "oof_predictions_replayed": 418700,
+  "screen_curves_replayed": 18,
+  "scope": "Trusted own cached models and vendor-adjusted factor-return screen; not executable market matching certification"
+}

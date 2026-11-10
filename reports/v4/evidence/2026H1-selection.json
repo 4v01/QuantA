@@ -1,0 +1,163 @@
+{
+  "split": {
+    "train_start": "2023-01-01 00:00:00",
+    "validation_start": "2025-07-01 00:00:00",
+    "test_start": "2026-01-01 00:00:00",
+    "test_end_exclusive": "2026-07-01 00:00:00",
+    "train_max_label_exit": "2025-06-30 00:00:00",
+    "refit_max_label_exit": "2025-12-31 00:00:00",
+    "training_rows": 35617,
+    "validation_rows": 6998,
+    "refit_rows": 42975,
+    "test_rows": 6913
+  },
+  "models": {
+    "ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.010933487468860323,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.010933487468860323
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.00930584995799169,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.00930584995799169
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.010797413884888037,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.010797413884888037
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "absolute_validation_rank_ic": 0.010933487468860323,
+        "direction": -1,
+        "raw_validation_rank_ic": -0.010933487468860323
+      }
+    },
+    "elasticnet": {
+      "candidates": [
+        {
+          "alpha": 0.001,
+          "absolute_validation_rank_ic": 0.009992790684077301,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.009992790684077301
+        },
+        {
+          "alpha": 0.01,
+          "absolute_validation_rank_ic": 0.001816229045615338,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.001816229045615338
+        },
+        {
+          "alpha": 0.1,
+          "absolute_validation_rank_ic": -1.0,
+          "direction": 1,
+          "raw_validation_rank_ic": null
+        }
+      ],
+      "selected": {
+        "alpha": 0.001,
+        "absolute_validation_rank_ic": 0.009992790684077301,
+        "direction": -1,
+        "raw_validation_rank_ic": -0.009992790684077301
+      }
+    },
+    "lightgbm": {
+      "candidates": [
+        {
+          "leaves": 15,
+          "best_iteration": 8,
+          "absolute_validation_rank_ic": 0.013717023908586852,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.013717023908586852
+        },
+        {
+          "leaves": 31,
+          "best_iteration": 8,
+          "absolute_validation_rank_ic": 0.020389649557246974,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.020389649557246974
+        }
+      ],
+      "selected": {
+        "leaves": 31,
+        "best_iteration": 8,
+        "absolute_validation_rank_ic": 0.020389649557246974,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.020389649557246974
+      }
+    },
+    "gp_ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.01091936317507501,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.01091936317507501
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.009267433112828013,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.009267433112828013
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.007514255165950906,
+          "direction": -1,
+          "raw_validation_rank_ic": -0.007514255165950906
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "absolute_validation_rank_ic": 0.01091936317507501,
+        "direction": -1,
+        "raw_validation_rank_ic": -0.01091936317507501
+      },
+      "formulas": [
+        "vol60",
+        "range20",
+        "add(vol60, ma_gap20)",
+        "vol60"
+      ],
+      "sample_rows": 6000,
+      "candidate_program_budget": 512
+    },
+    "x_rerank": {
+      "selected": {
+        "direction": 1,
+        "absolute_validation_rank_ic": 0.010756924156406807,
+        "raw_validation_rank_ic": 0.010756924156406807
+      },
+      "weights": {
+        "pred_rank": 1.0,
+        "vol20": -0.2,
+        "amount_ratio20": 0.1
+      },
+      "base": "lightgbm"
+    }
+  },
+  "provenance": {
+    "source_commit": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+    "config_sha256": "dca0af9188b63232fb55dcb3a7cd9929fc3b64e56315ef83375bf56f063bc882",
+    "data_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "packages": {
+      "akshare": "1.20.37",
+      "lightgbm": "4.7.0",
+      "gplearn": "0.4.3",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1"
+    },
+    "python": "3.12.14",
+    "seed": 17,
+    "source_dirty": false
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "calendar_sessions": 3117,
+  "raw_rows": 184117,
+  "symbols": 60,
+  "panel_rows": 187020,
+  "factor_eligible_rows": 171299,
+  "missing_factor_or_nontrading_rows": 15721,
+  "all_raw_ohlc_validated": true,
+  "adjusted_return_proxy": true,
+  "pit_universe_certified": false,
+  "cash_event_ledger_certified": false
+}

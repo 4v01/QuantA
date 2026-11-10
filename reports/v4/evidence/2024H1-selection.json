@@ -1,0 +1,163 @@
+{
+  "split": {
+    "train_start": "2021-01-01 00:00:00",
+    "validation_start": "2023-07-01 00:00:00",
+    "test_start": "2024-01-01 00:00:00",
+    "test_end_exclusive": "2024-07-01 00:00:00",
+    "train_max_label_exit": "2023-06-30 00:00:00",
+    "refit_max_label_exit": "2023-12-29 00:00:00",
+    "training_rows": 35267,
+    "validation_rows": 7079,
+    "refit_rows": 42706,
+    "test_rows": 7020
+  },
+  "models": {
+    "ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.054567628625283325,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.054567628625283325
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.05494381465931474,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.05494381465931474
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.07205088410596722,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.07205088410596722
+        }
+      ],
+      "selected": {
+        "alpha": 10000.0,
+        "absolute_validation_rank_ic": 0.07205088410596722,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.07205088410596722
+      }
+    },
+    "elasticnet": {
+      "candidates": [
+        {
+          "alpha": 0.001,
+          "absolute_validation_rank_ic": 0.06989863131456307,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.06989863131456307
+        },
+        {
+          "alpha": 0.01,
+          "absolute_validation_rank_ic": 0.1046100957176028,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.1046100957176028
+        },
+        {
+          "alpha": 0.1,
+          "absolute_validation_rank_ic": -1.0,
+          "direction": 1,
+          "raw_validation_rank_ic": null
+        }
+      ],
+      "selected": {
+        "alpha": 0.01,
+        "absolute_validation_rank_ic": 0.1046100957176028,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.1046100957176028
+      }
+    },
+    "lightgbm": {
+      "candidates": [
+        {
+          "leaves": 15,
+          "best_iteration": 41,
+          "absolute_validation_rank_ic": 0.08972252968495018,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.08972252968495018
+        },
+        {
+          "leaves": 31,
+          "best_iteration": 38,
+          "absolute_validation_rank_ic": 0.08191287298880595,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.08191287298880595
+        }
+      ],
+      "selected": {
+        "leaves": 15,
+        "best_iteration": 41,
+        "absolute_validation_rank_ic": 0.08972252968495018,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.08972252968495018
+      }
+    },
+    "gp_ridge": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "absolute_validation_rank_ic": 0.05458034419840015,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.05458034419840015
+        },
+        {
+          "alpha": 100.0,
+          "absolute_validation_rank_ic": 0.05495819109052251,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.05495819109052251
+        },
+        {
+          "alpha": 10000.0,
+          "absolute_validation_rank_ic": 0.0667616001586482,
+          "direction": 1,
+          "raw_validation_rank_ic": 0.0667616001586482
+        }
+      ],
+      "selected": {
+        "alpha": 10000.0,
+        "absolute_validation_rank_ic": 0.0667616001586482,
+        "direction": 1,
+        "raw_validation_rank_ic": 0.0667616001586482
+      },
+      "formulas": [
+        "add(turnover1, ret60)",
+        "add(ret60, turnover20)",
+        "add(turnover1, ret60)",
+        "add(turnover1, ret60)"
+      ],
+      "sample_rows": 6000,
+      "candidate_program_budget": 512
+    },
+    "x_rerank": {
+      "selected": {
+        "direction": 1,
+        "absolute_validation_rank_ic": 0.10546285899265304,
+        "raw_validation_rank_ic": 0.10546285899265304
+      },
+      "weights": {
+        "pred_rank": 1.0,
+        "vol20": -0.2,
+        "amount_ratio20": 0.1
+      },
+      "base": "lightgbm"
+    }
+  },
+  "provenance": {
+    "source_commit": "726783f7ba6d7c96fcece51484f9d1cbe779d27b",
+    "config_sha256": "dca0af9188b63232fb55dcb3a7cd9929fc3b64e56315ef83375bf56f063bc882",
+    "data_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "packages": {
+      "akshare": "1.20.37",
+      "lightgbm": "4.7.0",
+      "gplearn": "0.4.3",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1"
+    },
+    "python": "3.12.14",
+    "seed": 17,
+    "source_dirty": false
+  }
+}

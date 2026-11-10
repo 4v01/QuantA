@@ -84,12 +84,77 @@ def run(reports='reports/v4',config_path='configs/v4.json'):
     # Every available evaluation calendar date has all five arms, not cherry-picked years.
     sets=[set(pred[pred.model==m].date) for m in config['models']];assert all(x==sets[0] for x in sets)
     counts=pred.groupby(['model','date']).size();assert counts.groupby(level=1).nunique().max()==1
+    integrity=r/'old_reports_integrity.json'
+    if integrity.exists():
+        old=json.loads(integrity.read_text())
+        for name,digest in old['sha256'].items():
+            assert sha256(name)==digest
+            content=subprocess.check_output(['git','show',old['reference_commit']+':'+name])
+            assert hashlib.sha256(content).hexdigest()==digest
+        assert old['unchanged_files']==len(old['sha256'])
+    scores=r/'score_metrics.json'
+    if scores.exists():
+        from sklearn.metrics import r2_score,mean_squared_error
+        expected=json.loads(scores.read_text())
+        for m,g in pred.groupby('model'):
+            z=g.dropna(subset=['target','prediction'])
+            assert expected[m]['rows']==len(z)
+            assert np.isclose(expected[m]['rank_target_r2'],r2_score(z.target,z.prediction),atol=1e-10)
+            assert np.isclose(expected[m]['rank_target_rmse'],np.sqrt(mean_squared_error(z.target,z.prediction)),atol=1e-10)
     result={'status':'passed','source_commit':prov['source_commit'],'oof_model_rows':len(pred),
             'daily_ic_rows_recomputed':len(calculated),'screen_curves_recomputed':curves,
             'selected_model':selected,'paper_status':published['status'],'live_orders_sent':0}
     print(json.dumps(result,indent=2));return result
 
 
+def replay(reports='reports/v4',data_root='data/v4_akshare',outputs='outputs/v4',config_path='configs/v4.json'):
+    """Only load this project's hash-matched, trusted local checkpoints."""
+    import pickle
+    from .data import load
+    from .study import folds,split
+    from .models import x_rerank
+    from .screen import screen_path
+    r=Path(reports);out=Path(outputs);config=json.loads(Path(config_path).read_text())
+    prov=json.loads((r/'provenance.json').read_text())
+    assert sha256(Path(data_root)/'manifest.json')==prov['data_manifest_sha256']
+    panel,raw,adjusted,calendar,manifest,quality=load(config,data_root)
+    public=pd.read_csv(r/'predictions.csv.gz',dtype={'symbol':str},parse_dates=['date'],float_precision='round_trip')
+    generated=[];loaded=0
+    for fold,train,val,begin,end in folds(config):
+        checkpoint=out/'folds'/fold/'models.pkl';receipt=json.loads((r/'evidence'/(fold+'-checkpoint.json')).read_text())
+        assert receipt['provenance']==prov and sha256(checkpoint)==receipt['sha256']
+        with checkpoint.open('rb') as f:models=pickle.load(f)
+        _,_,_,q=split(panel,train,val,begin,end,config);x=q[FEATURES].to_numpy();pred={}
+        for arm in ['ridge','elasticnet']:
+            m=models[arm];pred[arm]=m['model'].predict(m['scaler'].transform(x))*m['direction']
+        m=models['lightgbm'];pred['lightgbm']=m['model'].predict(x)*m['direction']
+        m=models['gp_ridge'];gx=m['input_scaler'].transform(x)
+        z=np.column_stack([gx,np.clip(m['gp'].transform(gx),-100,100)])
+        pred['gp_ridge']=m['model'].predict(m['output_scaler'].transform(z))*m['direction']
+        pred['x_rerank']=x_rerank(q,pred['lightgbm'])*models['x_rerank']['direction']
+        for arm in config['models']:
+            z=q[['date','symbol','label','target']].copy();z['prediction']=pred[arm];z['model']=arm;z['fold']=fold
+            expected=public[(public.model==arm)&(public.fold==fold)].sort_values(['date','symbol'])
+            got=z.sort_values(['date','symbol']);assert expected[['date','symbol']].reset_index(drop=True).equals(got[['date','symbol']].reset_index(drop=True))
+            np.testing.assert_allclose(expected[['label','target','prediction']],got[['label','target','prediction']],rtol=1e-10,atol=1e-11,equal_nan=True)
+            generated.append(z)
+        loaded+=1
+    generated=pd.concat(generated,ignore_index=True);published=pd.read_csv(r/'screen_paths.csv.gz');curves=0
+    for arm in config['models']+['equal_weight']:
+        p=generated[generated.model==('ridge' if arm=='equal_weight' else arm)]
+        for cost in config['screen_oneway_cost_bps']:
+            got=screen_path(p,adjusted,calendar,config['symbols'],config,cost,arm=='equal_weight')
+            expected=published[(published.model==arm)&(published.cost_bps==cost)]
+            assert len(expected)==len(got)
+            for col in ['gross_return','net_return','nav','turnover','cost_fraction','stale_held_marks']:
+                np.testing.assert_allclose(expected[col],got[col],rtol=1e-8,atol=1e-9)
+            curves+=1
+    result={'status':'passed','checkpoints_loaded':loaded,'oof_predictions_replayed':len(generated),'screen_curves_replayed':curves,
+            'scope':'Trusted own cached models and vendor-adjusted factor-return screen; not executable market matching certification'}
+    print(json.dumps(result,indent=2));return result
+
+
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--reports',default='reports/v4');p.add_argument('--config',default='configs/v4.json');a=p.parse_args();run(a.reports,a.config)
+    p=argparse.ArgumentParser();p.add_argument('--reports',default='reports/v4');p.add_argument('--config',default='configs/v4.json');p.add_argument('--local-replay',action='store_true');p.add_argument('--data',default='data/v4_akshare');p.add_argument('--outputs',default='outputs/v4');a=p.parse_args();run(a.reports,a.config)
+    if a.local_replay:replay(a.reports,a.data,a.outputs,a.config)
 if __name__=='__main__':main()

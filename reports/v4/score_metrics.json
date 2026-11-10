@@ -1,0 +1,32 @@
+{
+  "elasticnet": {
+    "rows": 83328,
+    "rank_target_rmse": 0.2883636306750337,
+    "rank_target_r2": 0.0005867624275740502,
+    "target_definition": "cross-sectional future hfq proxy return percentile minus 0.5, not raw return R2"
+  },
+  "gp_ridge": {
+    "rows": 83328,
+    "rank_target_rmse": 0.2885353996001473,
+    "rank_target_r2": -0.0006042287230769716,
+    "target_definition": "cross-sectional future hfq proxy return percentile minus 0.5, not raw return R2"
+  },
+  "lightgbm": {
+    "rows": 83328,
+    "rank_target_rmse": 0.28855294834509587,
+    "rank_target_r2": -0.0007259460749797775,
+    "target_definition": "cross-sectional future hfq proxy return percentile minus 0.5, not raw return R2"
+  },
+  "ridge": {
+    "rows": 83328,
+    "rank_target_rmse": 0.2884833429889911,
+    "rank_target_r2": -0.00024320982176329053,
+    "target_definition": "cross-sectional future hfq proxy return percentile minus 0.5, not raw return R2"
+  },
+  "x_rerank": {
+    "rows": 83328,
+    "rank_target_rmse": 0.4212279273776814,
+    "rank_target_r2": -1.132546167573265,
+    "target_definition": "cross-sectional future hfq proxy return percentile minus 0.5, not raw return R2"
+  }
+}

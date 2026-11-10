@@ -8,6 +8,8 @@ python -m pytest -q
 python -m alphacontextlab.v4.audit
 ```
 
+可用`python -m alphacontextlab.v4.audit --local-replay`重放本项目受信本地快照的12组模型及全部18条曲线。
+
 公开审计不取数，不读取pickle：用逐股票OOF预测/收益代理重算每日IC、全部区块区间、18条收益成本曲线、验证选择及准入。源提交和环境版本见reports/v4/provenance.json，27因子与全部60代码/门槛见configs/v4.json。
 
 ## 精确快照复训

@@ -1,0 +1,15 @@
+{
+  "sources": [
+    {
+      "file": "600000-20261110T032553669244.json",
+      "sha256": "5e239454980722d5df6ff1e5563f278a7fca4357a7cce05337f198aee4be0927",
+      "rows": 10,
+      "fetched_at": "2026-11-10T03:25:52.755710+00:00",
+      "earliest_published": "2026-10-08T12:59:00+00:00",
+      "latest_published": "2026-11-06T11:54:00+00:00"
+    }
+  ],
+  "used_in_historical_models": false,
+  "availability": "max(published_at, first_seen_at); all collected after evaluation cutoff",
+  "note": "Current small public snapshot, not a complete archive. No sentiment performance claimed."
+}
