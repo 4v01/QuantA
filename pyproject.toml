@@ -9,6 +9,9 @@ description = "Auditable daily A-share ETF sequence and conditional-memory resea
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26", "pandas>=2.2", "scipy>=1.11", "torch>=2.2", "scikit-learn>=1.4"]
 
+[project.optional-dependencies]
+v4 = ["akshare==1.20.37", "lightgbm==4.7.0", "gplearn==0.4.3"]
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

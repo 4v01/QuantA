@@ -12,7 +12,7 @@ jobs:
           python-version: '3.12'
       - run: pip install numpy pandas scipy scikit-learn pytest
       - run: pip install torch --index-url https://download.pytorch.org/whl/cpu
-      - run: pip install --no-deps -e .
+      - run: pip install -e ".[v4]"
       - run: python -m pytest -q
         env:
           OMP_NUM_THREADS: '2'
@@ -27,4 +27,7 @@ jobs:
           fi
           if test -f reports/v3/provenance.json; then
             python -m alphacontextlab.v3.audit
+          fi
+          if test -f reports/v4/provenance.json; then
+            python -m alphacontextlab.v4.audit
           fi
