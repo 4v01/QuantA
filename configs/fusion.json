@@ -1,0 +1,17 @@
+{
+  "version": "v5-heterogeneous-fixed-group-fusion",
+  "weights": {"fundamental":0.30,"price_volume":0.40,"alternative":0.30},
+  "weight_interpretation":"Standardized forecast-score mixture, not feature counts or capital allocation",
+  "alternative_weights":{"news":0.25,"x":0.25,"polymarket":0.25,"satellite":0.25},
+  "missing_policy":"strict_block_no_renormalization",
+  "score_clip":3.0,
+  "seed":17,
+  "universe_config":"configs/v4.json",
+  "fundamental_fields":{"roe_pct":"ROEJQ","revenue_growth_pct":"TOTALOPERATEREVETZ","profit_growth_pct":"PARENTNETPROFITTZ","debt_assets_pct":"ZCFZL","eps_cny":"EPSJB","book_value_per_share_cny":"BPS"},
+  "max_age_days":{"fundamental":550,"price_volume":4,"news":7,"x":3,"polymarket":3,"satellite":45},
+  "polymarket_entity_links":[],
+  "satellite_site_links":[],
+  "x_status":"requires_user_authorized_export_or_configured_api_access",
+  "satellite_status":"catalogue_discovery_only_until_pixels_and_verified_company_site_mapping",
+  "notes":["All three group forecasts must pass data availability and calibration checks.","All four alternative inputs are required by this configuration. Change the configuration explicitly to run a different subset.","Current collected fundamentals/news/market metadata are not a historic PIT archive.","No historical IC, Sharpe or paper admission is inferred from adapter success."]
+}
