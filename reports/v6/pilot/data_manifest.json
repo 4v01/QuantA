@@ -1,0 +1,728 @@
+{
+  "source_repository": "https://github.com/BigRoddy/CMIN-Dataset",
+  "source_commit": "3f571a53b81d8f3ea7b3afb9877bdbdbeae54c97",
+  "source_license": "MIT (repository compilation; original publisher rights remain)",
+  "news_sha256": "38c334628be7efd4973096730ed7e4289cbc0ce93790fc6716fceb71908e57df",
+  "news_rows": 433482,
+  "mapped_symbols": [
+    {
+      "symbol": "000001",
+      "name": "平安银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000002",
+      "name": "万科A",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000063",
+      "name": "中兴通讯",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000069",
+      "name": "华侨城A",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000100",
+      "name": "TCL科技",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000157",
+      "name": "中联重科",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000333",
+      "name": "美的集团",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000338",
+      "name": "潍柴动力",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000425",
+      "name": "徐工机械",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000538",
+      "name": "云南白药",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000568",
+      "name": "泸州老窖",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000625",
+      "name": "长安汽车",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000651",
+      "name": "格力电器",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000661",
+      "name": "长春高新",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000725",
+      "name": "京东方A",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000768",
+      "name": "中航西飞",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000776",
+      "name": "广发证券",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000858",
+      "name": "五粮液",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000895",
+      "name": "双汇发展",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "000938",
+      "name": "紫光股份",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002001",
+      "name": "新和成",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002007",
+      "name": "华兰生物",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002008",
+      "name": "大族激光",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002027",
+      "name": "分众传媒",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002142",
+      "name": "宁波银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002179",
+      "name": "中航光电",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002230",
+      "name": "科大讯飞",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002236",
+      "name": "大华股份",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002241",
+      "name": "歌尔股份",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "002271",
+      "name": "东方雨虹",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600000",
+      "name": "浦发银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600009",
+      "name": "上海机场",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600010",
+      "name": "包钢股份",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600015",
+      "name": "华夏银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600016",
+      "name": "民生银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600019",
+      "name": "宝钢股份",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600028",
+      "name": "中国石化",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600030",
+      "name": "中信证券",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600031",
+      "name": "三一重工",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600036",
+      "name": "招商银行",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600048",
+      "name": "保利发展",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600050",
+      "name": "中国联通",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600104",
+      "name": "上汽集团",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600111",
+      "name": "北方稀土",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600150",
+      "name": "中国船舶",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600196",
+      "name": "复星医药",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600276",
+      "name": "恒瑞医药",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600309",
+      "name": "万华化学",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600406",
+      "name": "国电南瑞",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600436",
+      "name": "片仔癀",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600547",
+      "name": "山东黄金",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600585",
+      "name": "海螺水泥",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600660",
+      "name": "福耀玻璃",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600690",
+      "name": "海尔智家",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "600809",
+      "name": "山西汾酒",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "601088",
+      "name": "中国神华",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    },
+    {
+      "symbol": "601318",
+      "name": "中国平安",
+      "mapping_evidence": "current vendor security identity + exact archive filename + CMIN price-code presence"
+    }
+  ],
+  "excluded_symbols": [
+    {
+      "symbol": "600703",
+      "name": "三安光电",
+      "reason": "No unambiguous historical news filename; no replacement"
+    },
+    {
+      "symbol": "600745",
+      "name": "*ST闻泰",
+      "reason": "No unambiguous historical news filename; no replacement"
+    }
+  ],
+  "source_files": [
+    {
+      "symbol": "000001",
+      "file": "CMIN-CN/news/raw/平安银行.xlsx",
+      "news_sha256": "9c11f053d65c10abb01d00f1b82db47482705345ae446433cc2230712020bfce",
+      "financial_file": "data/fusion/v5_current/fundamental/000001-financial.csv",
+      "financial_sha256": "1b2f4026a1984d3fdec85aaf054c5bc2b90092e44cab26e8852ff2cb8a81a152"
+    },
+    {
+      "symbol": "000002",
+      "file": "CMIN-CN/news/raw/万科A.xlsx",
+      "news_sha256": "0330928033fb91137e1cf1167ee743159db70e1682fd04ea47c198dd49110e0c",
+      "financial_file": "data/fusion/v5_current/fundamental/000002-financial.csv",
+      "financial_sha256": "04a4181cd45bc2c71677c36683877598774a2dbe0a4c323602df5b5d9335cc36"
+    },
+    {
+      "symbol": "000063",
+      "file": "CMIN-CN/news/raw/中兴通讯.xlsx",
+      "news_sha256": "c7ab3aa00ffa3561f969feba727a10b46f019109d34f9c01ea601d41d27a849b",
+      "financial_file": "data/fusion/v5_current/fundamental/000063-financial.csv",
+      "financial_sha256": "2e7d22e5bdbae59c22a77dafab6cfd9c6c3a5ed63a0bb241fda4ef0b0d5a4176"
+    },
+    {
+      "symbol": "000069",
+      "file": "CMIN-CN/news/raw/华侨城A.xlsx",
+      "news_sha256": "bb9f5f41374c6f5ebcc4b259bed4193468ebb6ab8fc47cd83c6bd5c5e041bfa5",
+      "financial_file": "data/fusion/v5_current/fundamental/000069-financial.csv",
+      "financial_sha256": "5baba633801405a437ae6c88f89eedb0c5d1db0a256eb27f8a87719b38ff5ea0"
+    },
+    {
+      "symbol": "000100",
+      "file": "CMIN-CN/news/raw/TCL科技.xlsx",
+      "news_sha256": "11448367d4fc21884da4717520e469a3b1eebb9766bba2f9c300384f52e74803",
+      "financial_file": "data/fusion/v5_current/fundamental/000100-financial.csv",
+      "financial_sha256": "c9d06f57cf7892aaff82ca6ad792428eac0184d9ee782ebeb0c8fa68c3b24758"
+    },
+    {
+      "symbol": "000157",
+      "file": "CMIN-CN/news/raw/中联重科.xlsx",
+      "news_sha256": "81ee567704d31f4715e032c75c18f63bca35fb601dfa4e9aa0d14017255e8a50",
+      "financial_file": "data/fusion/v5_current/fundamental/000157-financial.csv",
+      "financial_sha256": "ffc8b6a0f56476c63b815d3796e3cbcb0841188771974f65538e5c995bfbf4cf"
+    },
+    {
+      "symbol": "000333",
+      "file": "CMIN-CN/news/raw/美的集团.xlsx",
+      "news_sha256": "e9c253ab4aafcc508a6a497e06fa9dccdbdffa26f8f44e64c149ef26a92c7607",
+      "financial_file": "data/fusion/v5_current/fundamental/000333-financial.csv",
+      "financial_sha256": "227ea5800fb8a88aa2ffab7cc738f2ab85a1df1412b478c695ca0758b086263c"
+    },
+    {
+      "symbol": "000338",
+      "file": "CMIN-CN/news/raw/潍柴动力.xlsx",
+      "news_sha256": "5b2a63f502cf0c2126e4e1b2d5da65542b1e44ef619c9fde926d161eccb8a869",
+      "financial_file": "data/fusion/v5_current/fundamental/000338-financial.csv",
+      "financial_sha256": "31d2a6ed5ed5ff80ac705438ab73da6905ef16095b41b995cd5245e458bf2730"
+    },
+    {
+      "symbol": "000425",
+      "file": "CMIN-CN/news/raw/徐工机械.xlsx",
+      "news_sha256": "96a938862dbc7e7133894f5c48ffa7799fceeb4650497a8a649e143454134401",
+      "financial_file": "data/fusion/v5_current/fundamental/000425-financial.csv",
+      "financial_sha256": "96e768d24e6843a3a07ddee38cfd0af887ae9bd955da2f1653e912af9118e5b6"
+    },
+    {
+      "symbol": "000538",
+      "file": "CMIN-CN/news/raw/云南白药.xlsx",
+      "news_sha256": "c261e7df1581f1ffdc08c7a8cf13d84c5a049c209a0ded050bf2dcb0ccf1f7c7",
+      "financial_file": "data/fusion/v5_current/fundamental/000538-financial.csv",
+      "financial_sha256": "738e701c594669972e51119e7c4f9ea5c261738b63e02aed26b0470799780407"
+    },
+    {
+      "symbol": "000568",
+      "file": "CMIN-CN/news/raw/泸州老窖.xlsx",
+      "news_sha256": "1de9da9b2db13d6bd533e399f0ce4308006b059062663c1807dcf3c956518c6d",
+      "financial_file": "data/fusion/v5_current/fundamental/000568-financial.csv",
+      "financial_sha256": "cd8eec709998d984809f7e4357025edcdc91773a53897a35e6d450a709385777"
+    },
+    {
+      "symbol": "000625",
+      "file": "CMIN-CN/news/raw/长安汽车.xlsx",
+      "news_sha256": "e1b78069be5e208fb5e93add82261346b15028fd74ffcf667ac60e5fe1d7f9ba",
+      "financial_file": "data/fusion/v5_current/fundamental/000625-financial.csv",
+      "financial_sha256": "2f012960d4e230a98f0e6a744758de1988beee80cfa994126342f1a489d7d3f2"
+    },
+    {
+      "symbol": "000651",
+      "file": "CMIN-CN/news/raw/格力电器.xlsx",
+      "news_sha256": "307f6fe39671af141356983643b89bcc49964d087371f524a850208aab606698",
+      "financial_file": "data/fusion/v5_current/fundamental/000651-financial.csv",
+      "financial_sha256": "4be9c9d703a5ba51c2809e46948565b5651ee55e5673f13ab99c2719910a93db"
+    },
+    {
+      "symbol": "000661",
+      "file": "CMIN-CN/news/raw/长春高新.xlsx",
+      "news_sha256": "103d0d8636a63638ab05fe78cef02536f7b08359c3791be7c44cdc913f54e50b",
+      "financial_file": "data/fusion/v5_current/fundamental/000661-financial.csv",
+      "financial_sha256": "c6c7d3d1a0b326db640073cd26d45be90868f57a797542bad7a2e1f9267630fb"
+    },
+    {
+      "symbol": "000725",
+      "file": "CMIN-CN/news/raw/京东方A.xlsx",
+      "news_sha256": "3c082c1bfe1d75db362f5d3c96e681b990fefc6e527e0a23c58a95aadcc0488a",
+      "financial_file": "data/fusion/v5_current/fundamental/000725-financial.csv",
+      "financial_sha256": "cc554bbc135fde7afdea7cc9053685a21a1dfbda2df81a56399c8add06a93b11"
+    },
+    {
+      "symbol": "000768",
+      "file": "CMIN-CN/news/raw/中航西飞.xlsx",
+      "news_sha256": "85f26ee4b0487149359b2f76188ddce89346d6e0e65f265dabf983d1ad52c406",
+      "financial_file": "data/fusion/v5_current/fundamental/000768-financial.csv",
+      "financial_sha256": "727df1788837ba3c4fe3d120060feeff48525f9240950e353b0d3d493d45992f"
+    },
+    {
+      "symbol": "000776",
+      "file": "CMIN-CN/news/raw/广发证券.xlsx",
+      "news_sha256": "02d7fd046be1c9b8bc4c5d00d9d464ab99ba27b037c24d5f876107377dbd9b1a",
+      "financial_file": "data/fusion/v5_current/fundamental/000776-financial.csv",
+      "financial_sha256": "abe9c3977dcd40704c2e416878bab1eaa71748092c38bcae147c6cc9d51fbeb4"
+    },
+    {
+      "symbol": "000858",
+      "file": "CMIN-CN/news/raw/五粮液.xlsx",
+      "news_sha256": "fedeb9313fe26dcbb370926463310d1344fd7574c91e453117c932af07eb1fd7",
+      "financial_file": "data/fusion/v5_current/fundamental/000858-financial.csv",
+      "financial_sha256": "c01129f8c6c19a9187b340b262dd7d869409e529b024781799b49d4987be0ba1"
+    },
+    {
+      "symbol": "000895",
+      "file": "CMIN-CN/news/raw/双汇发展.xlsx",
+      "news_sha256": "34196b258636b1637782fd17321d68b0bfcec3a1bbff50ae97891b2b81da21ba",
+      "financial_file": "data/fusion/v5_current/fundamental/000895-financial.csv",
+      "financial_sha256": "e5df59f299381b562cd2beb75f76dc2454f3827dd684585a63d71e3e1c13fbe6"
+    },
+    {
+      "symbol": "000938",
+      "file": "CMIN-CN/news/raw/紫光股份.xlsx",
+      "news_sha256": "4f3845d50a3d30f21f5aedce3e02f6e15411e2b650036ddc81b5e5ef23beecc9",
+      "financial_file": "data/fusion/v5_current/fundamental/000938-financial.csv",
+      "financial_sha256": "f7c4c0947f08c2397fe5b6fe124c2cd38426ab0a341dc82297ee7c61d9155bc8"
+    },
+    {
+      "symbol": "002001",
+      "file": "CMIN-CN/news/raw/新和成.xlsx",
+      "news_sha256": "4f07b3372f08bdbaee2042ff39d93820591629d840fa8d6c5417e8db8c57e97e",
+      "financial_file": "data/fusion/v5_current/fundamental/002001-financial.csv",
+      "financial_sha256": "c215e06bd25811ed5742dd30003b725922db2e43970fd1421866a0e3f88da852"
+    },
+    {
+      "symbol": "002007",
+      "file": "CMIN-CN/news/raw/华兰生物.xlsx",
+      "news_sha256": "e6d010650c8fab6bc79f6ebe59de94a60a7486e55c56b1a88361300cf32faa66",
+      "financial_file": "data/fusion/v5_current/fundamental/002007-financial.csv",
+      "financial_sha256": "e06f66f207285f7121821238972ab1bafd7f39a4ca48db680df6fe7298004909"
+    },
+    {
+      "symbol": "002008",
+      "file": "CMIN-CN/news/raw/大族激光.xlsx",
+      "news_sha256": "b0d796ddd760f154e3945bb131fcbd952c986bf1e15eb121dd4a511bd7834833",
+      "financial_file": "data/fusion/v5_current/fundamental/002008-financial.csv",
+      "financial_sha256": "81a742c1ba58e30fe70d50f8dca6bd7fae561306971bb2ba69c728708b736507"
+    },
+    {
+      "symbol": "002027",
+      "file": "CMIN-CN/news/raw/分众传媒.xlsx",
+      "news_sha256": "7672ee040c6be30f0312d164fd172925912734e7e8bac9bf45b06634faaea355",
+      "financial_file": "data/fusion/v5_current/fundamental/002027-financial.csv",
+      "financial_sha256": "f0a01f4721a641b75c236c2c45ab2c6bb51f06019e4e53f30d268c319e3f2f4a"
+    },
+    {
+      "symbol": "002142",
+      "file": "CMIN-CN/news/raw/宁波银行.xlsx",
+      "news_sha256": "5dfab67a75a2d0765ec3221f0c9f6de5022ca7e9e868c8e412c2de43aa7e09c6",
+      "financial_file": "data/fusion/v5_current/fundamental/002142-financial.csv",
+      "financial_sha256": "d1d601b197442fe1cef0a0865e44576d2c0409910eafa0718554fa1a63aad9a5"
+    },
+    {
+      "symbol": "002179",
+      "file": "CMIN-CN/news/raw/中航光电.xlsx",
+      "news_sha256": "e442e775cbf2087ed25c695f9fff209ea00a4f30c5804fc7f053c993666af7d5",
+      "financial_file": "data/fusion/v5_current/fundamental/002179-financial.csv",
+      "financial_sha256": "df77277d6acabd8105ef02c4ff61251a5ebb0215ca2805328b302a63d12abe34"
+    },
+    {
+      "symbol": "002230",
+      "file": "CMIN-CN/news/raw/科大讯飞.xlsx",
+      "news_sha256": "b3acff653ff4f1b99aa6a40311610ab6e75f77421e7125abe28338bfb38c5749",
+      "financial_file": "data/fusion/v5_current/fundamental/002230-financial.csv",
+      "financial_sha256": "9c1c834644d8073f6bc99031e473ff6fbac62d2539a397e36c97f7f69aac3a2d"
+    },
+    {
+      "symbol": "002236",
+      "file": "CMIN-CN/news/raw/大华股份.xlsx",
+      "news_sha256": "0cd89b56d42284d3a843deefe0531f42f6ee9dcd77a3af572b8996ecf04ce8c1",
+      "financial_file": "data/fusion/v5_current/fundamental/002236-financial.csv",
+      "financial_sha256": "e52783541ab11d2b0eba62fa01b5643f007b951f5f28aeeb1832298998c3a7d9"
+    },
+    {
+      "symbol": "002241",
+      "file": "CMIN-CN/news/raw/歌尔股份.xlsx",
+      "news_sha256": "3fdfb0826b6ecaac951df440ddda0313a08114706d0e6227f9d7a9bd7371b977",
+      "financial_file": "data/fusion/v5_current/fundamental/002241-financial.csv",
+      "financial_sha256": "d5453f005a36cbc4b3eb5b6242cc5b02a98797e39b899ce6a417429423a574b5"
+    },
+    {
+      "symbol": "002271",
+      "file": "CMIN-CN/news/raw/东方雨虹.xlsx",
+      "news_sha256": "d130da12e24661a0e75999bd30cf99267fe38052ac9c5638c436cbeb5924d819",
+      "financial_file": "data/fusion/v5_current/fundamental/002271-financial.csv",
+      "financial_sha256": "266fe777ca6ad4cd0ccf97726b73515ab3b1f8febe83c004e909106b0dc83903"
+    },
+    {
+      "symbol": "600000",
+      "file": "CMIN-CN/news/raw/浦发银行.xlsx",
+      "news_sha256": "8b3e036407e21f7a6dc5a9e0521b56a95545562217124955de7465cbe6a4fd2c",
+      "financial_file": "data/fusion/v5_current/fundamental/600000-financial.csv",
+      "financial_sha256": "d91194bad6b347e585ba43a33b897b00085e1417cf02865c302131813b89ef5e"
+    },
+    {
+      "symbol": "600009",
+      "file": "CMIN-CN/news/raw/上海机场.xlsx",
+      "news_sha256": "f7b7e141962365abcf9e70f303f3c8ed947ddec47ff27c9fdf00de481a488919",
+      "financial_file": "data/fusion/v5_current/fundamental/600009-financial.csv",
+      "financial_sha256": "9c06dc16e90df1cb3e85aebdeff3116a56a3c5ba2aedaf550d708a0111cca6a4"
+    },
+    {
+      "symbol": "600010",
+      "file": "CMIN-CN/news/raw/包钢股份.xlsx",
+      "news_sha256": "05b1521305600022164694205e48a67c32d9a60348a55545dd82d28fe765af41",
+      "financial_file": "data/fusion/v5_current/fundamental/600010-financial.csv",
+      "financial_sha256": "753fab36d95bde6a1cda9561ea1e0cd1c6e68b36259bc8899dbecfc3ec64fe89"
+    },
+    {
+      "symbol": "600015",
+      "file": "CMIN-CN/news/raw/华夏银行.xlsx",
+      "news_sha256": "02f6b425491e48d07fa67c6043917d3a8e21abd1117f4b3249c628b05be7cc93",
+      "financial_file": "data/fusion/v5_current/fundamental/600015-financial.csv",
+      "financial_sha256": "1b882767963416d4b4c3dcdf2f5909508f406ab28c60259b21fa0d131ee34975"
+    },
+    {
+      "symbol": "600016",
+      "file": "CMIN-CN/news/raw/民生银行.xlsx",
+      "news_sha256": "bf5c78fa78385855a9b5a16765e4e6f3cd4127854eb80c3aa2b8787396d1090f",
+      "financial_file": "data/fusion/v5_current/fundamental/600016-financial.csv",
+      "financial_sha256": "55a9122958bd08988efac79c755ed97fc2e7a3d7c9fb38185c0eed5236a4b162"
+    },
+    {
+      "symbol": "600019",
+      "file": "CMIN-CN/news/raw/宝钢股份.xlsx",
+      "news_sha256": "cb85f2031f74a332e2ce591becfb9801e7de46864d84350261920404eb02d7c5",
+      "financial_file": "data/fusion/v5_current/fundamental/600019-financial.csv",
+      "financial_sha256": "9300f512df38762df88b54d44ded6cbbd509efb3970f7dc6d3082290bc813b4d"
+    },
+    {
+      "symbol": "600028",
+      "file": "CMIN-CN/news/raw/中国石化.xlsx",
+      "news_sha256": "270adac809021f85be57de5bfc0bd98184de2ccd71bf4a63ff236c7309ad3e23",
+      "financial_file": "data/fusion/v5_current/fundamental/600028-financial.csv",
+      "financial_sha256": "6e5f425c7845080a29ebaf53585e1160efe03536efe1870b77c5d2b5085f9101"
+    },
+    {
+      "symbol": "600030",
+      "file": "CMIN-CN/news/raw/中信证券.xlsx",
+      "news_sha256": "65461802137a3fd721b796dff782eb0ed710eef7ef348e99ec389ea16d18c99e",
+      "financial_file": "data/fusion/v5_current/fundamental/600030-financial.csv",
+      "financial_sha256": "5fe45ef2536f664f91a043e932390ae15a0ab223bd4972dcdbb416475ad82173"
+    },
+    {
+      "symbol": "600031",
+      "file": "CMIN-CN/news/raw/三一重工.xlsx",
+      "news_sha256": "d1945fd068c05e4a87504f600326008802697d0f3926b7c7689d84d3abd00f94",
+      "financial_file": "data/fusion/v5_current/fundamental/600031-financial.csv",
+      "financial_sha256": "bd2bb8de827f1b1ac500f104c5f89ca410e086d428b0ccc51db16d88f77033c0"
+    },
+    {
+      "symbol": "600036",
+      "file": "CMIN-CN/news/raw/招商银行.xlsx",
+      "news_sha256": "aab99e0c51a0934545a021c653384698a8c2c37ace9ce7fce2169e40b84a87d6",
+      "financial_file": "data/fusion/v5_current/fundamental/600036-financial.csv",
+      "financial_sha256": "4f6d2bbb377528b1524fd4bb8f75c2f4c956cc1ba00a8ca5ad902c55cacb03b2"
+    },
+    {
+      "symbol": "600048",
+      "file": "CMIN-CN/news/raw/保利发展.xlsx",
+      "news_sha256": "e65965ec746c2e987c904e602c52c5040328d72b917577339e34667c1c906ec9",
+      "financial_file": "data/fusion/v5_current/fundamental/600048-financial.csv",
+      "financial_sha256": "6a5649efd3c678e052981997e54119c9b6da5085631042b843e070a4075eba0d"
+    },
+    {
+      "symbol": "600050",
+      "file": "CMIN-CN/news/raw/中国联通.xlsx",
+      "news_sha256": "ad53ee124e51ae6c9424ea70283b37a0e1a7f9f79f3e626ef18e112212566950",
+      "financial_file": "data/fusion/v5_current/fundamental/600050-financial.csv",
+      "financial_sha256": "3ecb1cbc1c5ad81d182c3557c79d157d3016191809b000d959ffd90f3372a52a"
+    },
+    {
+      "symbol": "600104",
+      "file": "CMIN-CN/news/raw/上汽集团.xlsx",
+      "news_sha256": "da8d4f3261d8bb5fee1a8fbdbfe2ac999ec08eb2f780f812f583bf5da4c1aa76",
+      "financial_file": "data/fusion/v5_current/fundamental/600104-financial.csv",
+      "financial_sha256": "29c4102d9941ef694d8bbba5ddf8c25b568d622f4f4fcf1f56828f2c359a8775"
+    },
+    {
+      "symbol": "600111",
+      "file": "CMIN-CN/news/raw/北方稀土.xlsx",
+      "news_sha256": "8370fe89aec918632ac26aa254cbe84f63aa9bf622361fa5174877d33781af46",
+      "financial_file": "data/fusion/v5_current/fundamental/600111-financial.csv",
+      "financial_sha256": "fd9214a618cc2f5020d9a49e15d2e56a989280e8e618681c85dd81c2cfc3147d"
+    },
+    {
+      "symbol": "600150",
+      "file": "CMIN-CN/news/raw/中国船舶.xlsx",
+      "news_sha256": "6654083095e4046890baf11d50a8f84860a530b068557bcdb3a628eea10bb8d3",
+      "financial_file": "data/fusion/v5_current/fundamental/600150-financial.csv",
+      "financial_sha256": "7853b5d9b4dacf770fcb263c087c3c390a99df37e870c98ded72f4e31d830629"
+    },
+    {
+      "symbol": "600196",
+      "file": "CMIN-CN/news/raw/复星医药.xlsx",
+      "news_sha256": "6c74bee6cfbbed15e8bd9acc1af2686b9c87824b22065f699ae99df750ec115a",
+      "financial_file": "data/fusion/v5_current/fundamental/600196-financial.csv",
+      "financial_sha256": "e6e9b02baf864300a47a15957c4c5d904e03ac26149dcd7d2d1ced1987f1aec8"
+    },
+    {
+      "symbol": "600276",
+      "file": "CMIN-CN/news/raw/恒瑞医药.xlsx",
+      "news_sha256": "1f47074b0d4d75e144a37f16679359f361b110414b3cffe2bcc032f428fd3516",
+      "financial_file": "data/fusion/v5_current/fundamental/600276-financial.csv",
+      "financial_sha256": "05a3f1a3d73a11ada8531f0d54946d2d90d7f0b507f18c492659c64aada909f6"
+    },
+    {
+      "symbol": "600309",
+      "file": "CMIN-CN/news/raw/万华化学.xlsx",
+      "news_sha256": "9459168655d69e5263ac7165bad6db617019076e826a66fbb4ccb7fcb430c512",
+      "financial_file": "data/fusion/v5_current/fundamental/600309-financial.csv",
+      "financial_sha256": "36eea93a464b63968f1980698f51b8e46d6f736d611765ece96c389468280aba"
+    },
+    {
+      "symbol": "600406",
+      "file": "CMIN-CN/news/raw/国电南瑞.xlsx",
+      "news_sha256": "10c629d59787558bce4241226fcfb2c2c41d4d6c07b848231138fbd93c3ae698",
+      "financial_file": "data/fusion/v5_current/fundamental/600406-financial.csv",
+      "financial_sha256": "6b3e84dc7aaf1343f4203fdea3a3be65d0b11a4825711216dcb4a85922e2a8de"
+    },
+    {
+      "symbol": "600436",
+      "file": "CMIN-CN/news/raw/片仔癀.xlsx",
+      "news_sha256": "9e83e7d09312c1b3ca8e737735a50cad75885ba9bd201b5da319a8b783f6832b",
+      "financial_file": "data/fusion/v5_current/fundamental/600436-financial.csv",
+      "financial_sha256": "881c62dad54e0b0fd548b7816c10425afc20fe13a64b649c8833a807c75ee035"
+    },
+    {
+      "symbol": "600519",
+      "file": "CMIN-CN/news/raw/贵州茅台.xlsx",
+      "news_sha256": "6013c8293179d523c2bcf5a9e139c5347f21803d25a28bd74def419c2025cecc",
+      "financial_file": "data/fusion/v5_current/fundamental/600519-financial.csv",
+      "financial_sha256": "ebefb85ae143919c83e58fcd8ff9445397a52257a066a12c57ef3e5ac7ee6686"
+    },
+    {
+      "symbol": "600547",
+      "file": "CMIN-CN/news/raw/山东黄金.xlsx",
+      "news_sha256": "aac37fee109b92aa6d365f94c09038471fc7ae486133b54449c61e2128df0216",
+      "financial_file": "data/fusion/v5_current/fundamental/600547-financial.csv",
+      "financial_sha256": "2c9e1648e734a11298b5a27692c8700b3ddb74e1bbf91741cabb391c690168f3"
+    },
+    {
+      "symbol": "600585",
+      "file": "CMIN-CN/news/raw/海螺水泥.xlsx",
+      "news_sha256": "9fc2b16f6d6505d88b10040c58253c8735c0eb0dba48038ae215daa3c16c0c4e",
+      "financial_file": "data/fusion/v5_current/fundamental/600585-financial.csv",
+      "financial_sha256": "f88ac7cf874378b34522227b885ff40aa644882c014857fb6651f59b8b85241f"
+    },
+    {
+      "symbol": "600660",
+      "file": "CMIN-CN/news/raw/福耀玻璃.xlsx",
+      "news_sha256": "0d7faf0e512e4a6be881599dddef3992a05921fc735aecc683b57c534ef40b67",
+      "financial_file": "data/fusion/v5_current/fundamental/600660-financial.csv",
+      "financial_sha256": "bfdefcb1d27a0901eb511038976c046439823db1dd1d5b6f82a89199b91ca460"
+    },
+    {
+      "symbol": "600690",
+      "file": "CMIN-CN/news/raw/海尔智家.xlsx",
+      "news_sha256": "4311c665f5103ade82137e2ded6d63f4d0d74bb73b50bb0c5f3a73ee74aa4503",
+      "financial_file": "data/fusion/v5_current/fundamental/600690-financial.csv",
+      "financial_sha256": "3ae1b427fe21f02d9e518840ed6e5a7498d01c22b2122a4437fc9691c8e04c67"
+    },
+    {
+      "symbol": "600809",
+      "file": "CMIN-CN/news/raw/山西汾酒.xlsx",
+      "news_sha256": "0dbeaeb6082bcdaf561a747523acf6c9677cce0e066ae23019a0a42b81fc1356",
+      "financial_file": "data/fusion/v5_current/fundamental/600809-financial.csv",
+      "financial_sha256": "db822d914892fa29730b371a77ac9e6f3d00cf3e8b0367589d55d2348bd9f156"
+    },
+    {
+      "symbol": "601088",
+      "file": "CMIN-CN/news/raw/中国神华.xlsx",
+      "news_sha256": "e0d0f878d5182c6b492b79c05036e4eb68095bc5acbd9def16e1f882d38133a8",
+      "financial_file": "data/fusion/v5_current/fundamental/601088-financial.csv",
+      "financial_sha256": "7ed3e9db8457f4881c2add40cd2dce24d841193ecb734e01e12c4333b31d4158"
+    },
+    {
+      "symbol": "601318",
+      "file": "CMIN-CN/news/raw/中国平安.xlsx",
+      "news_sha256": "ea85119c65d37d5c97737b7fdda30f276d86767b38fe562484a8220699aceb9c",
+      "financial_file": "data/fusion/v5_current/fundamental/601318-financial.csv",
+      "financial_sha256": "d9060c3b957f656e2d5468a95de3894f952ef03ed9f53c8d4843d4110e1a0717"
+    }
+  ],
+  "financial_source": "Existing immutable AKShare vendor financial snapshots with NOTICE_DATE and UPDATE_DATE",
+  "strict_first_seen_history_available": false,
+  "availability_mode": "vendor_max_notice_update_plus_one_day_and_news_date_plus_one_day_RECONSTRUCTION_NOT_CERTIFIED_PIT",
+  "news_fields_used": [
+    "published_date",
+    "title",
+    "publisher"
+  ],
+  "no_dataset_return_labels_or_prices_used_as_features": true
+}

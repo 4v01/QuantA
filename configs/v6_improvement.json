@@ -1,0 +1,41 @@
+{
+  "version": "v6-single-news-encoder-direction",
+  "decision_basis": "2020 pilot only: alternative IC -0.004293, fusion 0.003686 below price 0.006823; near-zero alternative/price correlation; off-topic items in company raw files",
+  "pilot_source_commit": "7b4ee5ec33bbeb76a3a643a61a317eca0891063f",
+  "pilot_summary_sha256": "8fbfab7594894ffb6572455670ef0cd4192edfcd667da54feb01f988b064eee8",
+  "followup_years": [
+    2021
+  ],
+  "variants": [
+    "baseline",
+    "entity_filter",
+    "entity_tfidf"
+  ],
+  "one_direction": "Improve entity grounding and semantic representation of the historical-news group",
+  "entity_match": "Exact full archive company name; no hand-added aliases after seeing outcomes",
+  "character_tfidf": {
+    "ngram_range": [
+      2,
+      3
+    ],
+    "max_features": 4096,
+    "min_df": 5,
+    "sublinear_tf": true,
+    "document_calendar_days": 5,
+    "max_document_characters": 8000,
+    "ridge_solver": "lsqr",
+    "ridge_tol": 1e-05
+  },
+  "weights": {
+    "fundamental": 0.3,
+    "price_volume": 0.4,
+    "alternative": 0.3
+  },
+  "ridge_alphas": [
+    1.0,
+    100.0,
+    10000.0
+  ],
+  "interpretation": "Filter-only is an ablation of the single improved news encoder. All 2021 variants reported, no choosing a claimed blind winner.",
+  "paper_admitted": false
+}

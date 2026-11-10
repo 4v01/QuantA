@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "BigRoddy/CMIN-Dataset",
+    "url": "https://github.com/BigRoddy/CMIN-Dataset",
+    "commit": "3f571a53b81d8f3ea7b3afb9877bdbdbeae54c97",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "rootSunc/CNEquity",
+    "url": "https://github.com/rootSunc/CNEquity",
+    "commit": "90ed0a5ad0df455af8d1e2610a79b642956a2f69",
+    "license": "Apache-2.0",
+    "archived": false
+  },
+  {
+    "repo": "AI4Finance-Foundation/FinNLP",
+    "url": "https://github.com/AI4Finance-Foundation/FinNLP",
+    "commit": "be4dfd5c2526e88bbb1307d444086c46a4b47e3a",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "JinanZou/Astock",
+    "url": "https://github.com/JinanZou/Astock",
+    "commit": "7c608532c14ff5df78564c733ea4bb6843fcace9",
+    "license": null,
+    "archived": false
+  },
+  {
+    "repo": "microsoft/qlib",
+    "url": "https://github.com/microsoft/qlib",
+    "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+    "license": "MIT",
+    "archived": false
+  },
+  {
+    "repo": "Polymarket/py-clob-client",
+    "url": "https://github.com/Polymarket/py-clob-client",
+    "commit": "b076b04d61135657e25dccc1bbd6866a96bd8c6e",
+    "license": "MIT",
+    "archived": true
+  },
+  {
+    "repo": "stac-utils/pystac-client",
+    "url": "https://github.com/stac-utils/pystac-client",
+    "commit": "077d93b575b89345cacbcd2e24a59ebd493f208e",
+    "license": "NOASSERTION",
+    "archived": false
+  },
+  {
+    "repo": "liuqi6776/news_stock_research",
+    "url": "https://github.com/liuqi6776/news_stock_research",
+    "commit": "abf5800c1dfe0a08d97b3b212a3096f52131e4fd",
+    "license": null,
+    "archived": false
+  }
+]

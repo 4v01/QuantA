@@ -37,15 +37,22 @@ def summary(d,config):
             'ir_definition':'daily mean RankIC / sample standard deviation, no sqrt252'}
 
 
-def run(phase,config_path='configs/v6.json',root='data/v6',outputs='outputs/v6/pilot',entity_only=False):
+def run(phase,config_path='configs/v6.json',root='data/v6',outputs='outputs/v6/pilot',entity_only=False,variant='baseline'):
     config=json.loads(Path(config_path).read_text());out=Path(outputs)
     if out.exists() and any(out.iterdir()):raise ValueError('Use empty output directory')
     if subprocess.check_output(['git','status','--porcelain'],text=True).strip():raise ValueError('Freeze clean source before fitting')
     source=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
-    panel,raw,adj,calendar,symbols,manifest,prices,coverage=load(config_path,root,entity_only)
+    if variant not in ['baseline','entity_filter','entity_tfidf']:raise ValueError('Unsealed variant')
+    if phase=='followup':
+        plan=json.loads(Path('configs/v6_improvement.json').read_text())
+        if sha256('reports/v6/pilot/ic_summary.json')!=plan['pilot_summary_sha256']:raise ValueError('Pilot evidence changed after direction selection')
+        if config['weights']!=plan['weights'] or config['followup_years']!=plan['followup_years'] or variant not in plan['variants']:raise ValueError('Follow-up differs from sealed plan')
+    config['variant']=variant;entity_only=entity_only or variant!='baseline'
+    panel,raw,adj,calendar,symbols,manifest,prices,coverage=load(config_path,root,entity_only,variant=='entity_tfidf')
     out.mkdir(parents=True)
     prov={'source_commit':source,'config_sha256':sha256(config_path),'data_manifest_sha256':sha256(Path(root)/'manifest.json'),
           'price_manifest_sha256':sha256(Path(config['data_prices'])/'manifest.json'),'phase':phase,'entity_only':entity_only,
+          'variant':variant,'improvement_sha256':sha256('configs/v6_improvement.json') if phase=='followup' else None,
           'seed':config['seed'],'strict_pit':False,'availability_mode':config['availability_mode'],
           'versions':{p:version(p) for p in ['numpy','pandas','scikit-learn','openpyxl']}}
     write_json(out/'provenance.json',prov);write_json(out/'coverage.json',coverage);write_json(out/'data_manifest.json',manifest)
@@ -102,8 +109,8 @@ def publish(outputs,reports):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','pilot','followup','publish']);p.add_argument('--config',default='configs/v6.json');p.add_argument('--data',default='data/v6');p.add_argument('--outputs',default='outputs/v6/pilot');p.add_argument('--reports',default='reports/v6/pilot');p.add_argument('--entity-only',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','pilot','followup','publish']);p.add_argument('--config',default='configs/v6.json');p.add_argument('--data',default='data/v6');p.add_argument('--outputs',default='outputs/v6/pilot');p.add_argument('--reports',default='reports/v6/pilot');p.add_argument('--entity-only',action='store_true');p.add_argument('--variant',default='baseline',choices=['baseline','entity_filter','entity_tfidf']);a=p.parse_args()
     if a.action=='prepare':prepare(a.config,root=a.data)
     elif a.action=='publish':publish(a.outputs,a.reports)
-    else:run(a.action,a.config,a.data,a.outputs,a.entity_only)
+    else:run(a.action,a.config,a.data,a.outputs,a.entity_only,a.variant)
 if __name__=='__main__':main()

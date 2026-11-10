@@ -53,3 +53,25 @@ def test_group_models_ignore_test_labels_and_keep_fixed_weights():
     p,_,_,_=fit(a,b,r,q,c);q2=q.copy();q2[['label','target']]*=-1000;p2,_,_,_=fit(a,b,r,q2,c)
     for group in p:np.testing.assert_allclose(p[group],p2[group],atol=1e-10)
     np.testing.assert_allclose(p['fusion'],sum(c['weights'][g]*p[g] for g in c['weights']))
+
+
+def test_entity_grounded_documents_exclude_other_firms_and_future_news():
+    d=pd.DataFrame({'research_available_date':pd.to_datetime(['2020-01-02','2020-01-02','2020-02-02']),
+                    'title':['浦发银行盈利','民生银行亏损','浦发银行未来增长']})
+    calendar=pd.date_range('2020-01-01','2020-02-10')
+    a=news_features(d,calendar,True,'浦发银行',True)
+    assert a.loc['2020-01-02','news_count_1']==pytest.approx(np.log(2))
+    assert a.loc['2020-01-01','news_document']==''
+    assert '民生' not in a.loc['2020-01-02','news_document'] and '未来' not in a.loc['2020-02-01','news_document']
+    d.loc[2,'title']='浦发银行完全不同的未来标题';b=news_features(d,calendar,True,'浦发银行',True)
+    pd.testing.assert_frame_equal(a.loc[:'2020-02-01'],b.loc[:'2020-02-01'])
+
+
+def test_text_vocabulary_is_fitted_only_on_training_documents():
+    from alphacontextlab.v6.models import text_estimator
+    rng=np.random.default_rng(11);d=pd.DataFrame(rng.normal(size=(30,len(NEWS_FEATURES))),columns=NEWS_FEATURES)
+    d['news_document']=['浦发银行盈利增长']*15+['浦发银行业绩改善']*15
+    model=text_estimator(1.).fit(d,np.arange(30)*.01)
+    vocabulary=dict(model.steps[0][1].named_transformers_['text'].vocabulary_)
+    held=d.iloc[:2].copy();held['news_document']='测试独有外星事件';model.predict(held)
+    assert '外星' not in vocabulary and vocabulary==model.steps[0][1].named_transformers_['text'].vocabulary_

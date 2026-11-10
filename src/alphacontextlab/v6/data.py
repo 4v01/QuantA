@@ -58,7 +58,7 @@ def prepare(config_path='configs/v6.json',source='/workspace/work/sources/CMIN-D
     print('PREPARED',len(mapping),'stocks',len(frame),'deduplicated headlines',flush=True)
 
 
-def news_features(news,calendar,entity_only=False,entity_name=''):
+def news_features(news,calendar,entity_only=False,entity_name='',include_text=False):
     d=news.copy()
     if entity_only:d=d[d.title.str.contains(entity_name,regex=False)].copy()
     title=d.title.astype(str);d['positive']=[sum(t.count(w) for w in POS) for t in title];d['negative']=[sum(t.count(w) for w in NEG) for t in title]
@@ -71,6 +71,15 @@ def news_features(news,calendar,entity_only=False,entity_name=''):
         sums=daily.rolling(h,min_periods=1).sum();count=sums['count'];result[f'news_count_{h}']=np.log1p(count)
         for f in ['sentiment','positive','negative','length']:
             result[f'news_{f}_{h}']=sums[f]/count.replace(0,np.nan)
+    if include_text:
+        from collections import deque
+        documents=d.sort_values(['research_available_date','title']).groupby('research_available_date').title.apply(list).to_dict()
+        history=deque();text=[]
+        for day in days:
+            for title in documents.get(day,[]):history.append((day,title))
+            while history and history[0][0]<day-pd.Timedelta(days=4):history.popleft()
+            text.append(' '.join(dict.fromkeys(t for _,t in history))[-8000:])
+        result['news_document']=text
     return result.reindex(calendar)
 
 
@@ -94,7 +103,7 @@ def financial_features(frame,calendar,max_age=550):
 
 
 
-def load(config_path='configs/v6.json',root='data/v6',entity_only=False):
+def load(config_path='configs/v6.json',root='data/v6',entity_only=False,include_text=False):
     config=json.loads(Path(config_path).read_text());root=Path(root);manifest=json.loads((root/'manifest.json').read_text())
     if sha256(root/'news.csv.gz')!=manifest['news_sha256']:raise ValueError('News snapshot changed')
     v4=json.loads(Path(config['raw_price_config']).read_text());panel,raw,adj,calendar,price_manifest,quality=price_load(v4,config['data_prices'])
@@ -105,7 +114,7 @@ def load(config_path='configs/v6.json',root='data/v6',entity_only=False):
         s=mapping['symbol'];p=Path(source['financial_file'])
         if sha256(p)!=source['financial_sha256']:raise ValueError('Financial snapshot changed')
         f=financial_features(pd.read_csv(p),days,config['maximum_fundamental_age_days'])
-        n=news_features(news[news.symbol==s],days,entity_only,mapping['name'])
+        n=news_features(news[news.symbol==s],days,entity_only,mapping['name'],include_text)
         f=f.join(n);f['date']=days;f['symbol']=s;parts.append(f)
     extra=pd.concat(parts,ignore_index=True);panel=panel[panel.symbol.isin(symbols)&panel.date.isin(days)].copy()
     panel=panel.merge(extra,on=['date','symbol'],validate='one_to_one')
