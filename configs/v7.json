@@ -1,0 +1,16 @@
+{
+ "version":"v7-stability-reliability-multihorizon-and-kaggle-transfer",
+ "start":"2018-01-01","end":"2024-12-31","development_years":[2020,2021],"holdout_years":[2022,2023,2024],
+ "horizon":5,"fundamental_horizon":20,"validation_months":6,"short_train_months":18,"long_train_months":30,
+ "min_cross_section":30,"min_fundamental_fields":3,"maximum_fundamental_age_days":550,
+ "weights":{"fundamental":0.3,"price_volume":0.4,"alternative":0.3},"seed":17,
+ "ridge_alphas":[1.0,100.0,10000.0],"validation_blocks":4,"instability_penalty":0.5,"reliability_floor":0.02,"score_clip":3.0,
+ "methods":["legacy_matched","signed_stable","reliable","long_history","aligned_fund","kaggle_context","kaggle_rank"],
+ "ranker":{"num_leaves":7,"max_depth":3,"min_child_samples":200,"reg_lambda":20.0,"learning_rate":0.03,"max_rounds":300,"early_stopping":30},
+ "rebalance_sessions":5,"top_fraction":0.2,"buffer_exit_fraction":0.4,"screen_cost_bps":[10,20,30],"screen_primary_cost_bps":20,
+ "bootstrap_repetitions":1000,"bootstrap_block":20,"minimum_ic_coverage":0.9,"minimum_ic":0.02,"minimum_passing_fold_fraction":0.75,"minimum_net_sharpe":1.0,
+ "data_prices":"data/v4_akshare","data_fundamental":"data/fusion/v5_current/fundamental","v6_news_root":"data/v6",
+ "finmultitime":{"repository":"Wenyan0110/Multimodal-Dataset-Image_Text_Table_TimeSeries-for-Financial-Time-Series-Forecasting","revision":"72d4e97b9acb92651949b8efb22c55676ff633ff","file":"text/hs300news_summary.zip","title_only":true,"summary_field_forbidden":true},
+ "availability_mode":"publication/update-date-plus-one-day reconstruction, not certified PIT",
+ "notes":["2020-2021 is known development; choose one champion before computing 2022-2024 IC.","2022-2024 market prices appeared in V4, so later fusion evaluation is retrospective, never a prospective blind trial.","CMIN titles through 2021; from 2022 use ONLY nonmissing title fields in the pinned FinMultiTime archive. Never use generated summary fields.","All methods use identical rows and conservative H20 label purging. Only aligned fundamental models learn H20; all IC is evaluated against unchanged H5.","Reliability is an explicitly published heuristic group-signal shrinkage after scaling. Nominal 30/40/30 weights are unchanged; effective contributions are reported without redistribution.","A flat/no-alpha score gives undefined IC and cash, never alphabetical stock selection.","All seven holdout ablations are reported; the champion cannot be replaced using holdout results.","Scores and costs remain research screens, not certified PIT or broker matching; no automatic paper admission."]
+}
