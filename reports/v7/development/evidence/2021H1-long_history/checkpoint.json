@@ -1,0 +1,20 @@
+{
+  "sha256": "fee7283f2bef08257f916d8965cb9afe28e7a1c0242f07df4815d37b2ca8760d",
+  "provenance": {
+    "source_commit": "2697579c8927fd75af65272a9be1e3fdb40dcfea",
+    "config_sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+    "data_manifest_sha256": "538dc2d1c3359028783b2c86360c559c7c92c71737b209cc335729826f896f30",
+    "price_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "phase": "development",
+    "seed": 17,
+    "strict_pit": false,
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0"
+    },
+    "champion_seal_sha256": null
+  }
+}

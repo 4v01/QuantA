@@ -1,0 +1,15 @@
+{
+  "method": "long_history",
+  "selection": "development coverage-adjusted mean IC, all methods included",
+  "scores": {
+    "aligned_fund": 0.031374529482573535,
+    "kaggle_context": 0.016316391210760523,
+    "kaggle_rank": 0.02217653265574316,
+    "legacy_matched": 0.0054884630359289185,
+    "long_history": 0.03835397416723795,
+    "reliable": 0.013715893958184077,
+    "signed_stable": 0.01927950490041724
+  },
+  "config_sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+  "data_manifest_sha256": "538dc2d1c3359028783b2c86360c559c7c92c71737b209cc335729826f896f30"
+}

@@ -1,0 +1,100 @@
+{
+  "aligned_fund": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.031374529482573535,
+    "coverage_adjusted_ic": 0.031374529482573535,
+    "ic_ir": 0.16610075227072008,
+    "ci95": [
+      0.004809341967924525,
+      0.057713714950451245
+    ],
+    "passing_fold_fraction": 0.5,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "kaggle_context": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.016316391210760523,
+    "coverage_adjusted_ic": 0.016316391210760523,
+    "ic_ir": 0.08438859194757874,
+    "ci95": [
+      -0.008755271712368421,
+      0.044144728908319456
+    ],
+    "passing_fold_fraction": 0.25,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "kaggle_rank": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.02217653265574316,
+    "coverage_adjusted_ic": 0.02217653265574316,
+    "ic_ir": 0.09356387261435169,
+    "ci95": [
+      -0.020340684569765163,
+      0.0660715659048572
+    ],
+    "passing_fold_fraction": 0.5,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "legacy_matched": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.0054884630359289185,
+    "coverage_adjusted_ic": 0.0054884630359289185,
+    "ic_ir": 0.02954177384175041,
+    "ci95": [
+      -0.02691891369290363,
+      0.038105341057187755
+    ],
+    "passing_fold_fraction": 0.5,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "long_history": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.03835397416723795,
+    "coverage_adjusted_ic": 0.03835397416723795,
+    "ic_ir": 0.19522628867514247,
+    "ci95": [
+      0.010756944577856326,
+      0.06636037926463641
+    ],
+    "passing_fold_fraction": 1.0,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "reliable": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.013715893958184077,
+    "coverage_adjusted_ic": 0.013715893958184077,
+    "ic_ir": 0.06471574230519561,
+    "ci95": [
+      -0.01758415846654557,
+      0.04601748512437221
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  },
+  "signed_stable": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.01927950490041724,
+    "coverage_adjusted_ic": 0.01927950490041724,
+    "ic_ir": 0.09490640712492562,
+    "ci95": [
+      -0.01092000955046448,
+      0.04992405995262399
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+  }
+}
