@@ -39,6 +39,8 @@ def public_phase(root,config,base):
         assert sha256(p)==prov[key]==hashlib.sha256(subprocess.check_output(['git','show',prov['source_commit']+':'+p])).hexdigest()
     all_pred=read(root/'predictions.csv.gz',['date','exit_date','exit20']);pred=all_pred[all_pred.evaluation_period]
     assert not all_pred.duplicated(['date','symbol','method']).any()
+    for method in config['methods']:
+        frame_equal(all_pred[all_pred.method==method],all_pred[all_pred.method=='matched_control'],['date','symbol','fold'],['label','target','label20','target20'])
     prior=read('reports/v9/development/predictions.csv.gz',['date','exit_date','exit20']) if prov['phase']=='evaluation' else all_pred.iloc[:0].copy()
     if prov['phase']=='evaluation':assert prov['development_forecasts_sha256']==sha256('reports/v9/development/predictions.csv.gz')
     for fold in sorted(all_pred.fold.unique()):
@@ -114,7 +116,10 @@ def local_phase(root,config,base):
         assert sha256(p)==json.loads((e/'checkpoint.json').read_text())['sha256']
         with p.open('rb') as f:model=pickle.load(f)
         _,_,_,q,_=split(panel,int(fold[:4]),int(fold[-1]),config['train_months'],base)
-        z=q[['date','symbol']].copy();z['prediction']=predict(q,model,base)['fusion'];frame_equal(z,g,['date','symbol'],['prediction']);count+=1
+        q.loc[q.exit_date>pd.Timestamp(f'{max(years)}-12-31'),['label','target']]=np.nan
+        q.loc[q.exit20>pd.Timestamp(f'{max(years)}-12-31'),['label20','target20']]=np.nan
+        z=q[['date','symbol','label','target','label20','target20']].copy();z['prediction']=predict(q,model,base)['fusion']
+        frame_equal(z,g,['date','symbol'],['prediction','label','target','label20','target20']);count+=1
     return {'phase':prov['phase'],'forecast_rows':len(pred),'checkpoint_sets':count,'input_tape_and_economic_features_verified':True}
 
 

@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T19:09:28.424576+00:00",
+  "status": "blocked",
+  "source": "baostock",
+  "source_version": "0.9.4",
+  "reference": "https://github.com/microsoft/qlib/tree/main/scripts/data_collector/pit",
+  "used_in_V9_model_inputs": false,
+  "revision_history_certified": false,
+  "orders_sent": 0,
+  "queries": [],
+  "error": "Anonymous login failed: 网络接收错误。",
+  "finished_at": "2026-11-15T19:09:28.614494+00:00"
+}

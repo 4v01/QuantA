@@ -1,0 +1,98 @@
+{
+  "method": "economic_h5",
+  "policy": "weekly_buffer",
+  "selection_qualified": true,
+  "candidates": [
+    {
+      "method": "matched_control",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 1.046212634532539
+    },
+    {
+      "method": "matched_control",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 0.8944381596083061
+    },
+    {
+      "method": "matched_control",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    },
+    {
+      "method": "full_window",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 0.8343893593457256
+    },
+    {
+      "method": "full_window",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 0.9049418276036902
+    },
+    {
+      "method": "full_window",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    },
+    {
+      "method": "economic_h5",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 1.3614870792893647
+    },
+    {
+      "method": "economic_h5",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 1.2852076069224703
+    },
+    {
+      "method": "economic_h5",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": -0.07819026011194738
+    },
+    {
+      "method": "economic_h20",
+      "policy": "weekly_buffer",
+      "eligible": false,
+      "net_sharpe": 1.2515771882036146
+    },
+    {
+      "method": "economic_h20",
+      "policy": "slow_buffer",
+      "eligible": false,
+      "net_sharpe": 1.5194967410014875
+    },
+    {
+      "method": "economic_h20",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": 0.44334514867524116
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "weekly_buffer",
+      "eligible": false,
+      "net_sharpe": 0.3935235791013942
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "slow_buffer",
+      "eligible": false,
+      "net_sharpe": 0.5086406829878302
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    }
+  ],
+  "criterion": "H5 signal stability/coverage then development 20bp net Sharpe, >=10% exposure and >=100 noncash days; config order breaks ties."
+}

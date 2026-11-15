@@ -1,0 +1,31 @@
+{
+  "symbols": 58,
+  "panel_rows": 98542,
+  "eligible_rows": 93204,
+  "strict_pit": false,
+  "new_source_fields_used": [
+    "datetime",
+    "title"
+  ],
+  "generated_summary_used": false,
+  "news_source_switch": "2022-01-01",
+  "paper_admitted": false,
+  "economic_feature_missing_fraction": {
+    "earnings_yield": 0.0343508351768789,
+    "book_to_price": 0.03188488157333929,
+    "roe_annual": 0.765764851535386,
+    "cash_earnings": 0.05901037121227497,
+    "financial_age_years": 0.03188488157333929,
+    "momentum_12_1": 0.014369507418156725,
+    "momentum_6_1": 0.010695946905887845,
+    "low_volatility_60": 0.027237117168314017,
+    "market_beta_126": 0.04950173530068397
+  },
+  "raw_per_share_valuation_is_a_proxy": true,
+  "split_share_basis_certified": false,
+  "old_input_snapshots_changed": false,
+  "revision_delay_days_median": 365.0,
+  "revision_delay_above_180_days_fraction": 1.0,
+  "known_report_age_days_median": 460.0,
+  "known_report_age_days_p90": 515.0
+}

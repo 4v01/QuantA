@@ -1,0 +1,121 @@
+{
+  "method": "economic_h5",
+  "policy": "weekly_buffer",
+  "selection_qualified": true,
+  "candidates": [
+    {
+      "method": "matched_control",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 1.046212634532539
+    },
+    {
+      "method": "matched_control",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 0.8944381596083061
+    },
+    {
+      "method": "matched_control",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    },
+    {
+      "method": "full_window",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 0.8343893593457256
+    },
+    {
+      "method": "full_window",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 0.9049418276036902
+    },
+    {
+      "method": "full_window",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    },
+    {
+      "method": "economic_h5",
+      "policy": "weekly_buffer",
+      "eligible": true,
+      "net_sharpe": 1.3614870792893647
+    },
+    {
+      "method": "economic_h5",
+      "policy": "slow_buffer",
+      "eligible": true,
+      "net_sharpe": 1.2852076069224703
+    },
+    {
+      "method": "economic_h5",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": -0.07819026011194738
+    },
+    {
+      "method": "economic_h20",
+      "policy": "weekly_buffer",
+      "eligible": false,
+      "net_sharpe": 1.2515771882036146
+    },
+    {
+      "method": "economic_h20",
+      "policy": "slow_buffer",
+      "eligible": false,
+      "net_sharpe": 1.5194967410014875
+    },
+    {
+      "method": "economic_h20",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": 0.44334514867524116
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "weekly_buffer",
+      "eligible": false,
+      "net_sharpe": 0.3935235791013942
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "slow_buffer",
+      "eligible": false,
+      "net_sharpe": 0.5086406829878302
+    },
+    {
+      "method": "classic_value_quality",
+      "policy": "slow_net_edge",
+      "eligible": false,
+      "net_sharpe": null
+    }
+  ],
+  "criterion": "H5 signal stability/coverage then development 20bp net Sharpe, >=10% exposure and >=100 noncash days; config order breaks ties.",
+  "config_sha256": "e47feca51d9c05d2549b2a6219a0e8d0d3e1230d7883bd9951c66cfda6a02da0",
+  "base_config_sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+  "development_candidate_sha256": "1e09751d59720d42f9f9b0fcd55ef69b57ae490bc6bd4f7bdfec3cea574ace22",
+  "development_predictions_sha256": "bfdd7056dd0ebb744fcba368db78729ee27abb1446908a2c2dacaeeb5ebf7faa",
+  "development_summary_sha256": "d128dfbb6624ab3832cb1118a8582a312ceaca204454d6c6331eb9bbb288ba9d",
+  "development_signal_sha256": "0f7904e8fc77cc9c9b2c5bf81346106507d342ba6b7a235652034ae29929afc0",
+  "development_source": "818e2f15a68a8dd3852beebc13445e84065891ee",
+  "primary_cost_bps": 20,
+  "evaluation_years": [
+    2022,
+    2023,
+    2024
+  ],
+  "prospective_blind_test": false,
+  "candidate_replacement_allowed": false,
+  "paper_admitted": false,
+  "core_sources": {
+    "src/alphacontextlab/v9/__init__.py": "b137e2440802ebfaf03b2efd2160b1e411500b58efa70fbc742b3da2f54a2dc5",
+    "src/alphacontextlab/v9/data.py": "70d84a4f65475a832ae938301e90f72df92077156b6de161d2e0875812bdcfb7",
+    "src/alphacontextlab/v9/study.py": "bf7c20c7defac897bff92efc5197e2d6e3a2ed9eb8edc1ee1361947eb978ae8e",
+    "src/alphacontextlab/v9/portfolio.py": "1dcdcd2321c75a89238cb10932bae17afd399042731bd652a4acb6063c7fb2d8",
+    "src/alphacontextlab/v9/models.py": "17c955f7e09d6f10fa8eb72c2986c9e188f99af6dbaee13631822973dde7d382"
+  }
+}
