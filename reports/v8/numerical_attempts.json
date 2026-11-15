@@ -1,0 +1,24 @@
+{
+  "config_unchanged": true,
+  "objective_unchanged": true,
+  "attempts": [
+    {
+      "source_commit": "8de61ad30391165d845e4f00d3f6b8fece89d183",
+      "log_sha256": "c202cbff4aa7658485a94613f08d64c051711568e6bb8ab047a1e785a250575c",
+      "status": "SLSQP_linesearch_failed_before_policy_selection",
+      "evaluation_run": false
+    },
+    {
+      "source_commit": "ee7a6007aff20d5f96f9b24ac0c92a8e0ba87838",
+      "log_sha256": "054a36dca36cd3f579cbde9c756c79d14040dabf1f7d087f51856ffd96da6bd0",
+      "status": "scaled_SLSQP_linesearch_failed_before_policy_selection",
+      "evaluation_run": false
+    },
+    {
+      "source_commit": "c8db8cbba1f9fd590afb19a7f029a5fe0dbb9084",
+      "log_sha256": "8843772846933f5faa54c1261a28151f0a45a6f24289942ad92e736d079f8f16",
+      "status": "complete_proximal_solver",
+      "evaluation_run": false
+    }
+  ]
+}

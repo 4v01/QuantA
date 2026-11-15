@@ -1,0 +1,7 @@
+{
+  "rows": 26233,
+  "rmse": 0.05478044803392612,
+  "r2": -0.00586066956311071,
+  "r2_vs_zero": -0.000186780197921399,
+  "note": "R2 on absolute H5 returns; never IC squared. Zero-return baseline is reported separately."
+}

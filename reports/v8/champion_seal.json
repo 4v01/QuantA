@@ -1,0 +1,36 @@
+{
+  "policy": "net_edge",
+  "eligible_scores": {
+    "buffer": 0.2924912912557988,
+    "vol_buffer": 0.32415281515284994,
+    "trend_vol_buffer": 0.041782472569446755,
+    "net_edge": 0.5487289885253205,
+    "trend_net_edge": 0.5487289885253205
+  },
+  "selection_qualified": true,
+  "criterion": "Development net Sharpe at 20bp; mean exposure>=0.1 and >=100 noncash days; config order breaks ties.",
+  "config_sha256": "7063074ee7d70d13ddb9ee1286fe028068e6a975896ecc5dd29ecf28041775ac",
+  "base_config_sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+  "development_candidate_sha256": "36982b7a2484ee40f1b66b5289bc55a41bc82bac3ceb646be427f9abcbe89412",
+  "development_summary_sha256": "6d6826aa9f79b52bf51470ecb29049b75c2b9e1519c2535c7907b782a6cf1d21",
+  "development_signal_sha256": "6c7d65f0258c16fb35de9e53152603e4d398a420a7663871ec2928824173efcb",
+  "data_manifest_sha256": "538dc2d1c3359028783b2c86360c559c7c92c71737b209cc335729826f896f30",
+  "development_source": "c8db8cbba1f9fd590afb19a7f029a5fe0dbb9084",
+  "primary_cost_bps": 20,
+  "evaluation_years": [
+    2022,
+    2023,
+    2024
+  ],
+  "development_IC": 0.011633601233345203,
+  "development_IC_below_target": true,
+  "evaluation_policy_cannot_be_replaced": true,
+  "prospective_blind_test": false,
+  "paper_admitted": false,
+  "core_sources": {
+    "src/alphacontextlab/v8/__init__.py": "3c85926bebfb0c6fbf9fb2caf40cfd49728dc57aee82bc2599291112dc57cbd6",
+    "src/alphacontextlab/v8/study.py": "27caa03d177a0ede8c8eac9c18686f487a8f296200ed3f7f6ab2d9659bba131b",
+    "src/alphacontextlab/v8/portfolio.py": "752230d3d957f5bca5b69c1d3a40ef4d025d5e04612433414ff0a0e91d0338f3",
+    "src/alphacontextlab/v8/models.py": "37a2870b35024b489b3d8a9cb8b30c06fad93c1c966d75e3712fb24a07caa3f1"
+  }
+}

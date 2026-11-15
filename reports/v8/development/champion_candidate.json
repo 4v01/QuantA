@@ -1,0 +1,12 @@
+{
+  "policy": "net_edge",
+  "eligible_scores": {
+    "buffer": 0.2924912912557988,
+    "vol_buffer": 0.32415281515284994,
+    "trend_vol_buffer": 0.041782472569446755,
+    "net_edge": 0.5487289885253205,
+    "trend_net_edge": 0.5487289885253205
+  },
+  "selection_qualified": true,
+  "criterion": "Development net Sharpe at 20bp; mean exposure>=0.1 and >=100 noncash days; config order breaks ties."
+}

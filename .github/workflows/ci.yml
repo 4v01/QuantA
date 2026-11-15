@@ -40,3 +40,6 @@ jobs:
           if test -f reports/v7/champion_seal.json; then
             python -m alphacontextlab.v7.audit
           fi
+          if test -f reports/v8/champion_seal.json; then
+            python -m alphacontextlab.v8.audit
+          fi
