@@ -1,7 +1,6 @@
 """Causal constrained allocation; future open returns are used only for marking."""
 import numpy as np
 import pandas as pd
-from scipy.optimize import minimize
 from ..v7.screen import choose_target
 
 
@@ -40,32 +39,45 @@ def net_edge_target(mu, old, covariance, cap, cost_bps, config):
         return np.zeros_like(old), {'success': True, 'cash_reason': 'trend_off'}
     mu = np.asarray(mu, float); old = np.asarray(old, float)
     good = np.isfinite(mu); mu = np.where(good, mu, 0.)
-    n = len(mu); cost = cost_bps/10000
-    cov = covariance*5; risk = config['risk_aversion']
-    # Epigraph variables u make absolute turnover convex and differentiable.
-    def objective(z):
-        w, u = z[:n], z[n:]
-        # Returns and costs are ~1e-3; scaling preserves the minimizer while
-        # avoiding SLSQP's near-zero-gradient line-search failure at box faces.
-        return 1000.*float(-mu@w + .5*risk*(w@cov@w) + cost*(u.sum()+w.sum()))
-    def gradient(z):
-        return 1000.*np.r_[-mu + risk*cov@z[:n] + cost, np.full(n, cost)]
-    matrix = np.vstack([np.c_[-np.eye(n), np.eye(n)], np.c_[np.eye(n), np.eye(n)]])
-    offset = np.r_[old, -old]
-    constraints = [
-        {'type': 'ineq', 'fun': lambda z: matrix@z+offset, 'jac': lambda z: matrix},
-        {'type': 'ineq', 'fun': lambda z: cap-z[:n].sum(), 'jac': lambda z: np.r_[-np.ones(n), np.zeros(n)]}]
-    bounds = [(0., config['maximum_stock_weight'] if good[j] else 0.) for j in range(n)] + [(0., None)]*n
-    start = np.minimum(old, config['maximum_stock_weight']); start *= min(1., cap/max(start.sum(), 1e-12))
-    z0 = np.r_[start, np.abs(start-old)]
-    fit = minimize(objective, z0, jac=gradient, bounds=bounds, constraints=constraints,
-                   method='SLSQP', options={'ftol': 1e-10, 'maxiter': 200})
-    if not fit.success or fit.x[:n].sum() > cap+1e-7:
-        raise RuntimeError('Allocation solver failed: '+str(fit.message))
-    w = np.clip(fit.x[:n], 0., config['maximum_stock_weight'])
+    cost = cost_bps/10000; quadratic = covariance*5*config['risk_aversion']
+    lipschitz = max(float(np.linalg.eigvalsh(quadratic)[-1]), 1e-10)
+    upper = np.where(good, config['maximum_stock_weight'], 0.)
+
+    def prox(v):
+        # Exact L1 proximal map with box and budget constraints. The scalar
+        # budget multiplier is monotone, so bisection solves the joint prox.
+        def at(multiplier):
+            delta = v-multiplier-old
+            return np.clip(old+np.sign(delta)*np.maximum(np.abs(delta)-cost/lipschitz,0.),0.,upper)
+        w = at(0.)
+        if w.sum() <= cap: return w
+        lo = 0.; hi = max(float(np.max(v))+float(np.max(old))+cost/lipschitz+1.,1.)
+        for _ in range(45):
+            mid = (lo+hi)/2
+            if at(mid).sum()>cap: lo=mid
+            else: hi=mid
+        return at(hi)
+
+    w = np.minimum(old,upper); w *= min(1.,cap/max(w.sum(),1e-12))
+    y = w.copy(); momentum = 1.; residual = np.inf
+    # Accelerated proximal gradient solves the same convex objective as the
+    # original epigraph formulation, without a generic line search at kinks.
+    for iteration in range(1,3001):
+        candidate = prox(y-(quadratic@y-mu+cost)/lipschitz)
+        next_momentum = (1+np.sqrt(1+4*momentum**2))/2
+        extrapolated = candidate+(momentum-1)/next_momentum*(candidate-w)
+        if (y-candidate)@(candidate-w)>0:
+            next_momentum=1.; extrapolated=candidate.copy()
+        w=candidate; y=extrapolated; momentum=next_momentum
+        if iteration % 10 == 0:
+            mapped = prox(w-(quadratic@w-mu+cost)/lipschitz)
+            residual = float(lipschitz*np.max(np.abs(w-mapped)))
+            if residual<1e-10: break
+    if residual>=1e-10 or w.sum()>cap+1e-8:
+        raise RuntimeError(f'Convex allocator did not converge: residual={residual}')
     w[w < 1e-9] = 0.
-    # Cash must dominate if every prospective edge is nonpositive after exit fee.
-    return w, {'success': True, 'objective': float(fit.fun/1000.), 'iterations': int(fit.nit)}
+    objective=float(-mu@w+.5*w@quadratic@w+cost*(np.abs(w-old).sum()+w.sum()))
+    return w, {'success': True, 'objective': objective, 'iterations': iteration, 'optimality_residual':residual}
 
 
 def target_for(policy, scores, excess, old, state, cost, base, config):

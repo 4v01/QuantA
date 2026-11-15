@@ -65,6 +65,15 @@ def test_allocator_handles_correlated_covariance_and_drifted_weights():
         old=rng.dirichlet(np.ones(n)); mu=rng.normal(.002,.004,n)
         w,info=net_edge_target(mu,old,cov,1.,20,c)
         assert info['success'] and w.sum()<=1+1e-7 and (w>=0).all() and w.max()<=.1+1e-7
+        assert info['optimality_residual']<1e-10
+
+
+def test_allocator_matches_analytic_separable_solution_with_existing_positions():
+    c=config(); old=np.array([.02,.03,.04]); mu=np.array([.007,.001,.004]); variance=np.array([.004,.006,.008])
+    q=variance*5*c['risk_aversion']; cost=.002; unconstrained=(mu-cost)/q
+    analytic=np.clip(old+np.sign(unconstrained-old)*np.maximum(abs(unconstrained-old)-cost/q,0),0,.1)
+    w,_=net_edge_target(mu,old,np.diag(variance),1.,20,c)
+    np.testing.assert_allclose(w,analytic,atol=1e-8)
 
 
 def test_future_open_return_cannot_change_initial_target():
