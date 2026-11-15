@@ -58,6 +58,15 @@ def test_known_close_only_risk_state():
     assert state['trend']==again['trend'] and state['market_expected']==again['market_expected']
 
 
+def test_allocator_handles_correlated_covariance_and_drifted_weights():
+    c=config(); n=58; rng=np.random.default_rng(17)
+    for _ in range(10):
+        cov=np.full((n,n),.0001)+np.eye(n)*1e-8
+        old=rng.dirichlet(np.ones(n)); mu=rng.normal(.002,.004,n)
+        w,info=net_edge_target(mu,old,cov,1.,20,c)
+        assert info['success'] and w.sum()<=1+1e-7 and (w>=0).all() and w.max()<=.1+1e-7
+
+
 def test_future_open_return_cannot_change_initial_target():
     c=config(); b=base(); b['min_cross_section']=3; days=pd.bdate_range('2020-01-01',periods=150); symbols=list('abcd')
     rng=np.random.default_rng(7); rows=[]

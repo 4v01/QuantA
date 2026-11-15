@@ -45,9 +45,11 @@ def net_edge_target(mu, old, covariance, cap, cost_bps, config):
     # Epigraph variables u make absolute turnover convex and differentiable.
     def objective(z):
         w, u = z[:n], z[n:]
-        return float(-mu@w + .5*risk*(w@cov@w) + cost*(u.sum()+w.sum()))
+        # Returns and costs are ~1e-3; scaling preserves the minimizer while
+        # avoiding SLSQP's near-zero-gradient line-search failure at box faces.
+        return 1000.*float(-mu@w + .5*risk*(w@cov@w) + cost*(u.sum()+w.sum()))
     def gradient(z):
-        return np.r_[-mu + risk*cov@z[:n] + cost, np.full(n, cost)]
+        return 1000.*np.r_[-mu + risk*cov@z[:n] + cost, np.full(n, cost)]
     matrix = np.vstack([np.c_[-np.eye(n), np.eye(n)], np.c_[np.eye(n), np.eye(n)]])
     offset = np.r_[old, -old]
     constraints = [
@@ -63,7 +65,7 @@ def net_edge_target(mu, old, covariance, cap, cost_bps, config):
     w = np.clip(fit.x[:n], 0., config['maximum_stock_weight'])
     w[w < 1e-9] = 0.
     # Cash must dominate if every prospective edge is nonpositive after exit fee.
-    return w, {'success': True, 'objective': float(fit.fun), 'iterations': int(fit.nit)}
+    return w, {'success': True, 'objective': float(fit.fun/1000.), 'iterations': int(fit.nit)}
 
 
 def target_for(policy, scores, excess, old, state, cost, base, config):
