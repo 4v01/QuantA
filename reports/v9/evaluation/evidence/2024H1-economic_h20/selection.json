@@ -1,0 +1,288 @@
+{
+  "split": {
+    "train_start": "2021-01-01 00:00:00",
+    "validation_start": "2023-07-01 00:00:00",
+    "test_start": "2024-01-01 00:00:00",
+    "test_end_exclusive": "2024-07-01 00:00:00",
+    "training_exit20_max": "2023-06-30 00:00:00",
+    "refit_exit20_max": "2023-12-29 00:00:00",
+    "training_rows": 32140,
+    "validation_rows": 5934,
+    "refit_rows": 39292,
+    "test_rows": 6360
+  },
+  "groups": {
+    "fundamental": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "diagnostics": {
+            "mean": 0.14166073858320782,
+            "blocks": [
+              0.21658144371854424,
+              0.22549514501862705,
+              0.024447182162394835,
+              0.09845752122726747
+            ],
+            "stable_score": 0.09314427636096043,
+            "reliability": 0.5476003429122956
+          },
+          "score": 0.09314427636096043
+        },
+        {
+          "alpha": 100.0,
+          "diagnostics": {
+            "mean": 0.14134788816248314,
+            "blocks": [
+              0.21678967007952826,
+              0.22525615681701178,
+              0.024138538791786075,
+              0.09752155891357131
+            ],
+            "stable_score": 0.09270794539655206,
+            "reliability": 0.5465301972151401
+          },
+          "score": 0.09270794539655206
+        },
+        {
+          "alpha": 10000.0,
+          "diagnostics": {
+            "mean": 0.12053242252915439,
+            "blocks": [
+              0.21408272738673556,
+              0.1983132909530792,
+              0.005533211411517385,
+              0.061947181878730675
+            ],
+            "stable_score": 0.06933240405952174,
+            "reliability": 0.4961561036055092
+          },
+          "score": 0.06933240405952174
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "diagnostics": {
+          "mean": 0.14166073858320782,
+          "blocks": [
+            0.21658144371854424,
+            0.22549514501862705,
+            0.024447182162394835,
+            0.09845752122726747
+          ],
+          "stable_score": 0.09314427636096043,
+          "reliability": 0.5476003429122956
+        },
+        "score": 0.09314427636096043
+      },
+      "confidence": 1.0,
+      "features": [
+        "earnings_yield",
+        "book_to_price",
+        "roe_annual",
+        "cash_earnings",
+        "fin_revenue_growth",
+        "fin_profit_growth",
+        "fin_leverage",
+        "financial_age_years"
+      ],
+      "target": "target20",
+      "direction": 1
+    },
+    "price_volume": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "diagnostics": {
+            "mean": 0.14100393116390167,
+            "blocks": [
+              0.3141828180125267,
+              0.1813938136092352,
+              0.06561187181418712,
+              -0.002699847178112138
+            ],
+            "stable_score": 0.07151210259417591,
+            "reliability": 0.35252441266332274
+          },
+          "score": 0.07151210259417591
+        },
+        {
+          "alpha": 100.0,
+          "diagnostics": {
+            "mean": 0.14191151912798658,
+            "blocks": [
+              0.3189720243151601,
+              0.18402386403800627,
+              0.06254039009076286,
+              -0.003482270774381685
+            ],
+            "stable_score": 0.07087444867102337,
+            "reliability": 0.3501271715623528
+          },
+          "score": 0.07087444867102337
+        },
+        {
+          "alpha": 10000.0,
+          "diagnostics": {
+            "mean": 0.14934926455123274,
+            "blocks": [
+              0.34865611179862616,
+              0.20671818882769738,
+              0.029343945810149038,
+              0.007211993657147409
+            ],
+            "stable_score": 0.0689278631652435,
+            "reliability": 0.45231027432600607
+          },
+          "score": 0.0689278631652435
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "diagnostics": {
+          "mean": 0.14100393116390167,
+          "blocks": [
+            0.3141828180125267,
+            0.1813938136092352,
+            0.06561187181418712,
+            -0.002699847178112138
+          ],
+          "stable_score": 0.07151210259417591,
+          "reliability": 0.35252441266332274
+        },
+        "score": 0.07151210259417591
+      },
+      "confidence": 1.0,
+      "features": [
+        "ret1",
+        "ret5",
+        "ret20",
+        "ret60",
+        "reversal5",
+        "vol5",
+        "vol20",
+        "vol60",
+        "downside20",
+        "range1",
+        "range20",
+        "gap1",
+        "intraday1",
+        "close_location",
+        "volume_ratio5",
+        "volume_ratio20",
+        "amount_ratio20",
+        "turnover1",
+        "turnover20",
+        "volume_vol20",
+        "price_volume_corr20",
+        "amihud20",
+        "ma_gap5",
+        "ma_gap20",
+        "ma_gap60",
+        "trend_strength20",
+        "volume_trend20",
+        "momentum_12_1",
+        "momentum_6_1",
+        "low_volatility_60",
+        "market_beta_126"
+      ],
+      "target": "target20",
+      "direction": 1
+    },
+    "alternative": {
+      "candidates": [
+        {
+          "alpha": 1.0,
+          "diagnostics": {
+            "mean": 0.03828984077962726,
+            "blocks": [
+              -0.0028314308652296013,
+              0.10111305178359452,
+              -0.0295009442393685,
+              0.08622224026590805
+            ],
+            "stable_score": 0.005976310842636584,
+            "reliability": 0.1557549880285854
+          },
+          "score": 0.005976310842636584
+        },
+        {
+          "alpha": 100.0,
+          "diagnostics": {
+            "mean": 0.03828074228926842,
+            "blocks": [
+              -0.0023155328177181913,
+              0.10107889187365561,
+              -0.02998094709998255,
+              0.08618294979759286
+            ],
+            "stable_score": 0.0059477144595985465,
+            "reliability": 0.15568011094225404
+          },
+          "score": 0.0059477144595985465
+        },
+        {
+          "alpha": 10000.0,
+          "diagnostics": {
+            "mean": 0.041929499031171276,
+            "blocks": [
+              0.0051508187741442415,
+              0.1127107616032556,
+              -0.04336678982974217,
+              0.09527495383886166
+            ],
+            "stable_score": 0.004867838161414624,
+            "reliability": 0.23113908330046473
+          },
+          "score": 0.004867838161414624
+        }
+      ],
+      "selected": {
+        "alpha": 1.0,
+        "diagnostics": {
+          "mean": 0.03828984077962726,
+          "blocks": [
+            -0.0028314308652296013,
+            0.10111305178359452,
+            -0.0295009442393685,
+            0.08622224026590805
+          ],
+          "stable_score": 0.005976310842636584,
+          "reliability": 0.1557549880285854
+        },
+        "score": 0.005976310842636584
+      },
+      "confidence": 1.0,
+      "features": [
+        "news_count_1",
+        "news_sentiment_1",
+        "news_positive_1",
+        "news_negative_1",
+        "news_length_1",
+        "news_count_5",
+        "news_sentiment_5",
+        "news_positive_5",
+        "news_negative_5",
+        "news_length_5",
+        "news_count_20",
+        "news_sentiment_20",
+        "news_positive_20",
+        "news_negative_20",
+        "news_length_20"
+      ],
+      "target": "target20",
+      "direction": 1
+    }
+  },
+  "method": "economic_h20",
+  "return_calibration": {
+    "slope": 0.002579768232838188,
+    "raw_slope": 0.005159536465676376,
+    "rows": 12396,
+    "first_date": "2023-01-03 00:00:00",
+    "last_date": "2023-11-30 00:00:00",
+    "exit20_max": "2023-12-29 00:00:00",
+    "score_scale": 0.5205087741397975,
+    "reason": "matured_earlier_forecasts_only"
+  }
+}

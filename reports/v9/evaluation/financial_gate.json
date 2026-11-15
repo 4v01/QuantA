@@ -1,0 +1,16 @@
+{
+  "method": "economic_h5",
+  "policy": "weekly_buffer",
+  "financial_passed": false,
+  "reasons": [
+    "net_sharpe_not_above_1"
+  ],
+  "strict_pit": false,
+  "paper_admitted": false,
+  "orders_sent": 0,
+  "structural_blocks": [
+    "fixed_survivor_universe",
+    "financial_vintages_and_share_basis_unverified",
+    "non_executable_adjusted_return_screen"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "read_files": [
+    {
+      "repository": "microsoft/qlib",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/scripts/data_collector/pit/README.md",
+      "file": "data/v9_sources/qlib_pit_README.md",
+      "sha256": "84b339f6ef67f39536a86e0011e564d01238537b1d3c030608443b1c17618a23"
+    },
+    {
+      "repository": "microsoft/qlib",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/scripts/data_collector/pit/collector.py",
+      "file": "data/v9_sources/qlib_pit_collector.py",
+      "sha256": "f97283f205d786dfba2e19e0376edd48472943ca3ccaf948436308d1c274660f"
+    }
+  ],
+  "qlib_code_executed": false,
+  "finding": "PIT collector reads Baostock pubDate/statDate; API date alone does not certify original field revisions.",
+  "probe_receipt": "data_source_probe.json",
+  "fitting_inputs_changed": false
+}

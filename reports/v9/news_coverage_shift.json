@@ -1,0 +1,23 @@
+{
+  "posthoc": true,
+  "used_to_replace_candidate": false,
+  "periods": [
+    {
+      "start": "2018-01-01",
+      "end": "2021-12-31",
+      "headlines": 433088,
+      "calendar_stock_days": 84738,
+      "mean_headlines_per_stock_calendar_day": 5.110906559040808,
+      "zero_headline_stock_calendar_day_fraction": 0.22789067478581038
+    },
+    {
+      "start": "2022-01-01",
+      "end": "2024-12-31",
+      "headlines": 43562,
+      "calendar_stock_days": 63568,
+      "mean_headlines_per_stock_calendar_day": 0.6852819028441983,
+      "zero_headline_stock_calendar_day_fraction": 0.741316385602819
+    }
+  ],
+  "note": "Calendar-day availability counts, including weekends; not a causal decomposition of performance. Same frozen title-only cache."
+}

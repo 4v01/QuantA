@@ -1,0 +1,48 @@
+{
+  "development": {
+    "method": "economic_h5",
+    "policy": "weekly_buffer",
+    "benchmark": "equal_weekly",
+    "net_sharpe_ci95": [
+      0.15038516950698544,
+      2.670462990104825
+    ],
+    "paired_daily_return_difference": 0.0007142656508177764,
+    "paired_daily_return_difference_ci95": [
+      -6.637070870883815e-05,
+      0.0014173689843333828
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 484,
+      "cumulative_return": 1.0849341707347095,
+      "annualized_return": 0.4660169468699593,
+      "net_sharpe": 1.513077355296368,
+      "max_drawdown": -0.24791095105242444,
+      "annual_turnover": 21.014329531440687
+    },
+    "note": "Conditional intervals only; no global multiple-testing correction, and benchmark/exposure difference is not certified alpha."
+  },
+  "evaluation": {
+    "method": "economic_h5",
+    "policy": "weekly_buffer",
+    "benchmark": "equal_weekly",
+    "net_sharpe_ci95": [
+      -1.417029741297992,
+      0.9546360026493319
+    ],
+    "paired_daily_return_difference": -0.00012904963640348764,
+    "paired_daily_return_difference_ci95": [
+      -0.0006649079739182124,
+      0.00030192679625100566
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.05867784910729357,
+      "annualized_return": -0.02082756320543333,
+      "net_sharpe": -0.02398258323049277,
+      "max_drawdown": -0.39627134428666055,
+      "annual_turnover": 17.05716661359763
+    },
+    "note": "Conditional intervals only; no global multiple-testing correction, and benchmark/exposure difference is not certified alpha."
+  }
+}

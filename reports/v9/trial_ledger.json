@@ -1,0 +1,29 @@
+{
+  "methods": 5,
+  "learned_methods": 4,
+  "separately_labelled_classic_baselines": 1,
+  "policies": 3,
+  "candidate_pairs": 15,
+  "independent_benchmark_policies": 3,
+  "cost_bps": [
+    10,
+    20,
+    30
+  ],
+  "primary_cost_bps": 20,
+  "development_warmup_folds": 2,
+  "development_scored_folds": 4,
+  "evaluation_folds": 6,
+  "formal_checkpoint_sets": 60,
+  "formal_saved_ridge_models": 144,
+  "formal_ridge_fit_calls": 576,
+  "formal_per_method_hyperparameter_evaluations": 432,
+  "discarded_control_regression_attempts": 1,
+  "additional_discarded_development_ridge_fit_calls": 288,
+  "additional_discarded_per_method_hyperparameter_evaluations": 216,
+  "formal_curves": 108,
+  "discarded_development_curves": 54,
+  "posthoc_diagnostics_used_to_replace_candidate": false,
+  "whole_history_multiple_testing_corrected": false,
+  "seed": 17
+}

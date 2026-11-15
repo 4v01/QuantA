@@ -1,0 +1,16 @@
+{
+  "unit_tests": 105,
+  "public_audit": "passed",
+  "local_replay": "passed",
+  "forecast_rows_replayed_including_warmup": 400145,
+  "scored_forecast_rows": 335595,
+  "curves_replayed": 108,
+  "checkpoint_sets": 60,
+  "V7_control_forecasts_and_paths_equal": true,
+  "old_reports_unchanged": 621,
+  "posthoc_diagnostics_not_used_for_selection": true,
+  "financial_gate": false,
+  "strict_pit": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

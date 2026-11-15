@@ -1,0 +1,32 @@
+{
+  "classic_value_quality": {
+    "rows": 39295,
+    "excess_H20_r2": -0.0009520134135760916,
+    "excess_H20_rmse": 0.06654304112217295,
+    "note": "On H20 cross-section demeaned returns, not absolute returns or IC squared."
+  },
+  "economic_h20": {
+    "rows": 39295,
+    "excess_H20_r2": -0.0007052450705649083,
+    "excess_H20_rmse": 0.06653483806749796,
+    "note": "On H20 cross-section demeaned returns, not absolute returns or IC squared."
+  },
+  "economic_h5": {
+    "rows": 39295,
+    "excess_H20_r2": -0.0005434991613189055,
+    "excess_H20_rmse": 0.0665294607734206,
+    "note": "On H20 cross-section demeaned returns, not absolute returns or IC squared."
+  },
+  "full_window": {
+    "rows": 39295,
+    "excess_H20_r2": -1.3968794629448666e-05,
+    "excess_H20_rmse": 0.06651185332694562,
+    "note": "On H20 cross-section demeaned returns, not absolute returns or IC squared."
+  },
+  "matched_control": {
+    "rows": 39295,
+    "excess_H20_r2": -0.00012619826261084377,
+    "excess_H20_rmse": 0.06651558546505779,
+    "note": "On H20 cross-section demeaned returns, not absolute returns or IC squared."
+  }
+}

@@ -1,0 +1,1307 @@
+{
+  "posthoc": true,
+  "used_to_replace_candidate": false,
+  "rows": [
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 470,
+      "mean_return": 0.0060111572457087386,
+      "mean_excess": 0.0018851578739104277,
+      "excess_ci95": [
+        -0.0013031512980383225,
+        0.00517485464504496
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 470,
+      "mean_return": 0.00430272546025133,
+      "mean_excess": 0.0001767260884530193,
+      "excess_ci95": [
+        -0.0015245807177780046,
+        0.0019891170829477536
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 470,
+      "mean_return": 0.004005178817675865,
+      "mean_excess": -0.00012082055412244473,
+      "excess_ci95": [
+        -0.002385399445856992,
+        0.0023419511598848186
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 470,
+      "mean_return": 0.0036730751731886015,
+      "mean_excess": -0.00045292419860970876,
+      "excess_ci95": [
+        -0.0022074270442300654,
+        0.0014416094628358367
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 470,
+      "mean_return": 0.0027703276906266313,
+      "mean_excess": -0.0013556716811716789,
+      "excess_ci95": [
+        -0.0036754224440904543,
+        0.001242620126534061
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 455,
+      "mean_return": 0.02151026372126713,
+      "mean_excess": 0.0045827961525966,
+      "excess_ci95": [
+        -0.006879788007928296,
+        0.01602086198706109
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 455,
+      "mean_return": 0.02014408505625088,
+      "mean_excess": 0.0032166174875803495,
+      "excess_ci95": [
+        -0.003198756640782119,
+        0.01014631321242628
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 455,
+      "mean_return": 0.018475486063183316,
+      "mean_excess": 0.0015480184945127846,
+      "excess_ci95": [
+        -0.004754417665423524,
+        0.007363630410398404
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 455,
+      "mean_return": 0.014736954457210556,
+      "mean_excess": -0.0021905131114599765,
+      "excess_ci95": [
+        -0.007863442642373635,
+        0.0028067391087945918
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 455,
+      "mean_return": 0.010276173081408876,
+      "mean_excess": -0.006651294487261656,
+      "excess_ci95": [
+        -0.014671995284422102,
+        0.001537268274752858
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 470,
+      "mean_return": 0.0024072636490466686,
+      "mean_excess": -0.001718735722751642,
+      "excess_ci95": [
+        -0.004084318396561371,
+        0.0009316502410802899
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 470,
+      "mean_return": 0.0026888500546599857,
+      "mean_excess": -0.0014371493171383258,
+      "excess_ci95": [
+        -0.0035079524716828503,
+        0.0004555160708453581
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 470,
+      "mean_return": 0.004790313008339247,
+      "mean_excess": 0.0006643136365409377,
+      "excess_ci95": [
+        -0.0008995119366988493,
+        0.0024197906514259746
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 470,
+      "mean_return": 0.0035281200406641644,
+      "mean_excess": -0.0005978793311341457,
+      "excess_ci95": [
+        -0.0026266655491724395,
+        0.0014625395859407765
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 470,
+      "mean_return": 0.006947365930673917,
+      "mean_excess": 0.0028213665588756056,
+      "excess_ci95": [
+        0.00017215047415385958,
+        0.005373603113348632
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 455,
+      "mean_return": 0.010225556558372166,
+      "mean_excess": -0.006701911010298364,
+      "excess_ci95": [
+        -0.014939186595945904,
+        0.0016146027682870715
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 455,
+      "mean_return": 0.012262578877209178,
+      "mean_excess": -0.004664888691461355,
+      "excess_ci95": [
+        -0.010983523008833193,
+        0.0012374273265087759
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 455,
+      "mean_return": 0.01762384495781579,
+      "mean_excess": 0.0006963773891452593,
+      "excess_ci95": [
+        -0.0037707830436270154,
+        0.005408550006925749
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 455,
+      "mean_return": 0.019237228093170685,
+      "mean_excess": 0.0023097605245001513,
+      "excess_ci95": [
+        -0.0052653098792634365,
+        0.01032345180256159
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 455,
+      "mean_return": 0.024703407406749926,
+      "mean_excess": 0.007775939838079399,
+      "excess_ci95": [
+        -0.0014061852757659772,
+        0.01589785722431547
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 470,
+      "mean_return": 0.0014265917464563766,
+      "mean_excess": -0.0026994076253419336,
+      "excess_ci95": [
+        -0.00498980065912783,
+        -0.00025768346972275037
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 470,
+      "mean_return": 0.0026444701780595336,
+      "mean_excess": -0.0014815291937387768,
+      "excess_ci95": [
+        -0.0031328029480453597,
+        0.00019774555397220793
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 470,
+      "mean_return": 0.005302555809026423,
+      "mean_excess": 0.001176556437228112,
+      "excess_ci95": [
+        -0.0006353545359477094,
+        0.0032686956424564603
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 470,
+      "mean_return": 0.004573946501882304,
+      "mean_excess": 0.00044794713008399216,
+      "excess_ci95": [
+        -0.0010162771690789922,
+        0.0019996582830716916
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 470,
+      "mean_return": 0.006359174480288529,
+      "mean_excess": 0.002233175108490218,
+      "excess_ci95": [
+        -0.0012598356284041889,
+        0.0055687145377844895
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 455,
+      "mean_return": 0.01314250987273366,
+      "mean_excess": -0.0037849576959368704,
+      "excess_ci95": [
+        -0.011474586373904373,
+        0.003322574852132022
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 455,
+      "mean_return": 0.01451724026179585,
+      "mean_excess": -0.00241022730687468,
+      "excess_ci95": [
+        -0.008733331326316008,
+        0.0036912567521878775
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 455,
+      "mean_return": 0.017821490112761962,
+      "mean_excess": 0.0008940225440914288,
+      "excess_ci95": [
+        -0.003139310818238964,
+        0.005576362013357821
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 455,
+      "mean_return": 0.015939656083358057,
+      "mean_excess": -0.0009878114853124724,
+      "excess_ci95": [
+        -0.006293512938566167,
+        0.003962561083767016
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 455,
+      "mean_return": 0.022540850311142658,
+      "mean_excess": 0.005613382742472125,
+      "excess_ci95": [
+        -0.0033209468950158015,
+        0.014971360093645641
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 470,
+      "mean_return": 0.0028390947714747785,
+      "mean_excess": -0.001286904600323531,
+      "excess_ci95": [
+        -0.004113330235233854,
+        0.0013720430728301665
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 470,
+      "mean_return": 0.0036006336633890796,
+      "mean_excess": -0.0005253657084092307,
+      "excess_ci95": [
+        -0.0020407452638375807,
+        0.0010892217830223033
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 470,
+      "mean_return": 0.004646560768826452,
+      "mean_excess": 0.0005205613970281411,
+      "excess_ci95": [
+        -0.0012173270973071043,
+        0.0023835001402142844
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 470,
+      "mean_return": 0.004970670959941719,
+      "mean_excess": 0.0008446715881434084,
+      "excess_ci95": [
+        -0.000392164809656645,
+        0.002021887284448187
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 470,
+      "mean_return": 0.004382110624973174,
+      "mean_excess": 0.00025611125317486286,
+      "excess_ci95": [
+        -0.002620737001763845,
+        0.00292341029616308
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 455,
+      "mean_return": 0.01846603797504735,
+      "mean_excess": 0.0015385704063768178,
+      "excess_ci95": [
+        -0.008772815720863207,
+        0.010900267569282921
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 455,
+      "mean_return": 0.018791855937993155,
+      "mean_excess": 0.001864388369322627,
+      "excess_ci95": [
+        -0.002702892113551995,
+        0.006158678997314623
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 455,
+      "mean_return": 0.01571116029233213,
+      "mean_excess": -0.0012163072763384014,
+      "excess_ci95": [
+        -0.004429536093632103,
+        0.0022507248425751255
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 455,
+      "mean_return": 0.014427850180748748,
+      "mean_excess": -0.002499617387921783,
+      "excess_ci95": [
+        -0.006440409457764028,
+        0.001532479730354499
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 455,
+      "mean_return": 0.016905177297622025,
+      "mean_excess": -2.2290271048506375e-05,
+      "excess_ci95": [
+        -0.007522045130444925,
+        0.007648582450784971
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 470,
+      "mean_return": 0.002735320371914234,
+      "mean_excess": -0.0013906789998840766,
+      "excess_ci95": [
+        -0.003905050143160817,
+        0.0010472879986435637
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 470,
+      "mean_return": 0.0032290874145077487,
+      "mean_excess": -0.0008969119572905618,
+      "excess_ci95": [
+        -0.0025008022798817093,
+        0.0007967514006454352
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 470,
+      "mean_return": 0.004059823289879117,
+      "mean_excess": -6.617608191919404e-05,
+      "excess_ci95": [
+        -0.001670460309702725,
+        0.0013855638592133155
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 470,
+      "mean_return": 0.005442297162046972,
+      "mean_excess": 0.0013162977902486618,
+      "excess_ci95": [
+        -7.563566746579611e-05,
+        0.0026141098461526565
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 470,
+      "mean_return": 0.005036961879426611,
+      "mean_excess": 0.0009109625076283007,
+      "excess_ci95": [
+        -0.0012778101626302427,
+        0.0029910038189443697
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 455,
+      "mean_return": 0.014993864751763482,
+      "mean_excess": -0.0019336028169070491,
+      "excess_ci95": [
+        -0.010776878803802698,
+        0.007310376868712233
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 455,
+      "mean_return": 0.018561329408761488,
+      "mean_excess": 0.0016338618400909557,
+      "excess_ci95": [
+        -0.0027402351295534623,
+        0.005779737911010621
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 455,
+      "mean_return": 0.015970989349634125,
+      "mean_excess": -0.0009564782190364069,
+      "excess_ci95": [
+        -0.005126295636336738,
+        0.002991133360697243
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 455,
+      "mean_return": 0.016981064471489078,
+      "mean_excess": 5.359690281854381e-05,
+      "excess_ci95": [
+        -0.004086167513265496,
+        0.003953262402027346
+      ]
+    },
+    {
+      "phase": "development",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 455,
+      "mean_return": 0.017838431581365173,
+      "mean_excess": 0.0009109640126946404,
+      "excess_ci95": [
+        -0.005421919224985065,
+        0.007475327902730772
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 720,
+      "mean_return": 0.00035097409291505807,
+      "mean_excess": 0.00028279615168848846,
+      "excess_ci95": [
+        -0.0022961643484337227,
+        0.0029322364888734512
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 720,
+      "mean_return": 0.000263820823541755,
+      "mean_excess": 0.00019564288231518572,
+      "excess_ci95": [
+        -0.0013961380358461233,
+        0.0017766702023891228
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 720,
+      "mean_return": -0.0010721671403196179,
+      "mean_excess": -0.0011403450815461876,
+      "excess_ci95": [
+        -0.0022229241250342475,
+        -0.00015410734343593391
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 720,
+      "mean_return": -0.0006642602559479773,
+      "mean_excess": -0.0007324381971745468,
+      "excess_ci95": [
+        -0.0021712669209619055,
+        0.0006928881331728614
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 720,
+      "mean_return": 0.001395852205406745,
+      "mean_excess": 0.0013276742641801752,
+      "excess_ci95": [
+        -0.0011031499885554548,
+        0.0037808624140424343
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 705,
+      "mean_return": 0.0010349305263959241,
+      "mean_excess": 0.0005050048337374027,
+      "excess_ci95": [
+        -0.007806294245796474,
+        0.0095031092746196
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 705,
+      "mean_return": -0.0006135989725880458,
+      "mean_excess": -0.0011435246652465691,
+      "excess_ci95": [
+        -0.005510285610381516,
+        0.003592605077123856
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 705,
+      "mean_return": -0.002575024872092,
+      "mean_excess": -0.0031049505647505237,
+      "excess_ci95": [
+        -0.005961614460181502,
+        -0.00024269359141393707
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 705,
+      "mean_return": -0.0001038086620574872,
+      "mean_excess": -0.0006337343547160097,
+      "excess_ci95": [
+        -0.005212025866515897,
+        0.0037379356359408073
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "classic_value_quality",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 705,
+      "mean_return": 0.004786966361342584,
+      "mean_excess": 0.004257040668684061,
+      "excess_ci95": [
+        -0.0038216696264614207,
+        0.01197468181315158
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 720,
+      "mean_return": -0.00046977360209908233,
+      "mean_excess": -0.0005379515433256521,
+      "excess_ci95": [
+        -0.0022966135407558575,
+        0.001374622841333624
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 720,
+      "mean_return": -0.0005303275700393722,
+      "mean_excess": -0.0005985055112659414,
+      "excess_ci95": [
+        -0.001709490785613815,
+        0.0005021385263614871
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 720,
+      "mean_return": 0.00037120650467739743,
+      "mean_excess": 0.000303028563450828,
+      "excess_ci95": [
+        -0.0006308233809414811,
+        0.0013806685992241918
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 720,
+      "mean_return": 0.0006959228698674775,
+      "mean_excess": 0.0006277449286409078,
+      "excess_ci95": [
+        -0.00032093331277478,
+        0.0015746527401699058
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 720,
+      "mean_return": 0.0002825601147912161,
+      "mean_excess": 0.00021438217356464646,
+      "excess_ci95": [
+        -0.0017503498540258847,
+        0.0021868558802890215
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 705,
+      "mean_return": -0.0011066766207375597,
+      "mean_excess": -0.0016366023133960823,
+      "excess_ci95": [
+        -0.0072863492100137366,
+        0.004008269136732871
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 705,
+      "mean_return": -0.0009930591612489707,
+      "mean_excess": -0.0015229848539074925,
+      "excess_ci95": [
+        -0.005070665698716054,
+        0.0021464538722127577
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 705,
+      "mean_return": 0.0005609552235155406,
+      "mean_excess": 3.1029530857018775e-05,
+      "excess_ci95": [
+        -0.0023547679295317808,
+        0.0022857804691755763
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 705,
+      "mean_return": 0.0016584376857635556,
+      "mean_excess": 0.0011285119931050327,
+      "excess_ci95": [
+        -0.002086289823035654,
+        0.004470580906607058
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h20",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 705,
+      "mean_return": 0.0023778226917253167,
+      "mean_excess": 0.0018478969990667923,
+      "excess_ci95": [
+        -0.0036778603576963754,
+        0.006792611088482777
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 720,
+      "mean_return": -0.0009628066747925172,
+      "mean_excess": -0.001030984616019087,
+      "excess_ci95": [
+        -0.0026222129535453994,
+        0.0007168793754516366
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 720,
+      "mean_return": -0.00011949937548042383,
+      "mean_excess": -0.00018767731670699334,
+      "excess_ci95": [
+        -0.0013728079877046257,
+        0.0008513506696436608
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 720,
+      "mean_return": 0.00020369070348500562,
+      "mean_excess": 0.0001355127622584359,
+      "excess_ci95": [
+        -0.0007685204533318083,
+        0.0010566104732585816
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 720,
+      "mean_return": 0.0005944873609104151,
+      "mean_excess": 0.0005263094196838455,
+      "excess_ci95": [
+        -0.00039559325351614446,
+        0.0014487821425440215
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 720,
+      "mean_return": 0.0005774424756318445,
+      "mean_excess": 0.0005092645344052752,
+      "excess_ci95": [
+        -0.0013993226196686167,
+        0.002234383845469533
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 705,
+      "mean_return": -0.0012656548041633288,
+      "mean_excess": -0.0017955804968218508,
+      "excess_ci95": [
+        -0.00718911453956308,
+        0.0036380021963360425
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 705,
+      "mean_return": 0.0006264282207886102,
+      "mean_excess": 9.650252813008848e-05,
+      "excess_ci95": [
+        -0.00253636158574574,
+        0.002705679112830525
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 705,
+      "mean_return": -0.000159411035270369,
+      "mean_excess": -0.0006893367279288912,
+      "excess_ci95": [
+        -0.003312683352747464,
+        0.001963552453548647
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 705,
+      "mean_return": 0.0007287506909817901,
+      "mean_excess": 0.00019882499832326697,
+      "excess_ci95": [
+        -0.0024985651538831912,
+        0.003029453787515175
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "economic_h5",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 705,
+      "mean_return": 0.002551677748412804,
+      "mean_excess": 0.0020217520557542826,
+      "excess_ci95": [
+        -0.003505007461085376,
+        0.00720864624138069
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 720,
+      "mean_return": -0.0009957024380935426,
+      "mean_excess": -0.0010638803793201121,
+      "excess_ci95": [
+        -0.0024794778414869312,
+        0.000360391510014721
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 720,
+      "mean_return": 0.00017207457252054647,
+      "mean_excess": 0.00010389663129397677,
+      "excess_ci95": [
+        -0.0007841987051440229,
+        0.0009233351953813358
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 720,
+      "mean_return": 0.0004989718863212171,
+      "mean_excess": 0.0004307939450946476,
+      "excess_ci95": [
+        -0.00031810353845398894,
+        0.0011716981421213493
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 720,
+      "mean_return": -0.0007665656757467551,
+      "mean_excess": -0.0008347436169733247,
+      "excess_ci95": [
+        -0.0019124570236350071,
+        0.00034457080184469783
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 720,
+      "mean_return": 0.001308710891300228,
+      "mean_excess": 0.0012405329500736583,
+      "excess_ci95": [
+        -4.230805540643027e-05,
+        0.0024393151976350625
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 705,
+      "mean_return": -0.002798808364441688,
+      "mean_excess": -0.0033287340571002103,
+      "excess_ci95": [
+        -0.008465257053637109,
+        0.0014257257109107331
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 705,
+      "mean_return": 0.0007905881895764069,
+      "mean_excess": 0.0002606624969178841,
+      "excess_ci95": [
+        -0.0026331617490762435,
+        0.0027722763497417414
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 705,
+      "mean_return": 0.0016738480193880174,
+      "mean_excess": 0.0011439223267294945,
+      "excess_ci95": [
+        -0.0007645126975797192,
+        0.0033087915940492947
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 705,
+      "mean_return": 0.0002212980007524363,
+      "mean_excess": -0.0003086276919060857,
+      "excess_ci95": [
+        -0.002582856674911402,
+        0.002029423642635357
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "full_window",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 705,
+      "mean_return": 0.0025056043305308516,
+      "mean_excess": 0.0019756786378723294,
+      "excess_ci95": [
+        -0.002347493672118606,
+        0.006227564181112829
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 1,
+      "days": 720,
+      "mean_return": -0.0008898422433473034,
+      "mean_excess": -0.0009580201845738724,
+      "excess_ci95": [
+        -0.0024712539894657984,
+        0.0005105346395103201
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 2,
+      "days": 720,
+      "mean_return": -0.00045872046550860077,
+      "mean_excess": -0.0005268984067351703,
+      "excess_ci95": [
+        -0.0013194098409315793,
+        0.0003736516170102753
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 3,
+      "days": 720,
+      "mean_return": 0.0008937543059028394,
+      "mean_excess": 0.0008255763646762694,
+      "excess_ci95": [
+        -5.2323141351516585e-05,
+        0.0017303297422428564
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 4,
+      "days": 720,
+      "mean_return": -0.00031487385102686385,
+      "mean_excess": -0.0003830517922534338,
+      "excess_ci95": [
+        -0.0013355254522343782,
+        0.0006914177781943083
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 5,
+      "quintile": 5,
+      "days": 720,
+      "mean_return": 0.0010299038515776703,
+      "mean_excess": 0.0009617259103511007,
+      "excess_ci95": [
+        -0.000496523315677516,
+        0.0023900546057433847
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 1,
+      "days": 705,
+      "mean_return": -0.0023576544729127917,
+      "mean_excess": -0.0028875801655713126,
+      "excess_ci95": [
+        -0.008103672175067387,
+        0.001959252087390107
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 2,
+      "days": 705,
+      "mean_return": -0.0014120333285234444,
+      "mean_excess": -0.0019419590211819666,
+      "excess_ci95": [
+        -0.004310467937007925,
+        0.0005414386060918141
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 3,
+      "days": 705,
+      "mean_return": 0.001755636680124586,
+      "mean_excess": 0.0012257109874660643,
+      "excess_ci95": [
+        -0.0002807882417486041,
+        0.0026538736054431585
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 4,
+      "days": 705,
+      "mean_return": 0.001520839902427217,
+      "mean_excess": 0.000990914209768695,
+      "excess_ci95": [
+        -0.001286227759611973,
+        0.00364401909796951
+      ]
+    },
+    {
+      "phase": "evaluation",
+      "method": "matched_control",
+      "horizon": 20,
+      "quintile": 5,
+      "days": 705,
+      "mean_return": 0.0028951790980212715,
+      "mean_excess": 0.0023652534053627493,
+      "excess_ci95": [
+        -0.0010860081426314469,
+        0.006091838038312027
+      ]
+    }
+  ],
+  "note": "Prediction-sorted quintiles, not buffered holdings. Conditional overlapping H5/H20 return diagnostics; no new trading rule or causal claim."
+}

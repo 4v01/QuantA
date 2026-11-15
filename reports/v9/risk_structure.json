@@ -1,0 +1,9 @@
+{
+  "posthoc": true,
+  "used_to_replace_candidate": false,
+  "names": 58,
+  "sessions": 726,
+  "correlation_participation_ratio": 7.0635930006663585,
+  "first_component_variance_fraction": 0.3537571486183554,
+  "note": "Descriptive return-correlation dimensions, not a count of independent strategy trials, a causal estimate, or a Sharpe bound."
+}

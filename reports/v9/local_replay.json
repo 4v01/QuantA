@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "mode": "local_replay",
+  "phases": [
+    {
+      "phase": "development",
+      "forecast_rows": 197565,
+      "checkpoint_sets": 30,
+      "input_tape_and_economic_features_verified": true
+    },
+    {
+      "phase": "evaluation",
+      "forecast_rows": 202580,
+      "checkpoint_sets": 30,
+      "input_tape_and_economic_features_verified": true
+    }
+  ]
+}

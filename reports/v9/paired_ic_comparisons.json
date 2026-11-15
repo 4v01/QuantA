@@ -1,0 +1,42 @@
+{
+  "matched_control": {
+    "paired_valid_days": 720,
+    "mean_delta_H5_RankIC": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "full_window": {
+    "paired_valid_days": 720,
+    "mean_delta_H5_RankIC": -5.595875367661534e-05,
+    "ci95": [
+      -0.012986470143587758,
+      0.012832594098185433
+    ]
+  },
+  "economic_h5": {
+    "paired_valid_days": 720,
+    "mean_delta_H5_RankIC": 0.009124156281022432,
+    "ci95": [
+      -0.007504921388149773,
+      0.025566956083831124
+    ]
+  },
+  "economic_h20": {
+    "paired_valid_days": 720,
+    "mean_delta_H5_RankIC": 0.008863295887526925,
+    "ci95": [
+      -0.012371286849876307,
+      0.029477602323792422
+    ]
+  },
+  "classic_value_quality": {
+    "paired_valid_days": 720,
+    "mean_delta_H5_RankIC": 0.013748649872711353,
+    "ci95": [
+      -0.03850527992261434,
+      0.06824357962919554
+    ]
+  }
+}

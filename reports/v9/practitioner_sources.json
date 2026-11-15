@@ -97,6 +97,8 @@
       "bytes": 74984
     }
   ],
-  "external_code_copied_or_executed": false,
-  "external_performance_imported": false
+  "external_performance_imported": false,
+  "source_files_downloaded_for_reading": true,
+  "external_code_reused_in_implementation": false,
+  "external_repository_code_executed": false
 }

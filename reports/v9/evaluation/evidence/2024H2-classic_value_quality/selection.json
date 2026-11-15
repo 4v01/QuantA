@@ -1,0 +1,32 @@
+{
+  "split": {
+    "train_start": "2021-07-01 00:00:00",
+    "validation_start": "2024-01-01 00:00:00",
+    "test_start": "2024-07-01 00:00:00",
+    "test_end_exclusive": "2025-01-01 00:00:00",
+    "training_exit20_max": "2023-12-29 00:00:00",
+    "refit_exit20_max": "2024-06-28 00:00:00",
+    "training_rows": 32906,
+    "validation_rows": 5142,
+    "refit_rows": 39245,
+    "test_rows": 7177
+  },
+  "groups": {
+    "classic_weights": {
+      "fundamental": 0.5,
+      "price_volume": 0.5
+    },
+    "learned": false
+  },
+  "method": "classic_value_quality",
+  "return_calibration": {
+    "slope": 0.017666649478461267,
+    "raw_slope": 0.03533329895692253,
+    "rows": 12273,
+    "first_date": "2023-07-03 00:00:00",
+    "last_date": "2024-05-29 00:00:00",
+    "exit20_max": "2024-06-28 00:00:00",
+    "score_scale": 0.10204092923183829,
+    "reason": "matured_earlier_forecasts_only"
+  }
+}

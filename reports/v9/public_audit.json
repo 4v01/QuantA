@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "mode": "public",
+  "phases": [
+    {
+      "phase": "development",
+      "forecast_rows_including_warmup": 197565,
+      "evaluation_forecast_rows": 133015,
+      "curves": 54,
+      "checkpoint_sets": 30,
+      "V7_control_equivalence": true
+    },
+    {
+      "phase": "evaluation",
+      "forecast_rows_including_warmup": 202580,
+      "evaluation_forecast_rows": 202580,
+      "curves": 54,
+      "checkpoint_sets": 30,
+      "V7_control_equivalence": true
+    }
+  ]
+}
