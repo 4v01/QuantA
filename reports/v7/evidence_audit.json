@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "status": "passed",
+      "phase": "development",
+      "prediction_rows": 744884,
+      "daily_ic_rows": 13160,
+      "curves": 45,
+      "source_commit": "2697579c8927fd75af65272a9be1e3fdb40dcfea"
+    },
+    {
+      "status": "passed",
+      "phase": "holdout",
+      "prediction_rows": 1134448,
+      "daily_ic_rows": 20160,
+      "curves": 45,
+      "source_commit": "ffc840ae2b94dca4f734ccb814216d06295f361a"
+    }
+  ],
+  "local_replays": [],
+  "sealed_champion": "long_history",
+  "strict_pit": false,
+  "paper_admitted": false
+}

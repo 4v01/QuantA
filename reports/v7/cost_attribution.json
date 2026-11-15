@@ -1,0 +1,332 @@
+[
+  {
+    "method": "legacy_matched",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.227579765450464,
+      "annualized_return": -0.0859590934947787,
+      "net_sharpe": -0.46128169497684723,
+      "max_drawdown": -0.3336754681935936,
+      "annual_turnover": 44.64246322313636
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.0014616069617512384,
+      "annualized_return": -0.0005089786999797896,
+      "net_sharpe": 0.07854140678465223,
+      "max_drawdown": -0.21583154134983773,
+      "annual_turnover": 44.64246322313636
+    },
+    "cumulative_cost_wedge": 0.22611815848871275,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "legacy_matched",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.041607864612819734,
+      "annualized_return": -0.01468334392213233,
+      "net_sharpe": -0.00899116085575927,
+      "max_drawdown": -0.21843088729318294,
+      "annual_turnover": 18.69871163491214
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.06716424400619792,
+      "annualized_return": 0.022883921516784422,
+      "net_sharpe": 0.2188944834756134,
+      "max_drawdown": -0.20769765153133246,
+      "annual_turnover": 18.69871163491214
+    },
+    "cumulative_cost_wedge": 0.10877210861901765,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "signed_stable",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.21765430203156844,
+      "annualized_return": -0.08188796640003337,
+      "net_sharpe": -0.4147542485508927,
+      "max_drawdown": -0.3175560465047459,
+      "annual_turnover": 44.60718085383664
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.011161421413941275,
+      "annualized_return": 0.003870866563423059,
+      "net_sharpe": 0.10676803730945192,
+      "max_drawdown": -0.2485933522111482,
+      "annual_turnover": 44.60718085383664
+    },
+    "cumulative_cost_wedge": 0.2288157234455097,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "signed_stable",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.05924393447120835,
+      "annualized_return": -0.021032561362053226,
+      "net_sharpe": -0.04413124652496803,
+      "max_drawdown": -0.2897203345856495,
+      "annual_turnover": 18.564119563613616
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.0467120352411865,
+      "annualized_return": 0.01601749519930662,
+      "net_sharpe": 0.17746556984550566,
+      "max_drawdown": -0.28228235232567145,
+      "annual_turnover": 18.564119563613616
+    },
+    "cumulative_cost_wedge": 0.10595596971239485,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "reliable",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.24940176309928208,
+      "annualized_return": -0.09503128950790718,
+      "net_sharpe": -0.5004663467564265,
+      "max_drawdown": -0.3451932702319005,
+      "annual_turnover": 45.89792463673332
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.022629544940238833,
+      "annualized_return": -0.00793541843908041,
+      "net_sharpe": 0.03733784565633577,
+      "max_drawdown": -0.2756840239093872,
+      "annual_turnover": 45.89792463673332
+    },
+    "cumulative_cost_wedge": 0.22677221815904325,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "reliable",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.09040364444203675,
+      "annualized_return": -0.032442857191781416,
+      "net_sharpe": -0.10258962824699805,
+      "max_drawdown": -0.32582078743686005,
+      "annual_turnover": 22.274398787466726
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.033875226593997,
+      "annualized_return": 0.011663003427874408,
+      "net_sharpe": 0.15266099702541824,
+      "max_drawdown": -0.3155017805661461,
+      "annual_turnover": 22.274398787466726
+    },
+    "cumulative_cost_wedge": 0.12427887103603374,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "long_history",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.2595302663439567,
+      "annualized_return": -0.09930055942657845,
+      "net_sharpe": -0.480585423103449,
+      "max_drawdown": -0.3395780254240415,
+      "annual_turnover": 51.49887216897651
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.004223990690522261,
+      "annualized_return": -0.0014722578555569354,
+      "net_sharpe": 0.08244622146425719,
+      "max_drawdown": -0.2727788414522635,
+      "annual_turnover": 51.49887216897651
+    },
+    "cumulative_cost_wedge": 0.25530627565343444,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "long_history",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.07172457130865495,
+      "annualized_return": -0.025572790462674355,
+      "net_sharpe": -0.052892450901836675,
+      "max_drawdown": -0.311361786431989,
+      "annual_turnover": 25.465150771334795
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.07464351837498473,
+      "annualized_return": 0.025373506992031114,
+      "net_sharpe": 0.22735021551984383,
+      "max_drawdown": -0.299203617050837,
+      "annual_turnover": 25.465150771334795
+    },
+    "cumulative_cost_wedge": 0.14636808968363968,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "aligned_fund",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.2772035258337101,
+      "annualized_return": -0.10684212898436884,
+      "net_sharpe": -0.5122628696963382,
+      "max_drawdown": -0.35358796235020595,
+      "annual_turnover": 52.67736916284693
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.02137412165804442,
+      "annualized_return": -0.00749206391739532,
+      "net_sharpe": 0.05207892868567872,
+      "max_drawdown": -0.2727788414522635,
+      "annual_turnover": 52.67736916284693
+    },
+    "cumulative_cost_wedge": 0.2558294041756657,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "aligned_fund",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.12652589383336932,
+      "annualized_return": -0.045993975730771464,
+      "net_sharpe": -0.16799357545861662,
+      "max_drawdown": -0.311361786431989,
+      "annual_turnover": 26.50844615069625
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.017287587688137096,
+      "annualized_return": 0.005983637624519034,
+      "net_sharpe": 0.12279192397842138,
+      "max_drawdown": -0.299203617050837,
+      "annual_turnover": 26.50844615069625
+    },
+    "cumulative_cost_wedge": 0.14381348152150641,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "kaggle_context",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.28148384266566495,
+      "annualized_return": -0.10868667868735149,
+      "net_sharpe": -0.5386071100883494,
+      "max_drawdown": -0.37356854756361924,
+      "annual_turnover": 51.33413178393475
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.03466907947313269,
+      "annualized_return": -0.012206173285591704,
+      "net_sharpe": 0.023161763361094472,
+      "max_drawdown": -0.30088940921189933,
+      "annual_turnover": 51.33413178393475
+    },
+    "cumulative_cost_wedge": 0.24681476319253226,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "kaggle_context",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.1818682082982801,
+      "annualized_return": -0.06748308553222326,
+      "net_sharpe": -0.284388344793573,
+      "max_drawdown": -0.3861698133446967,
+      "annual_turnover": 26.542644297615443
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.04697471326074243,
+      "annualized_return": -0.016607358585248533,
+      "net_sharpe": 0.0017466703043319352,
+      "max_drawdown": -0.37747418762916796,
+      "annual_turnover": 26.542644297615443
+    },
+    "cumulative_cost_wedge": 0.13489349503753767,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "kaggle_rank",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.28724718040280406,
+      "annualized_return": -0.11118166962332088,
+      "net_sharpe": -0.5120538859510441,
+      "max_drawdown": -0.3705494418663967,
+      "annual_turnover": 49.67424952216871
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.051504198945206414,
+      "annualized_return": -0.018236682621415534,
+      "net_sharpe": 0.0005323315542509436,
+      "max_drawdown": -0.34870195069763144,
+      "annual_turnover": 49.67424952216871
+    },
+    "cumulative_cost_wedge": 0.23574298145759764,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "kaggle_rank",
+    "policy": "buffer",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.24985245304001658,
+      "annualized_return": -0.09522045890718023,
+      "net_sharpe": -0.4150748569765475,
+      "max_drawdown": -0.3643911270146428,
+      "annual_turnover": 29.415341132802837
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.11160259061964994,
+      "annualized_return": -0.04035207764688786,
+      "net_sharpe": -0.11453086082042827,
+      "max_drawdown": -0.359325526409938,
+      "annual_turnover": 29.415341132802837
+    },
+    "cumulative_cost_wedge": 0.13824986242036663,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  },
+  {
+    "method": "equal_weight",
+    "policy": "weekly",
+    "net": {
+      "sessions": 724,
+      "cumulative_return": -0.058461231674815095,
+      "annualized_return": -0.020749140159606827,
+      "net_sharpe": -0.03428570019802534,
+      "max_drawdown": -0.2507640470085246,
+      "annual_turnover": 3.9360233111506657
+    },
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.03691312996448115,
+      "annualized_return": -0.013006033464375788,
+      "net_sharpe": 0.010855065369766412,
+      "max_drawdown": -0.24456479211046345,
+      "annual_turnover": 3.9360233111506657
+    },
+    "cumulative_cost_wedge": 0.021548101710333945,
+    "note": "Identical fractional holdings, diagnostic only. Zero cost was not an eligible selection or admission setting."
+  }
+]

@@ -37,3 +37,6 @@ jobs:
           if test -f reports/v6/pilot/provenance.json; then
             python -m alphacontextlab.v6.audit
           fi
+          if test -f reports/v7/champion_seal.json; then
+            python -m alphacontextlab.v7.audit
+          fi

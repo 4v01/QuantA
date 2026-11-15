@@ -1,0 +1,290 @@
+{
+  "split": {
+    "train_start": "2020-01-01 00:00:00",
+    "validation_start": "2022-07-01 00:00:00",
+    "test_start": "2023-01-01 00:00:00",
+    "test_end_exclusive": "2023-07-01 00:00:00",
+    "training_exit20_max": "2022-06-30 00:00:00",
+    "refit_exit20_max": "2022-12-30 00:00:00",
+    "training_rows": 31587,
+    "validation_rows": 5932,
+    "refit_rows": 38695,
+    "test_rows": 6462
+  },
+  "groups": {
+    "fundamental": {
+      "candidates": [
+        {
+          "kind": "ridge",
+          "alpha": 1.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.015557915420960414,
+            "blocks": [
+              0.122236344211085,
+              -0.07852226889202353,
+              -0.0638415078424646,
+              0.08235909420724481
+            ],
+            "stable_score": -0.03526697525878458,
+            "reliability": 0.05669476197773014
+          },
+          "selection_score": -0.03526697525878458
+        },
+        {
+          "kind": "ridge",
+          "alpha": 100.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.01567707666474574,
+            "blocks": [
+              0.12218704218010301,
+              -0.07948580639545305,
+              -0.06251773706794478,
+              0.0825248079422778
+            ],
+            "stable_score": -0.03513581141335817,
+            "reliability": 0.05708940616546784
+          },
+          "selection_score": -0.03513581141335817
+        },
+        {
+          "kind": "ridge",
+          "alpha": 10000.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.005162142145945818,
+            "blocks": [
+              0.1342226208482863,
+              -0.10523454390742479,
+              -0.06297772957034163,
+              0.054638221213263415
+            ],
+            "stable_score": -0.04956061361116688,
+            "reliability": 0.019174772034055716
+          },
+          "selection_score": -0.04956061361116688
+        }
+      ],
+      "selected": {
+        "kind": "ridge",
+        "alpha": 100.0,
+        "direction": 1,
+        "validation": {
+          "mean": 0.01567707666474574,
+          "blocks": [
+            0.12218704218010301,
+            -0.07948580639545305,
+            -0.06251773706794478,
+            0.0825248079422778
+          ],
+          "stable_score": -0.03513581141335817,
+          "reliability": 0.05708940616546784
+        },
+        "selection_score": -0.03513581141335817
+      },
+      "confidence": 0.05708940616546784,
+      "features": [
+        "aligned_roe",
+        "aligned_eps",
+        "fin_revenue_growth",
+        "fin_profit_growth",
+        "fin_leverage",
+        "fin_bps",
+        "change63_fin_roe",
+        "change63_fin_revenue_growth",
+        "change63_fin_profit_growth",
+        "change63_fin_leverage",
+        "change63_fin_eps",
+        "change63_fin_bps",
+        "report_age"
+      ],
+      "target": "target20",
+      "constant_validation": false
+    },
+    "price_volume": {
+      "candidates": [
+        {
+          "kind": "lambdarank",
+          "best_iteration": 12,
+          "direction": 1,
+          "validation": {
+            "mean": -0.040723124183850254,
+            "blocks": [
+              -0.010897591168805915,
+              -0.13445291317070598,
+              0.021551609159484696,
+              -0.039093601555373815
+            ],
+            "stable_score": -0.07433318408676745,
+            "reliability": 0.0
+          },
+          "selection_score": -0.07433318408676745
+        }
+      ],
+      "selected": {
+        "kind": "lambdarank",
+        "best_iteration": 12,
+        "direction": 1,
+        "validation": {
+          "mean": -0.040723124183850254,
+          "blocks": [
+            -0.010897591168805915,
+            -0.13445291317070598,
+            0.021551609159484696,
+            -0.039093601555373815
+          ],
+          "stable_score": -0.07433318408676745,
+          "reliability": 0.0
+        },
+        "selection_score": -0.07433318408676745
+      },
+      "confidence": 0.0,
+      "features": [
+        "ret1",
+        "ret5",
+        "ret20",
+        "ret60",
+        "reversal5",
+        "vol5",
+        "vol20",
+        "vol60",
+        "downside20",
+        "range1",
+        "range20",
+        "gap1",
+        "intraday1",
+        "close_location",
+        "volume_ratio5",
+        "volume_ratio20",
+        "amount_ratio20",
+        "turnover1",
+        "turnover20",
+        "volume_vol20",
+        "price_volume_corr20",
+        "amihud20",
+        "ma_gap5",
+        "ma_gap20",
+        "ma_gap60",
+        "trend_strength20",
+        "volume_trend20",
+        "market_ret5",
+        "market_vol20",
+        "ret5_x_market",
+        "ret20_x_market",
+        "vol20_x_market"
+      ],
+      "target": "target",
+      "constant_validation": false
+    },
+    "alternative": {
+      "candidates": [
+        {
+          "kind": "ridge",
+          "alpha": 1.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.041588482758830266,
+            "blocks": [
+              0.04718287877481822,
+              0.08738904314470584,
+              0.07111606035991688,
+              -0.039334051244119865
+            ],
+            "stable_score": 0.013378964644532466,
+            "reliability": 0.2643167345332144
+          },
+          "selection_score": 0.013378964644532466
+        },
+        {
+          "kind": "ridge",
+          "alpha": 100.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.04215641417802014,
+            "blocks": [
+              0.04755945563371578,
+              0.08728433488822304,
+              0.07208189270336557,
+              -0.0383000265132238
+            ],
+            "stable_score": 0.014117014519871122,
+            "reliability": 0.26741027227928577
+          },
+          "selection_score": 0.014117014519871122
+        },
+        {
+          "kind": "ridge",
+          "alpha": 10000.0,
+          "direction": 1,
+          "validation": {
+            "mean": 0.04737051971127125,
+            "blocks": [
+              0.0564954456570281,
+              0.0863004413177609,
+              0.07339609394854157,
+              -0.026709902078245577
+            ],
+            "stable_score": 0.02193425544694553,
+            "reliability": 0.3004649348295308
+          },
+          "selection_score": 0.02193425544694553
+        }
+      ],
+      "selected": {
+        "kind": "ridge",
+        "alpha": 10000.0,
+        "direction": 1,
+        "validation": {
+          "mean": 0.04737051971127125,
+          "blocks": [
+            0.0564954456570281,
+            0.0863004413177609,
+            0.07339609394854157,
+            -0.026709902078245577
+          ],
+          "stable_score": 0.02193425544694553,
+          "reliability": 0.3004649348295308
+        },
+        "selection_score": 0.02193425544694553
+      },
+      "confidence": 0.3004649348295308,
+      "features": [
+        "news_count_1",
+        "news_sentiment_1",
+        "news_positive_1",
+        "news_negative_1",
+        "news_length_1",
+        "news_count_5",
+        "news_sentiment_5",
+        "news_positive_5",
+        "news_negative_5",
+        "news_length_5",
+        "news_count_20",
+        "news_sentiment_20",
+        "news_positive_20",
+        "news_negative_20",
+        "news_length_20"
+      ],
+      "target": "target",
+      "constant_validation": false
+    }
+  },
+  "provenance": {
+    "source_commit": "ffc840ae2b94dca4f734ccb814216d06295f361a",
+    "config_sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+    "data_manifest_sha256": "538dc2d1c3359028783b2c86360c559c7c92c71737b209cc335729826f896f30",
+    "price_manifest_sha256": "3375c09bfdd5f5f14069228ff79de1707731fa7b4f7d96843cf40740ece08ed3",
+    "phase": "holdout",
+    "seed": 17,
+    "strict_pit": false,
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "2.2.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1",
+      "lightgbm": "4.7.0"
+    },
+    "champion_seal_sha256": "15e2e216bacaef47457ea6729d9f1d74f78e57506d741218dc627ee9da7ffb23"
+  }
+}

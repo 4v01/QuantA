@@ -1,0 +1,14 @@
+{
+  "unit_tests": 83,
+  "public_audit": "passed",
+  "local_replay": "passed",
+  "prediction_rows_replayed": 1879332,
+  "curves_replayed": 90,
+  "checkpoint_sets": 70,
+  "old_reports_unchanged": 447,
+  "sealed_champion": "long_history",
+  "financial_gate": false,
+  "strict_pit": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

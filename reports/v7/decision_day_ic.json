@@ -1,0 +1,44 @@
+[
+  {
+    "method": "legacy_matched",
+    "decision_day_ic": 0.03503792601648295,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.036785072051583205
+  },
+  {
+    "method": "signed_stable",
+    "decision_day_ic": 0.04105052561047636,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.04456323908749006
+  },
+  {
+    "method": "reliable",
+    "decision_day_ic": 0.03916809624457488,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.04194843005937553
+  },
+  {
+    "method": "long_history",
+    "decision_day_ic": 0.03425956692146527,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.03392176581242436
+  },
+  {
+    "method": "aligned_fund",
+    "decision_day_ic": 0.031027032355496316,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.02952677631393151
+  },
+  {
+    "method": "kaggle_context",
+    "decision_day_ic": 0.03311173428232934,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.03515420433100792
+  },
+  {
+    "method": "kaggle_rank",
+    "decision_day_ic": 0.0029029046015070525,
+    "valid_decision_days": 144,
+    "all_day_ic": 0.0063066199815269425
+  }
+]

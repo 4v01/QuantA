@@ -1,0 +1,21 @@
+{
+  "methods": 7,
+  "development_folds": 4,
+  "later_folds": 6,
+  "ridge_candidates_per_group": 3,
+  "ridge_group_candidates_per_fold": 60,
+  "ranker_candidates_per_fold": 1,
+  "validation_candidates_total": 610,
+  "final_group_models": 210,
+  "selected_ridge_training_refits_for_calibration": 200,
+  "checkpoint_sets": 70,
+  "screen_curves": 90,
+  "seed": 17,
+  "primary_champion_presealed": "long_history",
+  "primary_cost_bps": 20,
+  "primary_policy": "buffer",
+  "after_later_results_retuning": false,
+  "zero_fee_attribution_used_for_selection": false,
+  "strict_pit": false,
+  "paper_admitted": false
+}
