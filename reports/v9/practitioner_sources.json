@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-11-16 Asia/Shanghai",
+  "repositories": [
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "bbf5cf823e16be1cca27493a94099eb8cf33f6e7",
+      "branch": "develop",
+      "license": "GPL-3.0",
+      "html_url": "https://github.com/pst-group/pysystemtrade"
+    },
+    {
+      "repository": "ArturSepp/QuantInvestStrats",
+      "commit": "e5fb43d3e51e449eb6ae8b39d58b10d9fbb11dac",
+      "branch": "main",
+      "license": "MIT",
+      "html_url": "https://github.com/ArturSepp/QuantInvestStrats"
+    },
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "457a6f95bba7e0f0e126c2be8a6f4fa939b07097",
+      "branch": "main",
+      "license": "MIT",
+      "html_url": "https://github.com/stefan-jansen/machine-learning-for-trading"
+    }
+  ],
+  "read_files": [
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "457a6f95bba7e0f0e126c2be8a6f4fa939b07097",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/457a6f95bba7e0f0e126c2be8a6f4fa939b07097/README.md",
+      "local": "data/v9_sources/stefan-jansen__machine-learning-for-trading__README.md",
+      "sha256": "e377830d21b57c0342e36ba193240da3051a0d0d2c5524ae327847d999e45864",
+      "bytes": 31813
+    },
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "457a6f95bba7e0f0e126c2be8a6f4fa939b07097",
+      "file": "case_studies/us_equities_panel/README.md",
+      "url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/457a6f95bba7e0f0e126c2be8a6f4fa939b07097/case_studies/us_equities_panel/README.md",
+      "local": "data/v9_sources/stefan-jansen__machine-learning-for-trading__case_studies__us_equities_panel__README.md",
+      "sha256": "f7b4e010b4a82a3129a4955982a6e6db174712cb2eb14fb972691e6396d93a1f",
+      "bytes": 9711
+    },
+    {
+      "repository": "stefan-jansen/machine-learning-for-trading",
+      "commit": "457a6f95bba7e0f0e126c2be8a6f4fa939b07097",
+      "file": "case_studies/us_firm_characteristics/README.md",
+      "url": "https://raw.githubusercontent.com/stefan-jansen/machine-learning-for-trading/457a6f95bba7e0f0e126c2be8a6f4fa939b07097/case_studies/us_firm_characteristics/README.md",
+      "local": "data/v9_sources/stefan-jansen__machine-learning-for-trading__case_studies__us_firm_characteristics__README.md",
+      "sha256": "8ecc3d955c75b6fe530a811093517a892172f2d9f9e38d74152eadbe0e7d5c7a",
+      "bytes": 9593
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "bbf5cf823e16be1cca27493a94099eb8cf33f6e7",
+      "file": "docs/introduction.md",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/bbf5cf823e16be1cca27493a94099eb8cf33f6e7/docs/introduction.md",
+      "local": "data/v9_sources/pst-group__pysystemtrade__docs__introduction.md",
+      "sha256": "ffe5d838b100574f023a5ab3aae8c52a89a599bf6753fb26727204af2462373e",
+      "bytes": 27768
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "bbf5cf823e16be1cca27493a94099eb8cf33f6e7",
+      "file": "systems/forecast_scale_cap.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/bbf5cf823e16be1cca27493a94099eb8cf33f6e7/systems/forecast_scale_cap.py",
+      "local": "data/v9_sources/pst-group__pysystemtrade__systems__forecast_scale_cap.py",
+      "sha256": "9828b7371a3f93a9d32a42bfdf5d47efddfb20d842f8636afa1b2a80b4e9a894",
+      "bytes": 16961
+    },
+    {
+      "repository": "pst-group/pysystemtrade",
+      "commit": "bbf5cf823e16be1cca27493a94099eb8cf33f6e7",
+      "file": "systems/buffering.py",
+      "url": "https://raw.githubusercontent.com/pst-group/pysystemtrade/bbf5cf823e16be1cca27493a94099eb8cf33f6e7/systems/buffering.py",
+      "local": "data/v9_sources/pst-group__pysystemtrade__systems__buffering.py",
+      "sha256": "0d7209daf5dad4520917bd59f85de6659adafec4aa0bfafd37adb0f3de720128",
+      "bytes": 4780
+    },
+    {
+      "repository": "ArturSepp/QuantInvestStrats",
+      "commit": "e5fb43d3e51e449eb6ae8b39d58b10d9fbb11dac",
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/ArturSepp/QuantInvestStrats/e5fb43d3e51e449eb6ae8b39d58b10d9fbb11dac/README.md",
+      "local": "data/v9_sources/ArturSepp__QuantInvestStrats__README.md",
+      "sha256": "383337a4297a8ad69ec3136793b77c23ba45c1dfb8a57adc6b9b3deb5e2995aa",
+      "bytes": 35207
+    },
+    {
+      "repository": "ArturSepp/QuantInvestStrats",
+      "commit": "e5fb43d3e51e449eb6ae8b39d58b10d9fbb11dac",
+      "file": "docs/performance_analytics_and_sharpe.md",
+      "url": "https://raw.githubusercontent.com/ArturSepp/QuantInvestStrats/e5fb43d3e51e449eb6ae8b39d58b10d9fbb11dac/docs/performance_analytics_and_sharpe.md",
+      "local": "data/v9_sources/ArturSepp__QuantInvestStrats__docs__performance_analytics_and_sharpe.md",
+      "sha256": "b3ec20eb9a8cd83487e25b2498aa6147d28d184e9d68c32a6991404633c07610",
+      "bytes": 74984
+    }
+  ],
+  "external_code_copied_or_executed": false,
+  "external_performance_imported": false
+}
