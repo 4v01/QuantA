@@ -1,0 +1,109 @@
+{
+  "status": "invalid_control_cash_regression_corrected_before_seal_and_evaluation",
+  "source_commit": "777350b8bf99501344e2e25d63cba5dbb69c1686",
+  "candidate_not_sealed": {
+    "method": "economic_h5",
+    "policy": "weekly_buffer",
+    "selection_qualified": true,
+    "candidates": [
+      {
+        "method": "matched_control",
+        "policy": "weekly_buffer",
+        "eligible": true,
+        "net_sharpe": 1.0110514524899372
+      },
+      {
+        "method": "matched_control",
+        "policy": "slow_buffer",
+        "eligible": true,
+        "net_sharpe": 0.6439219355181073
+      },
+      {
+        "method": "matched_control",
+        "policy": "slow_net_edge",
+        "eligible": false,
+        "net_sharpe": null
+      },
+      {
+        "method": "full_window",
+        "policy": "weekly_buffer",
+        "eligible": true,
+        "net_sharpe": 0.7853860871804309
+      },
+      {
+        "method": "full_window",
+        "policy": "slow_buffer",
+        "eligible": true,
+        "net_sharpe": 0.7265037656181086
+      },
+      {
+        "method": "full_window",
+        "policy": "slow_net_edge",
+        "eligible": false,
+        "net_sharpe": null
+      },
+      {
+        "method": "economic_h5",
+        "policy": "weekly_buffer",
+        "eligible": true,
+        "net_sharpe": 1.3198521635416447
+      },
+      {
+        "method": "economic_h5",
+        "policy": "slow_buffer",
+        "eligible": true,
+        "net_sharpe": 1.0673451928960849
+      },
+      {
+        "method": "economic_h5",
+        "policy": "slow_net_edge",
+        "eligible": false,
+        "net_sharpe": -0.07819026011194738
+      },
+      {
+        "method": "economic_h20",
+        "policy": "weekly_buffer",
+        "eligible": false,
+        "net_sharpe": 1.1919844845874141
+      },
+      {
+        "method": "economic_h20",
+        "policy": "slow_buffer",
+        "eligible": false,
+        "net_sharpe": 1.4035218057460586
+      },
+      {
+        "method": "economic_h20",
+        "policy": "slow_net_edge",
+        "eligible": false,
+        "net_sharpe": 0.44334514867524116
+      },
+      {
+        "method": "classic_value_quality",
+        "policy": "weekly_buffer",
+        "eligible": false,
+        "net_sharpe": 0.35081072134389574
+      },
+      {
+        "method": "classic_value_quality",
+        "policy": "slow_buffer",
+        "eligible": false,
+        "net_sharpe": 0.4068180070481494
+      },
+      {
+        "method": "classic_value_quality",
+        "policy": "slow_net_edge",
+        "eligible": false,
+        "net_sharpe": null
+      }
+    ],
+    "criterion": "H5 signal stability/coverage then development 20bp net Sharpe, >=10% exposure and >=100 noncash days; config order breaks ties."
+  },
+  "summary_csv_sha256": "6185de930444dfc9c3c8050e1c9525ca4cd45e496fe3b2c64eb4881930fe4e7b",
+  "log_sha256": "4845d99ae2c178740cc57bd08b2a04a2299285148e77c425b86c51c3e09dc0b9",
+  "forecast_equivalence_to_V7": true,
+  "portfolio_equivalence_to_V7": false,
+  "cause": "Missing forecast sessions were liquidated instead of held; matched control must preserve V7 hold behavior.",
+  "method_parameters_or_costs_changed": false,
+  "evaluation_run_before_fix": false
+}

@@ -79,6 +79,13 @@ def test_equal_weight_benchmark_is_independent_of_flat_alpha():
     np.testing.assert_array_equal(w,np.full(4,.25))
 
 
+def test_missing_forecast_holds_positions_instead_of_manufacturing_a_sale():
+    c=config();b=base();b['min_cross_section']=3;old=np.array([.1,.2,.3,.1])
+    for method,policy in [('matched_control','weekly_buffer'),('economic_h20','slow_net_edge'),('equal_weight','equal_slow')]:
+        w=target(np.full(4,np.nan),np.full(4,np.nan),old,None,method,policy,20,b,c)
+        np.testing.assert_array_equal(w,old)
+
+
 def test_classic_forecast_does_not_use_labels():
     columns=['earnings_yield','book_to_price','roe_annual','fin_leverage','momentum_12_1','momentum_6_1','low_volatility_60']
     rng=np.random.default_rng(7);p=pd.DataFrame(rng.normal(size=(40,len(columns))),columns=columns);p['label']=1.

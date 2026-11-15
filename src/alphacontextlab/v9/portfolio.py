@@ -6,7 +6,9 @@ from ..v8.portfolio import risk_state,net_edge_target
 
 def target(scores,expected,old,state,method,policy,cost,base,config):
     good=np.isfinite(scores)
-    if good.sum()<base['min_cross_section']:return np.zeros_like(old)
+    # A missing forecast session is not a sell signal. Preserve V7's hold rule
+    # for every method and benchmark; a valid but flat signal is handled below.
+    if good.sum()<base['min_cross_section']:return old.copy()
     if method=='equal_weight':
         w=np.zeros_like(old); w[good]=1/good.sum()
         if policy=='equal_slow_vol':
