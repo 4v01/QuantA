@@ -1,0 +1,13 @@
+{
+  "symbols": 58,
+  "panel_rows": 98542,
+  "eligible_rows": 93204,
+  "strict_pit": false,
+  "new_source_fields_used": [
+    "datetime",
+    "title"
+  ],
+  "generated_summary_used": false,
+  "news_source_switch": "2022-01-01",
+  "paper_admitted": false
+}

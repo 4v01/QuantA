@@ -1,0 +1,44 @@
+{
+  "development": {
+    "policy": "net_edge",
+    "net_sharpe_ci95": [
+      -0.27960895297268495,
+      1.4084993425102468
+    ],
+    "paired_daily_return_difference": -0.00017090030193985605,
+    "paired_daily_return_difference_ci95": [
+      -0.0009634564444519888,
+      0.000525761633167774
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 484,
+      "cumulative_return": 0.07937535999872924,
+      "annualized_return": 0.04057079362483562,
+      "net_sharpe": 0.580580254373791,
+      "max_drawdown": -0.05466013144685611,
+      "annual_turnover": 1.1544576446881079
+    },
+    "note": "Conditional intervals; no correction across the full research history. Timing/exposure differences are not certified alpha. Zero-cost attribution is not a new candidate."
+  },
+  "evaluation": {
+    "policy": "net_edge",
+    "net_sharpe_ci95": [
+      -0.8698013177886361,
+      0.6809842073142692
+    ],
+    "paired_daily_return_difference": 0.00041809266431962205,
+    "paired_daily_return_difference_ci95": [
+      9.95569579021641e-05,
+      0.0007377044649995744
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": -0.0108284888820388,
+      "annualized_return": -0.0037824156004007126,
+      "net_sharpe": -0.13068528870678986,
+      "max_drawdown": -0.04033219458378323,
+      "annual_turnover": 0.7898801923988048
+    },
+    "note": "Conditional intervals; no correction across the full research history. Timing/exposure differences are not certified alpha. Zero-cost attribution is not a new candidate."
+  }
+}

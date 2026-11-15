@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "mode": "public",
+  "phases": [
+    {
+      "phase": "development",
+      "predictions": 26603,
+      "curves": 18,
+      "checkpoint_sets": 4
+    },
+    {
+      "phase": "evaluation",
+      "predictions": 40516,
+      "curves": 18,
+      "checkpoint_sets": 6
+    }
+  ],
+  "corrected_benchmark_curves": 6
+}

@@ -1,0 +1,17 @@
+{
+  "policy": "net_edge",
+  "financial_passed": false,
+  "reasons": [
+    "IC_coverage_below_90pct",
+    "IC_fold_stability_failed",
+    "net_sharpe_not_above_1"
+  ],
+  "strict_pit": false,
+  "paper_admitted": false,
+  "orders_sent": 0,
+  "structural_blocks": [
+    "fixed_survivor_universe",
+    "financial_vintages_unverified",
+    "non_executable_adjusted_return_screen"
+  ]
+}

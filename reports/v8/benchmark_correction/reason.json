@@ -1,0 +1,7 @@
+{
+  "error": "Original benchmark inherited flat-alpha cash gate; use corrected benchmark for attribution.",
+  "model_and_candidate_policies_changed": false,
+  "candidate_selection_changed": false,
+  "original_evidence_preserved": true,
+  "corrected_rule": "Equal weight all common eligible names, then apply the frozen trend and volatility rules, regardless of score dispersion."
+}

@@ -1,0 +1,15 @@
+{
+  "unit_tests": 95,
+  "public_audit": "passed",
+  "local_replay": "passed",
+  "forecast_rows": 67119,
+  "forecast_and_calibration_rows_replayed": 86955,
+  "original_curves_replayed": 36,
+  "corrected_benchmark_curves_replayed": 6,
+  "checkpoint_sets": 10,
+  "fitted_group_models_in_saved_checkpoints": 60,
+  "old_reports_unchanged": 555,
+  "financial_gate": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

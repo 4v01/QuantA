@@ -5,6 +5,7 @@ import pandas as pd
 from alphacontextlab.v8.models import calibrate_slope, nested_split
 from alphacontextlab.v8.portfolio import net_edge_target, risk_state, simulate
 from alphacontextlab.v8.study import select_policy, return_metrics
+from alphacontextlab.v8.benchmark import simulate_benchmark
 
 
 def config():
@@ -99,3 +100,14 @@ def test_all_cash_not_eligible_for_sharpe_selection():
 def test_return_r2_is_not_squared_correlation():
     d=pd.DataFrame({'label':[1.,2.,3.],'expected_return':[101.,102.,103.]})
     assert return_metrics(d)['r2']<0
+
+
+def test_equal_weight_control_does_not_depend_on_alpha_dispersion():
+    c=config(); b=base(); b['min_cross_section']=3; days=pd.bdate_range('2020-01-01',periods=150); symbols=list('abcd')
+    tape=pd.concat([pd.DataFrame({'date':days,'symbol':s,'close_return':.001,'next_open_return':.001,'open_observed':True}) for s in symbols])
+    p=pd.DataFrame({'date':np.repeat(days[125:-1],4),'symbol':symbols*24,'prediction':0.,'expected_excess':0.})
+    path,w=simulate_benchmark(p,tape,symbols,b,c,20)
+    assert path.gross_exposure.max()>0
+    p['prediction']=np.arange(len(p)); changed,w2=simulate_benchmark(p,tape,symbols,b,c,20)
+    np.testing.assert_allclose(path.net_return,changed.net_return)
+    assert w.groupby('date').weight.std().max()<1e-12

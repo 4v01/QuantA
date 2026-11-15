@@ -16,6 +16,7 @@ from ..v7.study import ic_summary
 from .models import calibrate_slope, nested_split
 from .portfolio import make_tape, risk_state, simulate
 from .study import gate, path_metrics, return_metrics, select_policy
+from .benchmark import simulate_benchmark
 
 
 def read(path, dates=()):
@@ -92,6 +93,18 @@ def public_phase(root,config,base):
             gross=(daily.weight*daily.next_open_return).groupby(daily.date).sum().reindex(actual.date,fill_value=0.).to_numpy()
             np.testing.assert_allclose(gross,actual.gross_return,atol=1e-10)
             np.testing.assert_allclose((1-actual.entry_fee)*(1+gross)*(1-actual.terminal_fee)-1,actual.net_return,atol=1e-10)
+            wide=holdings.pivot(index='date',columns='symbol',values='weight').reindex(index=actual.date,columns=symbols).fillna(0.).to_numpy()
+            realized=tape.pivot(index='date',columns='symbol',values='next_open_return').reindex(index=actual.date,columns=symbols).fillna(0.).to_numpy()
+            previous=np.zeros(len(symbols))
+            for i,(_,day) in enumerate(actual.iterrows()):
+                delta=float(np.abs(wide[i]-previous).sum())
+                if not day.scheduled: assert delta<1e-8
+                entry=delta*cost/10000 if day.scheduled else 0.
+                drift=wide[i]*(1+realized[i])/(1+gross[i])
+                exit_turn=float(drift.sum()) if i==len(actual)-1 else 0.
+                equal(float(day.turnover),(delta if day.scheduled else 0.)+exit_turn)
+                equal(float(day.entry_fee),entry); equal(float(day.terminal_fee),exit_turn*cost/10000)
+                previous=drift
             assert (actual.gross_exposure>=-1e-8).all() and (actual.gross_exposure<=1+1e-7).all()
             if policy in ['net_edge','trend_net_edge']:
                 # Weight cap applies when allocating; subsequent price drift is allowed.
@@ -130,6 +143,26 @@ def replay_phase(root,config,base):
     return {'phase':prov['phase'],'local_predictions':len(pred)+len(cal),'checkpoint_sets':len(years)*2}
 
 
+def corrected_benchmark(config,base):
+    root=Path('reports/v8/benchmark_correction'); summary=read(root/'summary.csv'); count=0
+    for phase in ['development','evaluation']:
+        original=Path('reports/v8')/phase
+        pred=read(original/'predictions.csv.gz',['date']); tape=read(original/'market_tape.csv.gz',['date'])
+        symbols=json.loads((original/'provenance.json').read_text())['symbols']
+        paths=read(root/(phase+'_paths.csv.gz'),['date']); weights=read(root/(phase+'_holdings.csv.gz'),['date'])
+        for cost in config['cost_bps']:
+            regenerated,w=simulate_benchmark(pred,tape,symbols,base,config,cost)
+            actual=paths[paths.cost_bps==cost]; held=weights[weights.cost_bps==cost]
+            frame_equal(regenerated,actual,['date'],['gross_return','net_return','nav','turnover','entry_fee','terminal_fee','gross_exposure'])
+            frame_equal(w,held,['date','symbol'],['weight'])
+            row=summary[(summary.phase==phase)&(summary.cost_bps==cost)].iloc[0]
+            for key,value in path_metrics(actual).items():
+                if value is None: assert pd.isna(row[key])
+                else: equal(value,float(row[key]))
+            count+=1
+    return count
+
+
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--local-replay',action='store_true'); p.add_argument('--receipt'); a=p.parse_args()
     config=json.loads(Path('configs/v8.json').read_text()); base=json.loads(Path(config['base_config']).read_text()); result=[]
@@ -140,8 +173,22 @@ def main():
     if Path('reports/v8/champion_seal.json').exists():
         seal=json.loads(Path('reports/v8/champion_seal.json').read_text()); candidate=Path('reports/v8/development/champion_candidate.json')
         assert seal['development_candidate_sha256']==sha256(candidate)
+        assert seal['development_summary_sha256']==sha256('reports/v8/development/screen_summary.csv')
+        assert seal['development_signal_sha256']==sha256('reports/v8/development/ic_summary.json')
+        assert seal['config_sha256']==sha256('configs/v8.json') and seal['base_config_sha256']==sha256('configs/v7.json')
+        for path,digest in seal['core_sources'].items(): assert sha256(path)==digest
         equal(seal['policy'],json.loads(candidate.read_text())['policy'])
+        inventory=json.loads(Path('reports/v8/old_reports_integrity.json').read_text())
+        paths=list(inventory['files']); base_commit=inventory['base_commit']
+        raw=subprocess.check_output(['git','cat-file','--batch'],input=''.join(base_commit+':'+path+'\n' for path in paths).encode())
+        offset=0
+        for path in paths:
+            end=raw.index(b'\n',offset); header=raw[offset:end].decode().split(); size=int(header[2]); offset=end+1
+            frozen=raw[offset:offset+size]; offset+=size+1
+            assert hashlib.sha256(frozen).hexdigest()==inventory['files'][path]==sha256(path)
     receipt={'passed':True,'mode':'local_replay' if a.local_replay else 'public','phases':result}
+    if not a.local_replay and Path('reports/v8/benchmark_correction').exists():
+        receipt['corrected_benchmark_curves']=corrected_benchmark(config,base)
     if a.receipt: write_json(a.receipt,receipt)
     print(json.dumps(receipt),flush=True)
 

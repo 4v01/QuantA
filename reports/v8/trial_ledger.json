@@ -1,0 +1,29 @@
+{
+  "base_methods": 1,
+  "candidate_policies": 5,
+  "benchmark_policies": 1,
+  "development_folds": 4,
+  "evaluation_folds": 6,
+  "ridge_alphas": [
+    1,
+    100,
+    10000
+  ],
+  "groups": 3,
+  "unique_hyperparameter_comparisons": 90,
+  "actual_repeated_hyperparameter_evaluations": 180,
+  "ridge_fit_calls": 300,
+  "fitted_group_models_in_saved_checkpoints": 60,
+  "calibration_slopes": 10,
+  "cost_bps": [
+    10,
+    20,
+    30
+  ],
+  "primary_cost_bps": 20,
+  "seed": 17,
+  "candidate_substitution_after_evaluation": false,
+  "benchmark_implementation_corrected_after_evaluation": true,
+  "historical_multiple_testing_corrected": false,
+  "numerical_failed_attempts_before_selection": 2
+}

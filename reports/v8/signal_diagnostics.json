@@ -1,0 +1,207 @@
+{
+  "median_daily_maximum_expected_H5_return": 0.0008834841531507275,
+  "days_with_maximum_expected_H5_below_40bp_fraction": 0.8898071625344353,
+  "folds": [
+    {
+      "phase": "development",
+      "fold": "2020H1",
+      "confidence": {
+        "fundamental": 0.15594967698065226,
+        "price_volume": 0.0,
+        "alternative": 0.3900076642236817
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": -0.009261801914708158,
+        "slope": 0.0,
+        "rows": 2147,
+        "score_sum_squares": 34.5602482410431,
+        "first_date": "2019-10-08 00:00:00",
+        "last_date": "2019-12-02 00:00:00",
+        "label_exit_max": "2019-12-10 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "development",
+      "fold": "2020H2",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.0,
+        "alternative": 0.11813772081701845
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.04213358468070984,
+        "slope": 0.02106679234035492,
+        "rows": 1442,
+        "score_sum_squares": 1.8102647492221848,
+        "first_date": "2020-04-01 00:00:00",
+        "last_date": "2020-05-28 00:00:00",
+        "label_exit_max": "2020-06-05 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "development",
+      "fold": "2021H1",
+      "confidence": {
+        "fundamental": 0.2015168849381414,
+        "price_volume": 0.0,
+        "alternative": 0.15218127569516987
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": -0.0032492262459928433,
+        "slope": 0.0,
+        "rows": 2167,
+        "score_sum_squares": 13.277555947583473,
+        "first_date": "2020-10-09 00:00:00",
+        "last_date": "2020-12-02 00:00:00",
+        "label_exit_max": "2020-12-10 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "development",
+      "fold": "2021H2",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.23048563950674794,
+        "alternative": 0.0
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.033116097625294674,
+        "slope": 0.016558048812647337,
+        "rows": 1885,
+        "score_sum_squares": 16.012292620122594,
+        "first_date": "2021-04-01 00:00:00",
+        "last_date": "2021-05-31 00:00:00",
+        "label_exit_max": "2021-06-08 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2022H1",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.0,
+        "alternative": 0.0
+      },
+      "all_groups_zero": true,
+      "calibration": {
+        "raw_slope": 0.0,
+        "slope": 0.0,
+        "rows": 2301,
+        "score_sum_squares": 0.0,
+        "first_date": "2021-10-08 00:00:00",
+        "last_date": "2021-12-02 00:00:00",
+        "label_exit_max": "2021-12-10 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2022H2",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.2970166394333207,
+        "alternative": 0.2837749724289598
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.02131533254353462,
+        "slope": 0.01065766627176731,
+        "rows": 1781,
+        "score_sum_squares": 45.22050250857804,
+        "first_date": "2022-04-01 00:00:00",
+        "last_date": "2022-05-31 00:00:00",
+        "label_exit_max": "2022-06-09 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2023H1",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.0,
+        "alternative": 0.5409322719194478
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.00883823970609231,
+        "slope": 0.004419119853046155,
+        "rows": 2232,
+        "score_sum_squares": 58.68808765457602,
+        "first_date": "2022-10-10 00:00:00",
+        "last_date": "2022-12-01 00:00:00",
+        "label_exit_max": "2022-12-09 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2023H2",
+      "confidence": {
+        "fundamental": 0.0,
+        "price_volume": 0.2230637037663547,
+        "alternative": 0.3512466924453515
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.00260814259083773,
+        "slope": 0.001304071295418865,
+        "rows": 1823,
+        "score_sum_squares": 39.83632731265301,
+        "first_date": "2023-04-03 00:00:00",
+        "last_date": "2023-05-30 00:00:00",
+        "label_exit_max": "2023-06-07 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2024H1",
+      "confidence": {
+        "fundamental": 0.012367123140827583,
+        "price_volume": 0.27752005560349746,
+        "alternative": 0.053807496982540795
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": -0.015068579201419692,
+        "slope": 0.0,
+        "rows": 2222,
+        "score_sum_squares": 29.116400437658708,
+        "first_date": "2023-10-09 00:00:00",
+        "last_date": "2023-11-30 00:00:00",
+        "label_exit_max": "2023-12-08 00:00:00",
+        "sign_flipped": false
+      }
+    },
+    {
+      "phase": "evaluation",
+      "fold": "2024H2",
+      "confidence": {
+        "fundamental": 0.10495713239256753,
+        "price_volume": 0.05151681154656581,
+        "alternative": 0.12774109231861444
+      },
+      "all_groups_zero": false,
+      "calibration": {
+        "raw_slope": 0.023465807565272754,
+        "slope": 0.011732903782636377,
+        "rows": 1836,
+        "score_sum_squares": 4.949916849791403,
+        "first_date": "2024-04-01 00:00:00",
+        "last_date": "2024-05-29 00:00:00",
+        "label_exit_max": "2024-06-06 00:00:00",
+        "sign_flipped": false
+      }
+    }
+  ],
+  "note": "Predicted, not realized edges; 40bp is the frozen approximate round-trip hurdle for a new position."
+}

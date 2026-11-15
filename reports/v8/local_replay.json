@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "mode": "local_replay",
+  "phases": [
+    {
+      "phase": "development",
+      "local_predictions": 34244,
+      "checkpoint_sets": 4
+    },
+    {
+      "phase": "evaluation",
+      "local_predictions": 52711,
+      "checkpoint_sets": 6
+    }
+  ]
+}
