@@ -1,0 +1,47 @@
+{
+  "stage": "preparation_only",
+  "checks": {
+    "original_filing_pilot_complete": false,
+    "publication_metadata_verified": false,
+    "target_dataset_frozen": false,
+    "historical_membership_verified": false,
+    "stock_cash_event_ledger_verified": false,
+    "economic_basis_contract_implemented": true,
+    "source_document_pilot_available": true,
+    "new_allocation_contract_integrated_and_replayed": false,
+    "cross_regime_design_sealed": false,
+    "prospective_window_sealed": false
+  },
+  "training_prerequisites": [
+    "original_filing_pilot_complete",
+    "publication_metadata_verified",
+    "target_dataset_frozen",
+    "historical_membership_verified",
+    "cross_regime_design_sealed"
+  ],
+  "ready_for_factor_research": false,
+  "ready_for_training": false,
+  "ready_for_executable_backtest": false,
+  "ready_for_prospective_validation": false,
+  "training_started": false,
+  "new_model_results": false,
+  "paper_admitted": false,
+  "orders_sent": 0,
+  "blocking_reasons": [
+    "original_filing_pilot_complete",
+    "publication_metadata_verified",
+    "target_dataset_frozen",
+    "historical_membership_verified",
+    "cross_regime_design_sealed"
+  ],
+  "all_pending_tasks": [
+    "original_filing_pilot_complete",
+    "publication_metadata_verified",
+    "target_dataset_frozen",
+    "historical_membership_verified",
+    "stock_cash_event_ledger_verified",
+    "new_allocation_contract_integrated_and_replayed",
+    "cross_regime_design_sealed",
+    "prospective_window_sealed"
+  ]
+}

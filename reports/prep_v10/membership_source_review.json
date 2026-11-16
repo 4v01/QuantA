@@ -1,0 +1,20 @@
+{
+  "read_files": [
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/scripts/data_collector/cn_index/README.md",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "sha256": "51900ea8fa0746f512e5fe78a6367aa1d5efc10716f5b49676c6989ba2070d48",
+      "bytes": 507,
+      "file": "data/prep_v10/qlib_cn_index_README.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/microsoft/qlib/54355232463878d2eebb91fe0ee5fa7fa1f5976c/scripts/data_collector/cn_index/collector.py",
+      "commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+      "sha256": "1fa3e2a992dd8ed47695ea554b12561e266b523f87c7458356add76d06c9e89d",
+      "bytes": 16015,
+      "file": "data/prep_v10/qlib_cn_index_collector.py"
+    }
+  ],
+  "external_code_executed": false,
+  "historical_membership_downloaded": false
+}

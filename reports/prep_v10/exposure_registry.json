@@ -1,0 +1,135 @@
+{
+  "entries": [
+    {
+      "config": "configs/study.json",
+      "sha256": "3016a7cb2c4e65db8ef67f93fc58ebf651446366222f1cae4736cb2f5a3c7d69",
+      "start": "2014-01-01",
+      "end": "2024-12-31",
+      "test_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "development_years": null,
+      "confirmation_year": null,
+      "evaluation_years": null
+    },
+    {
+      "config": "configs/v2.json",
+      "sha256": "a2e3f68e4d57aa59c7dcdb7268a648dc6b707db28577e6679233aa37a22f557b",
+      "start": "2014-01-01",
+      "end": "2025-12-31",
+      "test_years": null,
+      "development_years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "confirmation_year": 2025,
+      "evaluation_years": null
+    },
+    {
+      "config": "configs/v3.json",
+      "sha256": "3293b330cdc227c08940bde5ca132a150acbc93b87e373ed9e287b6e5983d181",
+      "start": "2014-01-01",
+      "end": "2026-10-30",
+      "test_years": null,
+      "development_years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "confirmation_year": 2026,
+      "evaluation_years": null
+    },
+    {
+      "config": "configs/v4.json",
+      "sha256": "dca0af9188b63232fb55dcb3a7cd9929fc3b64e56315ef83375bf56f063bc882",
+      "start": "2014-01-01",
+      "end": "2026-10-30",
+      "test_years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "development_years": null,
+      "confirmation_year": null,
+      "evaluation_years": null
+    },
+    {
+      "config": "configs/v6.json",
+      "sha256": "a18752744c84fc74e4bc1baff79af064e576b558f296be399e3ec681a16821d6",
+      "start": "2018-01-01",
+      "end": "2021-12-31",
+      "test_years": null,
+      "development_years": null,
+      "confirmation_year": null,
+      "evaluation_years": null
+    },
+    {
+      "config": "configs/v7.json",
+      "sha256": "8b345ba575af30b1d4dad9f8895510f09b51ed625e78716ffd927edddf27e92e",
+      "start": "2018-01-01",
+      "end": "2024-12-31",
+      "test_years": null,
+      "development_years": [
+        2020,
+        2021
+      ],
+      "confirmation_year": null,
+      "evaluation_years": [
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "config": "configs/v8.json",
+      "sha256": "7063074ee7d70d13ddb9ee1286fe028068e6a975896ecc5dd29ecf28041775ac",
+      "start": null,
+      "end": null,
+      "test_years": null,
+      "development_years": [
+        2020,
+        2021
+      ],
+      "confirmation_year": null,
+      "evaluation_years": [
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "config": "configs/v9.json",
+      "sha256": "e47feca51d9c05d2549b2a6219a0e8d0d3e1230d7883bd9951c66cfda6a02da0",
+      "start": null,
+      "end": null,
+      "test_years": null,
+      "development_years": [
+        2020,
+        2021
+      ],
+      "confirmation_year": null,
+      "evaluation_years": [
+        2022,
+        2023,
+        2024
+      ]
+    }
+  ],
+  "V4_prediction_date_min": "2021-01-04",
+  "V4_prediction_date_max": "2026-10-30",
+  "V4_predictions_sha256": "3b79c43700b164593fe10856587c0dec241366c614bb7fffbd15c7e18698a5c1",
+  "known_evaluation_through": "2026-10-30",
+  "2025_2026_is_new_blind_test": false,
+  "future_window_assigned": false,
+  "rule": "Future validation must start after a new protocol seal and data readiness; already inspected histories remain retrospective."
+}

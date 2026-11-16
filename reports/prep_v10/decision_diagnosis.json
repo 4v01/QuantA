@@ -1,0 +1,22 @@
+{
+  "diagnostic_only": true,
+  "candidate_not_changed": true,
+  "scheduled_rebalances": 145,
+  "rebalances_with_no_current_forecast": 0,
+  "fully_covered_H5_rebalances": 143,
+  "top_quintile_all_days_mean_excess": 0.0005092645344052752,
+  "top_quintile_actual_decision_days_mean_excess": -0.00041401308641317747,
+  "actual_decision_tail_days": 144,
+  "actual_decision_excess_ci95": [
+    -0.0028384044530222014,
+    0.0017228149357754255
+  ],
+  "bootstrap_block_decisions": 4,
+  "mean_entry_fee_per_rebalance": 0.0006621449714419641,
+  "mean_held_H5_basket_gross_return": -0.00012168527330448896,
+  "mean_held_percentile": 0.866345554861078,
+  "mean_held_weight_outside_fresh_top20": 0.261005661005661,
+  "same_holdings_gross_cumulative_return": -0.05867784910729357,
+  "net_cumulative_return": -0.14660557671438923,
+  "warning": "Overlapping H5 diagnostics, not new strategy results. Rank buffer can reduce turnover; these summaries do not prove removing it improves net profit."
+}

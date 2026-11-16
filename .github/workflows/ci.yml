@@ -46,3 +46,6 @@ jobs:
           if test -f reports/v9/champion_seal.json; then
             python -m alphacontextlab.v9.audit
           fi
+          if test -f reports/prep_v10/READINESS.json; then
+            python -m alphacontextlab.prep_v10.audit
+          fi

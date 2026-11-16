@@ -1,0 +1,14 @@
+{
+  "unit_tests": 113,
+  "public_preparation_audit": "passed",
+  "local_original_document_audit": "passed",
+  "old_reports_unchanged": 790,
+  "decision_rows_verified": 145,
+  "original_documents_checked": 1,
+  "candidate_facts_checked": 3,
+  "historically_eligible_new_facts": 0,
+  "new_model_training": false,
+  "new_strategy_backtest": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

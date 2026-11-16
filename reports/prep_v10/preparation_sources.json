@@ -1,0 +1,12 @@
+{
+  "baseline_commit": "095f7463b66c1a95f1a1c296cc73327b871702b6",
+  "stage": "preparation_not_fitted_experiment",
+  "files": {
+    "src/alphacontextlab/prep_v10/__init__.py": "b00ddb98b3f65871a82c8960bb48d4de00fc0b20201b327cd811bad6f372bd57",
+    "src/alphacontextlab/prep_v10/source_pilot.py": "cf1f88822f221a6c85230ff2f6ff8de329e1f3d91bc6371214fc6a63e6e84cac",
+    "src/alphacontextlab/prep_v10/build.py": "08fdc9022b812bfe31199f721e8dfaad64893dfea277385e6be1c627e8baef6a",
+    "src/alphacontextlab/prep_v10/contracts.py": "15dafa055e077d6becaa1d5cf2586cae297c8993de59c3a2bc34101a6e8404cd",
+    "src/alphacontextlab/prep_v10/audit.py": "ddf2b730127544cc0651ac08943d237d46b499284ef94feaa9e43f4c8066cd78",
+    "configs/v10_preparation.json": "b06d67175c9888dd6006b4477537e2548993a501cbae6cf9bf99a08e2821548d"
+  }
+}

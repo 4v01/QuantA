@@ -1,0 +1,24 @@
+{
+  "stage": "preparation_only",
+  "baseline_commit": "095f7463b66c1a95f1a1c296cc73327b871702b6",
+  "training_allowed": false,
+  "paper_allowed": false,
+  "orders_allowed": false,
+  "primary_cost_bps_per_side": 20,
+  "primary_H5_IC_threshold": 0.02,
+  "primary_net_sharpe_threshold": 1.0,
+  "nominal_group_weights": {"fundamental": 0.3, "price_volume": 0.4, "alternative": 0.3},
+  "filing_pilot_symbols": ["000001", "600036", "000333", "000651", "600519", "600028", "000063", "600276"],
+  "filing_pilot_years": [2019, 2020],
+  "filing_pilot_metrics": ["basic_eps", "common_book_value_per_share", "weighted_common_roe"],
+  "filing_pilot_required_documents": 16,
+  "future_validation_window": null,
+  "future_validation_policy": "Assign only after data readiness and a new public protocol seal; never relabel 2025/2026 as unseen.",
+  "optimization_order": [
+    "field-level original filings and historical membership",
+    "return-basis contract and stock cash/event ledger",
+    "decision-clock tail/cost and cross-regime validation",
+    "prequential group calibration in return units",
+    "limited model comparison after readiness gates"
+  ]
+}
