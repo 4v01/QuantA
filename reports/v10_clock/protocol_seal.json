@@ -1,0 +1,14 @@
+{
+  "config_sha256": "2f64534fd37c6a313ed97a2b4cc09177d6f9dd567fd276c94fb865551e91a55c",
+  "source_report_commit": "095f7463b66c1a95f1a1c296cc73327b871702b6",
+  "primary_method": "economic_h5",
+  "primary_clock": "stagger5",
+  "primary_fixed_before_results": true,
+  "phase_winner_selection_allowed": false,
+  "old_history_retrospective": true,
+  "core_sources": {
+    "src/alphacontextlab/v10_clock/__init__.py": "345a021e7a4ae9e0b6df5081fc1d20df622da436db07638d1d92eb3c8aea8651",
+    "src/alphacontextlab/v10_clock/ledger.py": "62193890c54b61049dcc2c8f6629d1f6a63bde4c84cb4866504ab0a70c4fa710",
+    "src/alphacontextlab/v10_clock/study.py": "b4d337bf822ee178c33def1f8cc28603b9e306470e32ab2cbbc0347886b14a6a"
+  }
+}

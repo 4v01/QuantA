@@ -1,0 +1,60 @@
+{
+  "stage": "frozen_forecast_clock_experiment",
+  "source_report_commit": "095f7463b66c1a95f1a1c296cc73327b871702b6",
+  "base_config": "configs/v7.json",
+  "methods": [
+    "economic_h5",
+    "matched_control",
+    "equal_weight"
+  ],
+  "clocks": [
+    "phase0",
+    "phase1",
+    "phase2",
+    "phase3",
+    "phase4",
+    "stagger5"
+  ],
+  "primary_method": "economic_h5",
+  "primary_clock": "stagger5",
+  "control_clock": "phase0",
+  "horizon_sessions": 5,
+  "initial_sleeve_budgets": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "secondary_common_window_start_index": 5,
+  "cost_bps": [
+    10,
+    20,
+    30
+  ],
+  "primary_cost_bps": 20,
+  "seed": 17,
+  "bootstrap_block_sessions": 20,
+  "bootstrap_repetitions": 1000,
+  "minimum_net_sharpe": 1.0,
+  "training_allowed": false,
+  "paper_allowed": false,
+  "inputs": {
+    "development": {
+      "predictions.csv.gz": "bfdd7056dd0ebb744fcba368db78729ee27abb1446908a2c2dacaeeb5ebf7faa",
+      "market_tape.csv.gz": "7ccc0f102eef951a2cf4fb4aeca3bd068d1e39eb0f4a960fa0ad636c8c09b388",
+      "provenance.json": "286af4906a81aa659e44c6bd5a7e1b3d37d332fdaae3124abbdae6ab2aa50927",
+      "ic_summary.json": "0f7904e8fc77cc9c9b2c5bf81346106507d342ba6b7a235652034ae29929afc0",
+      "screen_paths.csv.gz": "4b32c8d70fb4390537b4f81b7c545980b5020704c8d8d9b07ecb08854068562e",
+      "screen_summary.csv": "d128dfbb6624ab3832cb1118a8582a312ceaca204454d6c6331eb9bbb288ba9d"
+    },
+    "evaluation": {
+      "predictions.csv.gz": "2df5319361a5f0c178738a674094901db76b6b45499f4157cb423ee9b98b28c0",
+      "market_tape.csv.gz": "ff2c74dac98761b22c36544c5812c7a18c71558a204fdc4bd41b111174c6c450",
+      "provenance.json": "23821a6f4b6c242fccbdba52bf3ef2b789a38fe506bc09311d0182f6d480a992",
+      "ic_summary.json": "648e9bf1d59fe28c55d8da3155d40836599b2b2a30f57c467d3d0a8ec57ef7ac",
+      "screen_paths.csv.gz": "464bc859df1e698a13808bd17bab87be3cad4e9d269632d921264541f40bebc8",
+      "screen_summary.csv": "d0670541158a792b46f48e5bdadeee5d8fb28946d86773719b2b35f0b45d8693"
+    }
+  }
+}
