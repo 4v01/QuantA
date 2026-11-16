@@ -1,0 +1,74 @@
+{
+  "development": {
+    "paired_comparisons": {
+      "phase0": {
+        "paired_days": 484,
+        "mean_daily_return_difference": -0.000258557799323295,
+        "daily_return_difference_ci95": [
+          -0.0005418980703454494,
+          1.9661432191844474e-05
+        ]
+      },
+      "equal_weight_stagger5": {
+        "paired_days": 484,
+        "mean_daily_return_difference": 0.00045943983307146805,
+        "daily_return_difference_ci95": [
+          -0.00024630148350133585,
+          0.0011363835985195392
+        ]
+      }
+    },
+    "net_sharpe_ci95": [
+      0.003850032083863436,
+      2.489060790683731
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 484,
+      "cumulative_return": 0.8562070700266333,
+      "annualized_return": 0.3799499782018536,
+      "net_sharpe": 1.3351564832176046,
+      "max_drawdown": -0.25787307271336424,
+      "annual_turnover": 21.875789481091264
+    },
+    "total_gross_sleeve_turnover": 41.01540519384195,
+    "total_external_entry_turnover": 41.01540519384195,
+    "netting_reduction": 7.563394355258879e-16,
+    "note": "Conditional intervals on already-seen history; no full-research multiple-testing correction. Gross attribution is not a new candidate."
+  },
+  "evaluation": {
+    "paired_comparisons": {
+      "phase0": {
+        "paired_days": 724,
+        "mean_daily_return_difference": 9.735111798683666e-05,
+        "daily_return_difference_ci95": [
+          -9.1145613209315e-05,
+          0.0003043147514464246
+        ]
+      },
+      "equal_weight_stagger5": {
+        "paired_days": 724,
+        "mean_daily_return_difference": -3.77152694216282e-05,
+        "daily_return_difference_ci95": [
+          -0.00046578319535825247,
+          0.00035990208553113686
+        ]
+      }
+    },
+    "net_sharpe_ci95": [
+      -1.1949127650639813,
+      1.025178687470107
+    ],
+    "same_holdings_zero_cost_attribution": {
+      "sessions": 724,
+      "cumulative_return": 0.014918819160342656,
+      "annualized_return": 0.005167691083460602,
+      "net_sharpe": 0.11610819527951517,
+      "max_drawdown": -0.33558874112469894,
+      "annual_turnover": 17.124623409384434
+    },
+    "total_gross_sleeve_turnover": 48.19931487458068,
+    "total_external_entry_turnover": 48.19931487458068,
+    "netting_reduction": 1.186550857568136e-15,
+    "note": "Conditional intervals on already-seen history; no full-research multiple-testing correction. Gross attribution is not a new candidate."
+  }
+}

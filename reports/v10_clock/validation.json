@@ -1,0 +1,15 @@
+{
+  "unit_tests": 120,
+  "public_replay": "passed",
+  "local_document_hash_and_field_audit": "passed",
+  "curves_replayed": 108,
+  "V9_phase0_exact_match": true,
+  "sleeve_budget_and_cash_conservation": true,
+  "archive_documents_hash_checked": 16,
+  "documents_manually_field_checked": 2,
+  "fields_manually_checked": 6,
+  "old_reports_unchanged": 802,
+  "new_model_training": false,
+  "paper_admitted": false,
+  "orders_sent": 0
+}

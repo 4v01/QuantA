@@ -1,0 +1,23 @@
+{
+  "primary_fixed_before_results": true,
+  "primary_method": "economic_h5",
+  "primary_clock": "stagger5",
+  "frozen_signal_models": 2,
+  "independent_equal_weight_benchmark": 1,
+  "standalone_phase_diagnostics": 5,
+  "pooled_clock": 1,
+  "cost_bps": [
+    10,
+    20,
+    30
+  ],
+  "primary_cost_bps": 20,
+  "phases": 2,
+  "curves": 108,
+  "model_fit_calls": 0,
+  "input_or_model_selection_after_results": false,
+  "phase_winner_selected": false,
+  "holding_paths_independent_of_cost_under_declared_pro_rata_convention": true,
+  "seed": 17,
+  "whole_research_multiple_testing_corrected": false
+}

@@ -1,0 +1,14 @@
+{
+  "primary_method": "economic_h5",
+  "primary_clock": "stagger5",
+  "financial_passed": true,
+  "reasons": [],
+  "IC_retrained_or_improved": false,
+  "prospective_blind_test": false,
+  "paper_admitted": false,
+  "orders_sent": 0,
+  "structural_blocks": [
+    "unverified_financial_vintages_and_fixed_survivor_universe",
+    "fractional_return_screen_not_stock_cash_ledger"
+  ]
+}

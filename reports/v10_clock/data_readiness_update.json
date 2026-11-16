@@ -1,0 +1,19 @@
+{
+  "stage": "source_verification_in_progress",
+  "documents_checked": 2,
+  "required_pilot_documents": 16,
+  "issuers_checked": 1,
+  "fields_checked": 6,
+  "official_publication_dates_matched": 2,
+  "complete_revision_history": false,
+  "historical_membership_complete": false,
+  "stock_cash_event_ledger_verified": false,
+  "ready_for_new_data_training": false,
+  "data_used_in_clock_experiment": false,
+  "paper_admitted": false,
+  "orders_sent": 0,
+  "documents_archived": 16,
+  "issuer_archive_coverage": 8,
+  "documents_field_checked": 2,
+  "all_pilot_fields_verified": false
+}
