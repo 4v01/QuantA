@@ -35,7 +35,7 @@ def reorder(score, history):
     return result
 
 
-def run(phase):
+def run(phase, variant="dpp"):
     config = json.loads(Path('configs/v10_clock.json').read_text())
     base = json.loads(Path(config['base_config']).read_text())
     base['buffer_exit_fraction'] = .6
@@ -46,11 +46,19 @@ def run(phase):
     returns = tape.pivot(index='date',columns='symbol',values='close_return').sort_index()
     reference = pd.read_csv(Path('reports/v13_factor_trials')/phase/'daily.csv.gz',parse_dates=['date'])
     reference = reference.query("method == 'defensive'").set_index(['cost_bps','date']).sort_index()
-    for date,g in frame.dropna(subset=['prediction']).groupby('date'):
-        g = g.sort_values('symbol')
-        history = returns.loc[:date,g.symbol].tail(60)
-        if len(history)==60 and g.prediction.nunique()>1:
-            frame.loc[g.index,'prediction'] = reorder(g.prediction.to_numpy(),history.to_numpy())
+    if variant == "downside":
+        downside = -returns.clip(upper=0).pow(2).rolling(60).mean().pow(.5)
+        values = downside.stack().reindex(pd.MultiIndex.from_frame(frame[['date','symbol']]))
+        rank = pd.Series(values.to_numpy(),index=frame.index).groupby(frame.date).rank(pct=True)
+        frame['prediction'] = .75*raw + .25*rank.fillna(.5)
+    elif variant == "dpp":
+        for date,g in frame.dropna(subset=['prediction']).groupby('date'):
+            g = g.sort_values('symbol')
+            history = returns.loc[:date,g.symbol].tail(60)
+            if len(history)==60 and g.prediction.nunique()>1:
+                frame.loc[g.index,'prediction'] = reorder(g.prediction.to_numpy(),history.to_numpy())
+    else:
+        raise ValueError(variant)
     daily = pd.concat([daily_ic(g,g.prediction).assign(fold=f) for f,g in frame.groupby('fold')])
     signal = ic_summary(daily,base)
     gross,_,_,_ = simulate(frame,tape,symbols,base,config,'stagger5')
@@ -59,7 +67,7 @@ def run(phase):
     baseline = reference.loc[20].net_return
     assert net.index.equals(baseline.index)
     signal['paired_mean_daily_bp_ci95'] = block_mean_interval((net-baseline)*10000)
-    out = Path('reports/v15_dpp')/phase
+    out = Path('reports/v15_' + variant)/phase
     out.mkdir(parents=True,exist_ok=True)
     paths.to_csv(out/'daily.csv.gz',index=False,compression={'method':'gzip','mtime':0})
     pd.DataFrame([dict(cost=c,**path_metrics(g)) for c,g in paths.groupby('cost_bps')]).to_csv(out/'metrics.csv',index=False)
@@ -67,5 +75,9 @@ def run(phase):
 
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--variant', choices=['dpp','downside'], default='dpp')
+    args = parser.parse_args()
     for phase in ('development','evaluation'):
-        run(phase)
+        run(phase,args.variant)
