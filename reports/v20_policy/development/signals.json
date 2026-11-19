@@ -1,0 +1,35 @@
+{
+  "control": {
+    "combined": {
+      "days": 470,
+      "valid_ic_days": 470,
+      "ic_coverage": 1.0,
+      "rank_ic": 0.03957225688007107,
+      "coverage_adjusted_ic": 0.03957225688007107,
+      "ic_ir": 0.19231468605042465,
+      "ci95": [
+        0.00595801187277512,
+        0.07459616347694491
+      ],
+      "passing_fold_fraction": 0.75,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    }
+  },
+  "nev_policy": {
+    "exposed_stock_dates": 561,
+    "combined": {
+      "days": 470,
+      "valid_ic_days": 470,
+      "ic_coverage": 1.0,
+      "rank_ic": 0.03892100992328838,
+      "coverage_adjusted_ic": 0.03892100992328838,
+      "ic_ir": 0.19052646107295954,
+      "ci95": [
+        0.0061101297801886304,
+        0.07429932922855405
+      ],
+      "passing_fold_fraction": 0.75,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    }
+  }
+}
