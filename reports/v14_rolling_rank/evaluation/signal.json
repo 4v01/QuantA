@@ -1,0 +1,18 @@
+{
+  "days": 720,
+  "valid_ic_days": 720,
+  "ic_coverage": 1.0,
+  "rank_ic": 0.051550194741932454,
+  "coverage_adjusted_ic": 0.051550194741932454,
+  "ic_ir": 0.18575430772520107,
+  "ci95": [
+    0.0011554996138855103,
+    0.09873208692491711
+  ],
+  "passing_fold_fraction": 0.8333333333333334,
+  "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+  "paired_daily_net_delta_bp_ci95": [
+    -2.7779766824846037,
+    2.686443324946375
+  ]
+}

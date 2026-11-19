@@ -1,0 +1,74 @@
+{
+  "v11": {
+    "days": 720,
+    "valid_ic_days": 720,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.0430459220934468,
+    "coverage_adjusted_ic": 0.0430459220934468,
+    "ic_ir": 0.2055109608146774,
+    "ci95": [
+      0.01146069686358271,
+      0.07467978670024938
+    ],
+    "passing_fold_fraction": 0.8333333333333334,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "reversal": {
+    "days": 720,
+    "valid_ic_days": 720,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.03893552289862043,
+    "coverage_adjusted_ic": 0.03893552289862043,
+    "ic_ir": 0.1880421981124338,
+    "ci95": [
+      0.009984824206830337,
+      0.06785266352669207
+    ],
+    "passing_fold_fraction": 0.8333333333333334,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -0.7293134430320768,
+      1.3737663884461546
+    ]
+  },
+  "defensive": {
+    "days": 720,
+    "valid_ic_days": 720,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.057901162941948074,
+    "coverage_adjusted_ic": 0.057901162941948074,
+    "ic_ir": 0.258751180795678,
+    "ci95": [
+      0.02222251247302869,
+      0.09176802947625633
+    ],
+    "passing_fold_fraction": 0.8333333333333334,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -0.05509256889054627,
+      3.5332348182087734
+    ]
+  },
+  "joint": {
+    "days": 720,
+    "valid_ic_days": 720,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.059695511909283724,
+    "coverage_adjusted_ic": 0.059695511909283724,
+    "ic_ir": 0.2704497650159178,
+    "ci95": [
+      0.027515001561918696,
+      0.08956919728363318
+    ],
+    "passing_fold_fraction": 0.8333333333333334,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -0.5245945039322347,
+      3.662316687803357
+    ]
+  }
+}
