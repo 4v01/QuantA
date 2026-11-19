@@ -41,7 +41,7 @@ def replay(names, template, risk, future, tilt):
     return pd.DataFrame(rows,columns=['date','gross_return','entry_turnover','terminal_turnover','turnover','gross_exposure'])
 
 
-def portfolio_inputs(phase):
+def portfolio_inputs(phase, transform=None):
     config = json.loads(Path('configs/v10_clock.json').read_text())
     base = json.loads(Path(config['base_config']).read_text())
     base['buffer_exit_fraction'] = .6
@@ -54,6 +54,8 @@ def portfolio_inputs(phase):
     vals = -risk.stack().reindex(pd.MultiIndex.from_frame(frame[['date','symbol']])).to_numpy()
     rank = pd.Series(vals,index=frame.index).groupby(frame.date).rank(pct=True)
     frame['prediction'] = .75*raw + .25*rank.fillna(.5)
+    if transform is not None:
+        frame = transform(frame, matrix('close_return'))
     template,_,_,sleeves = simulate(frame,tape,symbols,base,config,'stagger5')
     active = sleeves.merge(template[['date','active_sleeve']],on='date').query('sleeve == active_sleeve')
     names = active.pivot(index='date',columns='symbol',values='weight').reindex(index=template.date,columns=symbols).fillna(0)
