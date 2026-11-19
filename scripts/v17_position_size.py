@@ -41,7 +41,7 @@ def replay(names, template, risk, future, tilt):
     return pd.DataFrame(rows,columns=['date','gross_return','entry_turnover','terminal_turnover','turnover','gross_exposure'])
 
 
-def run(phase):
+def portfolio_inputs(phase):
     config = json.loads(Path('configs/v10_clock.json').read_text())
     base = json.loads(Path(config['base_config']).read_text())
     base['buffer_exit_fraction'] = .6
@@ -57,9 +57,14 @@ def run(phase):
     template,_,_,sleeves = simulate(frame,tape,symbols,base,config,'stagger5')
     active = sleeves.merge(template[['date','active_sleeve']],on='date').query('sleeve == active_sleeve')
     names = active.pivot(index='date',columns='symbol',values='weight').reindex(index=template.date,columns=symbols).fillna(0)
+    return names, template, risk, matrix('next_open_return'), matrix('open_observed')
+
+
+def run(phase):
+    names, template, risk, future, _ = portfolio_inputs(phase)
     old = pd.read_csv(Path('reports/v15_downside')/phase/'daily.csv.gz',parse_dates=['date'])
-    reference = replay(names,template,risk,matrix('next_open_return'),False)
-    candidate = replay(names,template,risk,matrix('next_open_return'),True)
+    reference = replay(names,template,risk,future,False)
+    candidate = replay(names,template,risk,future,True)
     paths, metrics = [], []
     for cost in (0,10,20,30):
         control = old.query('cost_bps == @cost').set_index('date')
