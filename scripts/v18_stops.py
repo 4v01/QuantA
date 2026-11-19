@@ -7,11 +7,12 @@ from alphacontextlab.v10_clock.ledger import apply_cost
 from alphacontextlab.v4.metrics import path_statistics, block_mean_interval
 
 
-def simulate_stops(names, template, risk, future, observed, loss, profit):
+def simulate_stops(names, template, risk, future, observed, loss, profit, trailing_gap=None):
     positions = np.zeros((5,len(future.columns)))
     budgets = np.full(5,.2)
     prices = np.ones(len(future.columns))
     basis = np.ones_like(positions)
+    peak = basis.copy()
     pending = np.zeros_like(positions,dtype=int)
     rows = []
     for day in template.itertuples():
@@ -21,7 +22,11 @@ def simulate_stops(names, template, risk, future, observed, loss, profit):
         # Observe existing holdings before today's scheduled transactions.
         gain = prices / basis - 1
         eligible = (old>0) & visible & (pending==0)
-        next_order = np.where(eligible & (gain<=loss),-1,np.where(eligible & (gain>=profit),1,0))
+        take_profit = gain >= profit
+        if trailing_gap is not None:
+            peak = np.where((old>0) & visible, np.maximum(peak,prices), peak)
+            take_profit = (peak/basis-1 >= profit) & (prices <= peak*(1-trailing_gap))
+        next_order = np.where(eligible & (gain<=loss),-1,np.where(eligible & take_profit,1,0))
         s = day.active_sleeve
         if not day.missing_prediction_rebalance:
             selected = names.loc[day.date].to_numpy()>0
@@ -36,6 +41,7 @@ def simulate_stops(names, template, risk, future, observed, loss, profit):
         positions[fills!=0] = 0
         new = (positions>0) & (old==0)
         basis = np.where(new,prices,basis)
+        peak = np.where(new,prices,peak)
         pending = np.where(positions>0,np.where(pending!=0,pending,next_order),0)
         entry = np.abs((positions-old).sum(axis=0)).sum()
         exposure = positions.sum()
