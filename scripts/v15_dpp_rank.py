@@ -46,8 +46,20 @@ def run(phase, variant="dpp"):
     returns = tape.pivot(index='date',columns='symbol',values='close_return').sort_index()
     reference = pd.read_csv(Path('reports/v13_factor_trials')/phase/'daily.csv.gz',parse_dates=['date'])
     reference = reference.query("method == 'defensive'").set_index(['cost_bps','date']).sort_index()
-    if variant == "downside":
+    split_risk = variant in {"relative_downside", "down_beta"}
+    if split_risk:
+        reference = pd.read_csv(Path('reports/v15_downside')/phase/'daily.csv.gz',parse_dates=['date']).set_index(['cost_bps','date']).sort_index()
+    if variant == "downside" or split_risk:
         downside = -returns.clip(upper=0).pow(2).rolling(60).mean().pow(.5)
+        market = returns.mean(axis=1)
+        if variant == "relative_downside":
+            relative = returns.sub(market, axis=0)
+            downside = -relative.clip(upper=0).pow(2).rolling(60).mean().pow(.5)
+        elif variant == "down_beta":
+            # Through-origin sensitivity on negative market days only.
+            falling = market.clip(upper=0)
+            downside = -returns.mul(falling, axis=0).rolling(60).sum().div(
+                falling.pow(2).rolling(60).sum().replace(0, np.nan), axis=0)
         values = downside.stack().reindex(pd.MultiIndex.from_frame(frame[['date','symbol']]))
         rank = pd.Series(values.to_numpy(),index=frame.index).groupby(frame.date).rank(pct=True)
         frame['prediction'] = .75*raw + .25*rank.fillna(.5)
@@ -67,7 +79,7 @@ def run(phase, variant="dpp"):
     baseline = reference.loc[20].net_return
     assert net.index.equals(baseline.index)
     signal['paired_mean_daily_bp_ci95'] = block_mean_interval((net-baseline)*10000)
-    out = Path('reports/v15_' + variant)/phase
+    out = Path(('reports/v16_' if split_risk else 'reports/v15_') + variant)/phase
     out.mkdir(parents=True,exist_ok=True)
     paths.to_csv(out/'daily.csv.gz',index=False,compression={'method':'gzip','mtime':0})
     pd.DataFrame([dict(cost=c,**path_metrics(g)) for c,g in paths.groupby('cost_bps')]).to_csv(out/'metrics.csv',index=False)
@@ -77,7 +89,7 @@ def run(phase, variant="dpp"):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--variant', choices=['dpp','downside'], default='dpp')
+    parser.add_argument('--variant', choices=['dpp','downside','relative_downside','down_beta'], default='dpp')
     args = parser.parse_args()
     for phase in ('development','evaluation'):
         run(phase,args.variant)
