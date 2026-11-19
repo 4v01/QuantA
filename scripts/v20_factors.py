@@ -10,20 +10,25 @@ from alphacontextlab.v7.study import ic_summary
 ROOT = Path('reports/v20_factors')
 
 
-def run(phase):
-    out = ROOT/phase
-    out.mkdir(exist_ok=True)
+def run(phase,policy=False):
+    out = (Path('reports/v20_policy') if policy else ROOT)/phase
+    out.mkdir(parents=True,exist_ok=True)
     base = json.loads(Path('configs/v7.json').read_text())
     volume = pd.read_csv(ROOT/'turnover.csv.gz',dtype={'symbol':str},parse_dates=['date']).pivot(
         index='date',columns='symbol',values='turnover')
     old = pd.read_csv(Path('reports/v18_stops')/phase/'daily.csv.gz',parse_dates=['date']).query("rule=='profit'")
     rows, paths, signals = [], [], {}
-    for method in ['control','momentum','quiet']:
+    for method in (['control','nev_policy'] if policy else ['control','momentum','quiet']):
         def transform(frame,returns):
             strength = np.log1p(returns).shift(21).rolling(105).sum()
             turn = volume.reindex_like(returns)
             quiet = -turn.rolling(5).mean().div(turn.shift(5).rolling(60).mean().replace(0,np.nan))
-            if method!='control':
+            if method == 'nev_policy':
+                # Official posting was after market close on 2020-11-02.
+                exposed = frame.symbol.isin(['000625','600104']) & (frame.date > '2020-11-02')
+                signals[method] = {'exposed_stock_dates':int(exposed.sum())}
+                scores = {'combined':frame.prediction + .10*exposed}
+            elif method!='control':
                 factor = strength if method=='momentum' else quiet
                 values = factor.stack().reindex(pd.MultiIndex.from_frame(frame[['date','symbol']]))
                 rank = pd.Series(values.to_numpy(),index=frame.index).groupby(frame.date).rank(pct=True)
@@ -54,5 +59,9 @@ def run(phase):
 
 
 if __name__=='__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--policy',action='store_true')
+    args = parser.parse_args()
     for phase in ('development','evaluation'):
-        run(phase)
+        run(phase,args.policy)

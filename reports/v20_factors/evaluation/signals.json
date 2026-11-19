@@ -1,0 +1,80 @@
+{
+  "control": {
+    "combined": {
+      "days": 720,
+      "valid_ic_days": 720,
+      "ic_coverage": 1.0,
+      "rank_ic": 0.05465814106422792,
+      "coverage_adjusted_ic": 0.05465814106422792,
+      "ic_ir": 0.24470601769399286,
+      "ci95": [
+        0.01957840333905506,
+        0.08978812407313476
+      ],
+      "passing_fold_fraction": 0.8333333333333334,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    }
+  },
+  "momentum": {
+    "factor_coverage": 1.0,
+    "standalone": {
+      "days": 720,
+      "valid_ic_days": 720,
+      "ic_coverage": 1.0,
+      "rank_ic": -0.012994390435173756,
+      "coverage_adjusted_ic": -0.012994390435173756,
+      "ic_ir": -0.052724937900741835,
+      "ci95": [
+        -0.05162057148135441,
+        0.026396682881200773
+      ],
+      "passing_fold_fraction": 0.16666666666666666,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    },
+    "combined": {
+      "days": 720,
+      "valid_ic_days": 720,
+      "ic_coverage": 1.0,
+      "rank_ic": 0.049578606505935804,
+      "coverage_adjusted_ic": 0.049578606505935804,
+      "ic_ir": 0.2139791114238241,
+      "ci95": [
+        0.01416234413354874,
+        0.08475719191585676
+      ],
+      "passing_fold_fraction": 0.8333333333333334,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    }
+  },
+  "quiet": {
+    "factor_coverage": 0.9995063678546747,
+    "standalone": {
+      "days": 720,
+      "valid_ic_days": 720,
+      "ic_coverage": 1.0,
+      "rank_ic": -0.010978471810084827,
+      "coverage_adjusted_ic": -0.010978471810084827,
+      "ic_ir": -0.05976872892690668,
+      "ci95": [
+        -0.03552412776150184,
+        0.01734035790423503
+      ],
+      "passing_fold_fraction": 0.3333333333333333,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    },
+    "combined": {
+      "days": 720,
+      "valid_ic_days": 720,
+      "ic_coverage": 1.0,
+      "rank_ic": 0.051154084387333,
+      "coverage_adjusted_ic": 0.051154084387333,
+      "ic_ir": 0.23615594507200613,
+      "ci95": [
+        0.018363289866119077,
+        0.08394848617997146
+      ],
+      "passing_fold_fraction": 0.8333333333333334,
+      "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate."
+    }
+  }
+}
