@@ -1,0 +1,74 @@
+{
+  "v11": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.048653527177274336,
+    "coverage_adjusted_ic": 0.048653527177274336,
+    "ic_ir": 0.21274462680373887,
+    "ci95": [
+      0.012307654196293052,
+      0.08531029162402798
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  "reversal": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.04851466944010032,
+    "coverage_adjusted_ic": 0.04851466944010032,
+    "ic_ir": 0.21943930217443214,
+    "ci95": [
+      0.01447018437970161,
+      0.0821215223251062
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -3.113324593843153,
+      0.4408088134062481
+    ]
+  },
+  "defensive": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.041212562584196484,
+    "coverage_adjusted_ic": 0.041212562584196484,
+    "ic_ir": 0.20096778717439728,
+    "ci95": [
+      0.0079465322642064,
+      0.07544543756706655
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -5.230899876002372,
+      1.146742834341207
+    ]
+  },
+  "joint": {
+    "days": 470,
+    "valid_ic_days": 470,
+    "ic_coverage": 1.0,
+    "rank_ic": 0.03663295136427282,
+    "coverage_adjusted_ic": 0.03663295136427282,
+    "ic_ir": 0.19459041898507046,
+    "ci95": [
+      0.007997768598447415,
+      0.06627055044425788
+    ],
+    "passing_fold_fraction": 0.75,
+    "note": "Flat scores have undefined IC; valid coverage and zero-credit selection statistic are separate.",
+    "paired_daily_net_delta_bp_ci95": [
+      -10.44666305936604,
+      -1.1042543169860486
+    ]
+  }
+}

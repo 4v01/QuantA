@@ -1,0 +1,9 @@
+{
+  "method": "v11",
+  "eligible": [
+    "v11",
+    "reversal",
+    "defensive",
+    "joint"
+  ]
+}
